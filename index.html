@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- css links -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    
-    <link rel="stylesheet" href="home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/home.css">
 
     <title>Our Project</title>
 
@@ -61,7 +61,8 @@
          <!-- navbar start -->
          <nav class="navbar navbar-expand-lg navbar-light p-2 nav-fixed fixed-top" id="navbar">
             <div class="container-fluid">
-            <a class="navbar-brand justify-content-lg-start ps-2 " href="index.html">Our Logo</a>
+              <a class="navbar-brand" href="#">
+                <img id="logo" src="/assets/img/mag-logo.png" alt="Under the Magnifying Glass" style="width:40px;" class="rounded-pill"> Under the Magnifying Glass</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -113,100 +114,109 @@
         </nav>
         <!-- navbar end -->
 
-    <div class="container-fluid" id="first">
+        <!-- start first container -->
+    <div class="container pt-5" id="about"> <!-- pt-5 adds a large top padding-->
 
-        <!-- start first row -->
+
+            <div class="row">
+
+              <h2>About the project</h2>
+              <div id="about-proj">
+                <p id="proj-motivation">This website is a project developed for the final examination of the 2021/2022 course <a href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2020/454464">Information Modeling and Web Technologies</a> held by Professor <a href="https://www.unibo.it/sitoweb/fabio.vitali/en">Fabio Vitali.</a></p>
+              </div>
+            </div>
+        </div>
+
+
+
+        <!-- start second row -->
+        <div class="container" id="issues">
         <div class="row">
-            <h1 id="main-title">
-            Our Project</h1>
-            <h2>Some subtitle.</h2>
+            <h2>Issues</h2>
             <div id="first-text">
                 <p id="project-description">Select an issue, choose a style among the list and enjoy reading!
                 </p>
             </div>
         </div>
-    </div>
-
-        <!-- end first row -->
-
-        <!-- start second row -->
-
-        </div>
-        <div class="container-fluid" id="about">
-            <div class="row">
-
-              <h2>About the project</h2>
-              <div id="about-proj">
-
-                <p id="proj-description">Text
-                </p>
-                <p id="proj-motivation">This website was developed for the course <b>Information Modeling and Web Technology</b>, which is part of the Digital Humanities and Digital Knowledge master degree at the University of Bologna.</p>
-
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card text-center issue" id="card-iss1">
+              <div class="card-body">
+                  <div class="fadedbox">
+                    <div class="title-text" id="tt1">Sherlock Holmes</div>
+                    <p class="card-txt issue-description"><span>Discover the world of Arthur Conan Doyle's most famous fictional personality.</span></p>
+                    <button class="see-article"><a href="Sherlock-Holmes.html"><span>See the articles</span></a></button>
+                  </div>
+              </div>
             </div>
-
-            </div>
-
+          </div>
         </div>
         <!-- end second row -->
 
-        <!-- start third row -->
+        <!-- start third row / TIMELINE -->
 
-        <div id="third">
+          <section>
+          <div class="container" id="themes">
+
+           <div class="row">
+               <h2>Themes</h2>
+               <div class="timeline">
+                 <div class="timeline-container timeline-left">
+                   <div class="content">
+                     <h2>2017</h2>
+                     <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                   </div>
+                 </div>
+                 <div class="timeline-container timeline-right">
+                   <div class="content">
+                     <h2>2016</h2>
+                     <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                   </div>
+                 </div>
+                 <div class="timeline-container timeline-left">
+                   <div class="content">
+                     <h2>2015</h2>
+                     <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                   </div>
+                 </div>
+                 <div class="timeline-container timeline-right">
+                   <div class="content">
+                     <h2>2012</h2>
+                     <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                   </div>
+                 </div>
+                 <div class="timeline-container timeline-left">
+                   <div class="content">
+                     <h2>2011</h2>
+                     <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                   </div>
+                 </div>
+                 <div class="timeline-container timeline-right">
+                   <div class="content">
+                     <h2>2007</h2>
+                     <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                   </div>
+                 </div>
+               </div>
+
+         </div>
+
+     <!-- end third row -->
+
+          </section>
+
+
         </div>
-        <div class="container-fluid" id="third">
-            <div class="row">
-                <h2>Themes</h2>
-                <div class="timeline">
-                  <div class="timeline-container timeline-left">
-                    <div class="content">
-                      <h2>2017</h2>
-                      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                    </div>
-                  </div>
-                  <div class="timeline-container timeline-right">
-                    <div class="content">
-                      <h2>2016</h2>
-                      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                    </div>
-                  </div>
-                  <div class="timeline-container timeline-left">
-                    <div class="content">
-                      <h2>2015</h2>
-                      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                    </div>
-                  </div>
-                  <div class="timeline-container timeline-right">
-                    <div class="content">
-                      <h2>2012</h2>
-                      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                    </div>
-                  </div>
-                  <div class="timeline-container timeline-left">
-                    <div class="content">
-                      <h2>2011</h2>
-                      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                    </div>
-                  </div>
-                  <div class="timeline-container timeline-right">
-                    <div class="content">
-                      <h2>2007</h2>
-                      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                    </div>
-                  </div>
-                </div>
 
-            </div>
-
-        <!-- end third row -->
+        <!-- END TIMELINE -->
 
 
           <!-- footer -->
           <footer>
-            <div class="container-fluid">
+            <div class="container">
               <div class="row">
                 <div class="col-md-3"></div>
                 <div class="col-md-3 info-footer">
-                  <p>This website is a project developed for the 2021/2022 course <a href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2020/454464">Information Modeling and Web Technologies</a> held by Professor <a href="https://www.unibo.it/sitoweb/fabio.vitali/en">Fabio Vitali</a></p>
                 </div>
                 <div class="col-md-3 contacts">
                   <h4>Contacts</h4>

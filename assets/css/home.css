@@ -72,6 +72,7 @@ body{
 /* ------- END OF BOOTSTRAP BASIC GRID TEMPLATE ---------*/
 
 .navbar{
+  background-color: inherit;
 
 }
 
@@ -85,12 +86,75 @@ body{
 .row{
 
 }
-* {
-  box-sizing: border-box;
+
+
+/*THEMES CARDS*/
+
+
+.issue {
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    max-width: 100vh !important;
+    height: 60vh !important;
+    border-radius: 0;
+    margin: 0;
+    margin-top: 2em;
+    border: none;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: center;
+}
+
+#card-iss1{
+    background-image: url("/assets/img/holmes-cover.jpeg");
+    background-size: cover;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+#card-iss2{
+    background-image: url("/typetravel/images/examples/fem-issue.png");
+    margin-right: 2rem;
+    background-size: cover;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.issue .fadedbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #000;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    opacity: 0;
+    height: inherit;
+    cursor: auto;
+}
+
+.issue:hover .fadedbox {
+    opacity: 1;
+}
+
+.issue-description {
+    height: auto;
+    width: auto;
+    border: none;
+    color:#000000;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 0.5em;
+    background-color: transparent;
 }
 
 /* -------------TIMELINE-------------/*
-
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
@@ -117,6 +181,9 @@ body{
   background-color: white;
   width: 50%;
   border-color: black;
+}
+.timeline-container .timeline-left{
+
 }
 
 /* The circles on the timeline
@@ -178,11 +245,19 @@ body{
 
 /* The actual content */
 .content {
-  padding: 20px 30px;
-  background-color: gray;
-  position: relative;
-  border-radius: 6px;
+text-align: center;
+padding: 60px 30px;
+position: relative;
+border-radius: 6px;
+color:white;
+text-shadow:black 0px 0px 3px;
 }
+.content {
+background-image: url("https://www.w3schools.com/bootstrap4/cinqueterre.jpg");
+background-size: cover;
+background-position: center;
+}
+
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
