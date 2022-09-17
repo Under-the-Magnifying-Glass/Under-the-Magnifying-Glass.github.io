@@ -1,252 +1,103 @@
-<!doctype html>
-<html lang="en">
-  <head>
-
-    <!-- meta tags -->
-    <meta charset="utf-8">
+<!DOCTYPE html>
+<html>
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="home.css">
+    <script href="script.js"></script>
+</head>
 
-    <!-- css links -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/css/home.css">
+<body>
 
-    <title>Our Project</title>
-
-  </head>
-  <body>
-
-    <!-- MODALS -->
-
-    <!-- disclaimer start -->
-      <div class="modal" id="disclaimer">
-          <div class="modal-dialog">
-          <div class="modal-content">
-              <div class="modal-header">
-              <h5 class="modal-title">Disclaimer</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-              <p>
-                The purpose of this web site is to explore various types of typographic and layout style for text documents, as an end-of-course project for the "Information Modeling and Web technologies" course of the Master Degree in Digital Humanities and Digital Knowledge of the University of Bologna, under professor Fabio Vitali.
-
-                All copyrights and related rights on the content remain with their original owners. All copyright on the typographic and layout choices are 2022 © XY
-              </p>
-              <p>
-                The documents contained in this web site have been selected for their length and complexity from XXX. Their publication here is not intended to be an alternative or replace their original locations:
-              </p>
-                <ul>
-                    <li>File 1:</li>
-                    <li>File 2: </li>
-                    <li>File 3: </li>
-
-                </ul>
-              <p>
-                  All copyrights and related rights on the content remain with their original owners.
-                  <br>
-                  All copyright on the typographic and layout choices are 2022 © Our names.
-              </p>
-              </div>
-              <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              </div>
-          </div>
-          </div>
-        </div>
-      </div>
-      <!-- disclaimer end -->
-
-
-    <!-- HEADER -->
-
-         <!-- navbar start -->
-         <nav class="navbar navbar-expand-lg navbar-light p-2 nav-fixed fixed-top" id="navbar">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <img id="logo" src="/assets/img/mag-logo.png" alt="Under the Magnifying Glass" style="width:40px;" class="rounded-pill"> Under the Magnifying Glass</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-lg-center" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                <li class="nav-item ps-2">
-                    <a class="nav-link active" aria-current="page" href="index.html" id="nav-active-link">Home</a>
-                </li>
-                <li class="nav-item dropdown ps-2">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Issues
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="Sherlock-Holmes.html">Sherlock Holmes</a></li>
-                    <li><a class="dropdown-item" href="Issue2.html">Issue 2</a></li>
-                    <li><a class="dropdown-item" href="Issue3.html">Issue 3</a></li>
-
-                    </ul>
-                </li>
-                <li class="nav-item dropdown ps-2">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Themes
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" onclick="changeThemeHome" href="#" tag="link" id="enable-default">Default</a></li>
-                    <li><a class="dropdown-item" onclick="changeThemeHome" href="#" id="change-style1">Style 1</a></li>
-                    <li><a class="dropdown-item" onclick="changeThemeHome" href="#" id="change-style2">Style 2</a></li>
-                    <li><a class="dropdown-item" onclick="changeThemeHome" href="#" id="change-style3">Style 3</a></li>
-                    <li><a class="dropdown-item" onclick="changeThemeHome" href="#" id="change-style4">Style 4</a></li>
-                    <li><a class="dropdown-item" onclick="changeThemeHome" href="#" id="change-style5">Style 5</a></li>
-                    <li><a class="dropdown-item" onclick="changeThemeHome" href="#" id="change-style6">Style 6</a></li>
-                  </ul>
-              </li>
-                <li class="nav-item ps-2">
-                    <a class="nav-link active" aria-current="page" href="documentation.html" >Documentation</a>
-                </li>
-                <li class="nav-item dropdown ps-1">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="nav-active-link">
-                  About
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#disclaimer">Disclaimer</a></li>
-                  <li> <a class="dropdown-item" aria-current="page" href="index.html#about">About</a></li>
-                  </ul>
-              </li>
-                </ul>
-            </div>
-            </div>
-        </nav>
-        <!-- navbar end -->
-
-        <!-- start first container -->
-    <div class="container pt-5" id="about"> <!-- pt-5 adds a large top padding-->
-
-
-            <div class="row">
-
-              <h2>About the project</h2>
-              <div id="about-proj">
-                <p id="proj-motivation">This website is a project developed for the final examination of the 2021/2022 course <a href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2020/454464">Information Modeling and Web Technologies</a> held by Professor <a href="https://www.unibo.it/sitoweb/fabio.vitali/en">Fabio Vitali.</a></p>
-              </div>
-            </div>
-        </div>
+    <div class="navbar">
+        <a href="#docu">Documentation</a>
+        <a href="#about">About</a>
+        <a href="#style"><span onclick="openNav()">Style</span></a>
+        <a href="#issues">Issue</a>
+        <a href="index.html" style="float:left;">Under the Magnifying Glass</a>
+    </div>
 
 
 
-        <!-- start second row -->
-        <div class="container" id="issues">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">1500-1800</a>
+            <a href="#">XIX</a>
+            <a href="#">First half XX</a>
+            <a href="#">Second half XX</a>
+            <a href="#">XXI</a>
+            <a href="#">Screen</a>
+            <a href="#">Future</a>
+    </div>
+
+    <div class="main">
         <div class="row">
-            <h2>Issues</h2>
-            <div id="first-text">
-                <p id="project-description">Select an issue, choose a style among the list and enjoy reading!
-                </p>
+            <div class="column" id="background_img">
+                <div class="col-content">
+                    <h1>Discover New Burning Topics</h1>
+                    <h2>Investigate the issues</h2>
+                    <h2>It covers navbar on scroll... check the position</h2>
+                </div>
+            </div> 
+        </div>
+        <div class="row"  style="margin:30px;">
+            <h2 id="issues">The Issues</h2>
+            <h4>Discover our issues</h4>
+            <div class="card-column">
+                <div class="card" style="margin-left:20px ;">
+                    <img src="img/issue1.jpg" alt="Jane">
+                    <div class="card-container">
+                        <h2>Sherlock Holmes</h2>
+                        <p class="card-title">Arthur Conan Doyle</p>
+                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                        <p><a href="issue.html"><button class="button">Investigate!</button></a></p>
+                  </div>
+                </div>
+            </div>
+            
+            <div class="card-column">
+                <div class="card">
+                    <img src="img/issue2.jpg" alt="Jane">
+                    <div class="card-container">
+                        <h2>Hercule Poirot</h2>
+                        <p class="card-title">Agatha Christie</p>
+                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                        <p><button class="button">Investigate!</button></p>
+                  </div>
+                </div>
+            </div>
+            
+            <div class="card-column">
+                <div class="card">
+                    <img src="img/issue3.jpg" alt="Jane">
+                    <div class="card-container">
+                        <h2>Nancy Drew</h2>
+                        <p class="card-title">CEO &amp; Founder</p>
+                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                        <p><button class="button">Investigate!</button></p>
+                  </div>
+                </div>
             </div>
         </div>
         <div class="row">
-          <div class="col-md-6">
-            <div class="card text-center issue" id="card-iss1">
-              <div class="card-body">
-                  <div class="fadedbox">
-                    <div class="title-text" id="tt1">Sherlock Holmes</div>
-                    <p class="card-txt issue-description"><span>Discover the world of Arthur Conan Doyle's most famous fictional personality.</span></p>
-                    <button class="see-article"><a href="Sherlock-Holmes.html"><span>See the articles</span></a></button>
-                  </div>
-              </div>
+            <div class="column">
+
+                            
+            
             </div>
-          </div>
         </div>
-        <!-- end second row -->
+    </div>
 
-        <!-- start third row / TIMELINE -->
-
-          <section>
-          <div class="container" id="themes">
-
-           <div class="row">
-               <h2>Themes</h2>
-               <div class="timeline">
-                 <div class="timeline-container timeline-left">
-                   <div class="content">
-                     <h2>2017</h2>
-                     <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                   </div>
-                 </div>
-                 <div class="timeline-container timeline-right">
-                   <div class="content">
-                     <h2>2016</h2>
-                     <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                   </div>
-                 </div>
-                 <div class="timeline-container timeline-left">
-                   <div class="content">
-                     <h2>2015</h2>
-                     <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                   </div>
-                 </div>
-                 <div class="timeline-container timeline-right">
-                   <div class="content">
-                     <h2>2012</h2>
-                     <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                   </div>
-                 </div>
-                 <div class="timeline-container timeline-left">
-                   <div class="content">
-                     <h2>2011</h2>
-                     <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                   </div>
-                 </div>
-                 <div class="timeline-container timeline-right">
-                   <div class="content">
-                     <h2>2007</h2>
-                     <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                   </div>
-                 </div>
-               </div>
-
-         </div>
-
-     <!-- end third row -->
-
-          </section>
-
-
-        </div>
-
-        <!-- END TIMELINE -->
-
-
-          <!-- footer -->
-          <footer>
-            <div class="container">
-              <div class="row">
-                <div class="col-md-3"></div>
-                <div class="col-md-3 info-footer">
-                </div>
-                <div class="col-md-3 contacts">
-                  <h4>Contacts</h4>
-                    <a href="mailto: federica.bonifazi@gmail.com">federica.bonifazi@studio.unibo.it</a>
-                    <a href="mailto: chloi.papadopoulou@studio.unibo.it">chloi.papadopoulou@studio.unibo.it</a>
-                    <a href="mailto: loredana.salvatore@studio.unibo.it">loredana.salvatore@studio.unibo.it</a>
-
-                </div>
-
-
-              <div class="row">
-                <p id="cp">© 2022 Copyright: Our names</p>
-              </div>
-
-
-              <!--fab-->
-
-              #Our toggle button
-              <div class="fab-container">
-                  <div class="fab-content">
-                    <span class="material-icons"></span>
-                  </div>
-                </div>
-
-          </footer>
-
-    <!-- SCRIPTS -->
-
-        <!-- Bootstrap Bundle with Popper -->
-        <script src="/project/js/home.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  </body>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+    </script>
+</body>
 </html>
