@@ -107,31 +107,99 @@
 
 
       <!-- ======= About Section ======= -->
-      <main>
 
-        <div class="container" id="main"></div>
-      </main>
+
+      <div class="container-fluid">
+        <p>Resize the window to see the effect</p>
+        <div class="row">
+
+          <div class="col-5 col-sm-4">
+              <div class="metadata text-right">
+                  <h5>Select the text:</h5>
+                  <ul id="list" style="list-style: none;">
+                  </ul>
+                  </p>
+                  <div class="row mt-4">
+                      <h5>Select the metadata:</h5>
+                      <p><b>Highlight in the text:</b></p>
+                      <div class="col-md-12">
+                          <form role="form">
+                              <div class="checkbox"><label>
+                                      <input type="checkbox" id="showcharmortal" class="show"> Mortal
+                                      Characters</label></div>
+                              <div class="checkbox"><label>
+                                      <input type="checkbox" id="showcharimmortal" class="show"> Immortal
+                                      Characters</label></div>
+                              <div class="checkbox"><label>
+                                      <input type="checkbox" id="showplaces" class="show"> Places and
+                                      cities</label>
+                              </div>
+
+                          </form>
+                      </div>
+                  </div>
+                  <div class="row clearfix mt-3">
+                      <div class="col-md-12">
+                          <p><b>List down:</b></p>
+                          <!-- Nav selectors -->
+                          <ul class="nav nav-pills nav-justified" id="sentenceTab" role="tablist">
+                              <li class="nav-item">
+                                  <a class="nav-link active" id="mortalcharacters-tab" data-toggle="tab"
+                                      href="#charmortal" role="tab" aria-controls="view"
+                                      aria-selected="true">Mortal characters</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" id="immortalcharacters-tab" data-toggle="tab"
+                                      href="#charimmortal" role="tab" aria-controls="home"
+                                      aria-selected="false">Immortal Characters</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link " id="places-tab" data-toggle="tab" href="#places"
+                                      role="tab" aria-controls="home" aria-selected="false">Places and
+                                      cities</a>
+                              </li>
+                          </ul>
+
+                          <!-- Tab panes -->
+                          <div class="tab-content mt-1 auto" id="sentenceContent">
+                              <div class="tab-pane active myBorder myBorder-notop" id="charmortal"
+                                  role="tabpanel" aria-labelledby="mortalcharacters-tab">
+                                  <ul></ul>
+                              </div>
+                              <div class="tab-pane myBorder myBorder-notop" id="charimmortal" role="tabpanel"
+                                  aria-labelledby="immortalcharacters-tab">
+                                  <ul></ul>
+                              </div>
+                              <div class="tab-pane myBorder myBorder-notop" id="places" role="tabpanel"
+                                  aria-labelledby="places-tab">
+                                  <ul></ul>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      <div class="col-7 col-sm-7 col-xs-8">
+        <main id="main">
+
+        </main>
+        </div>
+      </div>
+    </div>
 
 
       <section id="about" class="about">
         <div class="container">
-
-
           <div class="row">
-
-
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
                 </p>
                 <div class="row">
-
                 </div>
               </div><!-- End .content-->
             </div>
-
       </section><!-- End About Section -->
-
-
 
 
 <!-- ======= Footer Section ======= -->
@@ -167,7 +235,7 @@
   <script>
     $(document).ready(function(){
       $("#btn1").click(function(){
-        $("#main").load("texts/musgrave-ritual.html")
+        $("#main").load("texts/dainty-hands.html")
       });
     });
   </script>
@@ -175,7 +243,7 @@
   <script>
     $(document).ready(function(){
       $("#btn2").click(function(){
-        $("#main").load("texts/scandal-in-bohemia.html")
+        $("#main").load("texts/musgrave-ritual.html")
       });
     });
   </script>
@@ -183,7 +251,7 @@
   <script>
     $(document).ready(function(){
       $("#btn3").click(function(){
-        $("#main").load("texts/dainty-hands.html")
+        $("#main").load("texts/scandal-in-bohemia.html")
       });
     });
   </script>
