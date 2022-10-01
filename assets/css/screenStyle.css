@@ -1,0 +1,31 @@
+#DisclaimerBtn {
+    background-color: #45a36c;
+}
+
+.about .image {
+    border-radius: 10px;
+}
+
+.services .img-left {
+    border-radius: 100px;
+    margin: 15px;
+    width: 120px;
+    float: left;
+}
+
+.services .img-right {
+    border-radius: 100px;
+    margin: 15px;
+    width: 120px;
+    float: right;
+
+}
+
+.services .test-content-right {
+    padding-top: 5%;    
+    text-align: right;
+}
+
+.services .test-content-left {
+    padding-top: 5%;
+}
