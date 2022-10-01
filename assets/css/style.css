@@ -39,7 +39,11 @@ h6 {
   background: #fff;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
-
+main {
+  margin-left: auto;
+  margin-right:auto;
+  
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -133,7 +137,7 @@ h6 {
   padding: 0;
   display: flex;
   list-style: none;
-  align-items:;
+  align-items: center;
 }
 
 .navbar li {
@@ -337,21 +341,16 @@ h6 {
 }
 
 
-.nav-link disabled {
-  items-align:right;
-}
-
 /*--------------------------------------------------------------
 # Nav menu in issues Section
 --------------------------------------------------------------*/
 
 
-.navbar-menu {
+.navbar-text {
   padding: 0;
-  text-align: center;
 }
 
-.navbar-menu ul {
+.navbar-text ul {
   margin: 0;
   padding: 0;
   display: flex;
@@ -359,34 +358,34 @@ h6 {
   align-items: center;
 }
 
-.navbar-menu li {
+.navbar-text li {
   position: relative;
 }
 
-.navbar-menu a,
-.navbar-menu a:focus {
+.navbar-text a,
+.navbar-text a:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
   font-size: 16px;
   font-weight: 500;
-  color: black;
+  color: #fff;
   white-space: nowrap;
   transition: 0.3s;
 }
 
-.navbar-menu a i,
-.navbar-menu a:focus i {
+.navbar-text a i,
+.navbar-text a:focus i {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
 }
 
-.navbar-menu a:hover,
-.navbar-menu .active,
-.navbar-menu .active:focus,
-.navbar-menu li:hover>a {
+.navbar-text a:hover,
+.navbar-text .active,
+.navbar-text .active:focus,
+.navbar-text li:hover>a {
   color: #72c393;
 }
 /*--------------------------------------------------------------
