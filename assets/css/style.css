@@ -12,6 +12,7 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
   background-color: #f4f4f4;
+
 }
 
 a {
@@ -43,7 +44,7 @@ h6 {
 main {
   margin-left: auto;
   margin-right:auto;
-
+  margin-top:20px;
 }
 /*--------------------------------------------------------------
 # Back to top button
@@ -343,6 +344,20 @@ main {
 
 
 /*--------------------------------------------------------------
+# Issues Section
+--------------------------------------------------------------*/
+.metadata-pleasework{
+  position: fixed;
+  background-color: #E5F6DF;
+  margin-top:25px;
+  padding: 20px 10px 10px 10px;
+}
+.article-scroll {
+
+  height: 75px;
+  overflow-y: scroll;
+}
+/*--------------------------------------------------------------
 # Nav menu in issues Section
 --------------------------------------------------------------*/
 
@@ -490,7 +505,6 @@ main {
 --------------------------------------------------------------*/
 section {
   padding: 60px 0;
-  overflow: hidden;
 }
 
 .section-bg {
