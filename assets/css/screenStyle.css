@@ -29,3 +29,75 @@
 .services .test-content-left {
     padding-top: 5%;
 }
+
+/*DOCUMENTATION CARDS*/
+
+.containerm {
+   
+    overflow: hidden;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.d_image {
+    overflow: hidden;
+    height: 300px;
+    width: 300px;
+    position: relative;
+    cursor: pointer;
+    margin: 0 15px;
+    box-shadow: 0 0 25px 1px rgba(0, 0, 0, .3);
+    transition: .5s;
+    background-color: #555
+}
+
+.image:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    transform: translate(-140%, -50%);
+    background-color: black;
+    opacity: 0.8;
+    border-radius: 50%;
+    transition: .8s
+}
+
+.image:hover:after {
+    transform: translate(-50%, -50%)
+}
+
+.image:hover img {
+    transform: translate(-50%, -50%) scale(1.3) rotate(20deg)
+}
+
+.docimg {
+    position: absolute;
+    height: 110%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .8s
+}
+
+.docCard {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-2000px, -50%);
+    color: #fff;
+    transition: .8s;
+    transition-timing-function: ease-in
+}
+
+.image:hover .docCard {
+    transform: translate(-50%, -50%);
+    transition-timing-function: ease
+}
