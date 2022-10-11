@@ -127,13 +127,13 @@
                       <div class="col-md-12">
                           <form role="form">
                               <div class="checkbox"><label>
-                                      <input type="checkbox" name="checkbox" id="showfemalechar" class="button conceptButton" data-concept= "fcharacter"> Female
+                                      <input type="checkbox" name="checkbox" id="showfemalechar" class="button showmetadata" data-concept= "fcharacter"> Female
                                       Characters</label></div>
                               <div class="checkbox"><label>
-                                      <input type="checkbox" name="checkbox" id="showmalechar" class="button conceptButton" data-concept= "character"> Male
+                                      <input type="checkbox" name="checkbox" id="showmalechar" class="button showmetadata" data-concept= "character"> Male
                                       Characters</label></div>
                               <div class="checkbox"><label>
-                                      <input type="checkbox" name="checkbox" id="showplaces" class="button conceptButton" data-concept= "places"> Places
+                                      <input type="checkbox" name="checkbox" id="showplaces" class="button shoemetadata" data-concept= "places"> Places
                                       </label>
                               </div>
 
@@ -389,7 +389,7 @@ document.querySelectorAll(".conceptButton").forEach(checkbox => {
 
 <script>
 
-function handleConceptClick(concept){
+function addHighlight(concept){
 /* Clean up all highlighted elements
 document.querySelectorAll(`.highlight`).forEach(node => {
     node.classList.remove('highlight');
@@ -414,11 +414,11 @@ function removeHighlight(concept){
 
 const checkbox = document.querySelectorAll('input[type=checkbox]');
 
-document.querySelectorAll(".conceptButton").forEach(checkbox =>{
+document.querySelectorAll(".showmetadata").forEach(checkbox =>{
 
   checkbox.addEventListener("change", (e) => {
   if (e.target.checked) {
-		handleConceptClick(e.target.getAttribute("data-concept"));
+		addHighlight(e.target.getAttribute("data-concept"));
 	}
    else {
     removeHighlight(e.target.getAttribute("data-concept"));
