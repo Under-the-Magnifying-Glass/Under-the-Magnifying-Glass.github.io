@@ -357,6 +357,54 @@ main {
   height: 75px;
   overflow-y: scroll;
 }
+
+
+
+/*--------------------------------------------------------------
+# HIGHLIGHTS
+--------------------------------------------------------------*/
+
+
+.highlight[class~="character"]{
+	background-color: #788091
+}
+
+.highlight[class~="fcharacter"]{
+	background-color: #00FAFA
+}
+
+.highlight[class~="places"]{
+	background-color: #63af90
+}
+
+.highlight[property~="justice"]{
+	background-color: #00FAFA
+}
+
+.highlight[property~="reason"]{
+	background-color: #ade8f4
+}
+
+.highlight[property~="death"]{
+	background-color: #788091
+}
+
+.highlight[property~="psy-body"]{
+	background-color: #eeaabe
+}
+
+.highlight[property~="power"]{
+	background-color: #ec37db
+}
+
+.highlight[property~="providence"]{
+	background-color: #feef5d
+}
+
+.highlight[property~="cosmo:omission"]{
+	background-color: #feef5d
+}
+
 /*--------------------------------------------------------------
 # Nav menu in issues Section
 --------------------------------------------------------------*/
@@ -404,6 +452,32 @@ main {
 .navbar-text li:hover>a {
   color: #72c393;
 }
+
+/*--------------------------------------------------------------
+COMPARE Section
+--------------------------------------------------------------*/
+
+
+.first_scroll {
+  padding: 30px;
+  margin: 50px auto 0 auto;
+  overflow-y:scroll;
+  height:75px;
+  background:gray;
+  }
+
+.second_scroll{
+  padding: 30px;
+  margin: 50px auto 0 auto;
+  height:75px;
+  overflow-y:scroll;
+  background:lightblue;
+  display:block;
+}
+
+.scroll-column {
+  height:100%;
+  }
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/

@@ -127,13 +127,13 @@
                       <div class="col-md-12">
                           <form role="form">
                               <div class="checkbox"><label>
-                                      <input type="checkbox" id="showfemalechar" class="show"> Female
+                                      <input type="checkbox" name="checkbox" id="showfemalechar" class="button conceptButton" data-concept= "fcharacter"> Female
                                       Characters</label></div>
                               <div class="checkbox"><label>
-                                      <input type="checkbox" id="showmalechar" class="show"> Male
+                                      <input type="checkbox" name="checkbox" id="showmalechar" class="button conceptButton" data-concept= "character"> Male
                                       Characters</label></div>
                               <div class="checkbox"><label>
-                                      <input type="checkbox" id="showplaces" class="show"> Places
+                                      <input type="checkbox" name="checkbox" id="showplaces" class="button conceptButton" data-concept= "places"> Places
                                       </label>
                               </div>
 
@@ -359,6 +359,73 @@
 });
 
   </script>
+  <!-- <script>
+
+  function handleConceptClick(concept){
+	/* Clean up all highlighted elements*/
+	document.querySelectorAll(`.highlight`).forEach(node => {
+  		node.classList.remove('highlight');
+	})
+
+	/* Select all elements to highlight, which are the ones that have the specified value of the "property" attribute */
+	let nodes = document.querySelectorAll(`[class="${concept}"]`)
+
+	/* Higlhlight all selected elements */
+	nodes.forEach(node => {
+		node.classList.add('highlight')
+	})
+}
+
+/* Select all buttons that have a conceptButton class */
+document.querySelectorAll(".conceptButton").forEach(checkbox => {
+	/* Add click listener to the buttons, and call the function to handle the click passing the button's value of the "data-concept" attribute */
+	checkbox.addEventListener("click", event => {
+		handleConceptClick(event.target.getAttribute("data-concept"))
+	})
+})
+
+</script> -->
+
+
+<script>
+
+function handleConceptClick(concept){
+/* Clean up all highlighted elements
+document.querySelectorAll(`.highlight`).forEach(node => {
+    node.classList.remove('highlight');
+})*/
+
+/* Select all elements to highlight, which are the ones that have the specified value of the "property" attribute */
+  let nodes = document.querySelectorAll(`[class="${concept}"]`)
+
+  /* Higlhlight all selected elements */
+  nodes.forEach(node => {
+    node.classList.add('highlight')
+  })
+};
+
+function removeHighlight(concept){
+  let nodes = document.querySelectorAll(`[class="${concept}"]`)
+
+  document.querySelectorAll(`.highlight`).forEach(node => {
+      node.classList.remove('highlight');
+  })
+};
+
+const checkbox = document.querySelectorAll('input[type=checkbox]');
+
+document.querySelectorAll(".conceptButton").forEach(checkbox =>{
+
+  checkbox.addEventListener("change", (e) => {
+  if (e.target.checked) {
+		handleConceptClick(e.target.getAttribute("data-concept"));
+	}
+   else {
+    removeHighlight(e.target.getAttribute("data-concept"));
+  }})
+});
+
+</script>
 
 </body>
 
