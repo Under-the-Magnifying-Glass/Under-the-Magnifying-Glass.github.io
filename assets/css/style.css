@@ -40,12 +40,12 @@ h6 {
   background: #fff;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
-
+/*
 main {
   margin-left: auto;
   margin-right:auto;
   margin-top:20px;
-}
+} */
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -381,7 +381,7 @@ main {
 	background-color: #00FAFA
 }
 
-.highlight[property~="reason"]{
+.highlight[property~="citedCase"]{
 	background-color: #ade8f4
 }
 
@@ -389,7 +389,8 @@ main {
 	background-color: #788091
 }
 
-.highlight[property~="psy-body"]{
+
+.highlight[property~="people"]{
 	background-color: #eeaabe
 }
 
@@ -458,26 +459,23 @@ COMPARE Section
 --------------------------------------------------------------*/
 
 
-.first_scroll {
+#first_scroll {
   padding: 30px;
   margin: 50px auto 0 auto;
   overflow-y:scroll;
-  height:75px;
+  height:70vh;
   background:gray;
   }
 
-.second_scroll{
+#second_scroll{
   padding: 30px;
   margin: 50px auto 0 auto;
-  height:75px;
+  height:70vh;
   overflow-y:scroll;
-  background:lightblue;
   display:block;
 }
 
-.scroll-column {
-  height:100%;
-  }
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
