@@ -347,7 +347,7 @@ main {
 # Issues Section
 --------------------------------------------------------------*/
 .metadata{
-  position: fixed;
+  position: sticky;
   background-color: #E5F6DF;
   margin-top:25px;
   padding: 20px 10px 10px 10px;
@@ -357,7 +357,11 @@ main {
   height: 75px;
   overflow-y: scroll;
 }
+.scroll-column {
+  background-color:#d9d9d9;
+  margin: 50px 25px 15px 25px;
 
+  } */
 
 
 /*--------------------------------------------------------------
@@ -461,15 +465,14 @@ COMPARE Section
 
 #first_scroll {
   padding: 30px;
-  margin: 50px auto 0 auto;
+  /* margin: 50px auto 0 auto; */
   overflow-y:scroll;
   height:70vh;
-  background:gray;
   }
 
 #second_scroll{
   padding: 30px;
-  margin: 50px auto 0 auto;
+  /* margin: 50px 25px 15px 25px; */
   height:70vh;
   overflow-y:scroll;
   display:block;

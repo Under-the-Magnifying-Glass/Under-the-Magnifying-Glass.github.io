@@ -23,7 +23,6 @@
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src ="js/jquery-3.6.1.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <!-- Bootsrap CSS Files -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -114,9 +113,9 @@
 
 
       <div class="container-fluid">
-        <div class="row h-100">
+        <div class="row">
 
-          <div class="col-4 col-md-4 col-sm-4">
+          <div class="col-2 col-md-2 col-sm-2">
               <div class="metadata text-right">
                   <h5>Select the text from the menu below</h5>
                   <ul id="list" style="list-style: none;">
@@ -377,7 +376,6 @@
 
     </div>
     </div>
-  </div>
     <!-- End .content-->
     </section><!-- End About Section -->
 
@@ -408,6 +406,8 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 
@@ -444,6 +444,13 @@
       });
     });
   </script>
+  <script>
+    $(document).ready(function(){
+      $("#btn4").click(function(){
+        $("#compare").load("issues-compare.html")
+      });
+    });
+  </script>
 
 
   <!--metadata hover-->
@@ -455,6 +462,48 @@
   }, function(){
   $(this).css("background-color", "#E5F6DF");
 });
+
+  </script>
+
+
+
+  <script>
+
+  function addHighlight(concept){
+  /* Clean up all highlighted elements
+  document.querySelectorAll(`.highlight`).forEach(node => {
+      node.classList.remove('highlight');
+  })*/
+
+  /* Select all elements to highlight, which are the ones that have the specified value of the "property" attribute */
+    let nodes = document.querySelectorAll(`[class="${concept}"]`)
+
+    /* Higlhlight all selected elements */
+    nodes.forEach(node => {
+      node.classList.add('highlight')
+    })
+  };
+
+  function removeHighlight(concept){
+    let nodes = document.querySelectorAll(`[class="${concept}"]`)
+
+    document.querySelectorAll(`.highlight`).forEach(node => {
+        node.classList.remove('highlight');
+    })
+  };
+
+  const checkbox = document.querySelectorAll('input[type=checkbox]');
+
+  document.querySelectorAll(".showmetadata").forEach(checkbox =>{
+
+    checkbox.addEventListener("change", (e) => {
+    if (e.target.checked) {
+  		addHighlight(e.target.getAttribute("data-concept"));
+  	}
+     else {
+      removeHighlight(e.target.getAttribute("data-concept"));
+    }})
+  });
 
   </script>
 
