@@ -25,27 +25,10 @@ main{
     position: relative;
     
     background-color: #00ffce;
-    /*background: url("https://img.freepik.com/free-vector/psychedelic-groovy-background_23-2148860829.jpg?w=2000") no-repeat center center ;
-    'psych_bg.jpg'
     
-    
-    -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;*/
-    /* hsla(27, 100%, 51%, 0.553) ;*/
     }
 
-    /*main::before {
-        box-sizing: border-box;
-        content: "";
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
-       //background-color: rgba(0,0,0,0.25);
-        background-color: rgba(255, 166, 77, 0.7); } */
+    
 
 .logo {
     font-family: "Euphoria";
@@ -109,7 +92,7 @@ text-decoration: none;}
  
 #hero{
     /*background: url("https://cdn.pixabay.com/photo/2017/11/12/22/52/christmas-bauble-fractal-2944076_1280.jpg") no-repeat center center ;*/
-    background: url("../img/pexels-cottonbro-7299584.jpg") no-repeat center center ;
+    background: url("../img/updated/pexels-cottonbro-7299584.jpg") no-repeat center center ;
     -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -177,18 +160,6 @@ text-decoration: none;}
 }
     
     
-.about .col-xl-7{
-        /*background-color: rgba(230, 210, 34, 0.8);*/
-        /*background-image: url("https://cdn-icons-png.flaticon.com/512/16/16600.png");*/
-        /*background-position: center;*/
-       /* background-repeat: no-repeat;*/
-        /*position: relative;*/
-        
-        
-    }
-
-  
-      
 
 .about .content{
     position:relative;
@@ -232,13 +203,6 @@ text-decoration: none;}
 .modal-content .close {
     font-family: "Euphoria";
 }
-
-
-
-   
-        
-
-
 
 
     #DisclaimerBtn {
