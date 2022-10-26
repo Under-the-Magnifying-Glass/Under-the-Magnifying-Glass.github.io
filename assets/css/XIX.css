@@ -1,0 +1,62 @@
+* {
+    font-family: "IM Fell English";
+}
+
+#hero {
+    filter: grayscale(100%);
+}
+
+#hero .btn-get-started {
+    border-style: double;
+    border-width: 5px;
+}
+
+#header {
+    background: #fff;
+    border-color: #000;
+    border-style: double none double none;
+    border-width: 5px;
+}
+
+#header .logo h1 a,
+#header .logo h1 a:hover {
+  color: #000;
+}
+
+.navbar a,
+.navbar a:focus {
+  color: #000;
+}
+
+.about p{
+    column-count: 2;
+}
+
+#DisclaimerBtn{
+    color: #000;
+    background-color: #fff;
+    border-color: #000;
+    border-style: double;
+    border-width: 5px;
+}
+#DisclaimerBtn:hover {
+    border-width: 8px;
+}
+
+.image, img:not(.card-img-top){
+    filter: grayscale(100%);
+    border-radius: 50%;
+    border-style: solid;
+    border-width: medium;
+}
+
+.card-img-top {
+    filter: grayscale(100%);
+}
+
+.features .card {
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+  }
+
