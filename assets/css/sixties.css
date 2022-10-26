@@ -1,28 +1,26 @@
 @font-face {
     font-family: "Moscoso";
-    src: url("https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/fonts/VICTM___.TTF") format('truetype');
+    src: url("../fonts/VICTM___.TTF") format('truetype');
       }
 
 
 @font-face {
     font-family: 'Amelia';
-    src: url('amelia-1/AmeliaItalic.ttf'); /*http://www.fontsaddict.com/fontface/amelia.ttf */
+    src: url('../fonts/AmeliaItalic.ttf'); /*http://www.fontsaddict.com/fontface/amelia.ttf */
   }
 
 @font-face {
     font-family: "Euphoria" ;
-    src: url("euphoria-party-font/EuphoriaParty-1Geng.ttf");
+    src: url("../fonts/EuphoriaParty-1Geng.ttf");
 }
  
 @font-face {
     font-family: 'Boecklins';
-    src: url('boecklins-universe/BoecklinsUniverse.ttf'); /*http://www.fontsaddict.com/fontface/amelia.ttf */
+    src: url('../fonts/BoecklinsUniverse.ttf'); /*http://www.fontsaddict.com/fontface/amelia.ttf */
   }
 
-    /*"Modak", cursive;*/
+  
     
-
-
 main{
     position: relative;
     
@@ -277,10 +275,7 @@ text-decoration: none;}
         
        }
 
-   /* .features .card-body{
-        
-        border-color:orange ;
-    }*/
+  
 
     .features .card:hover{
         background:  purple;
@@ -460,17 +455,7 @@ a:hover { text-decoration: underline ;
     font-size: 30px;
 }
 
-/*
-border-image: url(images/frame2.png);
-  border-image-outset: 0;
-  border-image-repeat: stretch;
-  border-image-slice: 100%;
-  border-image-source: url("images/frame2.png");
-  border-image-width: 1;
-border-image-slice: 30;
-border-image-repeat: round;
-border-spacing: 20px;
-*/
+
 .team .member{
     background-color:;
 }
