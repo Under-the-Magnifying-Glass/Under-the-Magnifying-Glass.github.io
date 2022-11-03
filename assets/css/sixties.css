@@ -1,8 +1,7 @@
 @font-face {
-    font-family: "Moscoso";
-    src: url("../fonts/VICTM___.TTF") format('truetype');
+    font-family: "Choda";
+    src: url("../fonts/CHODA___.ttf") format('truetype');
       }
-
 
 @font-face {
     font-family: 'Amelia';
@@ -19,16 +18,12 @@
     src: url('../fonts/BoecklinsUniverse.ttf'); /*http://www.fontsaddict.com/fontface/amelia.ttf */
   }
 
-  
+/*'Bungee Shade', cursive;*/  
     
 main{
-    position: relative;
-    
     background-color: #00ffce;
     
     }
-
-    
 
 .logo {
     font-family: "Euphoria";
@@ -43,19 +38,7 @@ main{
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-    color: black;
-}
-
-.sidenav .closebtn {
-    font-family: "Euphoria";
-}
-
-.sidenav .closebtn:hover{
-    text-decoration: none;
-}
-
-#footer{
-    position:relative;
+    color:#00ffce;
 }
 
 #header,#footer {
@@ -68,8 +51,20 @@ main{
    
             }
 .sidenav a {color:#fff}
-.sidenav a:hover {color:black; 
+.sidenav a:hover {color:#00ffce; 
 text-decoration: none;}
+.sidenav .closebtn:hover{
+    text-decoration: none;
+}
+
+#navbarTogglerDemo03{
+    font-family: "Amelia";
+    color:white;
+    background-color: #00ffce;
+}
+.metadata  {background-color:#D6237F;
+font-family: "Boecklins";}
+.metadata:hover{background-color: greenyellow;}
 
 .poster{
     background-color: #efdcbb;
@@ -79,7 +74,7 @@ text-decoration: none;}
   }
 
 .about{
-    position: relative;
+    
     background-image: url('psych_bg.jpg') no-repeat center center ;
     /*rays img: https://img.freepik.com/free-vector/psychedelic-groovy-background_23-2148860829.jpg?w=2000*/
     /*background-color: rgba(250, 145, 190, 0.9);*/
@@ -141,38 +136,37 @@ text-decoration: none;}
     right: 15px;
     bottom: 15px;
     z-index: 996;
-    background-color:coral;
     width: 40px;
     height: 40px;
+
     border-radius: 50%;
     border-width: 5px;
-    border-color: black;
+    border-color: purple;
+    background-color:rgb(255, 136, 0);
+    border-style: solid;
     transition: all 0.4s;
   }
 
 .back-to-top:hover{
-    background: #F6D701;
+    background-color:greenyellow;
 }
 
 .about .image {
-    position:relative;
-    border-radius: 50%;
+
+    filter: grayscale(100%);
+    border-radius: 25px;
 }
     
     
-
 .about .content{
-    position:relative;
+   
     border-radius: 15px 50px;
-    /*border-style:groove;*/
-                   background-color: rgb(255, 136, 0);
+    /*border-style:groove;     */
+     background-color: rgb(255, 136, 0);
     /*border-width: 20px;*/
     border-color:#d04764;
     text-align: center;
-    text-transform: uppercase;
-    
-      
-    
+    text-transform: uppercase;    
 }
 .about .content h3{
     font-size: 160%;
@@ -196,20 +190,22 @@ text-decoration: none;}
     background-color: #ffce00;
     font-family: "Amelia";
     border-radius: 25px;
-    border-width: 5px;
-    border-color: black;
+    border-width: 20px;
+    border-style: groove;
+    border-color:#d04764;
 }
 
 .modal-content .close {
-    font-family: "Euphoria";
+    font-family: "Boecklins";
+    color:black;
+    
 }
 
 
-    #DisclaimerBtn {
+ #DisclaimerBtn {
 
         font-family:  "Boecklins"/*'Bungee Shade', cursive*/ ;
         color: #d04764;
-    
         border-color: #d04764;
         background-color: #00ffce;
         /*background-color: #ffce00;*/
@@ -217,9 +213,8 @@ text-decoration: none;}
         border-width: thick;
        
         }
-    #DisclaimerBtn:hover{
-        background-color: white;
-        
+ #DisclaimerBtn:hover{
+        background-color:#ffce00;   
     }
 
 
@@ -228,7 +223,7 @@ text-decoration: none;}
 }*/
   
 
-    .features .card{ 
+.features .card{ 
         
         border-radius: 25px;
         border-width: 20px;
@@ -239,59 +234,42 @@ text-decoration: none;}
         
        }
 
-  
-
-    .features .card:hover{
+.features .card:hover{
         background:  purple;
         
     }
-   .features .card-title a{
+.features .card-title a{
         font-family: "Euphoria";
         font-size: 300%;
         color:rgb(255, 136, 0);
     }
 
-    
-
-    .features .card:hover{
+.features .card:hover{
         border-color:greenyellow;
     }
 
-    .features .card:hover  .card-title a , .card:hover .card-text{
+.features .card:hover  .card-title a , .card:hover .card-text{
         color: greenyellow;
         text-decoration: none;
 
       }
 
     
-    
-  
-    .features  .card-text{
+.features  .card-text{
         color:rgb(255, 136, 0);
         font-family: "Euphoria";
         font-size: 150%;
     
      }
+  
 
-     
-.services *{
-    position: relative;
-}
 .section-title span{
     font-family: "Amelia";
-    
-    /*width:30%;
-    translate:100%;
-    margin-bottom: 5%;
-    
-    border-radius: 50%;
-    background-color:black;*/
     
 }
 
 .section-title h2{
-    /*margin-bottom 5% width translate*/
-    font-family:"Amelia"; /*'Bungee Shade', cursive;*/
+    font-family:"Amelia"; 
     color:#D6237F;
 }
 
@@ -304,7 +282,7 @@ text-decoration: none;}
 .services .icon-box{
         border-radius: 15px 50px ;
         background-color: rgb(255, 136, 0);
-        /*background-image: url('psych_bg.jpg') ;*/
+       
         /*border-style:solid;*/
         /*border-width: 5px;*/
        /* border-color: black;*/
@@ -328,12 +306,8 @@ text-decoration: none;}
                 
                 }
 
-.services .test-content-right {
-    /*background-color: rgba(255, 255, 255, 0.6);*/
-    border-radius: 25px;
-    text-align: right;
-   
-}
+                
+
 .services .test-content-right h3{
 font-size: 200%;
 
@@ -343,16 +317,14 @@ font-size: 200%;
     
 }
 
-.services .test-content-right p{font-size: 150%;}
-.services .test-content-left p{font-size: 150%;}
+.services .test-content-right p{font-size: 150%; text-align:unset;}
+.services .test-content-left p{font-size: 150%; }
 
 
-h1,h3 { color: #d04764;   font-family: 'Boecklins';  }
+h1,h3{ color: #d04764;   font-family: 'Boecklins';  }
 
 
-h2 { color: #2CA4B0; /* font-size: 24px; font-weight: normal; line-height: 32px; margin: 0 0 18px; text-shadow: 1px 0 0 #fff;*/ }
-
-p  { color: #333; font-family: "Boecklins"; text-transform: lowercase; font-size: 110%;/*font-family: 'Modak', cursive; font-size: 16px; line-height: 28px; margin: 0 0 24px;*/ }
+p  { color: #333; font-family: "Boecklins"; text-transform: lowercase; font-size: 110%;/* font-size: 16px; line-height: 28px; margin: 0 0 24px;*/ }
 
 
 a { color: #d04764;  }
@@ -382,14 +354,9 @@ a:hover { text-decoration: underline ;
     }
   }
  
-  .member img{
-
-       
-        border-width: 20px;
-        border-style: solid;
-        border-color:rgb(255, 136, 0);
+  
     
-    /*
+    /* inside  .member img
     top:0;
     left:0;
     width:100%;
@@ -400,6 +367,13 @@ a:hover { text-decoration: underline ;
     -moz-animation: psychedelic linear 10s infinite;
     -o-animation: psychedelic linear 10s infinite;
     animation: psychedelic linear 10s infinite;*/
+
+    .member img{
+
+        filter: greyscale(100%);
+        border-width: 20px;
+        border-style: solid;
+        border-color:rgb(255, 136, 0);
   }
 
 /*
@@ -420,15 +394,9 @@ a:hover { text-decoration: underline ;
 }
 
 
-.team .member{
-    background-color:;
-}
-.team .member:hover .member-info-content h4 {
-    
-    
-    color:rgb(255, 136, 0);
-    
-    
+
+.team .member:hover .member-info-content h4 {  
+    color:rgb(255, 136, 0);   
   }
   .team .member:hover .member-info-content span {
     color:rgb(255, 136, 0);
@@ -440,3 +408,16 @@ background: rgba(161, 160, 161, 0.1);
 .team .member:hover img{
     border-color: rgb(255, 136, 0);
 }
+ /*ISSUES*/
+ #articles h2, h5, #articles h3 i , ul a{color:black; font-family: "Choda";}
+ .metadata{
+    background-color: purple; 
+    color:rgb(255, 136, 0); 
+    border-radius: 25px;
+    border-width: 20px;
+    border-style: solid;}
+blockquote{font-family: "Choda"; font-size: 90%; background-color:rgba(250, 250, 250, 0.5);}
+.notes p{
+    color:#D6237F; 
+    font-size: 60%;}
+main#articles{background-color: white;}
