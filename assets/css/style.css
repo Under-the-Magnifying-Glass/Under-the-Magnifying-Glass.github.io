@@ -42,9 +42,10 @@ h6 {
 }
 
 main {
-  margin-left: 5vw;
-  margin-right:auto;
-  margin-top:20px;
+  margin-left: 3vw;
+  margin-bottom:1vw;
+  margin-top:1vw;
+  margin-right: 8vw;
 } */
 /*--------------------------------------------------------------
 # Back to top button
@@ -124,6 +125,32 @@ main {
   margin-top: 70px;
 }
 
+#articles{
+  ;
+}
+#articles h1,
+#articles h2{
+  text-align:center;
+  padding: 10px 10px 0px 10px;
+  font-weight: bold;
+}
+
+#articles h3{
+  text-align:center;
+  padding: 10px 10px 0px 10px;
+  font-weight: normal;
+}
+#articles h4, #articles h5{  text-align:center;
+}
+#articles ul{
+text-align:center;
+/* list-style-position:outside; */
+list-style: none;
+;
+}
+#articles p {
+  text-align:justify;
+}
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -349,8 +376,13 @@ main {
 .metadata{
   position: sticky;
   background-color: #E5F6DF;
-  margin-top:25px;
-  padding: 20px 10px 10px 10px;
+  margin-top:1vw;
+  padding: 20px 10px;
+  box-sizing:border-box;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
 }
 .article-scroll {
 
@@ -359,7 +391,13 @@ main {
 }
 .scroll-column {
   background-color:#d9d9d9;
-  margin: 50px 25px 15px 25px;
+  padding: 20px 20px 20px 20px;
+  margin:10px 20px 20px 10px;
+  box-sizing:border-box;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
 
   } */
 
@@ -464,18 +502,18 @@ COMPARE Section
 
 
 #first_scroll {
-  padding: 30px;
   /* margin: 50px auto 0 auto; */
   overflow-y:scroll;
   height:70vh;
+  display:inline-block;
+
   }
 
 #second_scroll{
-  padding: 30px;
   /* margin: 50px 25px 15px 25px; */
   height:70vh;
   overflow-y:scroll;
-  display:block;
+  display:inline-block;
 }
 
 
@@ -798,7 +836,7 @@ section {
 }
 
 .services .test-content-right {
-  padding-top: 5%;    
+  padding-top: 5%;
   text-align: right;
 }
 
@@ -1001,5 +1039,3 @@ max-width: 40%;
 border: none;
 align-self: center;
 }
-
-
