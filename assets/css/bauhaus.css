@@ -2,9 +2,8 @@
 
 @font-face {
     font-family: 'Baumans';
-    src: url('../fonts/Baumans.ttf');
+    src: url('../fonts/Baumans-Regular.ttf');
   }
-
 body{
   font-family: "Baumans";
 }
