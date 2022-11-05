@@ -1,0 +1,10 @@
+/* --------------Bauhaus Theme---------------- */
+
+@font-face {
+    font-family: 'Baumans';
+    src: url('../fonts/Baumans.ttf');
+  }
+
+body{
+  font-family: "Baumans";
+}

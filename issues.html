@@ -70,7 +70,7 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
           <a href="#">1500-1800</a>
           <a href="#">XIX</a>
-          <a href="#">First half XX</a>
+          <a href="#" onclick=changeTheme('assets/css/bauhaus.css')>First half XX</a>
           <a href="#">Second half XX</a>
           <a href="#" onclick="changeTheme('assets/css/sixties.css')">XXI</a>
           <a href="#">Screen</a>
@@ -110,7 +110,7 @@
       <!-- =======  Metadata ======= REMEMBER TO COLLAPSE WHEN ON SMALL SCREENS!!!!-->
 
 
-      <div class="container-fluid">
+      <div class="container-fluid" id="content">
         <div class="row align-items-start">
 
           <div class="col-2 col-md-2 col-sm-2" id ="metadata">
@@ -186,8 +186,9 @@
               </div>
           </div>
 
-      <div class="col-10 col-md-10 col-sm-10" id="main">
+      <div class="col-9 col-md-9 col-sm-9 articles" id="main">
         <div class="overflow-auto">
+          <div class= "col-11 col-md-11 col-sm-11">
           <main id="articles">
             <h1>The Adventures of Sherlock Holmes.</h1>
                         <h2>I. - A SCANDAL IN BOHEMIA</h2>
@@ -284,6 +285,7 @@
 
       </div>
     </div>
+  </div>
     <!-- End .content-->
     <!-- End About Section -->
 
@@ -346,7 +348,7 @@
   <script>
     $(document).ready(function(){
       $("#btn4").click(function(){
-        $("#articles").load("issues-compare.html")
+        $("#main").load("issues-compare.html")
       });
     });
   </script>
