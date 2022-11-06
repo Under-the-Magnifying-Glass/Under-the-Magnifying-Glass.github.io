@@ -4,15 +4,38 @@
     font-family: 'Baumans';
     src: url('../fonts/Baumans-Regular.ttf');
   }
+
+@font-face{
+  font-family:"Righteous";
+  src:url('../fonts/Righteous-Regular.ttf')
+}
+
+@font-face{
+  font-family:"Sacco";
+  src:url('../fonts/Sacco-SemiBoldCondensed.ttf')
+}
 body, p{
   font-family: "Baumans";
 }
-
-h1, h2, h3, h4, h5{
+.navbar{
   font-family: "Baumans";
+  text-transform:uppercase;
+}
+
+h2, h3, h4, h5{
+  font-family: "Righteous";
   font-weight: bold;
   text-transform: uppercase;
+
 }
+
+h1{
+  font-weight:bolder;
+  font-family:"Righteous";
+  letter-spacing:4px;
+  text-transform: uppercase;
+}
+
 h3{
   text-decoration: underline;
 }
@@ -130,3 +153,17 @@ a:hover {
   flex-basis: 100%;
   flex: 1;
 }
+
+
+.bauhaus-img{
+    background-image: url("img/bauhaus-style/bauhaus-articles.jpg");
+    background-size: 35vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 10vh;
+}
+
+
+
+
+/* -----------IMAGES----------- */
