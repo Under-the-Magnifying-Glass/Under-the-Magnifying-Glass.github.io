@@ -1,3 +1,26 @@
+var jQueryScript = document.createElement('script');
+jQueryScript.setAttribute('src', 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js');
+document.head.appendChild(jQueryScript);
+
+
+$(document).ready(function(){
+  var start_style = sessionStorage.getItem('href');
+  switch (start_style) {
+    case 'assets/css/screenStyle.css':
+      document.getElementById('theme').setAttribute('href', 'assets/css/screenStyle.css');
+      break;
+    case 'assets/css/sixties.css':
+      document.getElementById('theme').setAttribute('href', 'assets/css/sixties.css');
+      break;
+    case 'assets/css/XIX.css':
+      document.getElementById('theme').setAttribute('href', 'assets/css/XIX.css');
+      break;
+  case 'assets/css/bauhaus.css':
+      document.getElementById('theme').setAttribute('href', 'assets/css/bauhaus.css');
+      break;}
+  });
+
+
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
