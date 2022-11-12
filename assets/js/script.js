@@ -67,4 +67,5 @@ window.onclick = function(event) {
 function changeTheme(newTheme) {
   const elem = document.getElementById('theme');
   elem.href = newTheme;
+  sessionStorage.setItem('href', newTheme);
 }
