@@ -18,41 +18,38 @@
     src: url('../fonts/BoecklinsUniverse.ttf'); /*http://www.fontsaddict.com/fontface/amelia.ttf */
   }
 
-/*'Bungee Shade', cursive;*/  
+html, body {
+    background-color: cadetblue;
     
-main{
-    background-color: #00ffce;
+  }  
+/*'Bungee Shade', cursive;
+background-image: radial-gradient(circle, rgb(255, 0, 179), yellow, rgb(28, 241, 216));*/
     
-    }
-
 .logo {
     font-family: "Euphoria";
 }
 
-.navbar a:hover {
-    text-decoration: wavy;
-    
-}
+p  { color: #333; font-family: "Boecklins"; text-transform: lowercase; font-size: 110%;/* font-size: 16px; line-height: 28px; margin: 0 0 24px;*/ }
 
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
+.sidenav a:hover,
 .navbar li:hover>a {
-    color:#00ffce;
+    text-decoration: none;
+    color:cadetblue;
 }
 
 #header,#footer {
     color:white;
     background-color:#D6237F;
     font-family: "Boecklins";
-    }
+}
 
 .sidenav{background-color:#D6237F;
-   
-            }
+   }
 .sidenav a {color:#fff}
-.sidenav a:hover {color:#00ffce; 
-text-decoration: none;}
+
 .sidenav .closebtn:hover{
     text-decoration: none;
 }
@@ -60,33 +57,16 @@ text-decoration: none;}
 #navbarTogglerDemo03{
     font-family: "Amelia";
     color:white;
-    background-color: #00ffce;
+    background-color: cadetblue;
 }
-.metadata  {background-color:#D6237F;
-font-family: "Boecklins";}
-.metadata:hover{background-color: greenyellow;}
-
-.poster{
-    background-color: #efdcbb;
-    background-image: url("framenobg.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-  }
-
-.about{
-    
-    background-image: url('psych_bg.jpg') no-repeat center center ;
-    /*rays img: https://img.freepik.com/free-vector/psychedelic-groovy-background_23-2148860829.jpg?w=2000*/
-    /*background-color: rgba(250, 145, 190, 0.9);*/
-    -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; 
-}
-
  
 #hero{
-    /*background: url("https://cdn.pixabay.com/photo/2017/11/12/22/52/christmas-bauble-fractal-2944076_1280.jpg") no-repeat center center ;*/
+    background: url("../img/updated/pexels-cottonbro-7299584.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;}
+    /*background: url("https://cdn.pixabay.com/photo/2017/11/12/22/52/christmas-bauble-fractal-2944076_1280.jpg") no-repeat center center ;
     background: url("../img/updated/pexels-cottonbro-7299584.jpg") no-repeat center center ;
     -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -103,7 +83,7 @@ font-family: "Boecklins";}
     top: 0;
     left: 0;
     right: 0;
-  }
+  }*/
 
 #hero h1{
     font-family: "Boecklins" /* 'Bungee Shade', cursive;*/
@@ -111,24 +91,19 @@ font-family: "Boecklins";}
 
 #hero .btn-get-started{
     font-family: "Amelia";
+    font-size:larger;
     border-radius: 50%;
     text-decoration: none;
     color:black;
-    font-size: 150%;
-    background-color:#00ffce;
-    border-color:#d04764;
-    align-self: center;
+    background-color: cadetblue;
+    border-color:#D6237F;
     border-style:ridge;
     border-width: 5px;
-   
           }
 #hero .btn-get-started:hover {
-        background: #d04764;
-        border: 2px solid #d04764;
-        
+        background: #D6237F;
+        border: 2px solid #D6237F;        
     }
-
-
 .back-to-top {
     position: fixed;
     visibility: hidden;
@@ -138,56 +113,60 @@ font-family: "Boecklins";}
     z-index: 996;
     width: 40px;
     height: 40px;
+    transition: all 0.4s;
 
     border-radius: 50%;
     border-width: 5px;
-    border-color: purple;
-    background-color:rgb(255, 136, 0);
+    border-color:white;
+    background-color:#D6237F;
     border-style: solid;
-    transition: all 0.4s;
-  }
+}
 
 .back-to-top:hover{
-    background-color:greenyellow;
+    background-color:cadetblue;
 }
 
 .about .image {
-
-    filter: grayscale(100%);
-    border-radius: 25px;
+    border-radius: 50%;
+   filter: grayscale(100%);
 }
     
     
 .about .content{
-   
-    border-radius: 15px 50px;
-    /*border-style:groove;     */
-     background-color: rgb(255, 136, 0);
-    /*border-width: 20px;*/
-    border-color:#d04764;
+    padding:5px;
+    font-size: 170%;
+    /*border-style:groove;    
+    border-radius: 15px 50px; */
+    /* background-color: rgb(255, 136, 0);    cornice arcobaleni  https://t3.ftcdn.net/jpg/01/41/79/12/360_F_141791256_sE42YMpLpVKB6VY5RuBSjU1c6Kdrud8c.jpg
+     border-style: solid;
+    border-width: 5px;
+    border-color: rgb(38, 60, 185);
+    border-image: url("/img/scrollframe.jpg") 50 ; */
+    background-color: white;
     text-align: center;
     text-transform: uppercase;    
 }
 .about .content h3{
-    font-size: 160%;
-    font-family: "Boecklins";
-    border-radius: 50%;
-    width:50%;
-    translate: 40%;
-  background-color:black;
-  color:white;
-      
+    font-family: "Euphoria";
+    
+    color:#D6237F;
+    font-weight: normal;
 }
 
-.about .content p ul{
-    color:black;
-    font-size: 110%;
+.about .content p{
+    
+    font-family: "Euphoria";
+    line-height: 25px;
+    color: #D6237F;
 }
+/*
+.about .content p::first-line{
+    text-decoration: #D6237F wavy overline;
+     }*/
 
 
 .modal-content{
     color: black;
-    background-color: #ffce00;
     font-family: "Amelia";
     border-radius: 25px;
     border-width: 20px;
@@ -202,26 +181,20 @@ font-family: "Boecklins";}
 }
 
 
- #DisclaimerBtn {
+#DisclaimerBtn {
 
-        font-family:  "Boecklins"/*'Bungee Shade', cursive*/ ;
-        color: #d04764;
-        border-color: #d04764;
-        background-color: #00ffce;
+        font-family:  "Euphoria"/*'Bungee Shade', cursive*/ ;
+        color: white;
+        
+        background-color: #D6237F;
         /*background-color: #ffce00;*/
-        border-style: dotted;
+        
         border-width: thick;
        
         }
- #DisclaimerBtn:hover{
-        background-color:#ffce00;   
+#DisclaimerBtn:hover{
+        background-color:cadetblue;   
     }
-
-
-/*.features{
-    background: url('psych_bg.jpg') no-repeat center center ;
-}*/
-  
 
 .features .card{ 
         
@@ -231,8 +204,7 @@ font-family: "Boecklins";}
         border-color: rgb(255, 136, 0) ;
         background:  purple;
         text-align:center;
-        
-       }
+        }
 
 .features .card:hover{
         background:  purple;
@@ -241,6 +213,7 @@ font-family: "Boecklins";}
 .features .card-title a{
         font-family: "Euphoria";
         font-size: 300%;
+        font-weight: normal;
         color:rgb(255, 136, 0);
     }
 
@@ -259,6 +232,7 @@ font-family: "Boecklins";}
         color:rgb(255, 136, 0);
         font-family: "Euphoria";
         font-size: 150%;
+        font-stretch: condensed;
     
      }
   
@@ -274,10 +248,10 @@ font-family: "Boecklins";}
 }
 
 .section-title p {
-                   
-                /* background-color: rgba(243, 230, 230, 0.5);*/
-                    color:white;
-                }
+    /* background-color: rgba(243, 230, 230, 0.5);*/
+        color:white;
+        font-family: "Amelia";
+    }
 
 .services .icon-box{
         border-radius: 15px 50px ;
@@ -323,20 +297,10 @@ font-size: 200%;
 
 h1,h3{ color: #d04764;   font-family: 'Boecklins';  }
 
-
-p  { color: #333; font-family: "Boecklins"; text-transform: lowercase; font-size: 110%;/* font-size: 16px; line-height: 28px; margin: 0 0 24px;*/ }
-
-
 a { color: #d04764;  }
-
 
 a:hover { text-decoration: underline ;
     cursor:url("C:\\Users\\lored\\OneDrive\\Desktop\\esame_vitali\\images\\peace.png");}
-
-
-
-.pointer{cursor:url("C:\\Users\\lored\\OneDrive\\Desktop\\esame_vitali\\images\\peace.png"), auto;}
-
 
 
 /*psych animation images*/
@@ -368,7 +332,7 @@ a:hover { text-decoration: underline ;
     -o-animation: psychedelic linear 10s infinite;
     animation: psychedelic linear 10s infinite;*/
 
-    .member img{
+.member img{
 
         filter: greyscale(100%);
         border-width: 20px;
@@ -409,15 +373,56 @@ background: rgba(161, 160, 161, 0.1);
     border-color: rgb(255, 136, 0);
 }
  /*ISSUES*/
- #articles h2, h5, #articles h3 i , ul a{color:black; font-family: "Choda";}
- .metadata{
-    background-color: purple; 
-    color:rgb(255, 136, 0); 
+ #articles h5, #articles h3 i , #articles ul a{color:black; font-family: "Choda";}
+#articles h2{color:white; font-family:"Choda";background-color: black; border-radius: 10px; border:1px solid transparent;}
+ #articles p{text-transform: none;}
+ #articles h1{font-family: "Euphoria"; color:black}
+ .metadata{ 
+    /*
+    width: 200px;
+    height: 400px;
+    position: fixed; */
+    font-family: "Amelia";
+    background-color:#D6237F; 
+    color:white; 
     border-radius: 25px;
-    border-width: 20px;
+    border-width: 10px;
+    
     border-style: solid;}
-blockquote{font-family: "Choda"; font-size: 90%; background-color:rgba(250, 250, 250, 0.5);}
+
+.metadata:hover {
+    color: black;
+}
+
+blockquote{font-family: "Euphoria";  background-color:#D6237F; color:white; border-radius: 10px; border:1px solid transparent;}
 .notes p{
-    color:#D6237F; 
+    color:black; 
     font-size: 60%;}
-main#articles{background-color: white;}
+main#articles {
+    background-color: white;
+    background-image: none;
+    }
+.frame{
+    filter: hue-rotate(0deg);
+    border: 30px solid;
+    border-image: url(/img/scrollframe.jpg) 50 round;
+   
+    }
+table{ 
+        font-family: "Boecklins";
+    text-transform: uppercase;}
+td {
+    border: 1px solid black;
+    border-radius: 10px;
+    }
+    thead {
+    background-color: #333;
+    color: white;}
+    
+  .dainty{
+    font-size: 80%;
+    text-align: center;
+    border-radius: 50%;
+    background-color: ;
+    max-width:max-content;
+  }
