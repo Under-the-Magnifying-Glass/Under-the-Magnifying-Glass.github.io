@@ -17,8 +17,7 @@
     font-family: 'Boecklins';
     src: url('../fonts/BoecklinsUniverse.ttf'); /*http://www.fontsaddict.com/fontface/amelia.ttf */
   }
-
-html, body {
+.wrap {
     background-color: cadetblue;
     
   }  
