@@ -72,11 +72,11 @@
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
           <a href="#">1500-1800</a>
-          <a href="#">XIX</a>
-          <a href="#" onclick=changeTheme('assets/css/bauhaus.css')>First half XX</a>
+          <a href="#" onclick="changeTheme('assets/css/XIX.css')">XIX</a>
+          <a href="#" onclick="changeTheme('assets/css/bauhaus.css')">First half XX</a>
           <a href="#">Second half XX</a>
           <a href="#" onclick="changeTheme('assets/css/sixties.css')">XXI</a>
-          <a href="#">Screen</a>
+          <a href="#" onclick="changeTheme('assets/css/screenStyle.css')">Screen</a>
           <a href="#">Future</a>
       </div>
     </header><!-- End Header -->
@@ -128,21 +128,27 @@
                               <div class="checkbox"><label>
                                       <input type="checkbox" name="checkbox" id="showfemalechar" class="button showmetadata" data-concept="fcharacter"> Female
                                       Characters</label></div>
-                              <div class="checkbox"><label>
-                                      <input type="checkbox" name="checkbox" id="showmalechar" class="button showmetadata" data-concept="character"> Male
-                                      Characters</label></div>
+                                <div class="checkbox"><label>
+                                        <input type="checkbox" name="checkbox" id="showmalechar" class="button showmetadata" data-concept="character"> Male
+                                        Characters</label></div>
+                              
                               <div class="checkbox"><label>
                                       <input type="checkbox" name="checkbox" id="showplaces" class="button showmetadata" data-concept="places"> Places
                                       </label>
                               </div>
                               <div class="checkbox"><label>
-                                      <input type="checkbox" name="checkbox" id="showplaces" class="button showmetadata" data-concept="citedCase"> Cited Cases
+                                      <input type="checkbox" name="checkbox" id="showcases" class="button showmetadata" data-concept="citedCase"> Cited Cases
                                       </label>
                               </div>
                               <div class="checkbox"><label>
-                                      <input type="checkbox" name="checkbox" id="showplaces" class="button showmetadata" data-concept="people"> Mentioned people
+                                <input type="checkbox" name="checkbox" id="showWorks" class="button showmetadata" data-concept="works"> Literary Works
+                                </label>
+                        </div>
+                              <div class="checkbox"><label>
+                                      <input type="checkbox" name="checkbox" id="showpeople" class="button showmetadata" data-concept="people"> Mentioned people
                                       </label>
                               </div>
+                              
 
                           </form>
                       </div>
@@ -183,17 +189,30 @@
                                   aria-labelledby="places-tab">
                                   <ul></ul>
                               </div>
-                          </div> -->
+                          </div> 
+                        
+                         <svg viewBox="0 0 500 500" width="50" height="25">
+          <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
+          <text width="500">
+            <textPath xlink:href="#curve">
+          The Adventures of Sherlock Holmes
+            </textPath>
+          </text>
+        </svg>              -->
                       </div>
                   </div>
               </div>
           </div>
-
+          
+      
       <div class="col-9 col-md-9 col-sm-9 articles" id="main">
+       
         <div class="overflow-auto">
           <div class= "col-11 col-md-11 col-sm-11">
+           
           <main id="articles">
-
+            
+            <img class="circt" src="/img/circt.png"  > 
             <h1>The Adventures of Sherlock Holmes.</h1>
                         <h2>I. - A SCANDAL IN BOHEMIA</h2>
                         <h3>BY A. CONAN DOYLE.</h3>
@@ -364,7 +383,7 @@
 
 
   <!--metadata hover-->
-
+<!-- <script>
   <script>
 
   $(".metadata").hover(function(){
@@ -374,7 +393,7 @@
 });
 
   </script>
-  <!-- <script>
+  
 
   function handleConceptClick(concept){
 	/* Clean up all highlighted elements*/
@@ -411,7 +430,7 @@ document.querySelectorAll(`.highlight`).forEach(node => {
 })*/
 
 /* Select all elements to highlight, which are the ones that have the specified value of the "property" attribute */
-  let nodes = document.querySelectorAll(`[class="${concept}"]`)
+  let nodes = document.querySelectorAll("."+concept)
 
   /* Higlhlight all selected elements */
   nodes.forEach(node => {
@@ -420,10 +439,10 @@ document.querySelectorAll(`.highlight`).forEach(node => {
 };
 
 function removeHighlight(concept){
-  let nodes = document.querySelectorAll(`[class="${concept}"]`)
+  let nodess = document.querySelectorAll(`[class="${concept} highlight"]`)
 
-  document.querySelectorAll(`.highlight`).forEach(node => {
-      node.classList.remove('highlight');
+  nodess.forEach(node => {
+      node.classList.remove('highlight')
   })
 };
 
@@ -432,11 +451,11 @@ const checkbox = document.querySelectorAll('input[type=checkbox]');
 document.querySelectorAll(".showmetadata").forEach(checkbox =>{
 
   checkbox.addEventListener("change", (e) => {
-  if (e.target.checked) {
-		addHighlight(e.target.getAttribute("data-concept"));
+  if (e.currentTarget.checked) {
+		addHighlight(e.currentTarget.getAttribute("data-concept"));
 	}
    else {
-    removeHighlight(e.target.getAttribute("data-concept"));
+    removeHighlight(e.currentTarget.getAttribute("data-concept"));
   }})
 });
 

@@ -34,6 +34,8 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+.circt{display: none;}
+
 .wrap {
   max-width: 1440px;
   margin: auto;
@@ -403,6 +405,30 @@ list-style: none;
 }
 
 
+span.fcharacter.highlight{
+	background-color: #00FAFA;
+}
+
+span.character.highlight{
+	background-color: #e04286;
+}
+
+.highlight[class~="places"]{
+	background-color: #63af90;
+}
+
+.highlight[class~="works"]{
+	background-color: #daca35;
+}
+
+
+
+.highlight[class~="citedCase"]{
+	background-color: #88f9c1;
+}
+.highlight[class~="people"]{
+	background-color: #eeaabe;
+}
 /*--------------------------------------------------------------
 # Issues Section
 --------------------------------------------------------------*/
@@ -431,42 +457,23 @@ list-style: none;
   flex-basis: 100%;
   flex: 1;
 
-  } */
+  } 
 
 
-/*--------------------------------------------------------------
-# HIGHLIGHTS
---------------------------------------------------------------*/
 
-
-.highlight[class~="character"]{
-	background-color: #788091
-}
-
-.highlight[class~="fcharacter"]{
-	background-color: #00FAFA
-}
-
-.highlight[class~="places"]{
-	background-color: #63af90
-}
 
 .highlight[property~="justice"]{
-	background-color: #00FAFA
-}
+    background-color: #00FAFA
+  }
 
-.highlight[property~="citedCase"]{
-	background-color: #ade8f4
-}
+
 
 .highlight[property~="death"]{
 	background-color: #788091
 }
 
 
-.highlight[property~="people"]{
-	background-color: #eeaabe
-}
+
 
 .highlight[property~="power"]{
 	background-color: #ec37db

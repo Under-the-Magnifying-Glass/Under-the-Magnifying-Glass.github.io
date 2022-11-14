@@ -372,10 +372,20 @@ background: rgba(161, 160, 161, 0.1);
     border-color: rgb(255, 136, 0);
 }
  /*ISSUES*/
+ .circt{display: block; }
+ path {
+    fill: transparent;
+  }
  #articles h5, #articles h3 i , #articles ul a{color:black; font-family: "Choda";}
 #articles h2{color:white; font-family:"Choda";background-color: black; border-radius: 10px; border:1px solid transparent;}
  #articles p{text-transform: none;}
  #articles h1{font-family: "Euphoria"; color:black}
+ #author{float: left; font-family: "Choda"; border-radius: 10px; border-style: solid; border-width: 2px;}
+ #article-info{float: right; position: relative;
+font-family: "Choda";
+border-radius: 10px; border-style: solid; border-width: 2px; position: relative;}
+#articles img{align-self: center; 
+    height: 150px;}
  .metadata{ 
     /*
     width: 200px;
@@ -402,9 +412,9 @@ main#articles {
     background-image: none;
     }
 .frame{
-    filter: hue-rotate(0deg);
+    
     border: 30px solid;
-    border-image: url(/img/scrollframe.jpg) 50 round;
+    border-image: url(/img/circt.png) 50 round;
    
     }
 table{ 
