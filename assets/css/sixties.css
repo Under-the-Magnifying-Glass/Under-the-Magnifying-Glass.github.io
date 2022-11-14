@@ -372,7 +372,9 @@ background: rgba(161, 160, 161, 0.1);
     border-color: rgb(255, 136, 0);
 }
  /*ISSUES*/
- .circt{display: block; }
+ .circt{display: block; 
+    align-self: center; 
+    height: 150px;}
  path {
     fill: transparent;
   }
@@ -384,8 +386,7 @@ background: rgba(161, 160, 161, 0.1);
  #article-info{float: right; position: relative;
 font-family: "Choda";
 border-radius: 10px; border-style: solid; border-width: 2px; position: relative;}
-#articles img{align-self: center; 
-    height: 150px;}
+
  .metadata{ 
     /*
     width: 200px;

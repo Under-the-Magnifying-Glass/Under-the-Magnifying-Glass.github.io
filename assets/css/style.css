@@ -403,14 +403,14 @@ list-style: none;
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
 }
+/*METADATA HIGHLIGHT*/
 
-
-span.fcharacter.highlight{
+.highlight[class~="fcharacter"]{
 	background-color: #00FAFA;
 }
 
-span.character.highlight{
-	background-color: #e04286;
+.highlight[class~="character"]{
+	background-color: #daa151;
 }
 
 .highlight[class~="places"]{
@@ -418,13 +418,10 @@ span.character.highlight{
 }
 
 .highlight[class~="works"]{
-	background-color: #daca35;
+	background-color: #f7e754;
 }
-
-
-
 .highlight[class~="citedCase"]{
-	background-color: #88f9c1;
+	background-color: #a2face;
 }
 .highlight[class~="people"]{
 	background-color: #eeaabe;

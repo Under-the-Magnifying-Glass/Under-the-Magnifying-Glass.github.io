@@ -430,7 +430,7 @@ document.querySelectorAll(`.highlight`).forEach(node => {
 })*/
 
 /* Select all elements to highlight, which are the ones that have the specified value of the "property" attribute */
-  let nodes = document.querySelectorAll("."+concept)
+  let nodes = document.querySelectorAll(`[class="${concept}"]`)
 
   /* Higlhlight all selected elements */
   nodes.forEach(node => {
@@ -439,9 +439,9 @@ document.querySelectorAll(`.highlight`).forEach(node => {
 };
 
 function removeHighlight(concept){
-  let nodess = document.querySelectorAll(`[class="${concept} highlight"]`)
+  let nodes = document.querySelectorAll(`[class="${concept} highlight"]`)
 
-  nodess.forEach(node => {
+  nodes.forEach(node => {
       node.classList.remove('highlight')
   })
 };
