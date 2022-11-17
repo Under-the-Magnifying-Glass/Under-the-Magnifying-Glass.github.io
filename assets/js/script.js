@@ -15,7 +15,10 @@ $(document).ready(function(){
       break;
   case 'assets/css/bauhaus.css':
       document.getElementById('theme').setAttribute('href', 'assets/css/bauhaus.css');
-      break;}
+      break;
+      case 'assets/css/future.css':
+        document.getElementById('theme').setAttribute('href', 'assets/css/future.css');
+        break;}
   });
 
 

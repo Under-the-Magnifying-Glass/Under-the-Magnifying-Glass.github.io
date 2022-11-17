@@ -1,7 +1,13 @@
+
+
 @font-face {
-    font-family: "Choda";
-    src: url("../fonts/CHODA___.ttf") format('truetype');
+    font-family: "Davida";
+    src: url("../fonts/Davida___.ttf") format('truetype');
       }
+@font-face {
+        font-family: "Davida";
+        src: url("../fonts/DavidaRegular.ttf") format('truetype');
+          }
 
 @font-face {
     font-family: 'Amelia';
@@ -12,23 +18,29 @@
     font-family: "Euphoria" ;
     src: url("../fonts/EuphoriaParty-1Geng.ttf");
 }
+
+@font-face {
+    font-family: "Moscoso" ;
+    src: url("../fonts/VICTM___.TTF");
+}
  
 @font-face {
     font-family: 'Boecklins';
     src: url('../fonts/BoecklinsUniverse.ttf'); /*http://www.fontsaddict.com/fontface/amelia.ttf */
   }
 .wrap {
-    background-color: cadetblue;
-    
-  }  
+    background-color:#108b9e; /*   rgb(83, 177, 180)  */
+    }  
 /*'Bungee Shade', cursive;
 background-image: radial-gradient(circle, rgb(255, 0, 179), yellow, rgb(28, 241, 216));*/
     
 .logo {
-    font-family: "Euphoria";
+    font-family: "Moscoso";
 }
 
-p  { color: #333; font-family: "Boecklins"; text-transform: lowercase; font-size: 110%;/* font-size: 16px; line-height: 28px; margin: 0 0 24px;*/ }
+p  { color: #333; font-family: "Boecklins"; text-transform: lowercase; /* font-size: 16px; line-height: 28px; margin: 0 0 24px;*/ }
+
+img{filter: grayscale(100%);}
 
 .navbar a:hover,
 .navbar .active,
@@ -36,16 +48,16 @@ p  { color: #333; font-family: "Boecklins"; text-transform: lowercase; font-size
 .sidenav a:hover,
 .navbar li:hover>a {
     text-decoration: none;
-    color:cadetblue;
+    color: #108b9e;
 }
 
 #header,#footer {
     color:white;
-    background-color:#D6237F;
-    font-family: "Boecklins";
+    background-color:#dd1c4b; 
+    font-family: "Moscoso";
 }
 
-.sidenav{background-color:#D6237F;
+.sidenav{background-color:#dd1c4b;
    }
 .sidenav a {color:#fff}
 
@@ -56,7 +68,7 @@ p  { color: #333; font-family: "Boecklins"; text-transform: lowercase; font-size
 #navbarTogglerDemo03{
     font-family: "Amelia";
     color:white;
-    background-color: cadetblue;
+    background-color: #108b9e;
 }
  
 #hero{
@@ -72,7 +84,7 @@ p  { color: #333; font-family: "Boecklins"; text-transform: lowercase; font-size
   -o-background-size: cover;
   background-size: cover;
   
-}
+}*/
 
 #hero:before {
     content: "";
@@ -82,26 +94,26 @@ p  { color: #333; font-family: "Boecklins"; text-transform: lowercase; font-size
     top: 0;
     left: 0;
     right: 0;
-  }*/
+  }
 
 #hero h1{
-    font-family: "Boecklins" /* 'Bungee Shade', cursive;*/
+    font-family: "Moscoso" /* 'Bungee Shade', cursive;*/
 }
 
 #hero .btn-get-started{
-    font-family: "Amelia";
-    font-size:larger;
+    font-family: "Moscoso";
+   
     border-radius: 50%;
     text-decoration: none;
-    color:black;
-    background-color: cadetblue;
-    border-color:#D6237F;
+    color:#dd1c4b;
+    background-color: #faff2c;
+    border-color:#dd1c4b;
     border-style:ridge;
-    border-width: 5px;
+    border-width: 3px;
           }
 #hero .btn-get-started:hover {
-        background: #D6237F;
-        border: 2px solid #D6237F;        
+        background: #dd1c4b;
+        border: 2px solid #dd1c4b;        
     }
 .back-to-top {
     position: fixed;
@@ -117,12 +129,12 @@ p  { color: #333; font-family: "Boecklins"; text-transform: lowercase; font-size
     border-radius: 50%;
     border-width: 5px;
     border-color:white;
-    background-color:#D6237F;
+    background-color:#dd1c4b;
     border-style: solid;
 }
 
 .back-to-top:hover{
-    background-color:cadetblue;
+    background-color:#108b9e;
 }
 
 .about .image {
@@ -136,7 +148,7 @@ p  { color: #333; font-family: "Boecklins"; text-transform: lowercase; font-size
     font-size: 170%;
     /*border-style:groove;    
     border-radius: 15px 50px; */
-    /* background-color: rgb(255, 136, 0);    cornice arcobaleni  https://t3.ftcdn.net/jpg/01/41/79/12/360_F_141791256_sE42YMpLpVKB6VY5RuBSjU1c6Kdrud8c.jpg
+    /* background-color: #f5a46c;    cornice arcobaleni  https://t3.ftcdn.net/jpg/01/41/79/12/360_F_141791256_sE42YMpLpVKB6VY5RuBSjU1c6Kdrud8c.jpg
      border-style: solid;
     border-width: 5px;
     border-color: rgb(38, 60, 185);
@@ -148,34 +160,46 @@ p  { color: #333; font-family: "Boecklins"; text-transform: lowercase; font-size
 .about .content h3{
     font-family: "Euphoria";
     
-    color:#D6237F;
+    color:#dd1c4b;
     font-weight: normal;
 }
 
 .about .content p{
     
     font-family: "Euphoria";
+     line-height: 25px; 
     line-height: 25px;
-    color: #D6237F;
+     line-height: 25px; 
+    line-height: 25px;
+     line-height: 25px; 
+    line-height: 25px;
+     line-height: 25px; 
+    line-height: 25px;
+     line-height: 25px; 
+    color: #dd1c4b;
 }
 /*
 .about .content p::first-line{
-    text-decoration: #D6237F wavy overline;
+    text-decoration: #dd1c4b wavy overline;
      }*/
 
+div.modal-content {
+    background-color: #faff2c;
 
-.modal-content{
-    color: black;
-    font-family: "Amelia";
-    border-radius: 25px;
-    border-width: 20px;
-    border-style: groove;
-    border-color:#d04764;
+    color: #dd1c4b;
+    font-family: "Moscoso";
+    font-weight: bold;
+    font-size:large;
+    border-width: 5px;
+    border-style: solid;
+    border-color:#dd1c4b;
+    
 }
 
+
 .modal-content .close {
-    font-family: "Boecklins";
-    color:black;
+    
+    color:#dd1c4b;
     
 }
 
@@ -185,78 +209,88 @@ p  { color: #333; font-family: "Boecklins"; text-transform: lowercase; font-size
         font-family:  "Euphoria"/*'Bungee Shade', cursive*/ ;
         color: white;
         
-        background-color: #D6237F;
+        background-color: #dd1c4b;
         /*background-color: #ffce00;*/
         
         border-width: thick;
        
         }
 #DisclaimerBtn:hover{
-        background-color:cadetblue;   
+        background-color:#108b9e;   
     }
 
 .features .card{ 
         
-        border-radius: 25px;
-        border-width: 20px;
+        
+        border-width: 5px;
         border-style: solid;
-        border-color: rgb(255, 136, 0) ;
-        background:  purple;
+        border-color: white;
+        background: rgba(36, 36, 36, 0.753) ;
         text-align:center;
         }
 
-.features .card:hover{
-        background:  purple;
+
         
-    }
 .features .card-title a{
-        font-family: "Euphoria";
-        font-size: 300%;
+        font-family: "Moscoso";
+        font-size: 250%;
         font-weight: normal;
-        color:rgb(255, 136, 0);
+        background: linear-gradient(to right, #d6365a,
+         white, #108b9e);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
     }
+
+.features  .card-text{
+    
+    block-size: max-content;
+
+        font-family: "Moscoso";
+        font-size:x-large;
+        font-stretch:expanded;
+        background: linear-gradient(to right,   #d6365a,
+     white, #108b9e);
+    -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+     }
 
 .features .card:hover{
-        border-color:greenyellow;
-    }
+    border-color: #dd1c4b;
+    background-color: #faff2c ;
+    text-decoration: none;
+        }
 
-.features .card:hover  .card-title a , .card:hover .card-text{
-        color: greenyellow;
+.features .card:hover  .card-title a , .features .card:hover .card-text{
+        background: #dd1c4b;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
         text-decoration: none;
 
       }
-
-    
-.features  .card-text{
-        color:rgb(255, 136, 0);
-        font-family: "Euphoria";
-        font-size: 150%;
-        font-stretch: condensed;
-    
-     }
   
 
 .section-title span{
-    font-family: "Amelia";
+    font-family: "Davida";
     
 }
 
 .section-title h2{
-    font-family:"Amelia"; 
-    color:#D6237F;
+    font-family:"Davida"; 
+    color:#dd1c4b;
 }
 
 .section-title p {
     /* background-color: rgba(243, 230, 230, 0.5);*/
         color:white;
-        font-family: "Amelia";
+        font-family: "Davida";
     }
 
 .services .icon-box{
+    
         border-radius: 15px 50px ;
-        background-color: rgb(255, 136, 0);
+        background-color: #faff2c ;
        
-        /*border-style:solid;*/
+        /*border-style:solid; #f5a46c*/
         /*border-width: 5px;*/
        /* border-color: black;*/
     }
@@ -281,62 +315,37 @@ p  { color: #333; font-family: "Boecklins"; text-transform: lowercase; font-size
 
                 
 
-.services .test-content-right h3{
-font-size: 200%;
-
-}
-.services .test-content-left h3{
-    font-size: 200%;
-    
+.services .test-content-right h3 a, .services .test-content-left h3 a{
+    font-size: 150%; 
+color: #dd1c4b;
+ text-transform:uppercase;   
 }
 
-.services .test-content-right p{font-size: 150%; text-align:unset;}
-.services .test-content-left p{font-size: 150%; }
+
+.services .test-content-right p{font-size: 150%; 
+                                text-align:unset; 
+                                color: #dd1c4b;
+                                font-family: "Moscoso";
+                                }
+.services .test-content-left p{font-size: 150%; 
+                                color: #dd1c4b;
+                                font-family: "Moscoso";
+                                }
 
 
-h1,h3{ color: #d04764;   font-family: 'Boecklins';  }
+h1,h3, h4{ color: #dd1c4b;   font-family: 'Moscoso';  }
 
-a { color: #d04764;  }
-
-a:hover { text-decoration: underline ;
-    cursor:url("C:\\Users\\lored\\OneDrive\\Desktop\\esame_vitali\\images\\peace.png");}
+a { color: #dd1c4b;  }
 
 
-/*psych animation images*/
-@-webkit-keyframes psychedelic {
-    0% {
-      -webkit-filter: hue-rotate(0deg) saturate(2) invert(0);
-    }
+
     
-    50% {
-      -webkit-filter: hue-rotate(360deg) saturate(8) invert(.25);
-    }
     
-    100% {
-      -webkit-filter: hue-rotate(0deg) saturate(2) invert(0);
-    }
-  }
- 
-  
-    
-    /* inside  .member img
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    object-fit: cover;
-    mix-blend-mode: screen;
-    -webkit-animation: psychedelic linear 10s infinite;
-    -moz-animation: psychedelic linear 10s infinite;
-    -o-animation: psychedelic linear 10s infinite;
-    animation: psychedelic linear 10s infinite;*/
 
 .member img{
-
-        filter: greyscale(100%);
-        border-width: 20px;
+        border-width: 10px;
         border-style: solid;
-        border-color:rgb(255, 136, 0);
+        border-color: #dd1c4b;
   }
 
 /*
@@ -345,32 +354,27 @@ a:hover { text-decoration: underline ;
     filter: blur(0px) brightness(1.1) contrast(1.4) grayscale(0.39) hue-rotate(250deg) invert(0.1) opacity(100%) saturate(8.8) sepia(0.5) drop-shadow(rgb(0, 0, 0) 0px 0px 5px);
 }*/
 .team .member .member-info-content h4{
-    font-family: "Euphoria";
-    color: rgb(255, 136, 0) ;
+    font-family: "Moscoso";
+    color:#dd1c4b;
     font-size: 50px;
 }
 
 .team .member .member-info-content span{
-    font-family: "Euphoria";
-    color:rgb(255, 136, 0);
+    font-family: "Moscoso";
+    color: #dd1c4b;
     font-size: 30px;
 }
 
 
 
-.team .member:hover .member-info-content h4 {  
-    color:rgb(255, 136, 0);   
-  }
-  .team .member:hover .member-info-content span {
-    color:rgb(255, 136, 0);
+.team .member:hover .member-info-content h4, .team .member:hover .member-info-content span, .team .member:hover img {  
+    color:#dd1c4b;   
   }
 .team .member:hover .member-info{
 background: rgba(161, 160, 161, 0.1);
   }
 
-.team .member:hover img{
-    border-color: rgb(255, 136, 0);
-}
+
  /*ISSUES*/
  .circt{display: block; 
     align-self: center; 
@@ -378,13 +382,13 @@ background: rgba(161, 160, 161, 0.1);
  path {
     fill: transparent;
   }
- #articles h5, #articles h3 i , #articles ul a{color:black; font-family: "Choda";}
-#articles h2{color:white; font-family:"Choda";background-color: black; border-radius: 10px; border:1px solid transparent;}
+h5, #articles h3 i , #articles ul a{color:black; font-family: "Davida";}
+#articles h2{color:white; font-family:"Davida";background-color: black; border-radius: 10px; border:1px solid transparent;}
  #articles p{text-transform: none;}
- #articles h1{font-family: "Euphoria"; color:black}
- #author{float: left; font-family: "Choda"; border-radius: 10px; border-style: solid; border-width: 2px;}
+ #articles h1{font-family: "Moscoso"; color:black}
+ #author{float: left; font-family: "Davida"; border-radius: 10px; border-style: solid; border-width: 2px;}
  #article-info{float: right; position: relative;
-font-family: "Choda";
+font-family: "Davida";
 border-radius: 10px; border-style: solid; border-width: 2px; position: relative;}
 
  .metadata{ 
@@ -392,11 +396,11 @@ border-radius: 10px; border-style: solid; border-width: 2px; position: relative;
     width: 200px;
     height: 400px;
     position: fixed; */
-    font-family: "Amelia";
-    background-color:#D6237F; 
+    font-family: "Moscoso";
+    background-color:#dd1c4b; 
     color:white; 
-    border-radius: 25px;
-    border-width: 10px;
+    
+    border-width: 5px;
     
     border-style: solid;}
 
@@ -404,7 +408,7 @@ border-radius: 10px; border-style: solid; border-width: 2px; position: relative;
     color: black;
 }
 
-blockquote{font-family: "Euphoria";  background-color:#D6237F; color:white; border-radius: 10px; border:1px solid transparent;}
+blockquote{font-family: "Moscoso";  color:#dd1c4b; background-color:#faff2c ; border-radius: 10px; border:1px solid transparent;}
 .notes p{
     color:black; 
     font-size: 60%;}
@@ -433,6 +437,6 @@ td {
     font-size: 80%;
     text-align: center;
     border-radius: 50%;
-    background-color: ;
+
     max-width:max-content;
   }

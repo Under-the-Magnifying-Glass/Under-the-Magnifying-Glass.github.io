@@ -25,14 +25,6 @@ a:hover {
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Raleway", sans-serif;
-}
 
 .circt{display: none;}
 
@@ -410,7 +402,7 @@ list-style: none;
 }
 
 .highlight[class~="character"]{
-	background-color: #daa151;
+	background-color:#788091 ;
 }
 
 .highlight[class~="places"]{

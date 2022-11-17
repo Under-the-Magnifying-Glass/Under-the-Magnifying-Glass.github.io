@@ -1,0 +1,25 @@
+.wrap{background-color: rgb(164, 99, 210);}
+.content{
+    background-color: aliceblue;
+    border: 0px none rgba(100, 100, 100, 0);
+    border-radius: 55px;
+    box-shadow:
+      inset 12px 12px 24px 0px rgba(239, 243, 255, 1),
+      inset -16px -16px 16px 0px rgba(191, 209, 255, 1),
+      15px 15px 16px 0px rgba(131, 154, 215, 1);
+  }
+  main#articles, .services .icon-box {
+    background: linear-gradient(
+      225deg,
+      rgba(178, 247, 99, 0.1) 17%,
+      rgba(38, 171, 63, 0.1) 74%
+    );
+    background-blend-mode: ;
+    box-shadow:
+      inset 0px 5px 5px 0px rgba(255, 255, 255, 0.1),
+      inset 0px -5px 5px 0px rgba(38, 171, 63, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  }
+  
+  
