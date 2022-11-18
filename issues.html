@@ -436,6 +436,7 @@ document.querySelectorAll(`.highlight`).forEach(node => {
   nodes.forEach(node => {
     node.classList.add('highlight')
   })
+  nodes[0].scrollIntoView({ behavior: 'smooth', block: "center" }, true);
 };
 
 function removeHighlight(concept){
