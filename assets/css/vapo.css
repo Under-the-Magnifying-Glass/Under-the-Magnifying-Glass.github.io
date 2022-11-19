@@ -8,7 +8,8 @@
 
 
 #canvas {
-  background-color:#B6D4D8;
+  background-image: url('https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/tile-holo.jpg?raw=true');
+
   padding-left:1vw;
   padding-right:1vw;
   padding-top:1vh;
@@ -34,9 +35,14 @@
 /* +--------------FONTS--------------+ */
 
 @font-face {
-    font-family: 'SF Alien';
-    src: url('../fonts/Sfalien/SFAlienEncounters.ttf');
+    font-family: 'SFAlien';
+    src: url('../fonts/SFAlienEncounters-Italic.ttf');
   }
+  @font-face {
+      font-family: 'VCR_MONO';
+      src: url('../fonts/SFAlienEncounters-Italic.ttf');
+    }
+
 
 
   #header .logo h1 {
@@ -44,7 +50,17 @@
       margin: 0;
       line-height: 1;
       font-weight: 700;
-      font-family:"SF Alien";
+      font-family:'SFAlien';
       letter-spacing: 2px;
-      text-transform: uppercase;
+      /* text-transform: uppercase; */
+  }
+
+  #articles h1{
+    font-size: 28px;
+    margin: 0;
+    line-height: 1;
+    font-weight: 700;
+    font-family:'SFAlien';
+    letter-spacing: 2px;
+
   }
