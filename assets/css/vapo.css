@@ -35,32 +35,52 @@
 /* +--------------FONTS--------------+ */
 
 @font-face {
-    font-family: 'SFAlien';
-    src: url('../fonts/SFAlienEncounters-Italic.ttf');
-  }
-  @font-face {
+    font-family:'SFAlien';
+    src: url('assets/fonts/SFAlienEncounters-Italic.ttf') format(italic);
+}
+
+@font-face {
       font-family: 'VCR_MONO';
-      src: url('../fonts/SFAlienEncounters-Italic.ttf');
-    }
+      src: url('../fonts/VCR_MONO.ttf');
+}
 
 
 
-  #header .logo h1 {
-      font-size: 28px;
-      margin: 0;
-      line-height: 1;
-      font-weight: 700;
-      font-family:'SFAlien';
-      letter-spacing: 2px;
-      /* text-transform: uppercase; */
-  }
-
-  #articles h1{
+#header .logo h1 {
     font-size: 28px;
     margin: 0;
     line-height: 1;
     font-weight: 700;
     font-family:'SFAlien';
     letter-spacing: 2px;
+    /* text-transform: uppercase; */
+}
 
-  }
+#articles  p{
+  padding-bottom: 4px;
+  line-height: 1.4;
+  font-weight: 400;
+  font-family:'VCR_MONO';
+  letter-spacing: 1.5px;
+  border-width: thick;
+  border-color:white;
+
+
+}
+
+.navbar-nav{
+  background-color:cyan;
+  color:cyan;
+  font-family:'VCR_MONO';
+  text-shadow: 1px 1px white, 1px 1px white;
+
+}
+.nav-item{
+  margin-right:4vw;
+  color:cyan;
+}
+.a{
+  color:cyan;
+
+
+}
