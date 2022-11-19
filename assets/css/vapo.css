@@ -8,14 +8,26 @@
 
 
 #canvas {
-  background-color:#CEA2D7;
+  background-color:#B6D4D8;
   padding-left:1vw;
   padding-right:1vw;
   padding-top:1vh;
   text-align:justify;
-}
+  border: 3px solid fuchsia;
+  border-style: dotted;
+  box-shadow: 5px 5px cyan, 5px 5px cyan;
+  }
 
 #articles{
+  background-color:#B6D4D8;
+  padding-left:1vw;
+  padding-right:1vw;
+  padding-top:1vh;
+  text-align:justify;
+  border: 3px solid cyan;
+  border-style: dotted;
+  box-shadow: 5px 5px magenta, 5px 5px magenta;
+  }
 
 }
 
@@ -23,5 +35,16 @@
 
 @font-face {
     font-family: 'SF Alien';
-    src: url('../fonts/Baumans-Regular.ttf');
+    src: url('../fonts/Sfalien/SFAlienEncounters.ttf');
+  }
+
+
+  #header .logo h1 {
+      font-size: 28px;
+      margin: 0;
+      line-height: 1;
+      font-weight: 700;
+      font-family:"SF Alien";
+      letter-spacing: 2px;
+      text-transform: uppercase;
   }
