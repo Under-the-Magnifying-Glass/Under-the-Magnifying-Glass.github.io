@@ -36,13 +36,14 @@ a:hover {
 }
 
 main {
-  margin-left: 3vw;
+  margin-left: 1vw;
   margin-bottom:1vw;
   margin-top:1vw;
-  margin-right: 8vw;
+  margin-right: 1vw;
+
   display:flex;
   flex-direction: column;
-} */
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -446,7 +447,7 @@ list-style: none;
   flex-basis: 100%;
   flex: 1;
 
-  } 
+  }
 
 
 
@@ -1071,7 +1072,7 @@ align-self: center;
 /*DOCUMENTATION CARDS*/
 
 .containerm {
-   
+
     overflow: hidden;
     width: 100%;
     padding: 2rem;
