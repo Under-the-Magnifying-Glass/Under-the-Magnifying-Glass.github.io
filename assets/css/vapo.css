@@ -6,7 +6,7 @@
 }
 
  body{
-   cursor: url("https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/cursor.png?raw=true"), auto;
+   cursor: url("https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/cursor.png?raw=true"), default;
 
  }
 
@@ -266,6 +266,8 @@ path {
  }
 
 hero{
-  background: ("../img/") top center;
+  background: url("../img/updated/wallpaper.jpg") top center; opacity:0.5;
+  background: url("img/vaporwave/sunset.gif") top center; opacity:0.2;
+
 
 }
