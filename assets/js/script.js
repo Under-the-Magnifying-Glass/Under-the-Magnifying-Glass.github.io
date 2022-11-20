@@ -7,16 +7,22 @@ $(document).ready(function(){
     case 'assets/css/screenStyle.css':
       document.getElementById('theme').setAttribute('href', 'assets/css/screenStyle.css');
       break;
-    case 'assets/css/sixties.css':
-      document.getElementById('theme').setAttribute('href', 'assets/css/sixties.css');
-      break;
+    case 'assets/css/1500.css':
+      document.getElementById('theme').setAttribute('href', 'assets/css/1500.css');
+      break;   
     case 'assets/css/XIX.css':
       document.getElementById('theme').setAttribute('href', 'assets/css/XIX.css');
       break;
-  case 'assets/css/bauhaus.css':
+    case 'assets/css/bauhaus.css':
       document.getElementById('theme').setAttribute('href', 'assets/css/bauhaus.css');
       break;
-      case 'assets/css/future.css':
+     case 'assets/css/sixties.css':
+      document.getElementById('theme').setAttribute('href', 'assets/css/sixties.css');
+      break;
+    case 'assets/css/vapo.css':
+      document.getElementById('theme').setAttribute('href', 'assets/css/vapo.css');
+      break;
+    case 'assets/css/future.css':
         document.getElementById('theme').setAttribute('href', 'assets/css/future.css');
         break;}
   });
