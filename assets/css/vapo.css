@@ -1,14 +1,25 @@
 /* vaporwave */
 
 .wrap {
-  background-image: url("https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/holograph.jpeg?raw=true");
-  cursor: url("https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/cursor.png?raw=true"), auto;
+  background: url("https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/sunset.gif?raw=true"); background-repeat: repeat;
+  position: relative;
+  /* cursor: url("https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/cursor.png?raw=true"), auto; */
 }
 
- body{
-   cursor: url("https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/cursor.png?raw=true"), default;
+.wrap::before{
+  content: "";
+  background-color: rgba(0,0,0,0.25);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+}
+ /* body{
+   /* cursor: url("https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/cursor.png?raw=true"), default; */
 
- }
+ } */
 
 
 #canvas {
@@ -265,9 +276,12 @@ path {
    font-family:"SFAlien";
  }
 
-hero{
-  background: url("../img/updated/wallpaper.jpg") top center; opacity:0.5;
-  background: url("img/vaporwave/sunset.gif") top center; opacity:0.2;
+#hero{
+  /* background: url("../img/updated/wallpaper.jpg") top center; opacity:0.5; */
+  background-image: url("https://media.tenor.com/ydLN6cT0i3gAAAAd/vaporwave-car.gif"); background-repeat:repeat;
+  background-position:center;
+  background-size: cover;
 
+background-repeat:repeat;
 
 }
