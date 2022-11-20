@@ -15,7 +15,7 @@
   padding-top:1vh;
   text-align:justify;
   border: 3px solid fuchsia;
-  border-style: dotted;
+  border-style: groove;
   box-shadow: 5px 5px cyan, 5px 5px cyan;
   }
 
@@ -26,12 +26,17 @@
   padding-top:1vh;
   text-align:justify;
   border: 3px solid cyan;
-  border-style: dotted;
+  border-style: groove;
   box-shadow: 5px 5px magenta, 5px 5px magenta;
   }
 
 }
 
+.collapse{
+  border: 3px solid fuchsia;
+  border-style: ridge;
+  box-shadow: 5px 5px cyan, 5px 5px cyan;
+  }
 /* +--------------FONTS--------------+ */
 
 @font-face {
@@ -43,6 +48,10 @@
       font-family: 'VCR_MONO';
       src: url('../fonts/VCR_MONO.ttf');
 }
+@font-face {
+      font-family: 'Rocket Rinder';
+      src: url('../fonts/RocketRinder-yV5d.ttf');
+}
 
 
 
@@ -51,7 +60,7 @@
     margin: 0;
     line-height: 1;
     font-weight: 700;
-    font-family:'SFAlien';
+    font-family:'Rocket Rinder';
     letter-spacing: 2px;
     /* text-transform: uppercase; */
 }
@@ -78,9 +87,52 @@
 .nav-item{
   margin-right:4vw;
   color:cyan;
+
+}
+.nav-item:hover{
+    transform: scale(1.2);
+
 }
 .a{
   color:cyan;
 
 
+}
+
+.metadata{
+
+  border: 3px solid fuchsia;
+  border-style:dotted;
+  box-shadow: 5px 5px cyan, 5px 5px cyan;
+}
+ /* ------------ANIMATIONS----------- */
+
+.zoom-nav {
+  transition: transform .2s;
+}
+
+
+/* .collapsible {
+  background-color:white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  outline: none;
+}
+
+.collapsible:hover {
+  background-color: #E5F6DF;
+}
+
+.content-met {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+} */
+
+.nav{
+  background-color:cyan !important;
 }

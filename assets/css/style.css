@@ -446,36 +446,13 @@ list-style: none;
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
+  background-color:white;
+  }
+
 
   }
 
 
-
-
-.highlight[property~="justice"]{
-    background-color: #00FAFA
-  }
-
-
-
-.highlight[property~="death"]{
-	background-color: #788091
-}
-
-
-
-
-.highlight[property~="power"]{
-	background-color: #ec37db
-}
-
-.highlight[property~="providence"]{
-	background-color: #feef5d
-}
-
-.highlight[property~="cosmo:omission"]{
-	background-color: #feef5d
-}
 
 /*--------------------------------------------------------------
 # Nav menu in issues Section
@@ -498,6 +475,14 @@ list-style: none;
   position: relative;
 }
 
+/* .nav-link{
+  color:black;
+} */
+.navbar-text a{
+  color:black;
+}
+
+
 .navbar-text a,
 .navbar-text a:focus {
   display: flex;
@@ -511,6 +496,9 @@ list-style: none;
   transition: 0.3s;
 }
 
+
+
+}
 .navbar-text a i,
 .navbar-text a:focus i {
   font-size: 12px;

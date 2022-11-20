@@ -27,7 +27,7 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/screenStyle.css" rel="stylesheet" id="theme">
-  <!-- <link href="assets/css/vapo.css" rel="stylesheet" id="theme"> -->
+  <link href="assets/css/vapo.css" rel="stylesheet" id="theme">
 
 
 
@@ -82,18 +82,20 @@
     </header><!-- End Header -->
 
 
-
+      <div id="nav-toggler">
       <nav class="navbar navbar-expand-lg navbar-light bg-light scrolled-offset" id="toggler">
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <a class="navbar-brand" href="#">
         <img id="logo" src="assets/img/mag-logo.png" alt="Under the Magnifying Glass" style="width:40px;" class="rounded-pill">
         </a>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul class="navbar-nav mx-auto mt-2 mt-lg-0" >
             <li class="nav-item">
-              <a class="nav-link" id="btn1" href="#">Dainty Hands</a>
+              <a class="nav-link navbar-text" id="btn1" href="#">Dainty Hands</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" id="btn2" href="#">Musgrave Ritual</a>
@@ -108,7 +110,7 @@
 
         </div>
       </nav>
-
+</div>
 
       <!-- =======  Metadata ======= REMEMBER TO COLLAPSE WHEN ON SMALL SCREENS!!!!-->
 
@@ -117,6 +119,8 @@
         <div class="row align-items-start">
 
           <div class="col-2 col-md-2 col-sm-2" id ="metadata">
+            <!-- <button class="collapsible">Explore</button> -->
+
               <div class="metadata">
                   <h5>Select the text from the menu</h5>
                   <ul id="list" style="list-style: none;">
@@ -211,7 +215,7 @@
           <div class= "col-11 col-md-11 col-sm-11" id="canvas">
 
           <main id="articles">
-            <div class="border" id="vaporwave">
+            <!-- <div class="border" id="vaporwave"> -->
 
             <img class="circt" src="/img/circt.png"  >
             <h1>The Adventures of Sherlock Holmes.</h1>
@@ -375,7 +379,7 @@
   <script>
     $(document).ready(function(){
       $("#btn4").click(function(){
-        $("#main").load("issues-compare.html")
+        $("#articles").load("issues-compare.html")
       });
     });
   </script>
@@ -461,6 +465,23 @@ document.querySelectorAll(".showmetadata").forEach(checkbox =>{
   }})
 });
 
+</script>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
 </script>
 
 
