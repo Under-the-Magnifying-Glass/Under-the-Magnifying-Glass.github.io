@@ -28,6 +28,7 @@ a:hover {
 
 .circt{display: none;}
 
+
 .wrap {
   max-width: 1440px;
   margin: auto;
@@ -1128,3 +1129,6 @@ align-self: center;
     transform: translate(-50%, -50%);
     transition-timing-function: ease
 }
+
+.vapo{
+  display: none;}

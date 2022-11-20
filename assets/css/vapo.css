@@ -2,9 +2,13 @@
 
 .wrap {
   background-image: url("https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/holograph.jpeg?raw=true");
-  cursor: url("https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/cursor.png?raw=true");
+  cursor: url("https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/cursor.png?raw=true"), auto;
 }
 
+ body{
+   cursor: url("https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/cursor.png?raw=true"), auto;
+
+ }
 
 
 #canvas {
@@ -20,7 +24,7 @@
   }
 
 #articles{
-  background-color:#B6D4D8;
+  background-color:#e3daffd4;
   padding-left:1vw;
   padding-right:1vw;
   padding-top:1vh;
@@ -41,27 +45,45 @@
 
 @font-face {
     font-family:'SFAlien';
-    src: url('assets/fonts/SFAlienEncounters-Italic.ttf') format(italic);
+    src: url('../fonts/vaporwave-font/Sfalien/SFAlienEncounters-Italic.ttf');
 }
 
 @font-face {
       font-family: 'VCR_MONO';
-      src: url('../fonts/VCR_MONO.ttf');
+      src: url('../fonts/vaporwave-font/VCR_MONO.ttf');
 }
 @font-face {
       font-family: 'Rocket Rinder';
-      src: url('../fonts/RocketRinder-yV5d.ttf');
+      src: url('../fonts/vaporwave-font/rocket-rinder-font/RocketRinder-yV5d.ttf');
+}
+
+@font-face {
+      font-family: 'Line beam';
+      src: url('../fonts/vaporwave-font/linear-beam 2/Linebeam.ttf');
 }
 
 
+#header a{
+  background-color:cyan;
+  font-family:'SFAlien';
+  text-shadow:2px 1px white, 2px 1px white;
+  color:black;
+}
+
+#header .logo h1 a{
+      color: #3B3486 !important;
+}
 
 #header .logo h1 {
-    font-size: 28px;
+    font-size: 30px;
     margin: 0;
     line-height: 1;
     font-weight: 700;
     font-family:'Rocket Rinder';
     letter-spacing: 2px;
+    text-shadow: 2px 1px white, 2px 1px white;
+
+
     /* text-transform: uppercase; */
 }
 
@@ -76,10 +98,14 @@
 
 
 }
+#articles h1, h2, h3, h4, h5{
+  font-family:"SFAlien";
+}
 
 .navbar-nav{
   background-color:cyan;
-  color:cyan;
+  /* background-image: url('https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/tile-holo.jpg?raw=true'); */
+  color:white;
   font-family:'VCR_MONO';
   text-shadow: 1px 1px white, 1px 1px white;
 
@@ -93,17 +119,67 @@
     transform: scale(1.2);
 
 }
-.a{
+.nav-link.scroll-to{
+  font-family:'Rocket Rinder' !important;
+  letter-spacing: 2px;
+  text-shadow: 2px 1px white, 2px 1px white;
+
+
+}
+a:hover{
   color:cyan;
 
 
 }
 
+
+.pointer{
+  display:inline-block;
+  font-family:'VCR_MONO';
+  background-color:white;
+  border:3px solid fuchsia;
+  border-style:dashed;
+  margin-top:4vh;
+  padding-left:1vw;
+  padding-right:1vw;
+  padding-top:1vh;
+  padding-bottom:1vh;
+  margin-right:2vw;
+
+}
+
+
+.ul{
+  padding-top:1vh;
+  padding-bottom:1vh;
+}
+.pointer a{
+  color:black;
+
+  font-family:"Line beam";
+  text-transform:uppercase;
+}
+
+#article-info h5{
+  display:none;
+}
 .metadata{
 
   border: 3px solid fuchsia;
   border-style:dotted;
   box-shadow: 5px 5px cyan, 5px 5px cyan;
+  background-color:#3B3486;
+
+}
+.metadata label{
+  font-family:'VCR_MONO';
+  color:white;
+}
+.metadata h5{
+  color:magenta;
+}
+.metadata:hover{
+  background-color:#6C4AB6;
 }
  /* ------------ANIMATIONS----------- */
 
@@ -133,6 +209,63 @@
   background-color: #f1f1f1;
 } */
 
-.nav{
+#toggler{
   background-color:cyan !important;
+}
+.sidenav{
+  background-color: white;
+  text-transform: uppercase;
+  font-family:'VCR_MONO';
+  border: 3px solid blue;
+  border-style:groove;
+  color:magenta;
+
+}
+
+.sidenav a:not(.closebtn){
+  border: 3px solid cyan;
+  border-style:dashed;
+  margin-bottom:1vh;
+  margin-top: 1px;
+  color:magenta;
+}
+
+
+
+.floating {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }
+}
+
+.vapo{display: block;
+   align-self: center;
+   height: 70px;}
+path {
+   fill: transparent;
+ }
+
+ .content, #about{
+   background-color:#a583e8bf;
+   border: 3px solid fuchsia;
+   border-style:dotted;
+   box-shadow: 5px 5px cyan, 5px 5px cyan;
+ }
+
+ h1, h2, h3, h4, h5{
+   font-family:"SFAlien";
+ }
+
+hero{
+  background: ("../img/") top center;
+
 }
