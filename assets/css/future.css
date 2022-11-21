@@ -30,7 +30,7 @@ animation: fall 5s 1.02s infinite;
   animation: glitch-2 5s infinite;
 }
 
-  .six_author, p.six_article-info{ 
+  .author, p.article-info{ 
   float:right;
   writing-mode: vertical-rl;
   text-orientation: upright;
