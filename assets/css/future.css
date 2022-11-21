@@ -26,11 +26,11 @@ animation: fall 5s 1.02s infinite;
 
 }
 
-#articles h2, .metadata h4{
+#articles h2{
   animation: glitch-2 5s infinite;
 }
 
-  .author, p.article-info{ 
+  #author, .info{ 
   float:right;
   writing-mode: vertical-rl;
   text-orientation: upright;
@@ -127,3 +127,17 @@ animation: fall 5s 1.02s infinite;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
   }
+
+/* PARALLAX*/
+  section.features, section.team{
+    background-image: url(/img/cyberpunk/matrix_wallp.jpg);
+   /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
