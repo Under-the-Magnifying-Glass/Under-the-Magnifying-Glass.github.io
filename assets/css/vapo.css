@@ -2,10 +2,10 @@
 
 .wrap {
   background: url("https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/sunset.gif?raw=true"); background-repeat: repeat;
-  position: relative;
+  /* position: relative; */
   /* cursor: url("https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/cursor.png?raw=true"), auto; */
 }
-
+/*
 .wrap::before{
   content: "";
   background-color: rgba(0,0,0,0.25);
@@ -14,12 +14,11 @@
   top: 0;
   left: 0;
   right: 0;
-}
-}
+} */
+
  /* body{
    /* cursor: url("https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/cursor.png?raw=true"), default; */
 
- } */
 
 
 #canvas {
@@ -73,30 +72,79 @@
       src: url('../fonts/vaporwave-font/linear-beam 2/Linebeam.ttf');
 }
 
+#header{
+  background-color: #00ffffa6;
+}
 
-#header a{
-  background-color:cyan;
-  font-family:'SFAlien';
+#header a {
+  /* background-color:cyan; */
+  font-family:'VCR_MONO';
   text-shadow:2px 1px white, 2px 1px white;
   color:black;
 }
 
-#header .logo h1 a{
-      color: #3B3486 !important;
+#header .logo h1{
+      color: white;
+      letter-spacing: 2px;
+      text-shadow: 2px 1px #3B3486, 2px 1px #3B3486;
+
 }
 
-#header .logo h1 {
+#hero > div > h1{
+  font-size: 40px;
+  margin: 0;
+  line-height: 1;
+  font-weight: 700;
+  font-family:'SFAlien';
+  letter-spacing: 8px;
+  color:magenta;
+  text-shadow: 2px 1px #3B3486, 2px 1px #3B3486;
+
+
+}
+#page_logo > h1 > a > span{
     font-size: 30px;
     margin: 0;
     line-height: 1;
-    font-weight: 700;
-    font-family:'Rocket Rinder';
-    letter-spacing: 2px;
-    text-shadow: 2px 1px white, 2px 1px white;
+    font-weight: 100;
+    font-family:'SFAlien';
+    letter-spacing: 4px;
+    text-shadow: 2px 1px #3B3486, 2px 1px #3B3486;
 
 
     /* text-transform: uppercase; */
 }
+/* #page_logo > h1 > a > span::after{
+  content:"【 た畏応王﻿";
+
+}
+
+#page_logo > h1 > a > span::before{
+  content:"【";
+
+ */
+/*
+
+#header .logo h1::before{
+  content:"【";
+
+}  */
+
+ h2::before{
+  content:"【";
+}
+ h3::before{
+  content:"【";
+}
+
+h2::after{
+  content:"【 た畏応王﻿";
+}
+
+ h3::after{
+  content:"【 た畏応王﻿";
+}
+
 
 #articles  p{
   padding-bottom: 4px;
@@ -110,7 +158,8 @@
 
 }
 #articles h1, h2, h3, h4, h5{
-  font-family:"SFAlien";
+  font-family:"VCR_MONO";
+  text-transform: uppercase;
 }
 
 .navbar-nav{
@@ -265,7 +314,13 @@ path {
    fill: transparent;
  }
 
- .content, #about{
+ .content{
+   background-color:cyan;
+
+
+ }
+
+ #about{
    background-color:#a583e8bf;
    border: 3px solid fuchsia;
    border-style:dotted;
@@ -274,14 +329,58 @@ path {
 
  h1, h2, h3, h4, h5{
    font-family:"SFAlien";
+   font-weight:200px;
  }
 
 #hero{
   /* background: url("../img/updated/wallpaper.jpg") top center; opacity:0.5; */
-  background-image: url("https://media.tenor.com/ydLN6cT0i3gAAAAd/vaporwave-car.gif"); background-repeat:repeat;
+  background: url("https://media.tenor.com/ydLN6cT0i3gAAAAd/vaporwave-car.gif"); background-repeat:repeat;
   background-position:center;
   background-size: cover;
 
-background-repeat:repeat;
+}
+
+.btn-secondary{
+  border: 3px solid fuchsia !important;
+  border-style:dashed !important;
+  background-color:#3B3486;
+  font-family: 'VCR_MONO';
+
+
+}
+
+.info-section{
+  background-color:#a583e8bf;
+  border: 3px solid fuchsia;
+  border-style:dotted;
+  box-shadow: 5px 5px cyan, 5px 5px cyan;
+}}
+
+.feature-card{
+
+  /* border: 2px solid cyan; */
+  /* border-style:dashed !important; */
+  padding-top:inherit;
+  padding-bottom:inherit;
+  /* background-color:#3B3486; */
+  font-family: 'VCR_MONO';
+
+}
+.card-body{
+  background-image: url('https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/tile-holo.jpg?raw=true');
+
+}
+.card-img-top{
+  border: 2px solid cyan;
+  border-style:ridge !important;
+  box-shadow: 5px 5px cyan, 5px 5px cyan;
+
+
+}
+
+.d_image{
+  border: 3px solid magenta;
+  border-style:dashed;
+  box-shadow: 5px 5px cyan, 5px 5px cyan;
 
 }
