@@ -24,9 +24,9 @@
 #canvas {
   background-image: url('https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/tile-holo.jpg?raw=true');
 
-  padding-left:1vw;
+  /* padding-left:1vw;
   padding-right:1vw;
-  padding-top:1vh;
+  padding-top:1vh; */
   text-align:justify;
   border: 3px solid fuchsia;
   border-style: groove;
@@ -297,8 +297,7 @@ a:hover{
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    margin-left: 30px;
-    margin-top: 5px;
+
 }
 
 @keyframes floating {
