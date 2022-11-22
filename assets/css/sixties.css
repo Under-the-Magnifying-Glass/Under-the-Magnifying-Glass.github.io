@@ -1,18 +1,10 @@
 
 
-@font-face {
-    font-family: "Davida";
-    src: url("../fonts/Davida___.ttf") format('truetype');
-      }
+
 @font-face {
         font-family: "Davida";
         src: url("../fonts/DavidaRegular.ttf") format('truetype');
           }
-
-@font-face {
-    font-family: 'Amelia';
-    src: url('../fonts/AmeliaItalic.ttf'); /*http://www.fontsaddict.com/fontface/amelia.ttf */
-  }
 
 @font-face {
     font-family: "Euphoria" ;
@@ -66,36 +58,22 @@ img{filter: grayscale(100%);}
 }
 
 #navbarTogglerDemo03{
-    font-family: "Amelia";
+    font-family: "Davida";
     color:white;
     background-color: #108b9e;
 }
  
 #hero{
-    background: url("../img/updated/pexels-cottonbro-7299584.jpg") no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;}
-    /*background: url("https://cdn.pixabay.com/photo/2017/11/12/22/52/christmas-bauble-fractal-2944076_1280.jpg") no-repeat center center ;
-    background: url("../img/updated/pexels-cottonbro-7299584.jpg") no-repeat center center ;
-    -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    background-image: url("../img/updated/pexels-cottonbro-7299584.jpg") ;
+    
+    background-repeat:repeat;
+    
+    background-position:center;
+    background-size: cover;
   
-}*/
-
-#hero:before {
-    content: "";
-    background: rgba(95, 94, 95, 0.1);
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-
+ 
+}
+    
 #hero h1{
     font-family: "Moscoso" /* 'Bungee Shade', cursive;*/
 }
@@ -189,7 +167,7 @@ div.modal-content {
     color: #dd1c4b;
     font-family: "Moscoso";
     font-weight: bold;
-    font-size:large;
+    font-size:medium;
     border-width: 5px;
     border-style: solid;
     border-color:#dd1c4b;
@@ -233,7 +211,7 @@ div.modal-content {
         
 .features .card-title a{
         font-family: "Moscoso";
-        font-size: 250%;
+        font-size: 200%;
         font-weight: normal;
         background: linear-gradient(to right, #d6365a,
          white, #108b9e);
@@ -384,10 +362,10 @@ background: rgba(161, 160, 161, 0.1);
   }
 h5, #articles h3 i , #articles ul a{color:black; font-family: "Davida";}
 #articles h2{color:white; font-family:"Davida";background-color: black; border-radius: 10px; border:1px solid transparent;}
- #articles p{text-transform: none;}
+ #articles p{text-transform: none; /*padding: 15px;*/}
  #articles h1{font-family: "Moscoso"; color:black}
- #author{float: left; font-family: "Davida"; border-radius: 10px; border-style: solid; border-width: 2px;}
- #article-info{float: right; position: relative;
+ .six_author{float: left; font-family: "Davida"; border-radius: 10px; border-style: solid; border-width: 2px;}
+ .six_article-info{float: right; position: relative;
 font-family: "Davida";
 border-radius: 10px; border-style: solid; border-width: 2px; position: relative;}
 
@@ -416,27 +394,21 @@ main#articles {
     background-color: white;
     background-image: none;
     }
-.frame{
-    
+
+ /* .frame {
     border: 30px solid;
-    border-image: url(/img/circt.png) 50 round;
-   
-    }
+    border-image: url(/img/bgimg.jpg) 50 round;
+   }*/
+
 table{ 
-        font-family: "Boecklins";
+     font-family: "Davida";   
     text-transform: uppercase;}
 td {
     border: 1px solid black;
     border-radius: 10px;
     }
-    thead {
+thead {
     background-color: #333;
     color: white;}
     
-  .dainty{
-    font-size: 80%;
-    text-align: center;
-    border-radius: 50%;
-
-    max-width:max-content;
-  }
+ 
