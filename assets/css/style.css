@@ -428,10 +428,7 @@ list-style: none;
   width:80%;
   background-color: #E5F6DF;
   margin-top:2vh;
-  padding-left: 1vw;
-  /* padding-right:1vw; */
-  padding-top:2vh;
-  /* box-sizing:border-box; */
+  padding: 2vh 1vw;
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
