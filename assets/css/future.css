@@ -4,49 +4,70 @@
 }
 
 @font-face {
-  font-family: "Milton";
-  src: url('/assets/fonts/Miltown_.ttf');
+  font-family: "Xirod";
+  src: url('/assets/fonts/xirod.ttf');
 }
 *{
-  font-family: "Chakra Petch";
+  font-family: "Xirod";
+  font-weight:normal;
   color: rgb(62, 241, 62);
 }
 
-.wrap{background-color: black ;
+.wrap{/* Created with https://www.css-gradient.com */
+  background: #000000;
+  background: -webkit-linear-gradient(top left, #000000, #5CD79D);
+  background: -moz-linear-gradient(top left, #000000, #5CD79D);
+  background: linear-gradient(to bottom right, #000000, #5CD79D);;
 
 }
- 
-    #articles h1 {
-
-  writing-mode: vertical-lr;
-  text-orientation: upright;
+#articles h1 { 
+    
+  animation:  glitch-2 5s infinite;
+/*text-align: center;
+position: relative;
+text-orientation: upright;
   font-size: medium;
-text-align: center;
-position: absolute;
 left: 17%;
-animation: fall 5s 1.02s infinite;
-
+animation: fall 5s 1.02s;
+animation-iteration-count: 1;
+*/
 }
-li:hover{
+li a{
+  color:rgb(62, 241, 62);
+  text-decoration: none;
+}
+li a:hover{
   animation: glitch-2 1s;
+  color:rgb(62, 241, 62);
   animation-iteration-count: 1;
 }
+
+
 #articles h2, #articles h3, #articles h4 {
+  
   animation: glitch-2 5s infinite;
   border-width: 1px;
   border-style: solid;
   border-color: rgb(62, 241, 62);
 }
 #articles h2:hover, #articles h3:hover, #articles h4:hover{
-  background-color: darkolivegreen;
+  background-color: rgba(255, 255, 255, .15);  
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px white;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: center;
 }
-  .six_author, p.six_article-info{
-    left:17%; 
-  float:right;
+#articles h2, #placeholder p{
+  
+  /*float:right;
   writing-mode: vertical-lr;
-  text-orientation: upright;
+  text-orientation: upright;*/
   position: relative;
-  animation: fall_r 5s 1.02s infinite;
+  animation: fall 5s 1.02s;
+  animation-iteration-count: 1;
   
 }
 #hero h1{
@@ -70,8 +91,8 @@ li:hover{
 }
 
 @keyframes fall{
-  from {top:70px; opacity: 0;}
-  to {top:270px; opacity: 1;}
+  from {top:-30px; opacity: 0;}
+  to {top:0px; opacity: 1;}
 }
 
 @keyframes fall_r{
@@ -113,7 +134,16 @@ li:hover{
 
 
 
-
+.metadata{
+  background-color: rgba(255, 255, 255, .15);  
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px white;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+}
 
 .content{
     background: 
@@ -154,6 +184,30 @@ li:hover{
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+/*COMPARE*/
+#compare-stories div.overflow-auto{
+  background-color: black;
+}
+
+img#logo, .team:hover .section-title {
+  width: auto;
+  margin: auto;
+  animation-name: rotate;
+  animation-duration: 7s;
+  animation-delay: 2s;
+  
+}
+
+@keyframe rotate {
+  0% { transform: rotate(0turn); }
+  100% { transform: rotate(6turn); }
+}
+
+@-webkit-keyframes rotate {
+  0% { transform: rotate(0turn); }
+  100% { transform: rotate(6turn); }
+}
 
 
 /*
