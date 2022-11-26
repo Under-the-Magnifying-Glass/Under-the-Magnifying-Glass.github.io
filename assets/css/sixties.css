@@ -357,9 +357,6 @@ background: rgba(161, 160, 161, 0.1);
  .circt{display: block; 
     align-self: center; 
     height: 150px;}
- path {
-    fill: transparent;
-  }
 h5, #articles h3 i , #articles ul a{color:black; font-family: "Davida";}
 #articles h2{color:white; font-family:"Davida";background-color: black; border-radius: 10px; border:1px solid transparent;}
  #articles p{text-transform: none; /*padding: 15px;*/}
@@ -385,6 +382,18 @@ border-radius: 10px; border-style: solid; border-width: 2px; position: relative;
 .metadata:hover {
     color: black;
 }
+#articles figure {
+    width:min-content;
+    background-color: black;
+    border-style: solid;
+    border-width: 5px;
+    border-color:#dd1c4b;
+  
+}
+figcaption{font-family: "Euphoria";
+            color: white;
+            font-size:xx-large;
+            align-self: center;}
 
 blockquote{font-family: "Moscoso";  color:#dd1c4b; background-color:#faff2c ; border-radius: 10px; border:1px solid transparent;}
 .notes p{
@@ -407,8 +416,6 @@ td {
     border: 1px solid black;
     border-radius: 10px;
     }
-thead {
-    background-color: #333;
-    color: white;}
+
     
  
