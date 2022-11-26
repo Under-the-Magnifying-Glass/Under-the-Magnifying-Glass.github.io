@@ -44,6 +44,9 @@ function closeNav() {
     document.getElementById("toggler").style.marginLeft = "0";
   }
 
+function toggle() {
+  document.getElementById("navbarTogglerDemo03").style.display="block";
+}
 
 // Get the modal
 var modal = document.getElementById("myModal");
