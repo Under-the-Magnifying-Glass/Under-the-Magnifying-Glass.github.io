@@ -161,7 +161,8 @@ Metadata            </button> -->
                   </div>
                   <div class="row clearfix mt-3">
                       <div class="col-md-12">
-                          <p id="keyword"><b> Instances</b></p>
+			      <h5>Instances:</h5>
+			      <pre><p id="keyword"></p></pre>
                           <!-- Nav selectors -->
                           <!-- <ul class="nav nav-pills nav-justified" id="sentenceTab" role="tablist">
                               <li class="nav-item">
@@ -433,27 +434,24 @@ document.querySelectorAll(".conceptButton").forEach(checkbox => {
 
 <script>
 function addHighlight(concept){
-/* Clean up all highlighted elements
-document.querySelectorAll(`.highlight`).forEach(node => {
-    node.classList.remove('highlight');
-})*/
-
 /* Select all elements to highlight, which are the ones that have the specified value of the "property" attribute */
   let nodes = document.querySelectorAll(`[class="${concept}"]`)
   let space=document.getElementById('keyword');
-  let x="Instances:\n";
-  /* Higlhlight all selected elements and get instances */
+  let x= new Set();
+  
+  /* Higlhlight all selected elements and show instances*/
   nodes.forEach(node => {
-    x=x+"\n"+ node.getAttribute("about");
+    x.add(node.getAttribute("about"));
     node.classList.add('highlight');
-    
   })
   nodes[0].scrollIntoView({ behavior: 'smooth', block: "center" }, true);
-  space.innerHTML=x;
-
+  let strings=""
+  x.forEach(s=>{
+    strings=strings+s+"\n";
+  })
+  space.innerHTML=strings;
 };
-
-
+	
 function removeHighlight(concept){
   let nodes = document.querySelectorAll(`[class="${concept} highlight"]`)
 
