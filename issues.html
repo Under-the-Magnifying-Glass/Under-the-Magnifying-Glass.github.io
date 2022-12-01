@@ -161,7 +161,7 @@ Metadata            </button> -->
                   </div>
                   <div class="row clearfix mt-3">
                       <div class="col-md-12">
-                          <p><b> Instances</b></p>
+                          <p id="keywords"><b> Instances</b></p>
                           <!-- Nav selectors -->
                           <!-- <ul class="nav nav-pills nav-justified" id="sentenceTab" role="tablist">
                               <li class="nav-item">
@@ -439,7 +439,6 @@ document.querySelectorAll(".conceptButton").forEach(checkbox => {
 
 
 <script>
-
 function addHighlight(concept){
 /* Clean up all highlighted elements
 document.querySelectorAll(`.highlight`).forEach(node => {
@@ -448,13 +447,19 @@ document.querySelectorAll(`.highlight`).forEach(node => {
 
 /* Select all elements to highlight, which are the ones that have the specified value of the "property" attribute */
   let nodes = document.querySelectorAll(`[class="${concept}"]`)
-
-  /* Higlhlight all selected elements */
+  let space=document.getElementById('keyword');
+  let x="Instances:\n";
+  /* Higlhlight all selected elements and get instances */
   nodes.forEach(node => {
-    node.classList.add('highlight')
+    x=x+"\n"+ node.getAttribute("about");
+    node.classList.add('highlight');
+    
   })
   nodes[0].scrollIntoView({ behavior: 'smooth', block: "center" }, true);
+  space.innerHTML=x;
+
 };
+
 
 function removeHighlight(concept){
   let nodes = document.querySelectorAll(`[class="${concept} highlight"]`)
