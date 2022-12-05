@@ -44,6 +44,7 @@ main {
   padding: 2vh 2vw 2vh 2vw;
   display:flex;
   flex-direction: column;
+  align-self: center;
 }
 /*--------------------------------------------------------------
 # Back to top button
