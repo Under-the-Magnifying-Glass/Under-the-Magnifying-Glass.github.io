@@ -438,7 +438,7 @@ list-style: none;
 
 #main{
   display:flex;
-  flex-direction:row;
+  flex-direction:column;
   flex-basis:100%;
   flex:1;
 }
