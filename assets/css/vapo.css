@@ -44,9 +44,9 @@
   box-shadow: 5px 5px magenta, 5px 5px magenta;
   }
 
-}
 
-.collapse{
+
+#toggler{
   border: 3px solid fuchsia;
   border-style: ridge;
   box-shadow: 5px 5px cyan, 5px 5px cyan;
@@ -155,13 +155,7 @@ h2::after{
   border-width: thick;
   border-color:white;
 
-
 }
-#articles h1, h2, h3, h4, h5{
-  font-family:"VCR_MONO";
-  text-transform: uppercase;
-}
-
 .navbar-nav{
   background-color:cyan;
   /* background-image: url('https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/tile-holo.jpg?raw=true'); */
@@ -223,13 +217,17 @@ a:hover{
 #article-info h5{
   display:none;
 }
-.metadata{
+#metadata{
 
+
+
+}
+.metadata{
+  background-color:#6C4AB6;
   border: 3px solid fuchsia;
   border-style:dotted;
   box-shadow: 5px 5px cyan, 5px 5px cyan;
   background-color:#3B3486;
-
 }
 .metadata label{
   font-family:'VCR_MONO';
@@ -237,8 +235,10 @@ a:hover{
 }
 .metadata h5{
   color:magenta;
+
+
 }
-.metadata:hover{
+#metadata:hover{
   background-color:#6C4AB6;
 }
  /* ------------ANIMATIONS----------- */
@@ -326,11 +326,23 @@ path {
    box-shadow: 5px 5px cyan, 5px 5px cyan;
  }
 
- h1, h2, h3, h4, h5{
+ h1, h2, h3, h4,h5{
    font-family:"SFAlien";
-   font-weight:200px;
+
+ }
+ #articles h5{
+   font-family:"VCR_MONO";
  }
 
+ .scroll-column h5{
+   font-family:"VCR_MONO";
+ }
+
+
+h2{
+  font-size:calc(0.9rem + 0.9vw) !important;
+  font-weight:lighter;
+}
 #hero{
   /* background: url("../img/updated/wallpaper.jpg") top center; opacity:0.5; */
   background: url("https://media.tenor.com/ydLN6cT0i3gAAAAd/vaporwave-car.gif"); background-repeat:repeat;

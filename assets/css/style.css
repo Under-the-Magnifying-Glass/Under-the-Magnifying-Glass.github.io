@@ -424,17 +424,38 @@ list-style: none;
 # Issues Section
 --------------------------------------------------------------*/
 .metadata{
-  position: sticky;
-  width:80%;
+  /* width:12vw; */
   background-color: #E5F6DF;
-  margin-top:2vh;
   padding: 2vh 1vw;
   display: flex;
   flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
+  flex-basis: 20%;
+  flex:0;
+
+  /* flex: 1; */
+
 }
 
+#main{
+  display:flex;
+  flex-direction:row;
+  flex-basis:100%;
+  flex:1;
+}
+#metadata{
+  top:10vh;
+
+}
+
+#metadata h5{
+  font-size:1.2em;
+  font-weight:250px;
+}
+#metadata label{
+  font-size:1em !important;
+}
+
+/* to avoid sticky property from hiding the navbar */
 
 /*--------------------------------------------------------------
 # Nav menu in issues Section
@@ -500,12 +521,12 @@ COMPARE Section
 --------------------------------------------------------------*/
 
 
-
+/*
 .article-scroll {
 
-  /* height: 75px; */
+
   overflow-y: scroll;
-}
+} */
 .scroll-column {
   margin: 2vh 0.5vw ;
   padding:2vh 2vw;
@@ -520,7 +541,20 @@ COMPARE Section
   }
 
 
+.scroll-column h1{
+  font-size:2em;
+}
 
+.scroll-column h2{
+  font-size:1.5em;
+}
+.scroll-column h4 {
+  font-size:1em;
+}
+
+h5{
+  font-family:"VCR_MONO"
+}
 
 /*
 #first_scroll {

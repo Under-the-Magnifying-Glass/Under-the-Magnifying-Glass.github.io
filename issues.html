@@ -114,7 +114,7 @@
       <div class="container-fluid" id="content">
         <div class="row align-items-start">
 
-          <div class="col-2 col-md-2 col-sm-2" id ="metadata">
+          <div class="col-4 col-md-2 col-sm-4 sticky-top" id ="metadata">
 
             <!-- <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#metadata-target" aria-expanded="false" aria-controls="metadata-target">
 Metadata            </button> -->
@@ -161,8 +161,12 @@ Metadata            </button> -->
                   </div>
                   <div class="row clearfix mt-3">
                       <div class="col-md-12">
+<<<<<<< HEAD
 			      <h5>Instances:</h5>
 			      <pre><p id="keyword"></p></pre>
+=======
+                          <h5> Instances</h5>
+>>>>>>> a6d02b6 (dynamic loading issues-compare and sidebar fix)
                           <!-- Nav selectors -->
                           <!-- <ul class="nav nav-pills nav-justified" id="sentenceTab" role="tablist">
                               <li class="nav-item">
@@ -206,7 +210,7 @@ Metadata            </button> -->
           </div>
 
 
-      <div class="col-10 col-md-10 col-sm-10 articles" id="main">
+      <div class="col-8 col-md-10 col-sm-10 articles d-flex" id="main">
 
         <!-- <div class="overflow-auto"> -->
           <div class= "col-11 col-md-11 col-sm-11" id="canvas">
@@ -491,6 +495,32 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 </script>
+
+<script>
+$(document).ready(function(){
+
+   $('#first_scroll').load("texts/scandal-in-bohemia.html");
+
+});
+</script>
+
+
+<script>
+$(document).ready(function(){
+
+   $('#second_scroll').load("texts/musgrave-ritual.html");
+
+});
+</script>
+
+<script>
+$(document).ready(function(){
+
+   $('#third_scroll').load("texts/dainty-hands.html");
+
+});
+</script>
+
 
 <!-- <script>
 
