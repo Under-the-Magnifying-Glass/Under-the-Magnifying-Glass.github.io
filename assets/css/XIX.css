@@ -8,11 +8,11 @@
 }
 
 .wrap {
-    background-image: url("xix/M2oldnewspaperBG.jpg"); 
+    background-image: url("../xix/M2oldnewspaperBG.jpg"); 
 }
 
 .sidenav {
-    background-image: url("xix/M2oldnewspaperBG.jpg");
+    background-image: url("../xix/M2oldnewspaperBG.jpg");
 }
 
 #hero {
@@ -25,7 +25,7 @@
 }
 
 #header {
-    background-image: url("xix/M2oldnewspaperBG.jpg"); 
+    background-image: url("../xix/M2oldnewspaperBG.jpg"); 
     border-color: #000;
     border-style: double none double none;
     border-width: 5px;
@@ -91,6 +91,6 @@
 
 /*ISSUES SPECIFIC*/
 #toggler {
-    background-image: url("xix/M2oldnewspaperBG.jpg") !important;
+    background-image: url("../xix/M2oldnewspaperBG.jpg") !important;
     border-bottom: black solid 2px ; 
 }
