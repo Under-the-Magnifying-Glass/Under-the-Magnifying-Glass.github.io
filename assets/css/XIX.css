@@ -1,5 +1,18 @@
+@font-face {
+    font-family:"OldNewspaper";
+    src: url("../fonts/OldNewspaperTypes.ttf");
+}
+
 * {
-    font-family: "IM Fell English";
+    font-family: "OldNewspaper";
+}
+
+.wrap {
+    background-image: url("xix/M2oldnewspaperBG.jpg"); 
+}
+
+.sidenav {
+    background-image: url("xix/M2oldnewspaperBG.jpg");
 }
 
 #hero {
@@ -12,7 +25,7 @@
 }
 
 #header {
-    background: #fff;
+    background-image: url("xix/M2oldnewspaperBG.jpg"); 
     border-color: #000;
     border-style: double none double none;
     border-width: 5px;
@@ -28,8 +41,10 @@
   color: #000;
 }
 
-.about p{
+.about p, .services p, .features p{
     column-count: 2;
+    column-gap: 25px;
+    text-align: justify;
 }
 
 #DisclaimerBtn{
@@ -50,8 +65,20 @@
     border-width: medium;
 }
 
+.card{
+    background-color: #faf8f4 ;
+}
+
+.icon-box{
+    background-color: #faf8f4;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+}
+
 .card-img-top {
     filter: grayscale(100%);
+    box-shadow: 0 0 8px 8px white inset;
 }
 
 .features .card {
@@ -60,3 +87,10 @@
     border-width: 2px;
   }
 
+
+
+/*ISSUES SPECIFIC*/
+#toggler {
+    background-image: url("xix/M2oldnewspaperBG.jpg") !important;
+    border-bottom: black solid 2px ; 
+}
