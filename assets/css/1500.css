@@ -12,11 +12,11 @@ a:hover {
 }
 
 .wrap {
-    background-image: url("1500/MmedmanuscriptBG.jpg"); 
+    background-image: url("../img/1500/MmedmanuscriptBG.jpg"); 
 }
 
 .sidenav {
-    background-image: url("1500/MmedmanuscriptBG.jpg");
+    background-image: url("../img/1500/MmedmanuscriptBG.jpg");
 }
 
 #hero {
@@ -29,7 +29,7 @@ a:hover {
 }
 
 #header {
-    background-image: url("1500/MmedmanuscriptBG.jpg"); 
+    background-image: url("../img/1500/MmedmanuscriptBG.jpg"); 
     border-color: #000;
     border-bottom: solid;
     border-width: 2px;
@@ -70,7 +70,7 @@ a:hover {
     border-bottom:50px solid;
     border-top: 50px solid;
     padding: 20px;
-    border-image: url("1500/borderDecor.png") 30% stretch ;
+    border-image: url("../img/1500/borderDecor.png") 30% stretch ;
 }
 
 .card{
@@ -148,7 +148,7 @@ a:hover {
 
 /*ISSUES SPECIFIC*/
 #toggler {
-    background-image: url("1500/MmedmanuscriptBG.jpg") !important;
+    background-image: url("../img/1500/MmedmanuscriptBG.jpg") !important;
     border-bottom: black solid 2px ; 
 }
 
