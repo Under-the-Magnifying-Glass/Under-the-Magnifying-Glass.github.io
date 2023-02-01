@@ -1,0 +1,455 @@
+@font-face {
+    font-family: "Davida";
+    src: url("../fonts/DavidaRegular.ttf") format('truetype');
+      }
+
+@font-face {
+font-family: "Euphoria" ;
+src: url("../fonts/EuphoriaParty-1Geng.ttf");
+}
+
+@font-face {
+font-family: "Compacta" ;
+src: url("/Compacta.woff");
+}
+
+@font-face {
+font-family: "Moscoso" ;
+src: url("../fonts/VICTM___.TTF");
+}
+
+@font-face {
+font-family: 'Cooper-Black';
+src: url('../fonts/cooper-black.ttf'); /*http://www.fontsaddict.com/fontface/amelia.ttf */
+}
+
+*{font-family: "Moscoso";}
+.body,  .wrap {
+background-color:#2090a1; 
+}  
+
+
+
+
+
+img{filter: grayscale(100%);}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.sidenav a:hover,
+.sidenav .closebtn:hover,
+.navbar li:hover>a {
+text-decoration: none;
+color: #108b9e;
+}
+
+#header,#footer {
+
+color:white;
+background-color:#dd1c4b; 
+ 
+}
+/*#page_logo h1 span, nav>* a{font-family: "Davida"; color: black;}*/
+
+.sidenav{background-color:#dd1c4b;
+}
+.sidenav a {color:#fff}
+
+#navbarTogglerDemo03 a{
+
+font-family: "Moscoso";
+
+color:black;
+
+}
+
+#hero{
+background-image: url("../img/updated/pexels-cottonbro-7299584.jpg") ;
+background-repeat:repeat;
+background-position:center;
+background-size: cover;
+}
+
+
+#hero .btn-get-started{
+font-family: "Moscoso";
+border-radius: 50%;
+text-decoration: none;
+color:#dd1c4b;
+background-color: #faff2c;
+border-color:#dd1c4b;
+border-style:ridge;
+border-width: 3px;
+      }
+#hero .btn-get-started:hover {
+    background: #dd1c4b;
+    border: 2px solid #dd1c4b;        
+}
+.back-to-top {
+position: fixed;
+visibility: hidden;
+opacity: 0;
+right: 15px;
+bottom: 15px;
+z-index: 996;
+width: 40px;
+height: 40px;
+transition: all 0.4s;
+border-radius: 50%;
+border-width: 5px;
+border-color:white;
+background-color:#dd1c4b;
+border-style: solid;
+}
+
+.back-to-top:hover{
+background-color:#108b9e;
+}
+
+.about .image {
+border-radius: 50%;
+filter: grayscale(100%);
+}
+   
+.about .content {
+padding: 20px;
+background-color: white;
+color: #dd1c4b;
+text-align: center;
+font-size:large;
+
+}
+
+
+.about .content h3, .about .content p {
+font-family: "Moscoso";
+color:#dd1c4b;
+
+
+}
+
+
+
+
+div.modal-content {
+background-color: white;
+color: #dd1c4b;
+font-weight: bold;
+font-size:medium;
+border-width: 5px;
+border-style: solid;
+border-color:#dd1c4b;
+
+}
+
+
+.modal-content .close {
+color:#dd1c4b;   
+}
+
+
+#DisclaimerBtn {
+
+    font-family:  "Moscoso" ;
+    color: white;
+    background-color: #dd1c4b;
+    /*background-color: #ffce00;*/
+   
+    }
+#DisclaimerBtn:hover{
+    background-color:#108b9e;   
+}
+
+.features .card { 
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+    background: rgba(36, 36, 36, 0.753) ;
+    text-align:center;
+    }
+
+
+    
+.features .card-title a{
+     
+    font-size: 200%;
+    font-weight: normal;
+    background: linear-gradient(to right, #d6365a,
+     white, #108b9e);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+}
+/*.info p{ float:right;
+ font-family: "Davida";}*/
+
+.features  .card-text{
+block-size: max-content;
+     
+    font-size:x-large;
+    font-stretch:expanded;
+    background: linear-gradient(to right,   #d6365a,
+ white, #108b9e);
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+ }
+
+.features .card:hover {
+border-color: #dd1c4b;
+background-color: #faff2c ;
+text-decoration: none;
+    }
+
+.features .card:hover  .card-title a , .features .card:hover .card-text{
+    background: #dd1c4b;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-decoration: none;
+  }
+
+
+.section-title {
+font-family: "Davida";  
+}
+
+.section-title h2{
+
+color:#dd1c4b;
+}
+
+.section-title p {
+    color:white;
+    
+}
+
+.services .icon-box{
+
+    border-radius: 15px 50px ;
+    background-color: #faff2c ;
+   
+}
+
+
+
+            
+
+.services .test-content-right h3 a, .services .test-content-left h3 a{
+font-size: 150%; 
+color: #dd1c4b;
+text-transform:uppercase;   
+}
+
+
+.services .test-content-right p{font-size: 150%; 
+                            text-align:unset; 
+                            color: #dd1c4b;
+                             
+                            }
+.services .test-content-left p{font-size: 150%; 
+                            color: #dd1c4b;
+                             
+                            }
+
+
+h1,h3, h4{ color: #dd1c4b;   font-family: 'Moscoso';  }
+
+a { color: #dd1c4b;  }
+.member img{
+    border-width: 10px;
+    border-style: solid;
+    border-color: #dd1c4b;
+}
+
+.team .member .member-info-content h4{
+ 
+color:#dd1c4b;
+font-size: 50px;
+}
+
+.team .member .member-info-content span{
+ 
+color: #dd1c4b;
+font-size: 30px;
+}
+
+.team .member:hover .member-info-content h4, .team .member:hover .member-info-content span, .team .member:hover img {  
+color:#dd1c4b;   
+}
+.team .member:hover .member-info{
+background: rgba(161, 160, 161, 0.1);
+}
+
+
+/*ISSUES*/
+.circt{     margin-left: 0;
+align-self: center;
+
+display:block;
+width:370px;}
+
+#articles{background-color: #fff;}
+.text{margin-top: 10px;}
+.text p a{color: #dd1c4b; }
+pre p, #articles h5, #articles ul{font-family: "Cooper-Black";}
+
+.info, .info li a{
+
+font-size: small;    
+color:black;
+text-decoration: none;
+font-family:"Cooper-Black";
+}
+
+#articles p, #articles p span  {color:black; font-family: 'Cooper-Black';}  
+#placeholder p{  font-family: "Cooper-Black";   }
+#placeholder {
+align-self: center;
+
+}
+
+
+/* .text p:nth-child(odd){  
+border: 2px solid #dd1c4b; padding:5px;
+}
+
+*/
+@media screen and (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+
+.text{ 
+    column-count:2;
+    column-gap: 40px;
+    column-rule: 2px solid black;
+ 
+       /* column-rule: 4px solid #dd1c4b;
+       font-size: x-large;*/
+      }
+.notes {
+    column-count:2;
+    
+    column-rule: 1px solid black;
+
+}
+
+div.notes p{
+    font-size: xx-small;
+    font-family: "Cooper Black";
+    color: black;
+}
+#articles img{
+    max-width: 270px;
+}
+
+
+}
+
+@media screen and (max-width:801px){
+.circt{
+    width: 200px;
+}
+
+}
+
+
+#articles h1{ 
+                        
+                        font-family: "Cooper-Black";
+                        
+                        /*font-size: 350%;*/
+                         color:black;}
+#articles h2  { text-decoration: none; font-family: "Cooper-Black"; color: #fff; background-color: #dd1c4b; }
+
+#articles h2>*, #articles h4, #articles h4>*, .text h3, .text h3>*{font-family: "Cooper-Black";}
+
+
+
+
+
+.text h3, .text h3>* {color:black;  background-color: #fff; text-decoration: underline overline; font-family: "Cooper-Black"; font-size: xx-large; text-transform: uppercase;}
+#author , #article-info , .intro p{ float: center; /*font-family: "Davida";*/}
+h5#article-info, h4#author{float:none;}
+
+.intro h4{color: black;}    
+/*
+
+#articles ul a{color:black; font-family: "Davida";}
+#articles h2{color:white; font-family:"Davida";background-color: black; border-radius: 10px; border:1px solid transparent;}
+#articles p{text-transform: none; }
+#articles h1{  color:black}
+
+
+
+#articles h3{ border-radius: 10px; border:1px solid #dd1c4b; background-color: #fff;} */
+.metadata{ 
+/*
+width: 200px;
+height: 400px;
+position: fixed; */
+ 
+background-color:#dd1c4b; 
+color:white; 
+border-width: 5px;
+border-style: solid;}
+
+.metadata:hover {
+color: #dd1c4b;
+background-color: #faff2c;
+}
+
+
+
+main#articles {
+
+background-image: none;
+}
+#articles figure {
+
+margin: 0;
+margin-bottom: 10px;
+width:min-content;
+background-color: black;
+border-style: solid;
+border-width: 5px;
+border-color:#dd1c4b;
+
+}
+/* .intro{
+
+font-size: xx-large;
+align-self: center;
+width: 480px;
+background-color: #faff2c;
+border-style: solid;
+border-width: 5px;
+border-color:#dd1c4b;
+}*/
+
+
+figcaption{font-family: "Moscoso";
+        color: white;
+        font-size:x-large;
+        align-self: center;}
+table{ 
+margin-top: 10px;
+padding: 10px;
+background-color:#dd1c4b;
+column-span: all;
+  
+}
+/*  table border  border-style: solid;
+border-width: 2px;
+border-color:#dd1c4b;  
+
+
+td{background: linear-gradient(to right, #d6365a,
+#108b9e);
+   -webkit-text-fill-color: transparent;
+   -webkit-background-clip: text;}
+*/
+
+td{color: #fff; padding: 10px; font-size: large;}
+
+/*blockquote{ column-count: 2; background-color: #fcfe96; font-family: "Choda";  border: 2px dashed;}     */ 
+blockquote{font-family: "Cooper-black"; border: 5px double #dd1c4b; padding: 20px; background-color: #faff2c;}
+div.notes p{
+font-size: xx-small; }
+
