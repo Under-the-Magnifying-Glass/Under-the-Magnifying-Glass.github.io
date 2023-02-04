@@ -9,7 +9,7 @@ $(document).ready(function(){
       break;
     case 'assets/css/1500.css':
       document.getElementById('theme').setAttribute('href', 'assets/css/1500.css');
-      break;   
+      break;
     case 'assets/css/XIX.css':
       document.getElementById('theme').setAttribute('href', 'assets/css/XIX.css');
       break;
@@ -35,7 +35,7 @@ function openNav() {
     document.getElementById("metadata").style.marginLeft = "300px";
     document.getElementById("toggler").style.marginLeft = "250px";
   }
-  
+
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
@@ -55,22 +55,29 @@ var btn = document.getElementById("DisclaimerBtn");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
+// add statement to prevent error on issues page
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
+if (modal !== null && btn !== null && span !== null) {
+  // When the user clicks on the button, open the modal
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
     modal.style.display = "none";
   }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
 }
+
+
+
 
 
 /* change themes*/
