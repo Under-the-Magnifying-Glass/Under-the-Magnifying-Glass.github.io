@@ -124,11 +124,14 @@ Metadata            </button> -->
 
               <div class="metadata floating" id="metadata-target">
                 <!-- <div class="card card-body"> -->
-                  <h5>Select the text from the menu</h5>
+                <div class="row mt-4">
+
+                  <h5 id="metadata-select-text">Select the text from the menu</h5>
                   <ul id="list" style="list-style: none;">
                   </ul>
+                </div>
                   <div class="row mt-4">
-                      <h5>Select the metadata:</h5>
+                      <h5 id="metadata-select-metadata">Select the metadata</h5>
                       <div class="col-md-12">
                           <form role="form">
                               <div class="checkbox"><label>
@@ -159,11 +162,12 @@ Metadata            </button> -->
                           </form>
                       </div>
                   </div>
-                  <div class="row clearfix mt-3">
+                  <div class="row clearfix mt-4">
+                    <h5 id="instances">Instances</h5>
+
                       <div class="col-md-12">
-			      <h5>Instances:</h5>
 			      <pre><p id="keyword"></p></pre>
-                          <h5> Instances</h5>
+                          <!-- <h5> Instances</h5> -->
                           <!-- Nav selectors -->
                           <!-- <ul class="nav nav-pills nav-justified" id="sentenceTab" role="tablist">
                               <li class="nav-item">
@@ -358,7 +362,7 @@ Metadata            </button> -->
 
 
   <!--change article-->
-
+<!--
   <script>
     $(document).ready(function(){
       $("#btn1").click(function(){
@@ -389,9 +393,74 @@ Metadata            </button> -->
         $("#articles").load("issues-compare.html")
       });
     });
+  </script> -->
+
+
+  <!-- change article -->
+  <script>
+    $(document).ready(function(){
+      $("#btn1").click(function(){
+        $.ajax({
+          url: 'texts/dainty-hands.html',
+          success: function(data) {
+            $("#articles").html(data);
+            // if newTheme =='assets/css/bauhaus.css' {
+            //            addClasses();
+            //          }
+            // else {
+            //   removeClasses();
+            // }
+          }
+        });
+      });
+    });
   </script>
 
+  <script>
+    $(document).ready(function(){
+      $("#btn2").click(function(){
+        $.ajax({
+          url: 'texts/musgrave-ritual.html',
+          success: function(data) {
+            $("#articles").html(data);
+if (sessionStorage.getItem('href') === 'assets/css/bauhaus.css') {
+                       addClasses();
+                     }
+            else {
+              removeClasses();
+            }
+          }
+        });
+      });
+    });
+  </script>
 
+  <script>
+    $(document).ready(function(){
+      $("#btn3").click(function(){
+        $.ajax({
+          url: 'texts/scandal-in-bohemia.html',
+          success: function(data) {
+            $("#articles").html(data);
+            // addClasses();
+          }
+        });
+      });
+    });
+  </script>
+
+  <script>
+    $(document).ready(function(){
+      $("#btn4").click(function(){
+        $.ajax({
+          url: 'issues-compare.html',
+          success: function(data) {
+            $("#articles").html(data);
+          }
+        });
+      });
+    });
+  </script>
 
 
   <!--metadata hover-->

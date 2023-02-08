@@ -1,214 +1,147 @@
 /* --------------Bauhaus Theme---------------- */
 
-/* @font-face {
-    font-family: 'Baumans';
-    src: url('../fonts/Baumans-Regular.ttf');
-  }
-
-@font-face{
-  font-family:"Righteous";
-  src:url('../fonts/Righteous-Regular.ttf')
-}
-
-@font-face{
-  font-family:"Sacco";
-  src:url('../fonts/Sacco-SemiBoldCondensed.ttf')
-}
-body, p{
-  font-family: "Baumans";
-}
-.navbar{
-  font-family: "Baumans";
-  text-transform:uppercase;
-}
-
-h2, h3, h4, h5{
-  font-family: "Righteous";
-  font-weight: bold;
-  text-transform: uppercase;
-
-}
-
-h1{
-  font-weight:bolder;
-  font-family:"Righteous";
-  letter-spacing:4px;
-  text-transform: uppercase;
-}
-
-h3{
-  text-decoration: underline;
-}
-h2{
- writing-mode: vertical-rl;
- position: relative;
- word-wrap: break-word;
-
-}
-.scroll-column{
-  border-style:solid;
-}
-
-
-
-.section-title {
-  text-align: center;
-  padding: 30px 0;
-  position: relative;
-}
-
-.section-title h2 {
-  font-size: 32px;
-  font-weight: 700;
-  text-transform: lowercase;
-  margin-bottom: 20px;
-  padding-bottom: 0;
-  color: red !important;
-  position: relative;
-  z-index: 2;
-}
-
-.section-title span {
-  position: absolute;
-  top: 30px;
-  color: red;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  font-weight: 700;
-  font-size: 52px;
-  text-transform: lowercase;
-  line-height: 0;
-}
-
-.section-title p {
-  margin-bottom: 0;
-  position: relative;
-  z-index: 2;
-}
-
-#header{
-  background:white;
-  color:black;
-}
-#header-content{
-}
-#header {
-  height: 70px;
-  z-index: 997;
-  transition: all 0.5s;
-  background: #000;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
-}
-
-#header .logo h1 {
-  font-size: 28px;
-  margin: 0;
-  line-height: 1;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-#header .logo h1 a,
-#header .logo h1 a:hover {
-  color: #fff;
-  text-decoration: none;
-}
-
-#header .logo img {
-  padding: 0;
-  margin: 0;
-  max-height: 40px;
-}
-
-.feature-card{
-  border-style: solid;
-  padding-right: 1vw;
-}
-.feature-card h5{
-text-transform:uppercase;
-}
-a:hover {
-  color: blue;
-  text-decoration: none;
-}
-
-.navbar a:hover,
-.navbar .active,
-.navbar .active:focus,
-.navbar li:hover>a {
-  color: blue;
-}
-
-
-.metadata{
-  position: sticky;
-  background-color: #E5F6DF;
-  margin-top:1vw;
-  padding: 20px 10px;
-  box-sizing:border-box;
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-}
-
-
-.bauhaus-img{
-    background-image: url("img/bauhaus-style/bauhaus-articles.jpg");
-    background-size: 35vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 10vh;
-} */
-
-
-
-
-/* -----------IMAGES----------- */
-
-
-/* --------------Bauhaus Theme---------------- */
+/* --------------Fonts---------------- */
 
 @font-face {
     font-family: 'Baumans';
-    src: url('../fonts/Baumans-Regular.ttf');
+    src: url('../fonts/bauhaus-font/Baumans-Regular.ttf');
   }
 
 @font-face{
   font-family:"Righteous";
-  src:url('../fonts/Righteous-Regular.ttf')
+  src:url('../fonts/bauhaus-font/Righteous-Regular.ttf')
 }
 
 @font-face{
   font-family:"Sacco";
-  src:url('../fonts/Sacco-SemiBoldCondensed.ttf')
+  src:url('../fonts/bauhaus-font/Sacco-SemiBoldCondensed.ttf')
+}
+
+
+@font-face{
+  font-family:"Xpressive";
+  src:url('../fonts/bauhaus-font/Xpressive/XPRSV.TTF')
+}
+
+
+@font-face{
+  font-family:"CypherLight";
+  src:url('../fonts/bauhaus-font/Cypher-Bold/Cypher-Light.ttf')
+}
+
+
+@font-face{
+  font-family:"CypherRegular";
+  src:url('../fonts/bauhaus-font/Cypher-Bold/Cypher-Regular.ttf')
+}
+
+@font-face{
+  font-family:"CypherBold";
+  src:url('../fonts/bauhaus-font/Cypher-Bold/Cypher-Bold.ttf')
+}
+
+
+@font-face{
+  font-family:"CypherSemiBold";
+  src:url('../fonts/bauhaus-font/Cypher-Bold/Cypher-Semibold.ttf')
+}
+
+
+@font-face{
+  font-family:"Mandala";
+  src:url('../fonts/fonts/bauhaus-font/Mandala/Mandala Regular.otf')
+}
+
+
+/* ---------Basic and index page------------ */
+
+
+
+.wrap {
+    background-color: #f0f0f0;
+
+}
+#canvas{
+  background-color:#f0f0f0;
+}
+/*
+.sidenav {
+    background-image: url("../img/1500/MmedmanuscriptBG.jpg");
+} */
+
+
+#hero{
+    background-image: url("../img/bauhaus-img/BAUHAUSHERO.jpg") ;
+    background-repeat:repeat;
+    background-position:center;
+    background-size: cover;
+    letter-spacing:2px;
+
+
+
+
+}
+
+#hero h1{
+  transform: rotate(-35deg);
+
+}
+#hero .btn-get-started {
+    margin-top:5em;
+    /* height:10em;
+    width:10em;
+    border-width: 5px;
+    border-color:inherit;
+    border-style: ridge; */
+    border-radius: 0%;
+    transition: 0.5s;
+    border: 2px solid #4eb478;
+    color: yellow;
+    align-items:center;
+    align-content:center;
+}
+
+#about-img{
+  filter:grayscale(100%);
+}
+/* #hero .btn-get-started:hover {
+   */
+
+#about-content p{
+  padding-right:8em;
+  padding-left:8em;
+
+}
+#about-content h3{
+  font-family:'CypherSemibold';
+  /* writing-mode:vertical-lr !important; */
+  display:inline;
+  /* text-orientation: upright; */
+
+}
+#hero a{
+  font-family:'CypherBold';
+  color:blue;
+
 }
 body, p{
-  font-family: "Baumans";
+  font-family: "CypherLight";
 }
 .navbar{
-  font-family: "Baumans";
-  text-transform:uppercase;
+  font-family: "CypherBold";
+  text-transform:lowercase;
+  letter-spacing:2px;
 }
 
-h2, h3, h4, h5{
-  font-family: "Righteous";
-  font-weight: bold;
-  text-transform: uppercase;
 
+.nav-item{
+  font-family:'CypherSemiBold';
+  text-transform: lowercase;
 }
 
-h1{
-  font-weight:bolder;
-  font-family:"Righteous";
-  letter-spacing:4px;
-  text-transform: uppercase;
-}
 
 h3{
-  text-decoration: underline;
+  font-family:'CypherRegular';
 }
 h2{
  /* writing-mode: vertical-rl; */
@@ -221,7 +154,6 @@ h2{
 }
 
 
-
 .section-title {
   text-align: center;
   padding: 30px 0;
@@ -230,17 +162,25 @@ h2{
 
 .section-title h2 {
   font-size: 32px;
+  font-family:'CypherBold';
+  letter-spacing:3px;
   font-weight: 700;
-  text-transform: lowercase;
+  text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: red !important;
+  color: red;
   position: relative;
   z-index: 2;
+  writing-mode:vertical-rl;
+  text-orientation: upright;
+
 }
 
 .section-title span {
   position: absolute;
+  font-family:'CypherBold';
+  letter-spacing:3px;
+
   top: 30px;
   color: red;
   left: 0;
@@ -248,7 +188,8 @@ h2{
   z-index: 1;
   font-weight: 700;
   font-size: 52px;
-  text-transform: lowercase;
+  text-transform: uppercase;
+
   line-height: 0;
 }
 
@@ -256,6 +197,15 @@ h2{
   margin-bottom: 0;
   position: relative;
   z-index: 2;
+}
+
+#services a{
+  font-family:'CypherBold';
+  color:red;
+}
+#services p{
+  color:blue;
+
 }
 
 #header{
@@ -278,7 +228,7 @@ h2{
   line-height: 1;
   font-weight: 700;
   letter-spacing: 2px;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 
 #header .logo h1 a,
@@ -294,12 +244,40 @@ h2{
 }
 
 .feature-card{
-  border-style: solid;
-  padding-right: 1vw;
+  border: 5px solid yellow;
+  /* margin-left: 1vw; */
+  /* width:30%; */
 }
-.feature-card h5{
-text-transform:uppercase;
+.card-img-top{
+  border: 5px solid yellow;
+
 }
+
+.card-body{
+  display:flex;
+  width:50;
+}
+
+.card-title {
+display:inline-block;
+writing-mode:vertical-lr;
+/* text-orientation:upright; */
+/* white-space:nowrap; */
+vertical-align:middle;
+
+text-transform:lowercase;
+font-family:'CypherBold' ;
+color: blue;
+letter-spacing:2px;
+
+}
+.card-text{
+  display:inline-block;
+  float:right;
+  vertical-align:middle;
+
+}
+
 a:hover {
   color: blue;
   text-decoration: none;
@@ -317,13 +295,41 @@ a:hover {
   position: sticky;
   background-color: #E5F6DF;
   margin-top:1vw;
-  padding: 20px 10px;
+  padding: 2em 2em 2em 2em;
   box-sizing:border-box;
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
+  border-style: solid;
+  background-color:black;
+  color:white;
+
 }
+.metadata label{
+  text-transform:lowercase;
+  font-family:'CypherLight';
+}
+
+.metadata h5{
+  font-family:"CypherBold";
+  border-width:5px;
+  align-self:center;
+color:white;}
+
+.metadata #metadata-select-text{
+color:#be1e2d;
+}
+
+.metadata #metadata-select-metadata{
+color:#ffde17;
+}
+
+.metadata #instances{
+color:#21409a;
+}
+
+
 
 
 .bauhaus-img{
@@ -337,17 +343,15 @@ a:hover {
 /* -----------IMAGES----------- */
 
 
-hero .btn-get-started {
-    font-family: "Sacco", sans-serif;
+.btn-get-started a {
+    font-family: "CypherLight", sans-serif;
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 2px;
     display: inline-block;
     padding: 10px 28px;
-    border-radius: 5px;
-    transition: 0.5s;
-    border: 2px solid #4eb478;
-    color: yellow;
+    align-self:center;
+
   }
 
 
@@ -356,7 +360,7 @@ hero .btn-get-started {
 
 
 
-
+/* BAUHAUS GRID ONLY!!! IGNORE!!!!!!!! */
 
 /* ---grid css--- */
 
@@ -410,6 +414,26 @@ hero .btn-get-started {
 
 
 /* -----bauhaus grid only------ */
+
+
+
+.articles h1{
+  font-weight:bolder;
+  font-family:"CypherBold";
+  letter-spacing:4px;
+  text-transform: lowercase;
+
+}
+
+.articles p{
+  color:#000072;
+}
+/* .articles h2, h3, h4, h5{
+  font-family: "Baumans";
+  font-weight: bold;
+  text-transform: lowercase;
+
+} */
  h1{
   padding-top:3vw;
   padding-left:2vw;
@@ -419,22 +443,25 @@ hero .btn-get-started {
   font-size:2.5vw;
   display: inline-block;
   line-height: normal;
+  text-transform: lowercase;
+  font-family:'Xpressive';
   /* vertical-align: middle; */
 
 }
 
 
-h2{
+.articles h2{
   padding-left:2vw;
   padding-right:2vw;
   padding-bottom:2vh;
   padding-top:2vh;
-  writing-mode:vertical-lr;
-  text-orientation: upright;
+  font-family:'CypherBold';
+  /* writing-mode:vertical-lr; */
+  /* text-orientation: upright; */
   font-size:2.8vh;
   text-align:center;
   /* viewport HEIGHT here AND NOT WIDTH!!! ITS VERTICAL STUPID */
-  white-space: nowrap;
+  /* white-space: nowrap; */
 
 
 
@@ -455,3 +482,87 @@ font-size: 1.8vw;
 h3{
   padding-top:2vw;
   text-align:center;}
+
+
+  /*ISSUES SPECIFIC*/
+  main#articles {
+
+  background-color:'#e8edd9'!important;
+  border-bottom: black solid 2px ;
+  }
+
+
+.style-title.col{
+  background-color:black;
+  color:white;
+  text-align:right;
+  text-align-last: right;
+  padding: 1vh 3vw 1vh 3vw;
+  /* flex-direction:row; */
+  position:relative;
+}
+
+.style-title.col h1{
+  padding:1vh 1vw 1vh 1vw;
+  /* position:relative; */
+  /* display:inline; */
+
+  /* flex-direction:row; */
+}
+.style-title.col h2,#author{
+  font-size:14px;
+  /* position:relative; */
+  /* flex-direction:column-reverse; */
+
+
+}
+
+.style-title.col #author{
+  writing-mode:vertical-lr !important;
+  text-orientation: sideways;
+  letter-spacing:1px;
+  /* CAZZO QUELLO E IMPORTANTISSIMO */
+  /* align-self:flex-end !important; */
+  /* display:inline; */
+  /* display:inline-block; */
+  /* text-align:lef; */
+  margin: 0 0 0 0;
+  align-self: center;
+  /* inline-size: 12em; */
+  /* overflow-wrap: break-word; */
+  /* flex-direction:row; */
+
+  /* white-space:nowrap; */
+}
+
+.style-title.col #author h5{
+  letter-spacing:1px;
+  font-family:"Xpressive";
+}
+
+
+table {
+  font-family:'CypherRegular';
+
+  border: 5px dotted red;
+
+  align-self:flex-end;
+}
+
+table > caption{
+  /* display:inline-flex;
+  writing-mode:vertical-lr !important;
+  text-orientation: sideways; */
+  letter-spacing:2px;
+  align-self:center;
+}
+
+.table-class{
+font-family:'CypherBold';
+text-transform:uppercase;
+
+}
+/* .col .style-title h1,h2,h3,h4{
+
+color:white !important;
+} */
