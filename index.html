@@ -57,7 +57,13 @@
 
         <nav id="navbar" class="navbar">
           <ul>
-            <li><a class="nav-link scrollto" href="issues.html">Issues</a></li>
+            <li class="dropdown" type="button"><a href="#"><span>Issues</span><i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a class="nav-link scrollto" href="issues.html">Sherlock Holmes</a></li>
+                <li><a class="nav-link scrollto" href="#">Hercules Poirot</a></li>
+                <li><a class="nav-link scrollto" href="#">Nancy Drew</a></li>
+              </ul>
+            </li>
             <li><a class="nav-link scrollto"><span onclick="openNav()">Styles</span></a></li>
             <li><a class="nav-link scrollto" href="documentation.html">Documentation</a></li>
             <li><a class="nav-link scrollto" href="#team">About</a></li>
@@ -65,7 +71,8 @@
 
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav><!-- .navbar -->
+        </nav>
+        <!-- .navbar -->
 
       </div>
 
@@ -339,7 +346,7 @@
   <!-- JQuery File -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!-- Template Main JS File -->
-  <!-- <script src="assets/js/main.js"></script> -->
+  <script src="assets/js/main.js"></script>
   <script src="assets/js/script.js"></script>
 
 
