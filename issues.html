@@ -168,11 +168,23 @@ Metadata            </button> -->
                       </div>
                   </div>
                   <div class="row clearfix mt-4">
-                    <h5 id="instances">Instances</h5>
+         
 
                       <div class="col-md-12">
-			      <pre><p id="keyword"></p></pre>
-                          <!-- <h5> Instances</h5> -->
+			      
+                          <!-- <h5> Instances:</h5> -->
+				      <p>Female Characters</p>
+				      <pre><p class="empty" id="fcharacter"></p></pre>
+				    <p>Male Chatacters</p>
+				    <pre><p class="empty" id="character"></p></pre>
+				    <p>Places</p>
+				    <pre><p class="empty" id="places"></p></pre>             
+				    <p>Cited Cases</p>
+				    <pre><p class="empty" id="citedCase"></p></pre> 
+				    <p>Literary Works</p>
+				    <pre><p class="empty" id="works"></p></pre> 
+				    <p>Mentioned People</p>
+				    <pre><p class="empty" id="people"></p></pre>  
                           <!-- Nav selectors -->
                           <!-- <ul class="nav nav-pills nav-justified" id="sentenceTab" role="tablist">
                               <li class="nav-item">
@@ -508,10 +520,12 @@ document.querySelectorAll(".conceptButton").forEach(checkbox => {
 
 
 <script>
+
 function addHighlight(concept){
 /* Select all elements to highlight, which are the ones that have the specified value of the "property" attribute */
   let nodes = document.querySelectorAll(`[class="${concept}"]`)
-  let space=document.getElementById('keyword');
+  let space=document.getElementById(concept);
+  
   let x= new Set();
 
   /* Higlhlight all selected elements and show instances*/
@@ -519,12 +533,29 @@ function addHighlight(concept){
     x.add(node.getAttribute("about"));
     node.classList.add('highlight');
   })
+
   nodes[0].scrollIntoView({ behavior: 'smooth', block: "center" }, true);
+
   let strings=""
+
   x.forEach(s=>{
     strings=strings+s+"\n";
   })
   space.innerHTML=strings;
+
+  $('#btn1').click(function(){
+  space.innerHTML="";
+})  ;
+$('#btn2').click(function(){
+  space.innerHTML="";
+})  ;
+$('#btn3').click(function(){
+  space.innerHTML="";
+})  ;
+$('#btn4').click(function(){
+  space.innerHTML="";
+})  ;
+
 };
 
 function removeHighlight(concept){
