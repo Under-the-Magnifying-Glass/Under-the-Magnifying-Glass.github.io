@@ -3,28 +3,30 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Under the Magnifying Glass</title>
+  <title>Under the Magnifying Glass - Issues-Sherlock Holmes</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
+  <!-- Bootstrap -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css" integrity="sha512-YFENbnqHbCRmJt5d+9lHimyEMt8LKSNTMLSaHjvsclnZGICeY/0KYEeiHwD1Ux4Tcao0h60tdcMv+0GljvWyHg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- JQuery File -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
   <!-- Favicons -->
-  <link href="assets/img/mag-logo.png" rel="icon">
-  <link href="assets/img/mag-logo.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
-
-
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/screenStyle.css" rel="stylesheet" id="theme">
-  <!-- <link href="assets/css/vapo.css" rel="stylesheet" id="theme"> -->
-
 
 
   <!-- =======================================================
@@ -113,7 +115,8 @@
       </nav>
 </div>
 
-      <!-- =======  Metadata ======= REMEMBER TO COLLAPSE WHEN ON SMALL SCREENS!!!!-->
+      <!-- =======  Metadata =======
+      REMEMBER TO COLLAPSE WHEN ON SMALL SCREENS!!!!-->
 
 
       <div class="container-fluid" id="content">
@@ -168,59 +171,26 @@ Metadata            </button> -->
                       </div>
                   </div>
                   <div class="row clearfix mt-4">
-         
+
 
                       <div class="col-md-12">
-			      
+
                           <!-- <h5> Instances:</h5> -->
 				      <p>Female Characters</p>
 				      <pre><p class="empty" id="fcharacter"></p></pre>
 				    <p>Male Chatacters</p>
 				    <pre><p class="empty" id="character"></p></pre>
 				    <p>Places</p>
-				    <pre><p class="empty" id="places"></p></pre>             
+				    <pre><p class="empty" id="places"></p></pre>
 				    <p>Cited Cases</p>
-				    <pre><p class="empty" id="citedCase"></p></pre> 
+				    <pre><p class="empty" id="citedCase"></p></pre>
 				    <p>Literary Works</p>
-				    <pre><p class="empty" id="works"></p></pre> 
+				    <pre><p class="empty" id="works"></p></pre>
 				    <p>Mentioned People</p>
-				    <pre><p class="empty" id="people"></p></pre>  
-                          <!-- Nav selectors -->
-                          <!-- <ul class="nav nav-pills nav-justified" id="sentenceTab" role="tablist">
-                              <li class="nav-item">
-                                  <a class="nav-link active" id="mortalcharacters-tab" data-toggle="tab"
-                                      href="#charmortal" role="tab" aria-controls="view"
-                                      aria-selected="true">Mortal characters</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" id="immortalcharacters-tab" data-toggle="tab"
-                                      href="#charimmortal" role="tab" aria-controls="home"
-                                      aria-selected="false">Immortal Characters</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link " id="places-tab" data-toggle="tab" href="#places"
-                                      role="tab" aria-controls="home" aria-selected="false">Places and
-                                      cities</a>
-                              </li>
-                          </ul> -->
+				    <pre><p class="empty" id="people"></p></pre>
 
-                          <!-- Tab panes -->
-                          <!-- <div class="tab-content mt-1 auto" id="sentenceContent">
-                              <div class="tab-pane active myBorder myBorder-notop" id="charmortal"
-                                  role="tabpanel" aria-labelledby="mortalcharacters-tab">
-                                  <ul></ul>
-                              </div>
-                              <div class="tab-pane myBorder myBorder-notop" id="charimmortal" role="tabpanel"
-                                  aria-labelledby="immortalcharacters-tab">
-                                  <ul></ul>
-                              </div>
-                              <div class="tab-pane myBorder myBorder-notop" id="places" role="tabpanel"
-                                  aria-labelledby="places-tab">
-                                  <ul></ul>
-                              </div>
-                          </div>
 
-                                       -->
+
                       </div>
                   </div>
               </div>
@@ -234,99 +204,10 @@ Metadata            </button> -->
           <div class= "col-11 col-md-11 col-sm-11" id="canvas">
 
           <main id="articles">
-            <!-- <div class="border" id="vaporwave"> -->
 
 <div id="placeholder">
 <p style="text-align:center;"> Choose a text from the menu above and start exploring! </p>
 </div>
-          <!--   <img class="circt" src="/img/circt.png"  >
-            <h1>The Adventures of Sherlock Holmes.</h1>
-                        <h2>I. - A SCANDAL IN BOHEMIA</h2>
-                        <h3>BY A. CONAN DOYLE.</h3>
-            <div class="bauhaus-img" id="bauhaus-img-articles"></div>
-
-
-					<h3> <i>Table of contents</i>  </h3>
-                                             <ul>
-                                                  <li class="pointer"> <a href="#primo">Chapter 1</a></li>
-                                                  <li> <a href="#secondo">Chapter 2</a></li>
-                                                  <li> <a href="#terzo">Chapter 3</a></li>
-                                             </ul>
-
-        <h3><a name="primo">CHAPTER I</a> </h3>
-<p>
-     To <span class="character" about="Sherlock">Sherlock Holmes</span>  she is always <i>the</i> woman. I have seldom heard him
-     mention her under any other name. In his eyes she eclipses and
-     predominates the whole of her sex. It was not that he felt any
-     emotion akin to love for <span class="fcharacter" about="Adler">Irene Adler</span>. All emotions, and that one
-     particularly, were abhorrent to his cold, precise but admirably
-     balanced mind. He was, I take it, the most perfect reasoning and
-     observing machine that the world has seen, but as a lover he would
-     have placed himself in a false position. He never spoke of the softer
-     passions, save with a gibe and a sneer. They were admirable things
-     for the observer-excellent for drawing the veil from men's motives
-     and actions. But for the trained reasoner to admit such intrusions
-     into his own delicate and finely adjusted temperament was to
-     introduce a distracting factor which might throw a doubt upon all his
-     mental results. Grit in a sensitive instrument, or a crack in one of
-     his own high-power lenses, would not be more disturbing than a strong
-     emotion in a nature such as his. And yet there was but one woman to
-     him, and that woman was the late Irene <span class="fcharacter" about="Adler">Adler,</span> of dubious and
-     questionable memory.</p><p>     I had seen little of <span class="character" about="Sherlock">Holmes</span> lately. My marriage had drifted us away
-     from each other. My own complete happiness, and the home-centred
-     interests which rise up around the man who first finds himself master
-     of his own establishment, were sufficient to absorb all my attention,
-     while <span class="character" about="Sherlock">Holmes</span>, who loathed every form of society with his whole
-     Bohemian soul, remained in our lodgings in <span class="places" about="BakerStreet">Baker Street</span>, buried among
-     his old books, and alternating from week to week between cocaine and
-     ambition, the drowsiness of the drug, and the fierce energy of his
-     own keen nature. He was still, as ever, deeply attracted by the study
-     of crime, and occupied his immense faculties and extraordinary powers
-     of observation in following out those clues, and clearing up those
-     mysteries which had been abandoned as hopeless by the official
-     police. From time to time I heard some vague account of his doings:
-     of his summons to <span class="places" about="Odessa">Odessa</span> in the case of <span class="citedCase" about="TrepoffMurder">the Trepoff murder</span>, of his
-     clearing up of the singular <span class="citedCase" about="Atkinson">tragedy of the Atkinson brothers</span> at <span class="places" about="Trincomalee">Trincomalee</span>
-     , and finally of the <span class="citedCase" about="ReigningFamily">mission</span> which he had accomplished so
-     delicately and successfully for the reigning family of <span class="places" about="Holland">Holland</span>.
-     Beyond these signs of his activity, however, which I merely shared
-     with all the readers of the daily press, I knew little of my former
-     friend and companion. </p><p>     One night-it was on the twentieth of March, 1888-I was returning
-     from a journey to a patient (for I had now returned to civil
-     practice), when my way led me through <span class="places" about="BakerStreet">Baker Street</span>. As I passed the
-     well-remembered door, which must always be associated in my mind with
-     my wooing, and with the dark incidents of <span class="works" about="StudyScarlet">the Study in Scarlet</span>, I was
-     seized with a keen desire to see <span class="character" about="Sherlock">Holmes</span> again, and to know how he was
-     employing his extraordinary powers. His rooms were brilliantly lit,
-     and, even as I looked up, I saw his tall, spare figure pass twice in
-     a dark silhouette against the blind. He was pacing the room swiftly,
-     eagerly, with his head sunk upon his chest and his hands clasped
-     behind him. To me, who knew his every mood and habit, his attitude
-     and manner told their own story. He was at work again. He had risen
-     out of his drug-created dreams and was hot upon the scent of some new
-     problem. I rang the bell and was shown up to the chamber which had
-     formerly been in part my own.</p><p>
-     His manner was not effusive. It seldom was; but he was glad, I think,
-     to see me. With hardly a word spoken, but with a kindly eye, he waved
-     me to an armchair, threw across his case of cigars, and indicated a
-     spirit case and a gasogene in the corner. Then he stood before the
-     fire and looked me over in his singular introspective fashion.</p>
-     <figure>
-          <img src="https://www.arthur-conan-doyle.com/images/4/44/Illus-scan-paget-01.jpg" alt="ScandalInBohemia1_StrandMagazine">
-         <figcaption><i>Then he stood before the fire.</i></figcaption>
-     </figure>
-     <p>     "Wedlock suits you," he remarked. "I think, <span class="character" about="Watson">Watson</span>, that you have put
-     on seven and a half pounds since I saw you."</p><p>     "Seven!" I answered.</p><p>     "Indeed, I should have thought a little more. Just a trifle more, I
-     fancy, <span class="character" about="Watson">Watson</span> . And in practice again, I observe. You did not tell me
-     that you intended to go into harness."</p><p>     "Then, how do you know?"</p><p>     "I see it, I deduce it. How do I know that you have been getting
-     yourself very wet lately, and that you have a most clumsy and
-     careless servant girl?"</p><p>   "My dear <span class="character" about="Sherlock">Holmes</span> ," said I, "this is too much. You would certainly have
-     been burned, had you lived a few centuries ago. It is true that I had
-     a country walk on Thursday and came home in a dreadful mess, but as I
-     have changed my clothes I can't imagine how you deduce it. As to <span class="character" about="MaryJane">Mary Jane</span>
-    , she is incorrigible, and <span class="fcharacter" about="MrsWatson">my wife</span> has given her notice, but
-     there, again, I fail to see how you work it out."
- </p> -->
         </main></div>
 
 
@@ -365,52 +246,11 @@ Metadata            </button> -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <!-- Bootsrap CSS Files -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/script.js"></script>
 
-
-
-  <!--change article-->
-<!--
-  <script>
-    $(document).ready(function(){
-      $("#btn1").click(function(){
-        $("#articles").load("texts/dainty-hands.html")
-      });
-    });
-  </script>
-
-  <script>
-    $(document).ready(function(){
-      $("#btn2").click(function(){
-        $("#articles").load("texts/musgrave-ritual.html")
-      });
-    });
-  </script>
-
-  <script>
-    $(document).ready(function(){
-      $("#btn3").click(function(){
-        $("#articles").load("texts/scandal-in-bohemia.html")
-      });
-    });
-  </script>
-
-  <script>
-    $(document).ready(function(){
-      $("#btn4").click(function(){
-        $("#articles").load("issues-compare.html")
-      });
-    });
-  </script> -->
 
 
   <!-- change article -->
@@ -421,12 +261,7 @@ Metadata            </button> -->
           url: 'texts/dainty-hands.html',
           success: function(data) {
             $("#articles").html(data);
-            // if newTheme =='assets/css/bauhaus.css' {
-            //            addClasses();
-            //          }
-            // else {
-            //   removeClasses();
-            // }
+
           }
         });
       });
@@ -480,52 +315,14 @@ if (sessionStorage.getItem('href') === 'assets/css/bauhaus.css') {
   </script>
 
 
-  <!--metadata hover-->
-<!-- <script>
-  <script>
-
-  $(".metadata").hover(function(){
-  $(this).css("background-color", "#CAEEC2");
-  }, function(){
-  $(this).css("background-color", "#E5F6DF");
-});
-
-  </script>
-
-
-  function handleConceptClick(concept){
-	/* Clean up all highlighted elements*/
-	document.querySelectorAll(`.highlight`).forEach(node => {
-  		node.classList.remove('highlight');
-	})
-
-	/* Select all elements to highlight, which are the ones that have the specified value of the "property" attribute */
-	let nodes = document.querySelectorAll(`[class="${concept}"]`)
-
-	/* Higlhlight all selected elements */
-	nodes.forEach(node => {
-		node.classList.add('highlight')
-	})
-}
-
-/* Select all buttons that have a conceptButton class */
-document.querySelectorAll(".conceptButton").forEach(checkbox => {
-	/* Add click listener to the buttons, and call the function to handle the click passing the button's value of the "data-concept" attribute */
-	checkbox.addEventListener("click", event => {
-		handleConceptClick(event.target.getAttribute("data-concept"))
-	})
-})
-
-</script> -->
-
-
+<!-- Highlight function -->
 <script>
 
 function addHighlight(concept){
 /* Select all elements to highlight, which are the ones that have the specified value of the "property" attribute */
   let nodes = document.querySelectorAll(`[class="${concept}"]`)
   let space=document.getElementById(concept);
-  
+
   let x= new Set();
 
   /* Higlhlight all selected elements and show instances*/
@@ -623,16 +420,6 @@ $(document).ready(function(){
 });
 </script>
 
-
-<!-- <script>
-
-var collapseElementList = [].slice.call(document.querySelectorAll('.collapse'))
-var collapseList = collapseElementList.map(function (collapseEl) {
-  return new bootstrap.Collapse(collapseEl)
-})
-
-</script>
- -->
 
 
 </body>
