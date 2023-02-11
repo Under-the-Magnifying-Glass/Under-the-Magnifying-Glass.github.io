@@ -46,10 +46,6 @@ a:hover {
   color: #000;
 }
 
-.about p{
-    column-count: 2;
-}
-
 #DisclaimerBtn{
     color:#000;
     background-color:rgb(212, 188, 139) ;
