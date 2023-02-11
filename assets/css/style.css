@@ -32,6 +32,7 @@ a:hover {
 .wrap {
   max-width: 1440px;
   margin: auto;
+  padding-top:2em;
   background: #fff;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
@@ -462,6 +463,23 @@ list-style: none;
 # Nav menu in issues Section
 --------------------------------------------------------------*/
 
+#nav-toggler{
+  padding-bottom:1em;
+  z-index:10
+}
+#toggler{
+  background-color:white;
+  z-index:10
+
+}
+#navbarTogglerDemo03 ul li a:not(.active) {
+  color: black;
+}
+
+#navbarTogglerDemo03 ul li a.active {
+  color: #4eb478;
+}
+
 
 .navbar-text {
   padding: 0;
@@ -482,10 +500,13 @@ list-style: none;
 /* .nav-link{
   color:black;
 } */
-.navbar-text a{
-  color:black;
+/* .navbar-text {
+  color: black;
 }
 
+.navbar-text.active {
+  color: red;
+} */
 
 .navbar-text a,
 .navbar-text a:focus {
