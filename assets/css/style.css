@@ -434,16 +434,18 @@ list-style: none;
   flex-basis: 20%;
   flex:0;
   /* flex: 1; */
+  overflow-y: scroll;
+  max-height: 40vw;	
 }
 
 #metadata{
   position: -webkit-sticky;
   position: sticky;
   top:10vh;
-  overflow-y: scroll;	
+
 }
 
-#metadata::-webkit-scrollbar {
+.metadata::-webkit-scrollbar {
   display: none;
 }
 
