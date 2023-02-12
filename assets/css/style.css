@@ -433,7 +433,10 @@ list-style: none;
   flex-direction: column;
   flex-basis: 20%;
   flex:0;
-  overflow-y: scroll;	
+
+#metadata::-webkit-scrollbar {
+  display: none;
+}
 
   /* flex: 1; */
 
