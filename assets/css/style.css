@@ -433,20 +433,18 @@ list-style: none;
   flex-direction: column;
   flex-basis: 20%;
   flex:0;
-
-#metadata::-webkit-scrollbar {
-  display: none;
-}
-
   /* flex: 1; */
-
 }
 
 #metadata{
   position: -webkit-sticky;
   position: sticky;
   top:10vh;
+  overflow-y: scroll;	
+}
 
+#metadata::-webkit-scrollbar {
+  display: none;
 }
 
 #main{
@@ -455,7 +453,6 @@ list-style: none;
   flex-basis:100%;
   flex:1;
 }
-
 
 #metadata h5{
   font-size:1.2em;
