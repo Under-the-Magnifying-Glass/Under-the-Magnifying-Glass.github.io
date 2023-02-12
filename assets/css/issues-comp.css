@@ -7,3 +7,6 @@
 .scroll-column{
   background-color:white;
 }
+.scroll-column::-webkit-scrollbar{
+  display: none;
+}
