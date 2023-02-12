@@ -415,6 +415,9 @@ color:#21409a;
 
 /* -----bauhaus grid only------ */
 
+.articles{
+  text-align:justify;
+}
 
 
 .articles h1{
@@ -422,6 +425,8 @@ color:#21409a;
   font-family:"CypherBold";
   letter-spacing:4px;
   text-transform: lowercase;
+  font-size:2em;
+  text-align:center;
 
 }
 
@@ -439,8 +444,6 @@ color:#21409a;
   padding-left:2vw;
   padding-bottom:3vh;
   padding-right:2vw; */
-  text-align:justify;
-  font-size:2.5vw;
   display: inline-block;
   line-height: normal;
   text-transform: lowercase;
@@ -455,34 +458,44 @@ color:#21409a;
   padding-right:2vw;
   padding-bottom:2vh;
   padding-top:2vh;
-  font-family:'CypherBold';
+  font-family:'CypherSemiBold';
+  text-transform: lowercase;
+
   /* writing-mode:vertical-lr; */
   /* text-orientation: upright; */
-  font-size:2.8vh;
+  font-size:1.5em;
   text-align:center;
   /* viewport HEIGHT here AND NOT WIDTH!!! ITS VERTICAL STUPID */
   /* white-space: nowrap; */
+}
 
-
+.articles h5{
+  font-size:1em;
+  font-family:'CypherRegular';
 
 }
+
+
 h3{
 text-align:center;
 padding-left:2vw;
 padding-right:2vw;
 padding-top:1vh;
 padding-bottom:1vh;
-font-size: 1.8vw;
+font-size: 1.2em;
+text-decoration: underline;
 
 }
+
 
 .scroll-column{
   border-style:solid;
 }
-h3{
-  padding-top:2vw;
-  text-align:center;}
 
+#author{
+  font-size:1.2em;
+  font-family:'CypherRegular';
+}
 
   /*ISSUES SPECIFIC*/
   main#articles {
@@ -542,11 +555,28 @@ h3{
 
 
 table {
-  font-family:'CypherRegular';
-
+  font-family:'CypherSemiBold';
+  padding: 1em 1em 1em 1em;
   border: 5px dotted red;
+  align-items: stretch;
+  align-content:center;
 
   align-self:flex-end;
+}
+
+tbody:not(.table-class){
+  font-size:0.8em;
+  align-self:center;
+
+}
+
+td {
+
+  text-align: center;
+  vertical-align: middle;
+  padding:0.5em 0.5em 0.5em 0.5em;
+  letter-spacing: 2px;
+
 }
 
 table > caption{
@@ -554,12 +584,21 @@ table > caption{
   writing-mode:vertical-lr !important;
   text-orientation: sideways; */
   letter-spacing:2px;
+  text-decoration:underline;
+  text-decoration-color:red;
   align-self:center;
+  margin-bottom:1em;
 }
 
 .table-class{
 font-family:'CypherBold';
 text-transform:uppercase;
+text-decoration:underline;
+font-size:1.2em;
+letter-spacing:1px;
+padding:0.5em 0.5em 0.5em 0.5em;
+
+/* transform: rotate(-10deg); */
 
 }
 /* .col .style-title h1,h2,h3,h4{
