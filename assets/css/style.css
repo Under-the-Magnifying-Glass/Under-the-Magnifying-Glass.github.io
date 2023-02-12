@@ -438,16 +438,20 @@ list-style: none;
 
 }
 
+#metadata{
+  position: -webkit-sticky;
+  position: sticky;
+  top:10vh;
+
+}
+
 #main{
   display:flex;
   flex-direction:column;
   flex-basis:100%;
   flex:1;
 }
-#metadata{
-  top:10vh;
 
-}
 
 #metadata h5{
   font-size:1.2em;
