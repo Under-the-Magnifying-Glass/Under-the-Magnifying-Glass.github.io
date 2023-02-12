@@ -567,8 +567,11 @@ COMPARE Section
   flex-basis: 100%;
   flex: 1;
   background-color:white;
-  }
+}
 
+.scroll-column::-webkit-scrollbar{
+  display: none;
+}
 
 .scroll-column h1{
   font-size:2em;
