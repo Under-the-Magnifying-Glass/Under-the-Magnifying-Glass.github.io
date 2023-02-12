@@ -131,6 +131,8 @@ main {
 
 .articles {
   font-family: helvetica;
+  align-content:center;
+  justify-content: center;
   }
 
 .articles h1,
@@ -160,10 +162,17 @@ list-style: none;
   margin-left:2vw;
   margin-right:2vw;
 } */
-
+.info{
+  align-content: center;
+  justify-content: center;
+  align-items:center;
+  padding:0;
+}
 .zoom {
+padding:0;
+margin:0;
 
-  transition: transform .2s; /* Animation */
+transition: transform .2s; /* Animation */
 
 }
 
@@ -171,9 +180,8 @@ list-style: none;
   transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
-.info {
-  padding: 1vw 1vw 1vw 1vw;
-
+.info ul{
+  padding:0;
 }
 /* .author{
   text-align:left !important;
@@ -435,7 +443,7 @@ list-style: none;
   flex:0;
   /* flex: 1; */
   overflow-y: scroll;
-  max-height: 40vw;	
+  max-height: 40vw;
 }
 
 #metadata{
@@ -1201,5 +1209,8 @@ align-self: center;
   text-align:center;
   font-size:25px;
 
-
 }
+
+.pointer a{
+padding:0;
+margin:0;}

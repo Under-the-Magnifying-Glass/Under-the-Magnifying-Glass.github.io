@@ -497,6 +497,15 @@ text-decoration: underline;
   font-family:'CypherRegular';
 }
 
+#article-info{
+  /* display:inline-block; */
+  /* writing-mode:vertical-lr; */
+}
+
+.pointer{
+  text-align:center;
+  /* float:left; */
+}
   /*ISSUES SPECIFIC*/
   main#articles {
 
