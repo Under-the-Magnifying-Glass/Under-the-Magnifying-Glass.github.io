@@ -329,7 +329,14 @@ color:#ffde17;
 color:#21409a;
 }
 
-
+.metadata p{
+  font-family:'CypherSemiBold';
+  letter-spacing:1.5px;
+}
+.empty{
+  font-family:'CypherLight';
+  font-size:0.8em;
+}
 
 
 .bauhaus-img{
@@ -487,13 +494,20 @@ text-decoration: underline;
 
 }
 
+.bauhaus-line{
+   width:100%;
+   height:4px;
+   background: black;
+   margin-bottom:1em;
+  }
+
 
 .scroll-column{
   border-style:solid;
 }
 
 #author{
-  font-size:1.2em;
+  font-size:6em;
   font-family:'CypherRegular';
 }
 
