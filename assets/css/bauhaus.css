@@ -52,6 +52,13 @@
   src:url('../fonts/bauhaus-font/Mandala/Mandala Regular.otf')
 }
 
+
+@font-face{
+  font-family:"MandalaBold";
+  src:url('../fonts/bauhaus-font/Mandala/Mandala Bold.otf')
+}
+
+
 @font-face{
   font-family:"MandalaItalic";
   src:url('../fonts/bauhaus-font/Mandala/Mandala Italic.otf')
@@ -91,19 +98,23 @@
 
 }
 #hero .btn-get-started {
-    margin-top:5em;
-    /* height:10em;
-    width:10em;
-    border-width: 5px;
-    border-color:inherit;
-    border-style: ridge; */
-    border-radius: 0%;
-    transition: 0.5s;
-    border: 2px solid #4eb478;
-    color: yellow;
-    align-items:center;
-    align-content:center;
+  font-family: "Mandala";
+  background: black;
+  border: 2px solid white;
+  border-radius:0;
+  margin-top:5em;
+  transition: 0.5s;
+  color: white;
+  align-items:center;
+  align-content:center;
 }
+
+#hero .btn-get-started:hover {
+  letter-spacing: 3px;
+  background: black;
+  border: 2px dotted white;
+}
+
 
 #about-img{
   filter:grayscale(100%);
@@ -146,11 +157,15 @@ body, p{
 
 h3{
   font-family:'CypherRegular';
+  color:black;
+
 }
 h2{
  /* writing-mode: vertical-rl; */
  position: relative;
  word-wrap: break-word;
+ color:black;
+
 
 }
 .scroll-column{
@@ -166,8 +181,8 @@ h2{
 
 .section-title h2 {
   font-size: 32px;
-  font-family:'CypherBold';
-  letter-spacing:3px;
+  font-family:'Mandala';
+  letter-spacing:5px;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -182,9 +197,9 @@ h2{
 
 .section-title span {
   position: absolute;
-  font-family:'CypherBold';
-  letter-spacing:3px;
-
+  font-family:'Mandala';
+  /* transform:rotateZ(8deg); */
+  letter-spacing:10px;
   top: 30px;
   color: red;
   left: 0;
@@ -193,9 +208,13 @@ h2{
   font-weight: 700;
   font-size: 52px;
   text-transform: uppercase;
-
   line-height: 0;
 }
+
+.section-title span:hover {
+transform:rotateZ(15deg);
+}
+
 
 .section-title p {
   margin-bottom: 0;
@@ -207,9 +226,13 @@ h2{
   font-family:'CypherBold';
   color:red;
 }
-#services p{
-  color:blue;
 
+#services a:hover{
+
+}
+
+#services p{
+  color:black;
 }
 
 #header{
@@ -235,10 +258,9 @@ h2{
   text-transform: lowercase;
 }
 
-#header .logo h1 a,
-#header .logo h1 a:hover {
-  color: #fff;
-  text-decoration: none;
+/* #header .logo h1 a, */
+#header .logo h1:hover {
+  color: blue;
 }
 
 #header .logo img {
@@ -247,8 +269,12 @@ h2{
   max-height: 40px;
 }
 
+#features{
+  background-color:black;
+}
 .feature-card{
-  border: 5px solid yellow;
+  /* border: 5px solid blue; */
+  background-color: black;
   /* margin-left: 1vw; */
   /* width:30%; */
 }
@@ -268,7 +294,6 @@ writing-mode:vertical-lr;
 /* text-orientation:upright; */
 /* white-space:nowrap; */
 vertical-align:middle;
-
 text-transform:lowercase;
 font-family:'CypherBold' ;
 color: blue;
@@ -282,12 +307,42 @@ letter-spacing:2px;
 
 }
 
-a:hover {
-  color: blue;
-  text-decoration: none;
+.features .card{
+  border-radius:0;
 }
 
+.features .card:hover .card-title a {
+  color: blue;
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+
+
+.services .img-left {
+  border-radius: 100px;
+  margin: 15px;
+  width: 120px;
+  height: 120px;
+  float: left;
+  border: 5px dotted blue;
+  background-color:yellow;
+
+}
+
+.services .img-right {
+  border-radius: 100px;
+  margin: 15px;
+  width: 120px;
+  height: 120px;
+  float: right;
+  border: 5px dotted blue;
+  background-color:yellow;
+
+}
+
+
 .navbar a:hover,
+#navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
@@ -295,14 +350,16 @@ a:hover {
 
 }
 
-#navbarTogglerDemo03 ul li a:hover,
-#navbarTogglerDemo03 ul li a.active {
 
+
+#navbarTogglerDemo03 ul li a:hover{
   color: blue;
-
-
 }
 
+#navbarTogglerDemo03 ul li a.active {
+  color: blue;
+
+}
 .metadata{
   position: sticky;
   background-color: #E5F6DF;
@@ -362,17 +419,6 @@ color:#21409a;
 /* -----------IMAGES----------- */
 
 
-.btn-get-started a {
-    font-family: "CypherLight", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 2px;
-    display: inline-block;
-    padding: 10px 28px;
-    align-self:center;
-
-  }
-
 
 /* -----------IMAGES----------- */
 
@@ -431,6 +477,18 @@ color:#21409a;
 
 }
 
+#DisclaimerBtn:hover{
+  color:red;
+  background-color:yellow;
+  transform:rotate(8deg);
+  font-family:'CypherBold';
+
+}
+.modal-content{
+  padding:0 5em;
+  background-color:black;
+  color:white;
+}
 
 /* -----bauhaus grid only------ */
 
@@ -439,7 +497,7 @@ color:#21409a;
 }
 
 
-.articles h1{
+/* .articles h1{
   font-weight:bolder;
   font-family:"CypherBold";
   letter-spacing:4px;
@@ -449,7 +507,7 @@ color:#21409a;
   /* background-color:black;
   color:white; */
 
-}
+
 
 .articles p{
   color:#000072;
@@ -469,12 +527,14 @@ color:#21409a;
   line-height: normal;
   text-transform: lowercase;
   font-family:'Xpressive';
+  color:black;
+
   /* vertical-align: middle; */
 
 }
 
 
-.articles h2{
+#articles h2{
   padding-left:2vw;
   padding-right:2vw;
   padding-bottom:2vh;
@@ -484,10 +544,10 @@ color:#21409a;
 
   /* writing-mode:vertical-lr; */
   /* text-orientation: upright; */
-  font-size:1.8em;
+  font-size:1.5em;
   text-align:center;
-  /* background-color:black;
-  color:white; */
+  background-color:black;
+  color:white;
 
   /* viewport HEIGHT here AND NOT WIDTH!!! ITS VERTICAL STUPID */
   /* white-space: nowrap; */
@@ -504,23 +564,30 @@ color:#21409a;
 
 h3{
 text-align:center;
+font-family:'CypherSemiBold';
+letter-spacing: 2px;
+color:black;
 padding-left:2vw;
 padding-right:2vw;
 padding-top:1vh;
 padding-bottom:1vh;
 font-size: 1.2em;
-text-decoration: underline;
 
 }
 
+
+
 #articles h1{
-  text-decoration:none;
+  font-family:"CypherBold";
+  letter-spacing:4px;
+  text-transform: lowercase;
+  font-size:2em;
   text-align:center;
-  font-family:'CypherBold';
+  text-decoration:none;
   margin:0;
-  padding:0;
-  /* background-color:black;
-  color:white; */
+  padding:2vh 0;
+  background-color:black;
+  color:white;
 
 
 }
@@ -557,6 +624,7 @@ text-decoration: underline;
   padding-top:2vh;
   padding-left:1em;
   letter-spacing:1px;
+  color:black;
 
 }
 
@@ -583,11 +651,12 @@ text-decoration: underline;
 
 #article-info{
   color:black;
+  padding:0 1em;
   font-family:'CypherSemiBold';
   font-size:1em;
   text-align:center;
-  /* background-color:black;
-  color:white; */
+  background-color:black;
+  color:white;
 
 
   /* writing-mode:vertical-lr; */
@@ -608,8 +677,11 @@ text-decoration: underline;
   align-self:center;
 
 }
-.pointer{
+.pointer a{
   text-align:center;
+  color:blue;
+  text-transform:uppercase;
+  font-size: 0.8em;
   /* float:left; */
 }
   /*ISSUES SPECIFIC*/
@@ -680,3 +752,74 @@ blockquote{
 
 color:white !important;
 } */
+/* Underline animation */
+
+.hover-underline-animation {
+  /* display: inline-block; */
+  position: relative;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 0.2em;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.50s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.hover-underline-animation:focus::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 0.2em;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.50s ease-out;
+}
+.hover-underline-animation:focus::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+
+
+
+
+
+
+
+.text-light.hover-underline-animation {
+  /* display: inline-block; */
+  position: relative;
+}
+
+.text-light.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 0.1em;
+  bottom: 0.6em;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.50s ease-out;
+}
+
+.text-light.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
