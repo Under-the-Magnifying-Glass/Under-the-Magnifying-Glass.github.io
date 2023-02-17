@@ -95,7 +95,14 @@
 
 #hero h1{
   transform: rotate(-35deg);
+  transition-duration: 6s;
 
+}
+  /* transform: rotate(-35deg); */
+
+#hero h1:hover{
+    transform: rotate(35deg);
+    transition-duration: 60s;
 }
 #hero .btn-get-started {
   font-family: "Mandala";
