@@ -46,6 +46,34 @@ a:hover {
   color: #000;
 }
 
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+  color: #8f6839;
+}
+
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover>a {
+  color: #8f6839;
+}
+.navbar-mobile .dropdown ul a:hover,
+.navbar-mobile .dropdown ul .active:hover,
+.navbar-mobile .dropdown ul li:hover>a {
+  color: #8f6839;
+}
+
+.navbar .dropdown ul {
+    background: #edd9b0;
+  }
+
+  .navbar .dropdown ul a:hover,
+  .navbar .dropdown ul .active:hover,
+  .navbar .dropdown ul li:hover>a {
+    color: #8f6839;
+  }
+
 #DisclaimerBtn{
     color:#000;
     background-color:rgb(212, 188, 139) ;
@@ -101,9 +129,15 @@ a:hover {
     background-color: #f0e0c1;
   }
 
-.features .card:hover{
-    background-color: #e4dccb;
-  }
+.features .card:hover {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  background: #e4dccb;
+}
+
+.features .card:hover .card-title a {
+  color: #523513;
+}
+
 
 .services .icon-box {
     border-style: solid;
@@ -119,32 +153,53 @@ a:hover {
     padding-top: 9%;
   }
 
+.about p, .card p {
+    text-align: justify;
+}
+
+
+
 .about p::first-letter, .card p::first-letter {
-        float: left;
-        line-height: 35px;
-        font-size: 55px;
-        color: black;
-        border: solid #311e06;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-right: 5px;
-        padding-left: 5px;
-        margin-right: 5px;
-        margin-bottom: -5px;
+    float: left;
+    line-height: 35px;
+    font-size: 55px;
+    color: black;
+    border: solid #311e06;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-right: 5px;
+    margin-bottom: -5px;
 }
 
 .section-title span {
-    color: #523513;
-    opacity: 30%;
+    display: none;
 }
 
 .section-title h2 {
     color: #8f6839;
+    border: solid;
+    text-transform: capitalize;
 }
 
+
 /*ISSUES SPECIFIC*/
+.metadata{
+    background-color: #edd9b0;
+    border: solid;
+}
+
+#navbarTogglerDemo03 ul li a.active {
+    color: #8f6839;
+}
+
 #toggler {
     background-image: url("../img/1500/MmedmanuscriptBG.jpg") !important;
     border-bottom: black solid 2px ; 
 }
 
+.articles h1 {
+    border: solid;
+    text-transform: capitalize;
+}
