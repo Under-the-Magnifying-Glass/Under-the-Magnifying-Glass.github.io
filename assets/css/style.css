@@ -434,9 +434,9 @@ transition: transform .2s; /* Animation */
 # Issues Section
 --------------------------------------------------------------*/
 .metadata{
-  width:12vw;
+  width:12em;
   background-color: #E5F6DF;
-  padding: 2vh 1vw;
+  padding: 1em 0.5em 1em 1em;
   display: flex;
   flex-direction: column;
   flex-basis: 20%;

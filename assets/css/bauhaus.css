@@ -49,12 +49,12 @@
 
 @font-face{
   font-family:"Mandala";
-  src:url('../fonts/fonts/bauhaus-font/Mandala/Mandala Regular.otf')
+  src:url('../fonts/bauhaus-font/Mandala/Mandala Regular.otf')
 }
 
 @font-face{
   font-family:"MandalaItalic";
-  src:url('../fonts/fonts/bauhaus-font/Mandala/Mandala Italic.otf')
+  src:url('../fonts/bauhaus-font/Mandala/Mandala Italic.otf')
 }
 
 /* ---------Basic and index page------------ */
@@ -129,7 +129,7 @@
 
 }
 body, p{
-  font-family: "CypherLight";
+  font-family: "CypherRegular";
 }
 .navbar{
   font-family: "CypherBold";
@@ -292,8 +292,16 @@ a:hover {
 .navbar .active:focus,
 .navbar li:hover>a {
   color: blue;
+
 }
 
+#navbarTogglerDemo03 ul li a:hover,
+#navbarTogglerDemo03 ul li a.active {
+
+  color: blue;
+
+
+}
 
 .metadata{
   position: sticky;
@@ -438,6 +446,8 @@ color:#21409a;
   text-transform: lowercase;
   font-size:2em;
   text-align:center;
+  /* background-color:black;
+  color:white; */
 
 }
 
@@ -476,6 +486,9 @@ color:#21409a;
   /* text-orientation: upright; */
   font-size:1.8em;
   text-align:center;
+  /* background-color:black;
+  color:white; */
+
   /* viewport HEIGHT here AND NOT WIDTH!!! ITS VERTICAL STUPID */
   /* white-space: nowrap; */
 }
@@ -483,6 +496,8 @@ color:#21409a;
 .articles h5{
   font-size:1em;
   font-family:'CypherRegular';
+
+
 
 }
 
@@ -504,6 +519,9 @@ text-decoration: underline;
   font-family:'CypherBold';
   margin:0;
   padding:0;
+  /* background-color:black;
+  color:white; */
+
 
 }
 
@@ -515,9 +533,22 @@ text-decoration: underline;
   margin:0;
   padding-top:2vh;
 
+
+
 }
 
-#articles h4{
+#author{
+  font-size:1.2em;
+  color:black;
+  text-decoration:none;
+  font-family:'CypherBold';
+  margin:0;
+  padding:2vh 0;
+  letter-spacing:1px;
+
+}
+
+#articles h4:not(#author){
   font-size:1.2em;
   text-align:left;
   text-decoration:none;
@@ -548,20 +579,16 @@ text-decoration: underline;
   border-style:solid;
 }
 
-#author{
-  font-family:'CypherSemiBold';
-  color:black;
-  font-size:1em;
-  text-align:right;
 
-
-}
 
 #article-info{
   color:black;
   font-family:'CypherSemiBold';
   font-size:1em;
-  text-align:right;
+  text-align:center;
+  /* background-color:black;
+  color:white; */
+
 
   /* writing-mode:vertical-lr; */
 }
@@ -593,63 +620,15 @@ text-decoration: underline;
   }
 
 
-.style-title.col{
-  background-color:black;
-  color:white;
-  text-align:right;
-  text-align-last: right;
-  padding: 1vh 3vw 1vh 3vw;
-  /* flex-direction:row; */
-  position:relative;
-}
-
-.style-title.col h1{
-  padding:1vh 1vw 1vh 1vw;
-  /* position:relative; */
-  /* display:inline; */
-
-  /* flex-direction:row; */
-}
-.style-title.col h2,#author{
-  font-size:14px;
-  /* position:relative; */
-  /* flex-direction:column-reverse; */
-
-
-}
-
-.style-title.col #author{
-  writing-mode:vertical-lr !important;
-  text-orientation: sideways;
-  letter-spacing:1px;
-  /* CAZZO QUELLO E IMPORTANTISSIMO */
-  /* align-self:flex-end !important; */
-  /* display:inline; */
-  /* display:inline-block; */
-  /* text-align:lef; */
-  margin: 0 0 0 0;
-  align-self: center;
-  /* inline-size: 12em; */
-  /* overflow-wrap: break-word; */
-  /* flex-direction:row; */
-
-  /* white-space:nowrap; */
-}
-
-.style-title.col #author h5{
-  letter-spacing:1px;
-  font-family:"Xpressive";
-}
-
 
 table {
   font-family:'CypherSemiBold';
   padding: 1em 1em 1em 1em;
+  margin:1em 0;
   border: 5px dotted red;
   align-items: stretch;
   align-content:center;
-
-  align-self:flex-end;
+  width:100%;
 }
 
 tbody:not(.table-class){
@@ -690,8 +669,12 @@ padding:0.5em 0.5em 0.5em 0.5em;
 
 }
 
-.blockquote{
-  font-family:'MandalaItalic'
+blockquote{
+  font-family:'CypherRegular';
+  font-style: italic;
+  color:blue;
+  background-color:#ffde17;
+
 }
 /* .col .style-title h1,h2,h3,h4{
 
