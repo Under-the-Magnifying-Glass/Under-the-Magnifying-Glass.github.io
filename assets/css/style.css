@@ -748,6 +748,7 @@ section {
 }
 
 .about .image {
+  background-image: url(../img/updated/mag_glass.jpg) ;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -877,7 +878,6 @@ section {
   line-height: 24px;
   font-size: 14px;
 }
-
 
 
 .services .img-left {

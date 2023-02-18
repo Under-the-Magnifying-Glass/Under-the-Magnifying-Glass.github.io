@@ -39,6 +39,7 @@
 
 .wrap {
  background: url("https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/sunset.gif?raw=true"); background-repeat: repeat;
+ font-family:'VCR_MONO';
  /* position: relative; */
  /* cursor: url("https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/cursor.png?raw=true"), auto; */
 }
@@ -115,8 +116,8 @@
 }
 
 #hero{
-  /* background: url("../img/updated/wallpaper.jpg") top center; opacity:0.5; */
-  background: url("https://media.tenor.com/ydLN6cT0i3gAAAAd/vaporwave-car.gif"); background-repeat:repeat;
+  background: url(img/vaporwave/vap-sad.png);
+  /* background: url("https://media.tenor.com/ydLN6cT0i3gAAAAd/vaporwave-car.gif"); background-repeat:repeat; */
   background-position:center;
   background-size: cover;
 
@@ -162,6 +163,14 @@ h3::after{
 }
 
 
+.section-title span{
+display:none;
+
+}
+
+.section-title h2{
+  color:white;
+}
 .navbar-nav{
   background-color:cyan;
   /* background-image: url('https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/tile-holo.jpg?raw=true'); */
@@ -266,6 +275,21 @@ path {
  }
 
 
+ .shift {
+     animation-name: shift;
+     animation-duration: 3s;
+     animation-iteration-count: infinite;
+     animation-timing-function: ease-in-out;
+
+ }
+
+ @keyframes shift {
+     0% { transform: scale(0.8); }
+     50%  { transform: scale(1); }
+     100%   { transform: scale(0.8); }
+ }
+
+
  #about{
    background-color:black;
    border: 3px solid fuchsia;
@@ -274,19 +298,31 @@ path {
  }
 
  .services .icon-box{
+
    background-color: #270342;
    color:white;
    border: 3px solid fuchsia;
    border-style:dotted;
    box-shadow: 5px 5px cyan, 5px 5px cyan;
  }
+ .section-title p{
+   color:white;
+   text-shadow: 1px 1px black, 2px 2px cyan;
+   transform:scale(1.1);
+   transition: 10s;
+
+ }
+ .services .icon-box h3 a{
+   color:fuchsia;
+}
+
  .about .image {
-background-image:url(img/vaporwave/question-mark.gif);
+background-image:url(/img/vaporwave/question-mark.gif);
  }
 
 
  h1, h2, h3, h4,h5{
-   font-family:"SFAlien";
+   font-family:"VCR_MONO";
 
  }
  #articles h5{
@@ -329,8 +365,18 @@ h2{
   font-family: 'VCR_MONO';
 
 }
-.card-body{
-  background-image: url('https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/tile-holo.jpg?raw=true');
+.features .card-body{
+  /* background-image: url('https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/tile-holo.jpg?raw=true'); */
+background-color:#270342;
+}
+
+.features .card-text{
+  color:fuchsia;
+}
+
+.features .card-title a{
+  color:fuchsia;
+  text-shadow: -1px -1px cyan, 1px 1px cyan;
 
 }
 .card-img-top{
@@ -339,6 +385,10 @@ h2{
   box-shadow: 5px 5px cyan, 5px 5px cyan;
 
 
+}
+
+.card-img-top{
+  trans
 }
 
 .d_image{
