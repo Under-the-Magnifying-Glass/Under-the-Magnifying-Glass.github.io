@@ -1,9 +1,25 @@
 /* vaporwave */
 
-.wrap {
-  background: url("https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/sunset.gif?raw=true"); background-repeat: repeat;
-  /* position: relative; */
-  /* cursor: url("https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/cursor.png?raw=true"), auto; */
+
+/* +--------------FONTS--------------+ */
+
+@font-face {
+  font-family:'SFAlien';
+  src: url('../fonts/vaporwave-font/Sfalien/SFAlienEncounters-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'VCR_MONO';
+    src: url('../fonts/vaporwave-font/VCR_MONO.ttf');
+}
+@font-face {
+    font-family: 'Rocket Rinder';
+    src: url('../fonts/vaporwave-font/rocket-rinder-font/RocketRinder-yV5d.ttf');
+}
+
+@font-face {
+    font-family: 'Line beam';
+    src: url('../fonts/vaporwave-font/linear-beam 2/Linebeam.ttf');
 }
 /*
 .wrap::before{
@@ -21,6 +37,13 @@
 
 
 
+.wrap {
+ background: url("https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/sunset.gif?raw=true"); background-repeat: repeat;
+ /* position: relative; */
+ /* cursor: url("https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/cursor.png?raw=true"), auto; */
+}
+
+
 #canvas {
   background-image: url('https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/tile-holo.jpg?raw=true');
 
@@ -33,16 +56,17 @@
   box-shadow: 5px 5px cyan, 5px 5px cyan;
   }
 
-#articles{
-  background-color:#e3daffd4;
-  padding-left:1vw;
-  padding-right:1vw;
-  padding-top:1vh;
-  text-align:justify;
-  border: 3px solid cyan;
-  border-style: groove;
-  box-shadow: 5px 5px magenta, 5px 5px magenta;
+  p{
+    padding-bottom: 4px;
+    line-height: 1.4;
+    font-weight: 400;
+    font-family:'VCR_MONO';
+    letter-spacing: 1.5px;
+    border-width: thick;
+    border-color:white;
+
   }
+
 
 
 
@@ -51,84 +75,76 @@
   border-style: ridge;
   box-shadow: 5px 5px cyan, 5px 5px cyan;
   }
-/* +--------------FONTS--------------+ */
 
-@font-face {
-    font-family:'SFAlien';
-    src: url('../fonts/vaporwave-font/Sfalien/SFAlienEncounters-Italic.ttf');
+#header .logo span{
+
+  color: white;
+  letter-spacing: 2px;
+  text-shadow: 2px 1px #3B3486, 2px 1px #3B3486;
+  font-family:'Line beam';
+  /* padding:1em; */
+  background-color: black;
 }
 
-@font-face {
-      font-family: 'VCR_MONO';
-      src: url('../fonts/vaporwave-font/VCR_MONO.ttf');
+.border-gradient {
+  border-image-slice: 1;
+  border-width: 8px;
 }
-@font-face {
-      font-family: 'Rocket Rinder';
-      src: url('../fonts/vaporwave-font/rocket-rinder-font/RocketRinder-yV5d.ttf');
-}
-
-@font-face {
-      font-family: 'Line beam';
-      src: url('../fonts/vaporwave-font/linear-beam 2/Linebeam.ttf');
-}
-
-#header{
-  background-color: #00ffffa6;
+.border-gradient-purple {
+  border-image-source: linear-gradient(to bottom, magenta, cyan);
 }
 
 #header a {
   /* background-color:cyan; */
   font-family:'VCR_MONO';
-  text-shadow:2px 1px white, 2px 1px white;
-  color:black;
+  text-shadow:2px 2px black, 2px 3px magenta;
+  color:white;
 }
 
-#header .logo h1{
-      color: white;
-      letter-spacing: 2px;
-      text-shadow: 2px 1px #3B3486, 2px 1px #3B3486;
 
-}
 
-#hero > div > h1{
-  font-size: 40px;
+#hero h1{
+  font-size: 30px;
   margin: 0;
   line-height: 1;
-  font-weight: 700;
+  font-weight: 100;
   font-family:'SFAlien';
-  letter-spacing: 8px;
-  color:magenta;
+  letter-spacing: 4px;
   text-shadow: 2px 1px #3B3486, 2px 1px #3B3486;
 
-
 }
-#page_logo > h1 > a > span{
-    font-size: 30px;
-    margin: 0;
-    line-height: 1;
-    font-weight: 100;
-    font-family:'SFAlien';
-    letter-spacing: 4px;
-    text-shadow: 2px 1px #3B3486, 2px 1px #3B3486;
 
-
-    /* text-transform: uppercase; */
-}
-/* #page_logo > h1 > a > span::after{
-  content:"【 た畏応王﻿";
+#hero{
+  /* background: url("../img/updated/wallpaper.jpg") top center; opacity:0.5; */
+  background: url("https://media.tenor.com/ydLN6cT0i3gAAAAd/vaporwave-car.gif"); background-repeat:repeat;
+  background-position:center;
+  background-size: cover;
 
 }
 
-#page_logo > h1 > a > span::before{
-  content:"【";
 
- */
-/*
+#hero .btn-get-started {
+  font-family: "VCR_MONO";
+  background: black;
+  border: 2px dotted white;
+  border-radius:0;
+  margin-top:5em;
+  transition: 0.5s;
+  color: white;
+  align-items:center;
+  align-content:center;
+}
 
-#header .logo h1::before{
-  content:"【";
 
-}  */
+#hero .btn-get-started:hover {
+  letter-spacing: 3px;
+  background: black;
+  border: 2px solid white;
+  transform:scale(1.05);
+  transition:0.1s;
+}
+
+/* Adding the japanese characters */
 
  h2::before{
   content:"【";
@@ -141,21 +157,11 @@ h2::after{
   content:"【 た畏応王﻿";
 }
 
- h3::after{
+h3::after{
   content:"【 た畏応王﻿";
 }
 
 
-#articles  p{
-  padding-bottom: 4px;
-  line-height: 1.4;
-  font-weight: 400;
-  font-family:'VCR_MONO';
-  letter-spacing: 1.5px;
-  border-width: thick;
-  border-color:white;
-
-}
 .navbar-nav{
   background-color:cyan;
   /* background-image: url('https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/tile-holo.jpg?raw=true'); */
@@ -187,60 +193,6 @@ a:hover{
 }
 
 
-.pointer{
-  display:inline-block;
-  font-family:'VCR_MONO';
-  background-color:white;
-  border:3px solid fuchsia;
-  border-style:dashed;
-  margin-top:4vh;
-  padding-left:1vw;
-  padding-right:1vw;
-  padding-top:1vh;
-  padding-bottom:1vh;
-  margin-right:2vw;
-
-}
-
-
-.ul{
-  padding-top:1vh;
-  padding-bottom:1vh;
-}
-.pointer a{
-  color:black;
-
-  font-family:"Line beam";
-  text-transform:uppercase;
-}
-
-#article-info h5{
-  display:none;
-}
-#metadata{
-
-
-
-}
-.metadata{
-  background-color:#6C4AB6;
-  border: 3px solid fuchsia;
-  border-style:dotted;
-  box-shadow: 5px 5px cyan, 5px 5px cyan;
-  background-color:#3B3486;
-}
-.metadata label{
-  font-family:'VCR_MONO';
-  color:white;
-}
-.metadata h5{
-  color:magenta;
-
-
-}
-#metadata:hover{
-  background-color:#6C4AB6;
-}
  /* ------------ANIMATIONS----------- */
 
 .zoom-nav {
@@ -313,18 +265,25 @@ path {
    fill: transparent;
  }
 
- .content{
-   background-color:cyan;
-
-
- }
 
  #about{
-   background-color:#a583e8bf;
+   background-color:black;
    border: 3px solid fuchsia;
    border-style:dotted;
    box-shadow: 5px 5px cyan, 5px 5px cyan;
  }
+
+ .services .icon-box{
+   background-color: #270342;
+   color:white;
+   border: 3px solid fuchsia;
+   border-style:dotted;
+   box-shadow: 5px 5px cyan, 5px 5px cyan;
+ }
+ .about .image {
+background-image:url(img/vaporwave/question-mark.gif);
+ }
+
 
  h1, h2, h3, h4,h5{
    font-family:"SFAlien";
@@ -343,13 +302,6 @@ h2{
   font-size:calc(0.9rem + 0.9vw) !important;
   font-weight:lighter;
 }
-#hero{
-  /* background: url("../img/updated/wallpaper.jpg") top center; opacity:0.5; */
-  background: url("https://media.tenor.com/ydLN6cT0i3gAAAAd/vaporwave-car.gif"); background-repeat:repeat;
-  background-position:center;
-  background-size: cover;
-
-}
 
 .btn-secondary{
   border: 3px solid fuchsia !important;
@@ -361,11 +313,11 @@ h2{
 }
 
 .info-section{
-  background-color:#a583e8bf;
+  /* background-color:#a583e8bf; */
   border: 3px solid fuchsia;
   border-style:dotted;
   box-shadow: 5px 5px cyan, 5px 5px cyan;
-}}
+}
 
 .feature-card{
 
@@ -394,4 +346,81 @@ h2{
   border-style:dashed;
   box-shadow: 5px 5px cyan, 5px 5px cyan;
 
+}
+
+
+/* Articles */
+
+#articles{
+  background-color:#e3daffd4;
+  padding-left:1vw;
+  padding-right:1vw;
+  padding-top:1vh;
+  text-align:justify;
+  border: 3px solid cyan;
+  border-style: groove;
+  box-shadow: 5px 5px magenta, 5px 5px magenta;
+  }
+
+
+#articles p{
+  padding-bottom: 4px;
+  line-height: 1.4;
+  font-weight: 400;
+  font-family:'VCR_MONO';
+  letter-spacing: 1.5px;
+  border-width: thick;
+  border-color:white;
+
+}
+
+.pointer{
+  display:inline-block;
+  font-family:'VCR_MONO';
+  background-color:white;
+  border:3px solid fuchsia;
+  border-style:dashed;
+  margin-top:4vh;
+  padding-left:1vw;
+  padding-right:1vw;
+  padding-top:1vh;
+  padding-bottom:1vh;
+  margin-right:2vw;
+
+}
+
+
+.ul{
+  padding-top:1vh;
+  padding-bottom:1vh;
+}
+.pointer a{
+  color:black;
+
+  font-family:"Line beam";
+  text-transform:uppercase;
+}
+
+#article-info h5{
+  display:none;
+}
+
+.metadata{
+  background-color:#6C4AB6;
+  border: 3px solid fuchsia;
+  border-style:dotted;
+  box-shadow: 5px 5px cyan, 5px 5px cyan;
+  background-color:#3B3486;
+}
+.metadata label{
+  font-family:'VCR_MONO';
+  color:white;
+}
+.metadata h5{
+  color:magenta;
+
+
+}
+#metadata:hover{
+  background-color:#6C4AB6;
 }

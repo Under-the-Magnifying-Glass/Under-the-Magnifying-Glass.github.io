@@ -402,16 +402,16 @@ transition: transform .2s; /* Animation */
 # Issues Section
 --------------------------------------------------------------*/
 .metadata{
-  width:12em;
+  /* width:12vw; */
   background-color: #E5F6DF;
-  padding: 1em 0.5em 1em 1em;
+  padding: 1em;
   display: flex;
   flex-direction: column;
   flex-basis: 20%;
   flex:0;
-  /* flex: 1; */
+  overflow-x: hidden;
   overflow-y: scroll;
-  max-height: 40vw;
+  max-height: 80vh;
 }
 
 #metadata{
@@ -536,6 +536,8 @@ COMPARE Section
   margin: 2vh 0.5vw ;
   padding:2vh 2vw;
   height:70vh;
+  overflow-y: auto;
+  overflow-x: hidden;
   box-sizing:border-box;
   border: 2px solid black;
   border-style: solid;

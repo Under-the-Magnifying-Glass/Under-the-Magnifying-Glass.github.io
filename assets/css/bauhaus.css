@@ -101,8 +101,8 @@
   /* transform: rotate(-35deg); */
 
 #hero h1:hover{
-    transform: rotate(35deg);
-    transition-duration: 60s;
+    /* transform: rotate(35deg);
+    transition-duration: 6s; */
 }
 #hero .btn-get-started {
   font-family: "Mandala";
@@ -176,9 +176,13 @@ h2{
 
 }
 .scroll-column{
-  border-style:solid;
+  border: 2px solid red;
+  box-shadow: -4px -2px yellow, 5px 5px blue;
+  background-color:white;
+  color:black;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
-
 
 .section-title {
   text-align: center;
@@ -551,7 +555,7 @@ color:#21409a;
 
   /* writing-mode:vertical-lr; */
   /* text-orientation: upright; */
-  font-size:1.5em;
+  font-size:1.2em;
   text-align:center;
   background-color:black;
   color:white;
@@ -588,11 +592,11 @@ font-size: 1.2em;
   font-family:"CypherBold";
   letter-spacing:4px;
   text-transform: lowercase;
-  font-size:2em;
+  font-size:1.5em;
   text-align:center;
   text-decoration:none;
   margin:0;
-  padding:2vh 0;
+  padding:2vh 2vw;
   background-color:black;
   color:white;
 
@@ -650,9 +654,6 @@ font-size: 1.2em;
 }
 
 
-.scroll-column{
-  border-style:solid;
-}
 
 
 
