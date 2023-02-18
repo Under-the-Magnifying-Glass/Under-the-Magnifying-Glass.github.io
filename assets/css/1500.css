@@ -225,7 +225,7 @@ td {
     letter-spacing: 2px;
 }
 
-.info .story ul{
+.info .story a::before{
   color: #8f6839;
 }
 
