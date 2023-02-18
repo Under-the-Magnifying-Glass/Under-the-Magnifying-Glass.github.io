@@ -204,24 +204,31 @@ a:hover {
 table {
     padding: 1em 1em 1em 1em;
     margin:1em 0;
-    border: 5px;
-    border-image: url("../img/1500/border.png") 30% stretch;
+    border-right:40px solid;
+    border-left: 40px solid;
+    padding: 10px;
+    border-image: url("../img/1500/border.png") 30% round;
     align-items: stretch;
     align-content:center;
     width:100%;
 }
 
 tbody:not(.table-class){
-font-size:0.8em;
-align-self:center;
+    font-size:0.8em;
+    align-self:center;
 }
 
 td {
-text-align: center;
-vertical-align: middle;
-padding:0.5em 0.5em 0.5em 0.5em;
-letter-spacing: 2px;
+    text-align: center;
+    vertical-align: middle;
+    padding:0.5em 0.5em 0.5em 0.5em;
+    letter-spacing: 2px;
 }
+
+.info .story ul{
+  color: #8f6839;
+}
+
 
 /* MODIFICA 
 -> ARTICLES-COMPARE COLORE SFONDO E CHAPTERS VERDI
