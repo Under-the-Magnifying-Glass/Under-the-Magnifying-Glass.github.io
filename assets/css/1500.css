@@ -178,7 +178,7 @@ a:hover {
 }
 
 .section-title h2 {
-    color: #8f6839;
+    color: rgb(255, 42, 0);
     border: solid;
     text-transform: capitalize;
 }
@@ -202,4 +202,11 @@ a:hover {
 .articles h1 {
     border: solid;
     text-transform: capitalize;
+    color: rgb(255, 42, 0);
 }
+
+/* MODIFICA 
+-> ARTICLES-COMPARE COLORE SFONDO E CHAPTERS VERDI
+-> NOTE...
+
+ 
