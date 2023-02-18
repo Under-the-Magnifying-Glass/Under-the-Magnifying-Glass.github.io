@@ -91,14 +91,16 @@ a:hover {
 }
 
 .card-img-top {
-    border-bottom:50px solid;
-    border-top: 50px solid;
-    padding: 20px;
-    border-image: url("../img/1500/borderDecor.png") 30% stretch ;
+    border-right:80px solid;
+    border-left: 80px solid;
+    padding: 10px;
+    border-image: url("../img/1500/border.png") 30% stretch;
 }
 
-.card{
-    background-color: #faf8f4 ;
+.features .card{
+    background-color: #f0e0c1;
+    border-radius: 0px;
+    border: 5px solid;
 }
 
 .icon-box{
@@ -123,12 +125,6 @@ a:hover {
     filter: sepia(1);
 }
 
-.features .card {
-    border-style: solid;
-    border-width: 2px;
-    background-color: #f0e0c1;
-  }
-
 .features .card:hover {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   background: #e4dccb;
@@ -141,23 +137,23 @@ a:hover {
 
 .services .icon-box {
     border-style: solid;
-    border-width: 2px;
+    border-width: 5px;
+    border-radius: 0px;
     background-color: #f0e0c1;
-  }
+    margin: 5px;
+    height: 50%;
+    padding: 10px;
+    clear: both;
+    display: table;
+}
 
 .services .icon-box:hover{
     background-color: #e4dccb;
-  }
-  
-.services .test-content-right {
-    padding-top: 9%;
-  }
-
-.about p, .card p {
-    text-align: justify;
 }
 
-
+.about p, .card p {
+    text-align: justify
+}
 
 .about p::first-letter, .card p::first-letter {
     float: left;
@@ -203,6 +199,28 @@ a:hover {
     border: solid;
     text-transform: capitalize;
     color: rgb(255, 42, 0);
+}
+
+table {
+    padding: 1em 1em 1em 1em;
+    margin:1em 0;
+    border: 5px;
+    background-image: url("../img/1500/border.png") 30% stretch;
+    align-items: stretch;
+    align-content:center;
+    width:100%;
+}
+
+tbody:not(.table-class){
+font-size:0.8em;
+align-self:center;
+}
+
+td {
+text-align: center;
+vertical-align: middle;
+padding:0.5em 0.5em 0.5em 0.5em;
+letter-spacing: 2px;
 }
 
 /* MODIFICA 
