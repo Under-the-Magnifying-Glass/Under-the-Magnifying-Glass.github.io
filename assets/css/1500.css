@@ -204,18 +204,15 @@ a:hover {
 table {
     padding: 1em 1em 1em 1em;
     margin:1em 0;
-    border-right:40px solid;
-    border-left: 40px solid;
     padding: 10px;
-    border-image: url("/img/1500/border.png") 30% round;
     align-items: stretch;
     align-content:center;
     width:100%;
 }
 
-tbody:not(.table-class){
-    font-size:0.8em;
-    align-self:center;
+table, th, td {
+  border: 5px solid;
+  border-color: #8f6839;
 }
 
 td {
@@ -230,7 +227,7 @@ td {
 }
 
 #articles a {
-    color: #8f6839;
+    color: #8f6839 !important;
 }
 
 /* MODIFICA 
