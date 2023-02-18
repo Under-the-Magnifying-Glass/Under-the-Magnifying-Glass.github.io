@@ -229,6 +229,9 @@ td {
   color: black;
 }
 
+.articles a {
+    color:black !important;
+}
 
 /* MODIFICA 
 -> ARTICLES-COMPARE COLORE SFONDO E CHAPTERS VERDI
