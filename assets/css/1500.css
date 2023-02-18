@@ -205,7 +205,7 @@ table {
     padding: 1em 1em 1em 1em;
     margin:1em 0;
     border: 5px;
-    background-image: url("../img/1500/border.png") 30% stretch;
+    border-image: url("../img/1500/border.png") 30% stretch;
     align-items: stretch;
     align-content:center;
     width:100%;
