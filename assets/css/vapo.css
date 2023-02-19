@@ -32,9 +32,9 @@
   right: 0;
 } */
 
- body{
-   cursor: url("https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/cursor.png?raw=true");
-}
+/* .body{
+   cursor: url("https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/cursor.png?raw=true"), auto;
+} */
 
 
 .wrap {
