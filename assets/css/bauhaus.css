@@ -89,8 +89,6 @@
     letter-spacing:2px;
 
 
-
-
 }
 
 #hero h1{
@@ -322,6 +320,9 @@ letter-spacing:2px;
   border-radius:0;
 }
 
+.features .card-title a{
+  color:blue;
+}
 .features .card:hover .card-title a {
   color: blue;
   text-decoration: none;

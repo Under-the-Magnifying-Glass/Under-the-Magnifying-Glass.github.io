@@ -32,9 +32,9 @@
   right: 0;
 } */
 
- /* body{
-   /* cursor: url("https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/cursor.png?raw=true"), default; */
-
+ .wrap{
+   cursor: url("https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/cursor.png?raw=true"), default;
+}
 
 
 .wrap {
@@ -116,8 +116,8 @@
 }
 
 #hero{
-  background: url(img/vaporwave/vap-sad.png);
-  /* background: url("https://media.tenor.com/ydLN6cT0i3gAAAAd/vaporwave-car.gif"); background-repeat:repeat; */
+  /* background: url(img/vaporwave/vap-sad.png); */
+  background: url("https://media.tenor.com/ydLN6cT0i3gAAAAd/vaporwave-car.gif"); background-repeat:repeat;
   background-position:center;
   background-size: cover;
 
@@ -231,7 +231,10 @@ a:hover{
 } */
 
 #toggler{
-  background-color:cyan !important;
+  background-color: #270342;
+}
+.navbar-nav{
+  background-color: #270342;
 }
 .sidenav{
   background-color: white;
@@ -398,6 +401,12 @@ background-color:#270342;
 
 }
 
+.modal-content{
+  padding:0 5em;
+  /* background-color:black; */
+  color:white;
+  background-image:linear-gradient(to bottom, magenta, cyan);
+}
 
 /* Articles */
 
@@ -473,4 +482,9 @@ background-color:#270342;
 }
 #metadata:hover{
   background-color:#6C4AB6;
+}
+.info-section{
+  background-color:#270342;
+  background-image:linear-gradient(to bottom, magenta, #270342);
+
 }
