@@ -352,6 +352,10 @@ letter-spacing:2px;
 
 }
 
+.member{
+  border: 2px solid red;
+  box-shadow: -4px -2px yellow, 5px 5px blue;
+}
 
 .navbar a:hover,
 #navbar a:hover,

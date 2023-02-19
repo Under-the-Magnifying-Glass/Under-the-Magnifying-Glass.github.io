@@ -79,9 +79,10 @@
 
 #header .logo span{
 
-  color: white;
   letter-spacing: 2px;
-  text-shadow: 2px 1px #3B3486, 2px 1px #3B3486;
+  color:white;
+  text-shadow: -1px -1px grey, 2px 2px magenta;
+
   font-family:'Line beam';
   /* padding:1em; */
   background-color: black;
@@ -105,7 +106,7 @@
 
 
 #hero h1{
-  font-size: 30px;
+  font-size: 40px;
   margin: 0;
   line-height: 1;
   font-weight: 100;
@@ -129,7 +130,7 @@
   background: black;
   border: 2px dotted white;
   border-radius:0;
-  margin-top:5em;
+  margin-top:2em;
   transition: 0.5s;
   color: white;
   align-items:center;
@@ -147,20 +148,29 @@
 
 /* Adding the japanese characters */
 
+#header .logo span::before{
+   content:"【 ";
+ }
+
+ #header .logo span::after{
+   content:" マガジン";
+ }
+
  h2::before{
-  content:"【";
+  content:"【 ";
 }
  h3::before{
-  content:"【";
+  content:"【 ";
 }
 
 h2::after{
   content:"【 た畏応王﻿";
 }
 
-h3::after{
+h3:not(#about-content > h3)::after{
   content:"【 た畏応王﻿";
 }
+
 
 
 .section-title span{
@@ -172,7 +182,7 @@ display:none;
   color:white;
 }
 .navbar-nav{
-  background-color:cyan;
+  background-color: #270342;
   /* background-image: url('https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/tile-holo.jpg?raw=true'); */
   color:white;
   font-family:'VCR_MONO';
@@ -195,12 +205,31 @@ display:none;
 
 
 }
+#navbarTogglerDemo03 ul li a:not(.active){
+
+  color:#444444;
+  text-shadow: -1px -1px cyan, 1px 1px magenta;
+
+
+}
+
+#navbarTogglerDemo03 ul li a.active{
+
+  color:cyan;
+  text-shadow: -1px -1px black, 1px 1px magenta;
+
+}
+
 a:hover{
   color:cyan;
 
 
 }
 
+h1, h2, h3, h4, h5{
+text-shadow: -1px -1px cyan, 2px 2px magenta;
+
+}
 
  /* ------------ANIMATIONS----------- */
 
@@ -234,10 +263,9 @@ a:hover{
   background-color: #270342;
 }
 .navbar-nav{
-  background-color: #270342;
 }
 .sidenav{
-  background-color: white;
+  background-image:linear-gradient(to left, #FF69B4, #40E0D0);
   text-transform: uppercase;
   font-family:'VCR_MONO';
   border: 3px solid blue;
@@ -317,6 +345,8 @@ path {
  }
  .services .icon-box h3 a{
    color:fuchsia;
+   text-transform: uppercase;
+
 }
 
  .about .image {
@@ -356,8 +386,16 @@ h2{
   border: 3px solid fuchsia;
   border-style:dotted;
   box-shadow: 5px 5px cyan, 5px 5px cyan;
+  background-image:linear-gradient(to left, #FF69B4, #40E0D0);
+
+}
+.info-section h2{
+  text-transform: uppercase;
 }
 
+/* TURQUOISE #40E0D0
+LIGHT CYAN
+E0FFFF*/
 .feature-card{
 
   /* border: 2px solid cyan; */
@@ -408,6 +446,11 @@ background-color:#270342;
   background-image:linear-gradient(to bottom, magenta, cyan);
 }
 
+.member{
+  border: 3px solid cyan;
+  border-style: groove;
+  box-shadow: 5px 5px magenta, 5px 5px magenta;
+}
 /* Articles */
 
 #articles{
@@ -421,7 +464,10 @@ background-color:#270342;
   box-shadow: 5px 5px magenta, 5px 5px magenta;
   }
 
+#logo{
+  filter: invert(1);
 
+}
 #articles p{
   padding-bottom: 4px;
   line-height: 1.4;
@@ -483,30 +529,34 @@ background-color:#270342;
 #metadata:hover{
   background-color:#6C4AB6;
 }
-.info-section{
-  background-color:#270342;
-  background-image:linear-gradient(to bottom, magenta, #270342);
 
-}
 
 /* music */
 
 #audio-player {
   position: fixed;
   bottom: 0;
+  margin-top:5vh;
   left: 0;
+
   width: 100%;
   height:40px;
   /* background-color: #f5f5f5; */
   box-sizing: border-box;
   display: flex;
   justify-content: center;
-  background-image:linear-gradient(to bottom, magenta, cyan);
+  background-image:linear-gradient(to bottom, #FF69B4, #40E0D0);
+  opacity:0.7;
   /* color:white; */
   border: 3px solid fuchsia;
   box-shadow: 5px 5px cyan, 5px 5px cyan;
-  /* flex:100%; */
+  z-index:100;
+}
 
+#vapo-img-computer{
+  background-image: url("https://raw.githubusercontent.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/main/img/vaporwave/this-is-the-end.gif"); background-repeat:repeat;
+  height:150px;
+  width:150px;
 }
 
 #audio-player audio {
