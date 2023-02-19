@@ -153,3 +153,13 @@ if (modal !== null && btn !== null && span !== null) {
     }
   }
 }
+
+
+var audio = document.getElementById("myAudio");
+function togglePlay() {
+  if (audio.paused) {
+    audio.play();
+  } else {
+    audio.pause();
+  }
+}
