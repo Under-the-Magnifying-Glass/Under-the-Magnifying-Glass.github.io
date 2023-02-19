@@ -582,7 +582,7 @@ audio {
   audio::-webkit-media-controls {
     display: flex;
     justify-content: center;
-    background-image:linear-gradient(to bottom, magenta, cyan);
+    /* background-image:linear-gradient(to bottom, magenta, cyan); */
     border-radius: 0px;
     overflow: hidden;
     margin: 0 auto;
