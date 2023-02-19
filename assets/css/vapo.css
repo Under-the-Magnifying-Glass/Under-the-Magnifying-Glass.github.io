@@ -553,10 +553,17 @@ background-color:#270342;
   z-index:100;
 }
 
+.vapo-img{
+  display:flex;
+  align-items:center;
+  align-content: stretch;
+}
 #vapo-img-computer{
-  background-image: url("https://raw.githubusercontent.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/main/img/vaporwave/this-is-the-end.gif"); background-repeat:repeat;
+  display:flex;
+  background-image: url("https://raw.githubusercontent.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/main/img/vaporwave/this-is-the-end.gif"); background-repeat:no-repeat;
   height:150px;
   width:150px;
+  align-self:flex-start;
 }
 
 #audio-player audio {
