@@ -217,6 +217,9 @@ display:none;
 
   color:cyan;
   text-shadow: -1px -1px black, 1px 1px magenta;
+  background-image: url('/img/vaporwave/stars.gif');
+  background-size: cover; /* Resize the background image to cover the entire container */
+
 
 }
 
@@ -546,8 +549,7 @@ background-color:#270342;
   display: flex;
   /* justify-content: center; */
   background-image:url('https://raw.githubusercontent.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/main/img/vaporwave/vaporwave-music.gif'); background-repeat:repeat;
-  opacity:0.7;
-  /* color:white; */
+
   border: 3px solid fuchsia;
   box-shadow: 5px 5px cyan, 5px 5px cyan;
   z-index:100;
@@ -625,3 +627,35 @@ audio {
   audio::-webkit-media-controls-volume-slider {
     /* display: none; */
   }
+
+
+.vapo-issues{
+  align-content: center;
+  align-items: center;
+  align-self: center;
+  display:flex;
+}
+#vapo-book{
+  /* background-image:url('/img/vaporwave/book-flip.gif'); */
+  width:50px;
+  height:auto;
+  display:inline-block;
+  margin:0;
+  filter:hue-rotate(180deg);
+}
+
+#book-worm{
+  width:80px;
+  height:auto;
+  align-self:center;
+  margin:0 2.5em;
+  filter:hue-rotate(180deg);
+}
+#vapo-welcome{
+background-image: url(/img/vaporwave/welcome.gif);
+/* align-self: flex-start; */
+  width:200px;
+  display:inline-block;
+
+  height:auto;
+}

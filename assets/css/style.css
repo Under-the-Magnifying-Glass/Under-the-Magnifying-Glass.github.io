@@ -1180,6 +1180,9 @@ align-self: center;
 #audio-player {
   display:none;
 }
+#vapo-book{
+  display:none;
+}
 
 #placeholder{
   text-align:center;
