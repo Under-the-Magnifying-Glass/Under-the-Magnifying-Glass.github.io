@@ -41,7 +41,7 @@
   color: #000;
 }
 
-.about p, .services p, .features p, articles p{
+.about p, .services p, .features p, .articles p{
     column-count: 2;
     column-gap: 25px;
     text-align: justify;
@@ -179,7 +179,7 @@
         100% calc(100% - var(--border-stop) * 2);
 }
 
-table {
+.articles table {
     padding: 1em 1em 1em 1em;
     margin:1em 0;
     padding: 10px;
@@ -190,7 +190,7 @@ table {
     border-color: #000;
 }
 
-td {
+.articles td {
     text-align: center;
     vertical-align: middle;
     padding:0.5em 0.5em 0.5em 0.5em;
