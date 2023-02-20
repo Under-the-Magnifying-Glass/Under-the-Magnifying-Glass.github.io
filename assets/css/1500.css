@@ -201,6 +201,14 @@ a:hover {
     color: rgb(255, 42, 0);
 }
 
+.scroll-column{
+    border: 5px solid;
+    border-color: #8f6839;
+    background-color: #edd9b0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
 table {
     padding: 1em 1em 1em 1em;
     margin:1em 0;
