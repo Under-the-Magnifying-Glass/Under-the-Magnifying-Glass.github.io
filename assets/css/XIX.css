@@ -41,7 +41,7 @@
   color: #000;
 }
 
-.about p, .services p, .features p{
+.about p, .services p, .features p, articles p{
     column-count: 2;
     column-gap: 25px;
     text-align: justify;
@@ -177,4 +177,22 @@
         var(--border-stop) var(--border-stop),
         calc(100% - var(--border-stop) * 2) 100%,
         100% calc(100% - var(--border-stop) * 2);
+}
+
+table {
+    padding: 1em 1em 1em 1em;
+    margin:1em 0;
+    padding: 10px;
+    align-items: stretch;
+    align-content:center;
+    width:100%;
+    border: 2px double;
+    border-color: #000;
+}
+
+td {
+    text-align: center;
+    vertical-align: middle;
+    padding:0.5em 0.5em 0.5em 0.5em;
+    letter-spacing: 2px;
 }
