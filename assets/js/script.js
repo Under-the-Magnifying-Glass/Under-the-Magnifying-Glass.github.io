@@ -154,12 +154,35 @@ if (modal !== null && btn !== null && span !== null) {
   }
 }
 
+//
+// var audio = document.getElementById("myAudio");
+// function togglePlay() {
+//   if (audio.paused) {
+//     audio.play();
+//   } else {
+//     audio.pause();
+//   }
+// }
 
-var audio = document.getElementById("myAudio");
-function togglePlay() {
-  if (audio.paused) {
-    audio.play();
-  } else {
-    audio.pause();
+const audio = document.querySelector('#vaporwave-audio');
+audio.addEventListener('keydown', (event) => {
+  if (event.code === 77) {
+togglePlay();
+  } else if (event.code === 'ArrowLeft') {
+    audio.currentTime -= 5;
+    event.preventDefault();
+  } else if (event.code === 'ArrowRight') {
+    audio.currentTime += 5;
+    event.preventDefault();
+  } else if (event.code === 'ArrowUp') {
+    audio.volume = Math.min(1, audio.volume + 0.1);
+    event.preventDefault();
+  } else if (event.code === 'ArrowDown') {
+    audio.volume = Math.max(0, audio.volume - 0.1);
+    event.preventDefault();
   }
-}
+});
+
+window.addEventListener('keydown', function(event) {
+  console.log(event.keyCode);
+});

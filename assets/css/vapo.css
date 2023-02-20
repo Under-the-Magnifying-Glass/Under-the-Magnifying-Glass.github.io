@@ -544,7 +544,7 @@ background-color:#270342;
   /* background-color: #f5f5f5; */
   box-sizing: border-box;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   background-image:url('https://raw.githubusercontent.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/main/img/vaporwave/vaporwave-music.gif'); background-repeat:repeat;
   opacity:0.7;
   /* color:white; */
@@ -568,10 +568,11 @@ background-color:#270342;
 
 #audio-player audio {
 
-  width: 80%;
+  width: 15%;
   max-height:100%;
-  max-width: 40%;
+  max-width: 15%;
   border-radius: 0px;
+  align-self:flex-start;
 
 }
 
