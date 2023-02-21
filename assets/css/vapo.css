@@ -615,7 +615,7 @@ background-color:#270342;
   }
 
   #play-pause-image.playing {
-    content: url(/img/vaporwave/simpsons-wave.gif);
+    content: url(/img/vaporwave/simpsons-wave-edit.gif);
   }
 
 
@@ -645,6 +645,7 @@ background-color:#270342;
   filter:hue-rotate(180deg);
 }
 .vapo-border{
+  display:flex;
   align-items:stretch;
   justify-content:space-between;
   padding:2em 4.4em;
