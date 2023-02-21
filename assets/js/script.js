@@ -154,12 +154,25 @@ if (modal !== null && btn !== null && span !== null) {
   }
 }
 
+
+// Missing issues
+
+function missingIssue() {
+  alert("This issue is not yet available. Stay tuned to read the magazine's upcoming issues!");
+}
+
 //
-// var audio = document.getElementById("myAudio");
-// function togglePlay() {
-//   if (audio.paused) {
-//     audio.play();
-//   } else {
-//     audio.pause();
-//   }
-// }
+
+const audio = document.querySelector('#vaporwave-audio');
+const playPauseButton = document.querySelector('#play-pause-button');
+const playPauseImage = document.querySelector('#play-pause-image');
+
+playPauseButton.addEventListener('click', () => {
+  if (audio.paused) {
+    audio.play();
+    playPauseImage.classList.add('playing');
+  } else {
+    audio.pause();
+    playPauseImage.classList.remove('playing');
+  }
+});

@@ -17,8 +17,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/mag-logo.png" rel="icon">
 
 
   <!-- Google Fonts -->
@@ -40,11 +39,11 @@
 <body>
   <div class="wrap">
 
+
     <!-- ======= Hero Section ======= -->
     <section id="hero">
       <div class="hero-container" data-aos="fade-up">
         <h1>Discover new burning topics</h1>
-        <img src="/img/vaporwave/welcome.gif "id="vapo-welcome">
         <a href="#about" class="btn-get-started scrollto floating">Start Investigating</a>
       </div>
     </section><!-- End Hero -->
@@ -62,14 +61,14 @@
         <nav id="navbar" class="navbar">
         <ul>
           <li class="dropdown" type="button">
-            <a href="#">
+            <a class="issues-button">
               <span>Issues</span>
               <i class="bi bi-chevron-down"></i>
             </a>
             <ul>
               <li><a class="nav-link scrollto" href="issues.html">Sherlock Holmes</a></li>
-              <li><a class="nav-link scrollto" href="#">Hercules Poirot</a></li>
-              <li><a class="nav-link scrollto" href="#">Nancy Drew</a></li>
+              <li><a class="nav-link scrollto" onclick="missingIssue()">Hercules Poirot</a></li>
+              <li><a class="nav-link scrollto" onclick="missingIssue()">Nancy Drew</a></li>
             </ul>
           </li>
           <li><a class="nav-link scrollto"><span onclick="openNav()">Styles</span></a></li>
@@ -98,6 +97,14 @@
 
       <!-- ======= About Section ======= -->
       <section id="about" class="about">
+
+        <div class="vapo-border">
+        <img src="/img/vaporwave/welcome.gif "id="vapo-welcome">
+        <img src="/img/vaporwave/welcome.gif "id="vapo-welcome">
+        <img src="/img/vaporwave/welcome.gif "id="vapo-welcome">
+        <img src="/img/vaporwave/welcome.gif "id="vapo-welcome">
+
+</div>
         <div class="container">
 
           <div class="row">
@@ -105,9 +112,9 @@
 
             <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" id="about-img"></div>
             <div class="col-xl-7 pt-4 pt-lg-0 d-flex align-items-stretch">
+
               <div class="content d-flex flex-column justify-content-center" id="about-content">
-                <div id="vapo-welcome"></div>
-                <div id="vapo-welcome"></div>
+
                 <h3 class="hover-underline-animation" >Looking for detective stories?</h3>
                 <p>
                   This magazine collects mystery short stories by various authors, along with articles to provide
@@ -125,6 +132,8 @@
                   <!-- Modal content -->
                   <div class="modal-content">
                     <span class="close">&times;</span>
+
+
                     The purpose of this web site is to explore various types of typographic and layout style for text documents, as an end-of-course project for the "Information Modeling and Web technologies" course of the Master Degree in Digital Humanities and Digital Knowledge of the University of Bologna, under professor Fabio Vitali. All copyrights and related rights on the content remain with their original owners. All copyright on the typographic and layout choices are 2022 ©UndertheMagnifyingGlass
                       The documents contained in this web site have been selected for their length and complexity from XXX. Their publication here is not intended to be an alternative or replace their original locations:
                       <ul>
@@ -132,8 +141,14 @@
                         <li>File 2: </li>
                         <li>File 3: </li>
                       </ul>
+                      <div class="vapo-border" style="padding:0;">
+                      <img src="/img/vaporwave/cute-cat-white.gif"id="vapo-cat"><img src="/img/vaporwave/cute-cat-white.gif"id="vapo-cat"><img src="/img/vaporwave/cute-cat-white.gif"id="vapo-cat"><img src="/img/vaporwave/cute-cat-white.gif"id="vapo-cat"><img src="/img/vaporwave/cute-cat-white.gif"id="vapo-cat"><img src="/img/vaporwave/cute-cat-white.gif"id="vapo-cat"><img src="/img/vaporwave/cute-cat-white.gif" id="vapo-cat">
+                      <img src="/img/vaporwave/cute-cat-white.gif" id="vapo-cat"><img src="/img/vaporwave/cute-cat-white.gif" id="vapo-cat">
+
                       All copyrights and related rights on the content remain with their original owners.
-                      All copyright on the typographic and layout choices are 2022 ©Our names.
+                      All copyright on the typographic and layout choices are 2023 ©Federica Bonifazi, Chloe Papadopoulou, Loredana Salvatore.
+
+                    </div>
                   </div>
 
                 </div>
@@ -332,7 +347,6 @@
 
 
 
-
     </main>
 <!-- End main -->
 <!-- ======= Footer Section ======= -->
@@ -354,14 +368,21 @@
 
       </div>
 
+
     </footer><!-- End Footer -->
 
-<!-- vaporwave music -->
-<div id="audio-player">
-  <audio id="vaporwave-audio" controls>
-    <source src="assets/media/MACINTOSH PLUS.mp3" type="audio/mpeg">
-  </audio>
-</div>
+    <!-- vaporwave music -->
+
+          <div id="audio-player">
+
+            <audio id="vaporwave-audio" controls>
+              <source src="assets/media/MACINTOSH PLUS.mp3" type="audio/mpeg">
+            </audio>
+            <button id="play-pause-button">
+            <img id="play-pause-image" src="/img/vaporwave/aesthetic-anime-music.gif">
+            Play me!</button>
+
+          </div>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>

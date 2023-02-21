@@ -113,6 +113,7 @@
   font-family:'SFAlien';
   letter-spacing: 4px;
   text-shadow: 2px 1px #3B3486, 2px 1px #3B3486;
+  animation: color-change 2s infinite;
 
 }
 
@@ -125,26 +126,48 @@
 }
 
 
+
+
+
 #hero .btn-get-started {
   font-family: "VCR_MONO";
-  background: black;
-  border: 2px dotted white;
+  background: transparent;
+  border: none;
   border-radius:0;
   margin-top:2em;
   transition: 0.5s;
-  color: white;
+  color: cyan;
   align-items:center;
   align-content:center;
-}
 
+}
 
 #hero .btn-get-started:hover {
   letter-spacing: 3px;
-  background: black;
-  border: 2px solid white;
+  background: none;
+  border: none;
   transform:scale(1.05);
   transition:0.1s;
 }
+
+
+/* get started button Animation */
+
+@keyframes color-change {
+  0% { color: cyan; }
+  40% { color: magenta; }
+  80% { color: blue; }
+}
+
+
+
+@keyframes background-color-change {
+  0% { background-color: cyan; }
+  50% { background-color: blue; }
+  100% { background-color: cyan; }
+}
+
+
 
 /* Adding the japanese characters */
 
@@ -170,7 +193,6 @@ h2::after{
 h3:not(#about-content > h3)::after{
   content:"【 た畏応王﻿";
 }
-
 
 
 .section-title span{
@@ -202,9 +224,13 @@ display:none;
   font-family:'Rocket Rinder' !important;
   letter-spacing: 2px;
   text-shadow: 2px 1px white, 2px 1px white;
-
-
 }
+
+#navbar > ul > li.dropdown > ul{
+
+  background-color:black;
+}
+
 #navbarTogglerDemo03 ul li a:not(.active){
 
   color:#444444;
@@ -241,38 +267,17 @@ text-shadow: -1px -1px cyan, 2px 2px magenta;
 }
 
 
-/* .collapsible {
-  background-color:white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  outline: none;
-}
-
-.collapsible:hover {
-  background-color: #E5F6DF;
-}
-
-.content-met {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
-} */
-
 #toggler{
   background-color: #270342;
 }
 .navbar-nav{
 }
 .sidenav{
-  background-image:linear-gradient(to left, #FF69B4, #40E0D0);
+  background-image:url(/img/vaporwave/tile-building.jpg); background-size: cover;
   text-transform: uppercase;
   font-family:'VCR_MONO';
-  border: 3px solid blue;
-  border-style:groove;
+  /* border: 3px solid blue;
+  border-style:groove; */
   color:magenta;
 
 }
@@ -376,10 +381,14 @@ h2{
 }
 
 .btn-secondary{
-  border: 3px solid fuchsia !important;
-  border-style:dashed !important;
+  width:25%;
+  border: 3px dashed fuchsia;
+  border-radius:0px;
   background-color:#3B3486;
+  text-shadow: -1px -1px black, 1px 1px magenta;
   font-family: 'VCR_MONO';
+  animation:background-color-change 1.8s infinite;
+
 
 
 }
@@ -443,16 +452,30 @@ background-color:#270342;
 }
 
 .modal-content{
-  padding:0 5em;
   /* background-color:black; */
-  color:white;
-  background-image:linear-gradient(to bottom, magenta, cyan);
+  color:black;
+  text-shadow: -1px 1px cyan, 1px -1px magenta;
+  padding:2em;
+
+  background-image:url(/img/vaporwave/vaporwave-desert.jpeg); background-position: center;
+  /* opacity:0.8; */
 }
 
+.modal-content span{
+  color:cyan;
+  text-shadow: 1px 2px black, 2px -2px magenta;
+
+}
 .member{
   border: 3px solid cyan;
   border-style: groove;
   box-shadow: 5px 5px magenta, 5px 5px magenta;
+
+}
+
+#footer a{
+  color:magenta;
+
 }
 /* Articles */
 
@@ -534,26 +557,7 @@ background-color:#270342;
 }
 
 
-/* music */
 
-#audio-player {
-  position: fixed;
-  bottom: 0;
-  margin-top:5vh;
-  left: 0;
-
-  width: 100%;
-  height:40px;
-  /* background-color: #f5f5f5; */
-  box-sizing: border-box;
-  display: flex;
-  /* justify-content: center; */
-  background-image:url('https://raw.githubusercontent.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/main/img/vaporwave/vaporwave-music.gif'); background-repeat:repeat;
-
-  border: 3px solid fuchsia;
-  box-shadow: 5px 5px cyan, 5px 5px cyan;
-  z-index:100;
-}
 
 .vapo-img{
   display:flex;
@@ -568,66 +572,54 @@ background-color:#270342;
   align-self:flex-start;
 }
 
-#audio-player audio {
 
-  width: 15%;
-  max-height:100%;
-  max-width: 15%;
-  border-radius: 0px;
-  align-self:flex-start;
+/* music */
 
-}
 
-audio {
-  color:cyan;
-}
+ #audio-player {
+   position: fixed;
+   bottom: 0;
+   margin-top:5vh;
+   margin-inline-start:90%;
+   margin-bottom:5vh;
+   width: 50%;
+   height:100px;
+   box-sizing: border-box;
+   display: inline;
+   align-items:right;
+   z-index:100;
 
-  audio::-webkit-media-controls {
-    display: flex;
-    justify-content: center;
-    /* background-image:linear-gradient(to bottom, magenta, cyan); */
-    border-radius: 0px;
-    overflow: hidden;
-    margin: 0 auto;
+ }
+  #vaporwave-audio {
+    display: none;
   }
 
-  audio::-webkit-media-controls-enclosure {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
+  #play-pause-button {
+    display: inline-block;
+    color:white;
+    text-shadow: -1px -1px black, 1px 1px magenta;
+    background: none;
+    cursor: pointer;
+    position:fixed;
+    border-radius:50px;
+    border:none;
   }
 
-  audio::-webkit-media-controls-play-button {
-     border: 2px solid blue;
-     width: 24px;
-     height: 24px;
+  #play-pause-image {
+    display: inline;
+
+    height: 100px;
+    width: 100px;
+    border:2px groove blue;
+    border-radius:50px;
   }
 
-  audio::-webkit-media-controls-start-playback-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    padding: 0 10px;
-    background-color: blue;
-    border: 2px solid magenta;
+  #play-pause-image.playing {
+    content: url(/img/vaporwave/simpsons-wave.gif);
   }
 
-  audio::-webkit-media-controls-timeline {
-    width: 20%;
-    margin: 0 10px;
 
-  }
-
-  audio::-webkit-media-controls-time-remaining-display {
-    margin: 0 10px;
-  }
-
-  audio::-webkit-media-controls-volume-slider {
-    /* display: none; */
-  }
-
+/* Vaporwave gifs */
 
 .vapo-issues{
   align-content: center;
@@ -645,17 +637,38 @@ audio {
 }
 
 #book-worm{
+  display:inline-block;
   width:80px;
   height:auto;
   align-self:center;
   margin:0 2.5em;
   filter:hue-rotate(180deg);
 }
+.vapo-border{
+  align-items:stretch;
+  justify-content:space-between;
+  padding:2em 4.4em;
+  width:100%;
+}
 #vapo-welcome{
-background-image: url(/img/vaporwave/welcome.gif);
-/* align-self: flex-start; */
-  width:200px;
+  width:280px;
   display:inline-block;
+  height:30px;
+  align-self:center;
+  filter:hue-rotate(260deg);
 
+}
+
+#vapo-cat{
+  width:50px;
   height:auto;
+  display:inline-block;
+  margin:0 1em;
+}
+
+/* remove padding to have the border */
+#about{
+  margin-top:0;
+  padding-top:0;
+  padding-bottom:2em;
 }

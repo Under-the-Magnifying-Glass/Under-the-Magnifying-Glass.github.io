@@ -46,6 +46,9 @@ main {
   flex-direction: column;
   align-self: center;
 }
+head > link{
+  filter:invert(1);
+}
 
 /*--------------------------------------------------------------
 # Disable AOS delay on mobile
@@ -1177,12 +1180,6 @@ align-self: center;
 }
 
 
-#audio-player {
-  display:none;
-}
-#vapo-book{
-  display:none;
-}
 
 #placeholder{
   text-align:center;
@@ -1229,4 +1226,21 @@ margin:0;}
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
+}
+
+
+/* hide style specific elements */
+
+#audio-player {
+  display:none;
+}
+#vapo-book{
+  display:none;
+}
+
+#book-worm{
+  display:none;
+}
+#vapo-welcome{
+  display:none;
 }

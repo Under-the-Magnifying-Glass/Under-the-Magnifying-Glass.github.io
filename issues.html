@@ -32,6 +32,10 @@
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
+
+    <!-- Favicons -->
+    <link href="assets/img/mag-logo.png" rel="icon" id="fav-icon">
+
   <!-- =======================================================
   * Template Name: Plato - v4.9.0
   * Template URL: https://bootstrapmade.com/plato-responsive-bootstrap-website-template/
@@ -60,8 +64,8 @@
             <li class="dropdown" type="button"><a href="#"><span>Issues</span><i class="bi bi-chevron-down"></i></a>
               <ul>
                 <li><a class="nav-link scrollto" href="issues.html">Sherlock Holmes</a></li>
-                <li><a class="nav-link scrollto" href="#">Hercules Poirot</a></li>
-                <li><a class="nav-link scrollto" href="#">Nancy Drew</a></li>
+                <li><a class="nav-link scrollto" onclick="missingIssue()">Hercules Poirot</a></li>
+                <li><a class="nav-link scrollto" onclick="missingIssue()">Nancy Drew</a></li>
               </ul>
             </li>
             <li><a class="nav-link scrollto"><span onclick="openNav()">Styles</span></a></li>
@@ -254,13 +258,19 @@ Metadata            </button> -->
 
     </footer><!-- End Footer -->
 
-    <!-- vaporwave music -->
+<!-- vaporwave music -->
+
     <div id="audio-player">
-      <audio controls aria-label="chill synth-wave song (MACINTOSH 420)">
+
+      <audio id="vaporwave-audio" controls>
         <source src="assets/media/MACINTOSH PLUS.mp3" type="audio/mpeg">
       </audio>
+      <button id="play-pause-button">
+      <img id="play-pause-image" src="/img/vaporwave/aesthetic-anime-music.gif">
+      Play me!</button>
+
     </div>
-  </div>
+
 
 
   <!-- END WRAP  -->
