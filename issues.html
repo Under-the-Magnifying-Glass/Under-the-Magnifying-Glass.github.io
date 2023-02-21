@@ -92,139 +92,120 @@
     </header><!-- End Header -->
 
 
-    <div id="nav-toggler">
-      <nav class="navbar navbar-expand-lg scrolled-offset fixed-top" id="toggler">
-
-
+    <nav class="navbar align-items-stretch justify-content-center scrolled-offset fixed-top" id="toggler">
+      <div class="d-flex align-items-center">
         <a class="navbar-brand" href="#">
           <img id="logo" src="assets/img/mag-logo.png" alt="Under the Magnifying Glass" style="width:40px;" class="rounded-pill shift">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-          <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
-            <li class="nav-item">
-              <a class="nav-link navbar-text hover-underline-animation" id="btn1" href="#">Dainty Hands</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link navbar-text hover-underline-animation" id="btn2" href="#">Musgrave Ritual</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link navbar-text hover-underline-animation" id="btn3" href="#">Scandal in Bohemia</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link navbar-text hover-underline-animation" id="btn4" href="#">Compare</a>
-            </li>
-          </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
+        <div class="align-items-stretch justify-content-center">
+          <div class="navbar-nav flex-row" id="navbarTogglerDemo03">
+            <a class="nav-link navbar-text hover-underline-animation" id="btn1" href="#">Dainty Hands</a>
+            <a class="nav-link navbar-text hover-underline-animation" id="btn2" href="#">Musgrave Ritual</a>
+            <a class="nav-link navbar-text hover-underline-animation" id="btn3" href="#">Scandal in Bohemia</a>
+            <a class="nav-link navbar-text hover-underline-animation" id="btn4" href="#">Compare</a>
 
+          </div>
         </div>
-
-      </nav>
-    </div>
-
-      <!-- =======  Metadata =======
-      REMEMBER TO COLLAPSE WHEN ON SMALL SCREENS!!!!-->
+      </div>
+    </nav>
 
 
-      <div class="container-fluid" id="content">
-        <div class="row align-items-start">
 
-          <div class="col-2 col-lg-2 col-md-2 col-sm-2 col-xs-2" id ="metadata">
 
-            <!-- <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#metadata-target" aria-expanded="false" aria-controls="metadata-target">
-Metadata            </button> -->
-            <!-- <button class="collapsible">Explore</button> -->
+          <!-- =======  Metadata =======
+          REMEMBER TO COLLAPSE WHEN ON SMALL SCREENS!!!!-->
 
-            <!-- REMEMBER TO USE NAVBAR MECHANISM FOR COLLAPSING -->
 
-              <div class="metadata floating" id="metadata-target">
-                <div class="row mt-4">
 
-                  <h5 id="metadata-select-text">Select the text from the menu</h5>
-                  <img src="/img/vaporwave/read-book-worm.gif" class="vapo-issues"id="book-worm">
+  <div class="container-fluid" id="content">
 
-                  <ul id="list" style="list-style: none;">
-                  </ul>
-                </div>
-                  <div class="row mt-4">
-                      <h5 id="metadata-select-metadata">Select the metadata</h5>
-                      <div class="col-md-12">
-                          <form role="form">
-                              <div class="checkbox"><label>
-                                      <input type="checkbox" name="checkbox" id="showfemalechar" class="button showmetadata" data-concept="fcharacter"> Female
-                                      Characters</label></div>
-                                <div class="checkbox"><label>
-                                        <input type="checkbox" name="checkbox" id="showmalechar" class="button showmetadata" data-concept="character"> Male
-                                        Characters</label></div>
 
-                              <div class="checkbox"><label>
-                                      <input type="checkbox" name="checkbox" id="showplaces" class="button showmetadata" data-concept="places"> Places
-                                      </label>
-                              </div>
-                              <div class="checkbox"><label>
-                                      <input type="checkbox" name="checkbox" id="showcases" class="button showmetadata" data-concept="citedCase"> Cited Cases
-                                      </label>
-                              </div>
-                              <div class="checkbox"><label>
-                                <input type="checkbox" name="checkbox" id="showWorks" class="button showmetadata" data-concept="works"> Literary Works
+    <div class="row align-items-start">
+
+      <div class="col-4 col-lg-2 col-md-4 col-sm-4" id ="metadata">
+        <div class="metadata floating" id="metadata-target">
+          <div class="row mt-4">
+            <h5 id="metadata-select-text">Select the text from the menu</h5>
+            <img src="/img/vaporwave/read-book-worm.gif" class="vapo-issues"id="book-worm">
+            <ul id="list" style="list-style: none;">
+            </ul>
+          </div>
+            <div class="row mt-4">
+                <h5 id="metadata-select-metadata">Select the metadata</h5>
+                <div class="col-md-12">
+                    <form role="form">
+                        <div class="checkbox"><label>
+                                <input type="checkbox" name="checkbox" id="showfemalechar" class="button showmetadata" data-concept="fcharacter"> Female
+                                Characters</label></div>
+                          <div class="checkbox"><label>
+                                  <input type="checkbox" name="checkbox" id="showmalechar" class="button showmetadata" data-concept="character"> Male
+                                  Characters</label></div>
+
+                        <div class="checkbox"><label>
+                                <input type="checkbox" name="checkbox" id="showplaces" class="button showmetadata" data-concept="places"> Places
                                 </label>
                         </div>
-                              <div class="checkbox"><label>
-                                      <input type="checkbox" name="checkbox" id="showpeople" class="button showmetadata" data-concept="people"> Mentioned people
-                                      </label>
-                              </div>
-
-
-                          </form>
-                      </div>
+                        <div class="checkbox"><label>
+                                <input type="checkbox" name="checkbox" id="showcases" class="button showmetadata" data-concept="citedCase"> Cited Cases
+                                </label>
+                        </div>
+                        <div class="checkbox"><label>
+                          <input type="checkbox" name="checkbox" id="showWorks" class="button showmetadata" data-concept="works"> Literary Works
+                          </label>
                   </div>
-                  <div class="row clearfix mt-4">
+                        <div class="checkbox"><label>
+                                <input type="checkbox" name="checkbox" id="showpeople" class="button showmetadata" data-concept="people"> Mentioned people
+                                </label>
+                        </div>
 
 
-                      <div class="col-md-12">
-
-                          <!-- <h5> Instances:</h5> -->
-				      <p>Female Characters</p>
-				      <pre><p class="empty" id="fcharacter"></p></pre>
-				    <p>Male Chatacters</p>
-				    <pre><p class="empty" id="character"></p></pre>
-				    <p>Places</p>
-				    <pre><p class="empty" id="places"></p></pre>
-				    <p>Cited Cases</p>
-				    <pre><p class="empty" id="citedCase"></p></pre>
-				    <p>Literary Works</p>
-				    <pre><p class="empty" id="works"></p></pre>
-				    <p>Mentioned People</p>
-				    <pre><p class="empty" id="people"></p></pre>
+                    </form>
+                </div>
+            </div>
+            <div class="row clearfix mt-4">
 
 
+      <div class="col-md-12" id="instances">
 
-                      </div>
-                  </div>
-              </div>
-            <!-- </div> -->
-          </div>
-
-
-      <div class="col-8 col-md-10 col-sm-10 articles d-flex" id="main">
-
-        <!-- <div class="overflow-auto"> -->
-          <div class= "col-11 col-md-11 col-sm-11" id="canvas">
-
-          <main id="articles">
-
-<div id="placeholder">
-<p style="text-align:center;"> Choose a text from the menu above and start exploring! </p>
-<img src='/img/vaporwave/book-flip.gif' id="vapo-book">
-<img src='/img/vaporwave/book-flip.gif' id="vapo-book">
-<img src='/img/vaporwave/book-flip.gif' id="vapo-book">
-<img src='/img/vaporwave/book-flip.gif' id="vapo-book">
+                    <!-- <h5> Instances:</h5> -->
+	      <p>Female Characters</p>
+	      <pre><p class="empty" id="fcharacter"></p></pre>
+	    <p>Male Chatacters</p>
+	    <pre><p class="empty" id="character"></p></pre>
+	    <p>Places</p>
+	    <pre><p class="empty" id="places"></p></pre>
+	    <p>Cited Cases</p>
+	    <pre><p class="empty" id="citedCase"></p></pre>
+	    <p>Literary Works</p>
+	    <pre><p class="empty" id="works"></p></pre>
+	    <p>Mentioned People</p>
+	    <pre><p class="empty" id="people"></p></pre>
 
 
-</div>
-        </main></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+          <div class="col-8 col-md-10 col-sm-10 articles d-flex" id="main">
+
+            <!-- <div class="overflow-auto"> -->
+              <div class= "col-11 col-md-11 col-sm-11" id="canvas">
+
+              <main id="articles">
+
+    <div id="placeholder">
+    <p style="text-align:center;"> Choose a text from the menu above and start exploring! </p>
+    <img src='/img/vaporwave/book-flip.gif' id="vapo-book">
+    <img src='/img/vaporwave/book-flip.gif' id="vapo-book">
+    <img src='/img/vaporwave/book-flip.gif' id="vapo-book">
+    <img src='/img/vaporwave/book-flip.gif' id="vapo-book">
+
+
+    </div>
+            </main></div>
 
 
 

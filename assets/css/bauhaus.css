@@ -368,11 +368,12 @@ letter-spacing:2px;
 
 
 
-#navbarTogglerDemo03 ul li a:hover{
+
+#navbarTogglerDemo03 a:hover{
   color: blue;
 }
 
-#navbarTogglerDemo03 ul li a.active {
+#navbarTogglerDemo03 a.active {
   color: blue;
 
 }
@@ -757,8 +758,9 @@ padding:0.5em 0.5em 0.5em 0.5em;
 blockquote{
   font-family:'CypherRegular';
   font-style: italic;
+  padding:1em 4em;
   color:blue;
-  background-color:#ffde17;
+  /* background-color:#ffde17; */
 
 }
 /* .col .style-title h1,h2,h3,h4{

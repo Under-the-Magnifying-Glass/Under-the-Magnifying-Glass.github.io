@@ -231,7 +231,7 @@ display:none;
   background-color:black;
 }
 
-#navbarTogglerDemo03 ul li a:not(.active){
+#navbarTogglerDemo03 a:not(.active){
 
   color:#444444;
   text-shadow: -1px -1px cyan, 1px 1px magenta;
@@ -239,7 +239,7 @@ display:none;
 
 }
 
-#navbarTogglerDemo03 ul li a.active{
+#navbarTogglerDemo03 a.active{
 
   color:cyan;
   text-shadow: -1px -1px black, 1px 1px magenta;
@@ -536,10 +536,12 @@ background-color:#270342;
   display:none;
 }
 
+.metadata p{
+  color:white;
+}
 .metadata{
   background-color:#6C4AB6;
   border: 3px solid fuchsia;
-  border-style:dotted;
   box-shadow: 5px 5px cyan, 5px 5px cyan;
   background-color:#3B3486;
 }
@@ -553,11 +555,17 @@ background-color:#270342;
 
 }
 #metadata:hover{
-  background-color:#6C4AB6;
+  border:4px dotted cyan;
 }
 
 
+blockquote{
+  font-family: "VCR_MONO";
+  font-style: italic;
+  padding:1em 4em;
+  /* background-color:#ffde17; */
 
+}
 
 .vapo-img{
   display:flex;
@@ -580,13 +588,17 @@ background-color:#270342;
    position: fixed;
    bottom: 0;
    margin-top:5vh;
-   margin-inline-start:90%;
+   margin-left:92vw;
+   /* margin-right:10vw; */
    margin-bottom:5vh;
-   width: 50%;
+   /* padding:0 1em 0 2em; */
+   width: 5vw;
    height:100px;
    box-sizing: border-box;
-   display: inline;
-   align-items:right;
+   display: flex;
+   align-items:center;
+   align-content:center;
+   justify-content:flex-start;
    z-index:100;
 
  }
@@ -600,7 +612,9 @@ background-color:#270342;
     text-shadow: -1px -1px black, 1px 1px magenta;
     background: none;
     cursor: pointer;
+    /* width:5vw; */
     position:fixed;
+    /* align-self:center; */
     border-radius:50px;
     border:none;
   }
@@ -645,17 +659,17 @@ background-color:#270342;
   filter:hue-rotate(180deg);
 }
 .vapo-border{
-  display:flex;
+  display:inline-block;
   align-items:stretch;
   justify-content:space-between;
   padding:2em 4.4em;
-  width:100%;
+  /* width:100%; */
 }
 #vapo-welcome{
-  width:280px;
-  display:inline-block;
+  width:15vw;
+  display:flex-start;
   height:30px;
-  align-self:center;
+  /* align-self:center; */
   filter:hue-rotate(260deg);
 
 }

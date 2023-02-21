@@ -12,9 +12,7 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
   background-color: #f4f4f4;
-
 }
-
 a {
   color: #4eb478;
   text-decoration: none;
@@ -154,6 +152,11 @@ transition: transform .2s; /* Animation */
   padding:0;
 }
 
+#content{
+  padding-top:7em;
+
+}
+
 /* .author{
   text-align:left !important;
 }
@@ -168,7 +171,7 @@ transition: transform .2s; /* Animation */
 * Desktop Navigation
 */
 .navbar {
-  padding: 0;
+  padding:0;
 }
 
 .navbar ul {
@@ -183,6 +186,10 @@ transition: transform .2s; /* Animation */
   position: relative;
 }
 
+.navbar a{
+  cursor: pointer;
+
+}
 .navbar a,
 .navbar a:focus {
   display: flex;
@@ -286,6 +293,15 @@ transition: transform .2s; /* Animation */
   transition: 0.5s;
 }
 
+.mobile-nav-toggle a{
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+  display: block;
+  line-height: 0;
+  transition: 0.5s;
+}
+
 @media (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
@@ -294,6 +310,9 @@ transition: transform .2s; /* Animation */
   .navbar ul {
     display: none;
   }
+/* #toggler{
+  width:100%;
+} */
 }
 
 .navbar-mobile {
@@ -451,48 +470,55 @@ transition: transform .2s; /* Animation */
 
 #nav-toggler{
   padding-bottom:1em;
-  z-index:10
+  z-index:10;
+  width:100%;
 }
 #toggler{
   background-color:white;
-  z-index:10
+  z-index:10;
+  width:100%;
+  overflow-x:auto;
+
 
 }
-#navbarTogglerDemo03 ul li a:not(.active) {
-  color: black;
+#navbarTogglerDemo03{
+  width:100%;
 }
 
-#navbarTogglerDemo03 ul li a.active {
-  color: #4eb478;
+#navbarTogglerDemo03 a{
+  padding:0.5em 1em 0.5em 1em;
+  color:black;
 }
 
+#navbarTogglerDemo03 a:hover,
+#navbarTogglerDemo03 a:focus{
+  color:#72c393;
+}
+/* .nav-item{
+  display:inline-block;
+}
+li > .nav-link {
+  display: inline-block;
+  align-self:flex-start;
+
+} */
 
 .navbar-text {
   padding: 0;
 }
 
-.navbar-text ul {
+/* .navbar-text ul {
   margin: 0;
   padding: 0;
   display: flex;
   list-style: none;
   align-items: center;
-}
+} */
 
 .navbar-text li {
   position: relative;
 }
 
-/* .nav-link{
-  color:black;
-} */
-/* .navbar-text {
-  color: black;
-}
-
-.navbar-text.active {
-  color: red;
-} */
 
 .navbar-text a,
 .navbar-text a:focus {
@@ -509,7 +535,7 @@ transition: transform .2s; /* Animation */
 
 
 
-}
+
 .navbar-text a i,
 .navbar-text a:focus i {
   font-size: 12px;
@@ -674,6 +700,9 @@ h5{
     line-height: 24px;
     margin-bottom: 30px;
   }
+  #toggler{
+    width:100%;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -732,6 +761,10 @@ section {
   .section-title span {
     font-size: 38px;
   }
+
+  /* #toggler{
+    width:100%;
+  } */
 }
 
 /*--------------------------------------------------------------
