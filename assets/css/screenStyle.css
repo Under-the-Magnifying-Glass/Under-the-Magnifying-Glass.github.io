@@ -1,7 +1,29 @@
 /*METADATA background*/
-.metadata{background-color: #CAEEC2;}
+.metadata{
+  background-color: #E5F6DF;
+  border:2px solid green;
+}
 .metadata:hover{
-    background-color: #E5F6DF;}
+    background-color:#CAEEC2 ;}
+
+#articles h1, {
+  font-weight: 700;
+  font-size:1.8em;
+}
+
+#articles h2{
+  font-size:1.5em;
+  font-weight: 500;
+}
+
+#articles h3, h4, h5{
+  font-size:1.2em;
+  font-weight: 500;
+}
+
+
+
+
 
 .circt{display: none;}
 h1,
@@ -12,4 +34,3 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
 }
-

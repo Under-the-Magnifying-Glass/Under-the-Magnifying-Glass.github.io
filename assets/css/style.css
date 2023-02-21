@@ -99,35 +99,35 @@ head > link{
   margin-bottom:2vw;
 }
 
-.articles {
+#articles {
   font-family: helvetica;
   align-content:center;
   justify-content: center;
   }
 
-.articles h1,
-.articles h2{
+#articles h1,
+#articles h2{
   text-align:center;
-  padding: 10px 10px 0px 10px;
-  font-weight: normal;
+  padding: 10px 10px 10px 10px;
 }
 
-.articles h3{
+#articles h3{
   text-align:center;
-  padding: 10px 10px 0px 10px;
-  font-weight: normal;
+  padding: 10px 10px 10px 10px;
 }
-.articles h4, .articles h5{  text-align:center;
+#articles h4, .articles h5{  text-align:center;
 }
-.articles ul{
+#articles ul{
 text-align:center;
 /* list-style-position:outside; */
 list-style: none;
 ;
 }
-.articles p {
+#articles p {
   text-align:justify;
+  font-weight:300;
 }
+
 /* #compare-stories{
   margin-left:2vw;
   margin-right:2vw;
@@ -1062,7 +1062,7 @@ section {
 .modal {
 display: none; /* Hidden by default */
 position: fixed; /* Stay in place */
-z-index: 1; /* Sit on top */
+z-index: 200; /* Sit on top */
 left: 0;
 top: 0;
 width: 100%; /* Full width */
