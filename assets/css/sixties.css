@@ -1,33 +1,30 @@
 @font-face {
-        font-family: "Davida";
-        src: url("../fonts/DavidaRegular.ttf") format('truetype');
-          }
+    font-family: "Davida";
+    src: url("../fonts/DavidaRegular.ttf") format('truetype');
+      }
 
 @font-face {
-    font-family: "Euphoria" ;
-    src: url("../fonts/EuphoriaParty-1Geng.ttf");
+font-family: "Euphoria" ;
+src: url("../fonts/EuphoriaParty-1Geng.ttf");
+}
+
+
+@font-face {
+font-family: "Moscoso" ;
+src: url("../fonts/VICTM___.TTF");
 }
 
 @font-face {
-    font-family: "Moscoso" ;
-    src: url("../fonts/VICTM___.TTF");
-}
- 
-@font-face {
-    font-family: 'Boecklins';
-    src: url('../fonts/BoecklinsUniverse.ttf'); /*http://www.fontsaddict.com/fontface/amelia.ttf */
-  }
-.wrap {
-    background-color:#108b9e; /*   rgb(83, 177, 180)  */
-    }  
-/*'Bungee Shade', cursive;
-background-image: radial-gradient(circle, rgb(255, 0, 179), yellow, rgb(28, 241, 216));*/
-    
-.logo {
-    font-family: "Moscoso";
+font-family: 'Cooper-Black';
+src: url('../fonts/cooper-black.ttf'); /*http://www.fontsaddict.com/fontface/amelia.ttf */
 }
 
-p  { color: #333; font-family: "Boecklins"; text-transform: lowercase; /* font-size: 16px; line-height: 28px; margin: 0 0 24px;*/ }
+*{font-family: "Moscoso";}
+
+.body,  .wrap {
+background-color:#2090a1; 
+}  
+
 
 img{filter: grayscale(100%);}
 
@@ -35,386 +32,428 @@ img{filter: grayscale(100%);}
 .navbar .active,
 .navbar .active:focus,
 .sidenav a:hover,
+.sidenav .closebtn:hover,
 .navbar li:hover>a {
-    text-decoration: none;
-    color: #108b9e;
+text-decoration: none;
+color: #2090a1;
 }
 
 #header,#footer {
-    color:white;
-    background-color:#dd1c4b; 
-    font-family: "Moscoso";
+
+color:white;
+background-color:#dd1c4b; 
+ 
 }
+/*#page_logo h1 span, nav>* a{font-family: "Davida"; color: black;}*/
 
 .sidenav{background-color:#dd1c4b;
-   }
+}
 .sidenav a {color:#fff}
 
-.sidenav .closebtn:hover{
-    text-decoration: none;
+#navbarTogglerDemo03 a{
+
+font-family: "Moscoso";
+
+color:black;
+
 }
 
-#navbarTogglerDemo03{
-    font-family: "Davida";
-    color:white;
-    background-color: #108b9e;
-}
- 
 #hero{
-    background-image: url("../img/updated/pexels-cottonbro-7299584.jpg") ;
-    
-    background-repeat:repeat;
-    
-    background-position:center;
-    background-size: cover;
-  
- 
+background-image: url("../img/updated/pexels-cottonbro-7299584.jpg") ;
+background-repeat:repeat;
+background-position:center;
+background-size: cover;
 }
-    
-#hero h1{
-    font-family: "Moscoso" /* 'Bungee Shade', cursive;*/
-}
+
 
 #hero .btn-get-started{
-    font-family: "Moscoso";
-   
-    border-radius: 50%;
-    text-decoration: none;
-    color:#dd1c4b;
-    background-color: #faff2c;
-    border-color:#dd1c4b;
-    border-style:ridge;
-    border-width: 3px;
-          }
+font-family: "Moscoso";
+border-radius: 50%;
+text-decoration: none;
+color:#dd1c4b;
+background-color: #faff2c;
+border-color:#dd1c4b;
+border-style:ridge;
+border-width: 3px;
+      }
 #hero .btn-get-started:hover {
-        background: #dd1c4b;
-        border: 2px solid #dd1c4b;        
-    }
+    background: #dd1c4b;
+    border: 2px solid #dd1c4b;        
+}
 .back-to-top {
-    position: fixed;
-    visibility: hidden;
-    opacity: 0;
-    right: 15px;
-    bottom: 15px;
-    z-index: 996;
-    width: 40px;
-    height: 40px;
-    transition: all 0.4s;
-
-    border-radius: 50%;
-    border-width: 5px;
-    border-color:white;
-    background-color:#dd1c4b;
-    border-style: solid;
+position: fixed;
+visibility: hidden;
+opacity: 0;
+right: 15px;
+bottom: 15px;
+z-index: 996;
+width: 40px;
+height: 40px;
+transition: all 0.4s;
+border-radius: 50%;
+border-width: 5px;
+border-color:white;
+background-color:#dd1c4b;
+border-style: solid;
 }
 
 .back-to-top:hover{
-    background-color:#108b9e;
+background-color:#108b9e;
 }
 
 .about .image {
-    border-radius: 50%;
-   filter: grayscale(100%);
+border-radius: 50%;
+filter: grayscale(100%);
 }
-    
-    
-.about .content{
-    padding:5px;
-    font-size: 170%;
-    /*border-style:groove;    
-    border-radius: 15px 50px; */
-    /* background-color: #f5a46c;    cornice arcobaleni  https://t3.ftcdn.net/jpg/01/41/79/12/360_F_141791256_sE42YMpLpVKB6VY5RuBSjU1c6Kdrud8c.jpg
-     border-style: solid;
-    border-width: 5px;
-    border-color: rgb(38, 60, 185);
-    border-image: url("/img/scrollframe.jpg") 50 ; */
-    background-color: white;
-    text-align: center;
-    text-transform: uppercase;    
-}
-.about .content h3{
-    font-family: "Euphoria";
-    
-    color:#dd1c4b;
-    font-weight: normal;
+   
+.about .content {
+padding: 20px;
+background-color: white;
+color: #dd1c4b;
+text-align: center;
+font-size:large;
+
 }
 
-.about .content p{
-    
-    font-family: "Euphoria";
-     line-height: 25px; 
-    line-height: 25px;
-     line-height: 25px; 
-    line-height: 25px;
-     line-height: 25px; 
-    line-height: 25px;
-     line-height: 25px; 
-    line-height: 25px;
-     line-height: 25px; 
-    color: #dd1c4b;
+
+.about .content h3, .about .content p {
+font-family: "Moscoso";
+color:#dd1c4b;
+
+
 }
-/*
-.about .content p::first-line{
-    text-decoration: #dd1c4b wavy overline;
-     }*/
+
+
+
 
 div.modal-content {
-    background-color: #faff2c;
+background-color: white;
+color: #dd1c4b;
+font-weight: bold;
+font-size:medium;
+border-width: 5px;
+border-style: solid;
+border-color:#dd1c4b;
 
-    color: #dd1c4b;
-    font-family: "Moscoso";
-    font-weight: bold;
-    font-size:medium;
-    border-width: 5px;
-    border-style: solid;
-    border-color:#dd1c4b;
-    
 }
 
 
 .modal-content .close {
-    
-    color:#dd1c4b;
-    
+color:#dd1c4b;   
 }
 
 
 #DisclaimerBtn {
 
-        font-family:  "Euphoria"/*'Bungee Shade', cursive*/ ;
-        color: white;
-        
-        background-color: #dd1c4b;
-        /*background-color: #ffce00;*/
-        
-        border-width: thick;
-       
-        }
+    font-family:  "Moscoso" ;
+    color: white;
+    background-color: #dd1c4b;
+    /*background-color: #ffce00;*/
+   
+    }
 #DisclaimerBtn:hover{
-        background-color:#108b9e;   
+    background-color:#108b9e;   
+}
+
+.features .card, .metadata { 
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+    background: rgba(36, 36, 36, 0.9) ;
+    text-align:center;
     }
 
-.features .card{ 
-        
-        
-        border-width: 5px;
-        border-style: solid;
-        border-color: white;
-        background: rgba(36, 36, 36, 0.753) ;
-        text-align:center;
-        }
+/*.metadata{ 
 
-
-        
-.features .card-title a{
-        font-family: "Moscoso";
-        font-size: 200%;
-        font-weight: normal;
-        background: linear-gradient(to right, #d6365a,
-         white, #108b9e);
-            -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
-    }
-
-.features  .card-text{
+background-color:#faff2c; 
+color:#dd1c4b; 
+}*/
+ 
     
-    block-size: max-content;
-
-        font-family: "Moscoso";
-        font-size:x-large;
-        font-stretch:expanded;
-        background: linear-gradient(to right,   #d6365a,
+.features .card-title a{
+     
+    font-size: 200%;
+    font-weight: normal;
+    background: linear-gradient(to right, #d6365a,
      white, #108b9e);
-    -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
-     }
-
-.features .card:hover{
-    border-color: #dd1c4b;
-    background-color: #faff2c ;
-    text-decoration: none;
-        }
-
-.features .card:hover  .card-title a , .features .card:hover .card-text{
-        background: #dd1c4b;
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
-        text-decoration: none;
+}
+/*.info p{ float:right;
+ font-family: "Davida";}*/
+ 
+.metadata h5, .metadata label, .metadata p{background: linear-gradient(to right, #d6365a,
+    white, #108b9e);
+       -webkit-text-fill-color: transparent;
+       -webkit-background-clip: text;
+    font-family: "Moscoso";}
 
-      }
-  
+.features  .card-text{
+block-size: max-content;
+     
+    font-size:x-large;
+    font-stretch:expanded;
+    background: linear-gradient(to right,   #d6365a,
+ white, #108b9e);
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+ }
 
-.section-title span{
-    font-family: "Davida";
-    
+.features .card:hover{
+border-color: #dd1c4b;
+background-color: #faff2c;
+text-decoration: none;
+    }
+
+.features .card:hover  .card-title a , .features .card:hover .card-text{
+    background: #dd1c4b;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-decoration: none;
+  }
+
+
+.section-title {
+font-family: "Davida";  
 }
 
 .section-title h2{
-    font-family:"Davida"; 
-    color:#dd1c4b;
+
+color:#dd1c4b;
 }
 
 .section-title p {
-    /* background-color: rgba(243, 230, 230, 0.5);*/
-        color:white;
-        font-family: "Davida";
-    }
-
-.services .icon-box{
+    color:white;
     
-        border-radius: 15px 50px ;
-        background-color: #faff2c ;
-       
-        /*border-style:solid; #f5a46c*/
-        /*border-width: 5px;*/
-       /* border-color: black;*/
-    }
-
-
-.services .img-left {
-    border-radius: 100px;
-    margin: 15px;
-    width: 120px;
-    float: left;
-    z-index: 1;
 }
 
-.services .img-right {
-    border-radius: 100px;
-    margin: 15px;
-    width: 120px;
-    float: right;
-    z-index: 1;
-                
-                }
+.services .icon-box{
 
-                
+    border-radius: 15px 50px ;
+    background-color: #faff2c ;
+   
+}
+
+
+
+            
 
 .services .test-content-right h3 a, .services .test-content-left h3 a{
-    font-size: 150%; 
+font-size: 150%; 
 color: #dd1c4b;
- text-transform:uppercase;   
+text-transform:uppercase;   
 }
 
 
 .services .test-content-right p{font-size: 150%; 
-                                text-align:unset; 
-                                color: #dd1c4b;
-                                font-family: "Moscoso";
-                                }
+                            text-align:unset; 
+                            color: #dd1c4b;
+                             
+                            }
 .services .test-content-left p{font-size: 150%; 
-                                color: #dd1c4b;
-                                font-family: "Moscoso";
-                                }
+                            color: #dd1c4b;
+                             
+                            }
 
 
-h1,h3, h4{ color: #dd1c4b;   font-family: 'Moscoso';  }
+h1,h3,h4{ color: #dd1c4b;   font-family: 'Moscoso';  }
 
 a { color: #dd1c4b;  }
-
-
-
-    
-    
-
 .member img{
-        border-width: 10px;
-        border-style: solid;
-        border-color: #dd1c4b;
-  }
+    border-width: 10px;
+    border-style: solid;
+    border-color: #dd1c4b;
+}
 
-/*
-.card-img-top{
-    -webkit-filter: blur(0px) brightness(1.1) contrast(1.4) grayscale(0.39) hue-rotate(250deg) invert(0.1) opacity(100%) saturate(8.8) sepia(0.5) drop-shadow(0px 0px 5px #000);
-    filter: blur(0px) brightness(1.1) contrast(1.4) grayscale(0.39) hue-rotate(250deg) invert(0.1) opacity(100%) saturate(8.8) sepia(0.5) drop-shadow(rgb(0, 0, 0) 0px 0px 5px);
-}*/
 .team .member .member-info-content h4{
-    font-family: "Moscoso";
-    color:#dd1c4b;
-    font-size: 50px;
+ 
+color:#dd1c4b;
+font-size: 50px;
 }
 
 .team .member .member-info-content span{
-    font-family: "Moscoso";
-    color: #dd1c4b;
-    font-size: 30px;
+ 
+color: #dd1c4b;
+font-size: 30px;
 }
-
-
 
 .team .member:hover .member-info-content h4, .team .member:hover .member-info-content span, .team .member:hover img {  
-    color:#dd1c4b;   
-  }
+color:#dd1c4b;   
+}
 .team .member:hover .member-info{
 background: rgba(161, 160, 161, 0.1);
-  }
-
-
- /*ISSUES*/
- .circt{display: block; 
-    align-self: center; 
-    height: 150px;}
-h5, #articles h3 i , #articles ul a{color:black; font-family: "Davida";}
-#articles h2{color:white; font-family:"Davida";background-color: black; border-radius: 10px; border:1px solid transparent;}
- #articles p{text-transform: none; /*padding: 15px;*/}
- #articles h1{font-family: "Moscoso"; color:black}
- .six_author{float: left; font-family: "Davida"; border-radius: 10px; border-style: solid; border-width: 2px;}
- .six_article-info{float: right; position: relative;
-font-family: "Davida";
-border-radius: 10px; border-style: solid; border-width: 2px; position: relative;}
-
- .metadata{ 
-    /*
-    width: 200px;
-    height: 400px;
-    position: fixed; */
-    font-family: "Moscoso";
-    background-color:#dd1c4b; 
-    color:white; 
-    
-    border-width: 5px;
-    
-    border-style: solid;}
-
-.metadata:hover {
-    color: #dd1c4b;
-    background-color: #faff2c;
 }
 
-#articles figure {
-    width:min-content;
-    background-color: black;
-    border-style: solid;
-    border-width: 5px;
-    border-color:#dd1c4b;
+
+/*ISSUES*/
+div.wrap#issuespage{background-color: #fff;}
+
+.circt{     margin-left: 0;
+align-self: center;
+
+display:block;
+width:370px;}
+
+#articles{background-color: #fff;}
+.text{margin-top: 10px;}
+.text p a{color: #dd1c4b; }
+pre p, #articles h5, #articles ul{font-family: "Cooper-Black";}
+
+.info, .info li a{
+
+font-size: small;    
+color:black;
+text-decoration: none;
+font-family:"Cooper-Black";
+}
+
+
+
+/* .text p:nth-child(odd){  
+border: 2px solid #dd1c4b; padding:5px;
+}
+
+*/
+@media screen and (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+
+.text{ 
+    column-count:2;
+    column-gap: 40px;
+    column-rule: 2px solid black;
+ 
+       /* column-rule: 4px solid #dd1c4b;
+       font-size: x-large;*/
+      }
+
+
+div.notes p{
+    font-size: xx-small;
+    font-family: "Cooper Black";
+    color: black;
+}
+#articles figure img{
+   /* max-width: 270px;          cerca poster sizes*/
+    
+  
+  
+    filter: sepia() hue-rotate(30deg) saturate(var(--value, 5)); --value: 4;
   
 }
-figcaption{font-family: "Euphoria";
-            color: white;
-            font-size:xx-large;
-            align-self: center;}
 
-blockquote{font-family: "Moscoso";  color:#dd1c4b; background-color:#faff2c ; border-radius: 10px; border:1px solid transparent;}
-.notes p{
-    color:black; 
-    font-size: 60%;}
+
+}
+
+@media screen and (max-width:801px){
+.circt{
+    width: 100px;
+}
+
+}
+
+
+#articles h1 {                         
+                        font-family: "Moscoso";
+                        color:black;
+                         }
+#articles h2 ,#articles h2>* { text-decoration: none; font-family: "Cooper Black"; color: #fff; background-color: #dd1c4b; }
+
+ #articles h4, #articles h4>*{font-family: "Cooper Black"; color: #dd1c4b}
+ #articles h5{color: #dd1c4b;}
+  #articles h3, #articles h3>*{font-family: "Cooper Black"; color: #dd1c4b;}
+/* FILTER THE IMAGESSSSSSSSSSSS
+#articles h3, #articles h3>* {color:black;  background-color: #fff; text-decoration: underline overline; font-family: "Cooper-Black"; font-size: xx-large; text-transform: uppercase;}*/
+
+
+
+
+.intro h4{color:#dd1c4b}  
+/*.metadata h5 {font-family: "Moscoso"; font-size: x-large; color:#dd1c4b;}*/
+
+/*old titles 
+
+h5, #articles h3 i , #articles ul a{color:black; font-family: "Cooper-Black";}
+#articles h3,#articles h4{font-family: 'Moscoso'; color: black;}
+#articles h2,  #articles h2>*{color:white; font-family:"Davida";background-color: #dd1c4b; border:1px solid transparent;}
+ #articles p{text-transform: none; }
+ #articles h1{font-family: "Moscoso"; color:black}
+
+ */
+
+#articles p, #articles p>*{text-transform: none; color:black;  font-family: 'Cooper-Black'; font-weight: lighter;}
+#articles h1{  color:black;}
+
+#placeholder p{ text-align: center; font-family: "Moscoso"; font-size: xx-large; color:#dd1c4b;   }
+#placeholder {
+align-self: center; }
+
+#articles ul a{color:black;}
+
+p#author , p#article-info , .intro p{ text-align: center;  color: black;}
+
+.metadata label{font-family: 'Moscoso';}
+sup a {color: #2090a1; text-decoration: none; }
+/*
+.metadata:hover {
+color: #dd1c4b;
+background-color: #faff2c;
+} */
+
+
+
 main#articles {
-    background-color: white;
-    background-image: none;
-    }
 
- /* .frame {
-    border: 30px solid;
-    border-image: url(/img/bgimg.jpg) 50 round;
-   }*/
+background-image: none;
+}
+#articles figure {
 
+margin: 0;
+margin-bottom: 10px;
+width:min-content;
+background-color: #dd1c4b;
+border-style: solid;
+border-width: 5px;
+border-color: #dd1c4b;
+
+}
+/* .intro{
+
+font-size: xx-large;
+align-self: center;
+width: 480px;
+background-color: #faff2c;
+border-style: solid;
+border-width: 5px;
+border-color:#dd1c4b;
+}*/
+
+
+figcaption{font-family: "Moscoso";
+        color: white;
+        font-size:xx-large;
+        align-self: center;}
 table{ 
-     font-family: "Davida";   
-    text-transform: uppercase;}
-td {
-    border: 1px solid black;
-    border-radius: 10px;
-    }
+margin-top: 10px;
+padding: 10px;
+background-color:#dd1c4b;
+column-span: all;
+  
+}
+/*  table border  border-style: solid;
+border-width: 2px;
+border-color:#dd1c4b;  
 
-    
- 
+
+td{background: linear-gradient(to right, #d6365a,
+#108b9e);
+   -webkit-text-fill-color: transparent;
+   -webkit-background-clip: text;}
+*/
+
+td{color: #fff; padding: 10px; font-size: large;}
+
+/*  */     
+blockquote{font-family: "Cooper-black";   color:black;}
+div.notes p{
+font-size: xx-small; }
+
+
