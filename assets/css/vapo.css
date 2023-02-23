@@ -111,7 +111,7 @@
   line-height: 1;
   font-weight: 100;
   font-family:'SFAlien';
-  letter-spacing: 4px;
+  letter-spacing: 10px;
   text-shadow: 2px 1px #3B3486, 2px 1px #3B3486;
   animation: color-change 2s infinite;
 
@@ -381,7 +381,8 @@ h2{
 }
 
 .btn-secondary{
-  width:25%;
+  width:30%;
+  height:30px;
   border: 3px dashed fuchsia;
   border-radius:0px;
   background-color:#3B3486;
@@ -431,6 +432,11 @@ background-color:#270342;
   color:fuchsia;
   text-shadow: -1px -1px cyan, 1px 1px cyan;
 
+}
+.features .card:hover .card-title a {
+
+  color:cyan;
+  text-shadow: -1px -1px black, 1px 1px magenta;
 }
 .card-img-top{
   border: 2px solid cyan;
@@ -659,15 +665,15 @@ blockquote{
   filter:hue-rotate(180deg);
 }
 .vapo-border{
-  display:inline-block;
-  align-items:stretch;
+  display:inline-flex;
+  /* align-items:stretch; */
   justify-content:space-between;
   padding:2em 4.4em;
-  /* width:100%; */
+  width:100%;
 }
 #vapo-welcome{
-  width:15vw;
-  display:flex-start;
+  width:18vw;
+  /* display:inline-block; */
   height:30px;
   /* align-self:center; */
   filter:hue-rotate(260deg);
