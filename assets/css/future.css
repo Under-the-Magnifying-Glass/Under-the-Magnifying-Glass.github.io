@@ -13,7 +13,7 @@
   color: rgb(62, 241, 62);
 }
 
-#header,#footer, .sidenav{
+ .sidenav{
   background: 
      
       rgba(28, 76, 25, 0.7);
@@ -21,6 +21,9 @@
   
 
 }
+
+#header,#footer{ background-color: #296147;}
+
 #hero .btn-get-started{
 font-family: "Xirod";
 border-color: black;
@@ -38,6 +41,7 @@ border-color: black;
   background: linear-gradient(to bottom right, #000000, #296147);;
 
 }
+.about div#lensabout{background-image: url(/img/close-up-eye-scanning.jpg);}
 
 /*ANIMATIONS*/
 
@@ -83,8 +87,8 @@ border-color: black;
     transform: translateX(0);
   }
   100% {
-    left: 10%;
-    transform: translateX(-10%);
+    left: 80%;
+    transform: translateX(-80%);
   }
 }
 
@@ -120,11 +124,26 @@ li a:hover{
   color: white;
   text-align: center;
 }
+figure{
+  
+  text-align: center;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(62, 241, 62);
+  background-color: rgba(255, 255, 255, .15);  
+  backdrop-filter: blur(5px);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px white;
+
+  animation:  glitch-2 3s infinite;
+}
 
 .metadata{
   animation-name: none;
+  font-size: small;
 }
-
+.metadata h5{font-family: "Xirod";}
 #articles h2:hover, #articles h3:hover, #articles h4:hover, .metadata:hover{
   background-color:rgba(255, 255, 255, 0.521);
 }
@@ -135,17 +154,21 @@ li a:hover{
   animation-iteration-count: 1;
   
 }
-#articles figure img{
-  
 
+#articles figure img{
+  filter: sepia() hue-rotate(90deg);
+ 
+/*
 -webkit-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%); 
 clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+*/
+border-width: 1px;
+border-style: solid;
+border-color: rgb(62, 241, 62);
 
-  position: relative;
-  animation: linear infinite alternate;
-  animation-name: run;
-  animation-duration: 3s;
-}
+border-radius: 10px;
+box-shadow: 0px 0px 2px white;
+} 
 
 .features .card, .features .card:hover{
   background:  white;
