@@ -55,6 +55,8 @@
   border: 3px solid fuchsia;
   border-style: groove;
   box-shadow: 5px 5px cyan, 5px 5px cyan;
+  display:flex;
+  justify-content: center;
   }
 
   p{
@@ -179,14 +181,14 @@
    content:" マガジン";
  }
 
- h2::before{
+ h2:not(#articles h2)::before{
   content:"【 ";
 }
  h3::before{
   content:"【 ";
 }
 
-h2::after{
+h2:not(#articles h2)::after{
   content:"【 た畏応王﻿";
 }
 
@@ -194,6 +196,16 @@ h3:not(#about-content > h3)::after{
   content:"【 た畏応王﻿";
 }
 
+/* #articles h1::before{
+  content:"【 ";
+
+} */
+
+#articles h1::after{
+  content:"【 た畏応王﻿";
+  font-size:smaller;
+
+}
 
 .section-title span{
 display:none;
@@ -255,7 +267,7 @@ a:hover{
 
 }
 
-h1, h2, h3, h4, h5{
+h1, h2, h3, h4, h5, .info{
 text-shadow: -1px -1px cyan, 2px 2px magenta;
 
 }
@@ -494,7 +506,15 @@ background-color:#270342;
   border: 3px solid cyan;
   border-style: groove;
   box-shadow: 5px 5px magenta, 5px 5px magenta;
+  width:60%;
+  align-self:center;
   }
+
+#articles:not(#compare-stories){
+  width:60%;
+
+
+}
 
 #logo{
   filter: invert(1);
@@ -522,7 +542,6 @@ background-color:#270342;
   padding-right:1vw;
   padding-top:1vh;
   padding-bottom:1vh;
-  margin-right:2vw;
 
 }
 

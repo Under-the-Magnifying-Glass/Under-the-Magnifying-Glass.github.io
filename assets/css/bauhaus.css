@@ -99,8 +99,9 @@
   /* transform: rotate(-35deg); */
 
 #hero h1:hover{
-    /* transform: rotate(35deg);
-    transition-duration: 6s; */
+    transform: rotate(35deg);
+    transition-duration: 6s;
+    cursor:default;
 }
 #hero .btn-get-started {
   font-family: "Mandala";
@@ -136,6 +137,7 @@
   font-family:'CypherSemibold';
   /* writing-mode:vertical-lr !important; */
   display:inline;
+  align-self:flex-end;
   /* text-orientation: upright; */
 
 }
@@ -493,6 +495,9 @@ color:#21409a;
   background-color: #F5F5F5;
 
 }
+#DisclaimerBtn{
+  width: 20%;
+}
 
 #DisclaimerBtn:hover{
   color:red;
@@ -645,6 +650,11 @@ font-size: 1.2em;
 
 }
 
+#articles a{
+  color:#ffde17;
+  font-family: 'CypherSemiBold';
+  text-shadow: 1px 1px grey, 1px 1px grey;
+}
 .bauhaus-line-chapter{
      width:100%;
      height:2px;

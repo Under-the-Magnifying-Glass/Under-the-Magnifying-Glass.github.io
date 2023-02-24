@@ -58,18 +58,18 @@ function changeTheme(newTheme) {
 
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
+    // document.getElementById("main").style.marginLeft = "250px";
     document.getElementById("page_logo").style.marginLeft = "200px";
-    document.getElementById("metadata").style.marginLeft = "300px";
-    document.getElementById("toggler").style.marginLeft = "250px";
+    // document.getElementById("metadata").style.marginLeft = "300px";
+    // document.getElementById("toggler").style.marginLeft = "250px";
   }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
+    // document.getElementById("main").style.marginLeft= "0";
     document.getElementById("page_logo").style.marginLeft = "0";
-    document.getElementById("metadata").style.marginLeft = "0";
-    document.getElementById("toggler").style.marginLeft = "0";
+    // document.getElementById("metadata").style.marginLeft = "0";
+    // document.getElementById("toggler").style.marginLeft = "0";
   }
 
 
