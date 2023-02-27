@@ -1,4 +1,12 @@
 /* --------------Bauhaus Theme---------------- */
+/*
+color palette
+blue: #154084
+red: #9D2719
+yellow: #D7B418
+black: #222222
+white: #EDEDED */
+
 
 /* --------------Fonts---------------- */
 
@@ -70,6 +78,7 @@
 
 .wrap {
     background-color: #f0f0f0;
+    /* padding:1em 2em 3em 1em; */
 
 }
 #canvas{
@@ -83,13 +92,16 @@
 
 #hero{
     background-image: url("../img/bauhaus-img/BAUHAUSHERO.jpg") ;
+    filter:saturate(1.4);
     background-repeat:repeat;
     background-position:center;
     background-size: cover;
     letter-spacing:2px;
 
-
 }
+/* #hero:hover{
+  filter:saturate(2);
+} */
 
 #hero h1{
   transform: rotate(-35deg);
@@ -117,8 +129,12 @@
 
 #hero .btn-get-started:hover {
   letter-spacing: 3px;
-  background: black;
-  border: 2px dotted white;
+  background: white;
+  border: 2px dotted #154084;
+  color:black;
+  border: 2px solid #9D2719;
+
+  box-shadow: -4px -2px yellow, 5px 5px #154084;
 }
 
 
@@ -143,7 +159,7 @@
 }
 #hero a{
   font-family:'CypherBold';
-  color:blue;
+  color:#154084;
 
 }
 body, p{
@@ -176,7 +192,7 @@ h2{
 
 }
 .scroll-column{
-  border: 2px solid red;
+  border: 2px solid #9D2719;
   box-shadow: -4px -2px yellow, 5px 5px blue;
   background-color:white;
   color:black;
@@ -198,7 +214,7 @@ h2{
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: red;
+  color: #9D2719;
   position: relative;
   z-index: 2;
   writing-mode:vertical-rl;
@@ -212,7 +228,7 @@ h2{
   /* transform:rotateZ(8deg); */
   letter-spacing:10px;
   top: 30px;
-  color: red;
+  color: #9D2719;
   left: 0;
   right: 0;
   z-index: 1;
@@ -235,7 +251,7 @@ transform:rotateZ(15deg);
 
 #services a{
   font-family:'CypherBold';
-  color:red;
+  color:#9D2719;
 }
 
 #services a:hover{
@@ -271,7 +287,7 @@ transform:rotateZ(15deg);
 
 /* #header .logo h1 a, */
 #header .logo h1:hover {
-  color: blue;
+  color: #154084;
 }
 
 #header .logo img {
@@ -307,7 +323,7 @@ writing-mode:vertical-lr;
 vertical-align:middle;
 text-transform:lowercase;
 font-family:'CypherBold' ;
-color: blue;
+color: #154084;
 letter-spacing:2px;
 
 }
@@ -323,7 +339,7 @@ letter-spacing:2px;
 }
 
 .features .card-title a{
-  color:blue;
+  color:#154084;
 }
 .features .card:hover .card-title a {
   color: blue;
@@ -359,6 +375,10 @@ letter-spacing:2px;
   box-shadow: -4px -2px yellow, 5px 5px blue;
 }
 
+.member .img-fluid{
+  filter:grayscale(1);
+
+}
 .navbar a:hover,
 #navbar a:hover,
 .navbar .active,
@@ -391,7 +411,7 @@ letter-spacing:2px;
   flex: 1;
   border-style: solid;
   background-color:black;
-  color:white;
+  color:#EDEDED;
 
 }
 .metadata label{
@@ -403,18 +423,18 @@ letter-spacing:2px;
   font-family:"CypherBold";
   border-width:5px;
   align-self:center;
-color:white;}
+color:#EDEDED;}
 
 .metadata #metadata-select-text{
 color:#be1e2d;
 }
 
 .metadata #metadata-select-metadata{
-color:#ffde17;
+color:blue;
 }
 
 .metadata #instances{
-color:#21409a;
+color:yellow;
 }
 
 .metadata p{
@@ -479,9 +499,7 @@ color:#21409a;
 }
 
 
-.row{
-    margin:0 ;
-    padding:0;
+#articles{  margin:1em 2em 3em 1em;
 
 }
 .col{
@@ -497,19 +515,27 @@ color:#21409a;
 }
 #DisclaimerBtn{
   width: 20%;
+  background: white;
+  color:black;
+  border: 2px solid red;
+  box-shadow: -4px -2px yellow, 5px 5px blue;
+
 }
 
 #DisclaimerBtn:hover{
-  color:red;
-  background-color:yellow;
-  transform:rotate(8deg);
+  transform:rotate(10deg);
   font-family:'CypherBold';
+  background: white;
+  color:black;
+  border: 2px solid red;
+  box-shadow: -4px -2px yellow, 5px 5px blue;
 
 }
 .modal-content{
   padding:0 5em;
   background-color:black;
   color:white;
+  text-align:justify;
 }
 
 /* -----bauhaus grid only------ */
@@ -654,6 +680,27 @@ font-size: 1.2em;
   color:#ffde17;
   font-family: 'CypherSemiBold';
   text-shadow: 1px 1px grey, 1px 1px grey;
+}
+
+.articles img{
+  border: 2px solid red;
+  box-shadow: -4px -2px yellow, 5px 5px blue;
+  /* display:inline-block; */
+}
+
+.articles figcaption {
+  font-family: 'Xpressive';
+  padding:1em;
+  font-weight: bolder;
+  color:red;
+  display:inline-block;
+
+
+
+}
+
+.articles figure{
+  width:fit-content;
 }
 .bauhaus-line-chapter{
      width:100%;
