@@ -954,6 +954,7 @@ section {
   position: relative;
   overflow: hidden;
   border-radius: 5px;
+  max-height: 400px;
 }
 
 .team .member .member-info {
