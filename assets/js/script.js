@@ -59,7 +59,7 @@ function changeTheme(newTheme) {
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     document.body.style.marginLeft = "250px";
-    // document.getElementById("page_logo").style.marginLeft = "250px";
+    document.getElementById("page_logo").style.marginLeft = "250px";
     // document.getElementById("metadata").style.marginLeft = "300px";
     // document.getElementById("toggler").style.marginLeft = "250px";
   }
