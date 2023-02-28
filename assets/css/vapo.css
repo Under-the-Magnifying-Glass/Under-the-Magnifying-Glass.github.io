@@ -46,14 +46,13 @@
 
 
 #canvas {
-  background-image: url('https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/tile-holo.jpg?raw=true');
+  background-image:url(/img/vaporwave/holographic-background.jpeg); background-size: contain;
 
   /* padding-left:1vw;
   padding-right:1vw;
   padding-top:1vh; */
   text-align:justify;
-  border: 3px solid fuchsia;
-  border-style: groove;
+  border: 3px groove fuchsia;
   box-shadow: 5px 5px cyan, 5px 5px cyan;
   display:flex;
   justify-content: center;
@@ -111,11 +110,12 @@
   font-size: 40px;
   margin: 0;
   line-height: 1;
+  color:blue;
   font-weight: 100;
   font-family:'SFAlien';
   letter-spacing: 10px;
-  text-shadow: 2px 1px #3B3486, 2px 1px #3B3486;
-  animation: color-change 2s infinite;
+  text-shadow: -1px -1px cyan, 2px 2px magenta;;
+  /* animation: color-change 2s infinite; */
 
 }
 
@@ -141,6 +141,7 @@
   color: cyan;
   align-items:center;
   align-content:center;
+  animation:  pop-out 0.8s infinite;
 
 }
 
@@ -156,12 +157,18 @@
 /* get started button Animation */
 
 @keyframes color-change {
-  0% { color: cyan; }
-  40% { color: magenta; }
-  80% { color: blue; }
+  0% { color: magenta; }
+  50% { color: cyan; }
+  100% { color: magenta; }
+
 }
 
+@keyframes pop-out {
+  0% { opacity:1; }
+  50% { opacity: 0; }
+  100% { opacity:1; }
 
+}
 
 @keyframes background-color-change {
   0% { background-color: cyan; }
@@ -506,15 +513,9 @@ background-color:#270342;
   border: 3px solid cyan;
   border-style: groove;
   box-shadow: 5px 5px magenta, 5px 5px magenta;
-  width:60%;
+  width:80%;
   align-self:center;
   }
-
-#articles:not(#compare-stories){
-  width:60%;
-
-
-}
 
 #logo{
   filter: invert(1);
