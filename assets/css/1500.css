@@ -247,6 +247,19 @@ td {
     border-image: url(../img/1500/border.png) 30% stretch;
 }
 
+#articles p::first-letter:not q {
+    float: left;
+    line-height: 35px;
+    font-size: 55px;
+    color: black;
+    border: solid #311e06;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-right: 5px;
+    margin-bottom: -5px;
+}
 /* MODIFICA 
 -> ARTICLES-COMPARE COLORE SFONDO E CHAPTERS VERDI
 -> NOTE...
