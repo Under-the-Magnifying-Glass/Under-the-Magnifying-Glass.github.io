@@ -399,9 +399,8 @@ h2{
   font-weight:lighter;
 }
 
-.btn-secondary{
+#DisclaimerBtn{
   width:30%;
-  height:30px;
   border: 3px dashed fuchsia;
   border-radius:0px;
   background-color:#3B3486;

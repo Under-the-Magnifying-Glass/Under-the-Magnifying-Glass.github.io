@@ -921,6 +921,7 @@ section {
   border-radius: 100px;
   margin: 15px;
   width: 120px;
+  height:120px;
   float: left;
 }
 
@@ -928,6 +929,7 @@ section {
   border-radius: 100px;
   margin: 15px;
   width: 120px;
+  height:120px;
   float: right;
 
 }

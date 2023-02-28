@@ -99,8 +99,7 @@ color palette brighter
 
 
 #hero{
-    background-image: url("../img/bauhaus-img/BAUHAUSHERO.jpg") ;
-    filter:saturate(1.4);
+    background-image: url("../img/bauhaus-img/BAUHAUSHERO-edit.jpg") ;
     background-repeat:repeat;
     background-position:center;
     background-size: cover;
@@ -202,6 +201,7 @@ h2{
 .scroll-column{
   border: 2px solid #be1e2d;
   box-shadow: -4px -2px #ffde17, 5px 5px #21409a;
+  border-radius:0;
   background-color:white;
   color:black;
   overflow-y: auto;
@@ -355,6 +355,10 @@ letter-spacing:2px;
   letter-spacing: 3px;
 }
 
+.features b{
+  font-family:'CypherBold';
+  color:#be1e2d;
+}
 
 .services .img-left {
   border-radius: 100px;
@@ -381,6 +385,8 @@ letter-spacing:2px;
 .member{
   border: 2px solid #be1e2d;
   box-shadow: -4px -2px #ffde17, 5px 5px #21409a;
+  border-radius:0;
+
 }
 
 .member .img-fluid{
