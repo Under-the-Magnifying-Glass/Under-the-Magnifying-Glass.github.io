@@ -186,7 +186,7 @@ a:hover {
     border: solid;
 }
 
-#navbarTogglerDemo03 ul li a.active {
+#navbarTogglerDemo03 a.active, #navbarTogglerDemo03 a.hover {
     color: #8f6839;
 }
 
@@ -236,6 +236,15 @@ td {
 
 #articles a {
     color: #8f6839 !important;
+}
+
+#articles figure {
+    margin-left: auto;
+    margin-right: auto;
+    border-right: 130px solid;
+    border-left: 130px solid;
+    padding: 6px;
+    border-image: url(../img/1500/border.png) 30% stretch;
 }
 
 /* MODIFICA 
