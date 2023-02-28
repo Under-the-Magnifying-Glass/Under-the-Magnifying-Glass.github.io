@@ -1,12 +1,3 @@
-@font-face {
-    font-family: "Davida";
-    src: url("../fonts/DavidaRegular.ttf") format('truetype');
-      }
-
-@font-face {
-font-family: "Euphoria" ;
-src: url("../fonts/EuphoriaParty-1Geng.ttf");
-}
 
 
 @font-face {
@@ -26,7 +17,7 @@ background-color:#2090a1;
 }  
 
 
-img{filter: grayscale(100%);}
+/*img{filter: grayscale(100%);}*/
 
 .navbar a:hover,
 .navbar .active,
@@ -102,8 +93,8 @@ background-color:#108b9e;
 }
 
 .about .image {
-border-radius: 50%;
-filter: grayscale(100%);
+
+    filter: sepia() hue-rotate(300deg) saturate(var(--value, 5)); --value: 4;
 }
    
 .about .content {
@@ -131,9 +122,9 @@ background-color: white;
 color: #dd1c4b;
 font-weight: bold;
 font-size:medium;
-border-width: 5px;
+/*border-width: 5px;
 border-style: solid;
-border-color:#dd1c4b;
+border-color:#dd1c4b;*/
 
 }
 
@@ -148,13 +139,11 @@ color:#dd1c4b;
     font-family:  "Moscoso" ;
     color: white;
     background-color: #dd1c4b;
-    border:none;
     /*background-color: #ffce00;*/
    
     }
 #DisclaimerBtn:hover{
-    background-color:#108b9e;
-    border: none;
+    background-color:#108b9e;   
 }
 
 .features .card, .metadata { 
@@ -214,10 +203,11 @@ text-decoration: none;
     text-decoration: none;
   }
 
-
+.features img {filter: sepia() hue-rotate(300deg) saturate(var(--value, 5)); --value: 4;}
+/*
 .section-title {
 font-family: "Davida";  
-}
+}*/
 
 .section-title h2{
 
@@ -265,6 +255,7 @@ a { color: #dd1c4b;  }
     border-width: 10px;
     border-style: solid;
     border-color: #dd1c4b;
+    /*filter: sepia() hue-rotate(300deg) saturate(var(--value, 5)); --value: 4;*/
 }
 
 .team .member .member-info-content h4{
@@ -273,14 +264,10 @@ color:#dd1c4b;
 font-size: 50px;
 }
 
-.team .member .member-info-content span{
- 
-color: #dd1c4b;
-font-size: 30px;
-}
 
-.team .member:hover .member-info-content h4, .team .member:hover .member-info-content span, .team .member:hover img {  
-color:#dd1c4b;   
+
+.team .member:hover .member-info-content h4, .team .member:hover, .team .member:hover img {  
+color: #dd1c4b;   
 }
 .team .member:hover .member-info{
 background: rgba(161, 160, 161, 0.1);
@@ -288,6 +275,7 @@ background: rgba(161, 160, 161, 0.1);
 
 
 /*ISSUES*/
+#navbarTogglerDemo03 a.active, #navbarTogglerDemo03 a:hover{color: #2090a1;}
 div.wrap#issuespage{background-color: #fff;}
 
 .circt{     margin-left: 0;
@@ -338,7 +326,8 @@ div.notes p{
     
   
   
-    filter: sepia() hue-rotate(30deg) saturate(var(--value, 5)); --value: 4;
+   /* filter: sepia() hue-rotate(30deg) saturate(var(--value, 5)); --value: 4; */
+   filter: sepia() hue-rotate(100deg) saturate(var(--value, 5)); --value: 4;
   
 }
 
@@ -407,7 +396,7 @@ main#articles {
 background-image: none;
 }
 #articles figure {
-
+text-align: center;
 margin: 0;
 margin-bottom: 10px;
 width:min-content;
