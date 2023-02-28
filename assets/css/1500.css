@@ -247,7 +247,7 @@ td {
     border-image: url(../img/1500/border.png) 30% stretch;
 }
 
-#articles p::first-letter:not q {
+#articles p::first-letter {
     float: left;
     line-height: 35px;
     font-size: 55px;
