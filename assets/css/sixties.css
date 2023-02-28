@@ -153,7 +153,8 @@ color:#dd1c4b;
    
     }
 #DisclaimerBtn:hover{
-    background-color:#108b9e;   
+    background-color:#108b9e;
+    border: none;
 }
 
 .features .card, .metadata { 
