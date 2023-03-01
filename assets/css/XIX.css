@@ -3,12 +3,50 @@
     src: url("../fonts/OldNewspaperTypes.ttf");
 }
 
+@font-face {
+    font-family:"TheStrandTitle";
+    src: url("../fonts/Cardinal.ttf");
+}
+
 * {
     font-family: "OldNewspaper";
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: "TheStrandTitle";
+} 
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+  color: #46a8be;
+}
+
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover>a {
+  color: #46a8be;
+}
+.navbar-mobile .dropdown ul a:hover,
+.navbar-mobile .dropdown ul .active:hover,
+.navbar-mobile .dropdown ul li:hover>a {
+  color: #46a8be;
+}
+
+.navbar .dropdown ul a:hover,
+  .navbar .dropdown ul .active:hover,
+  .navbar .dropdown ul li:hover>a {
+    color: #46a8be;
+  }
+
+
+a:hover{
+    color: #46a8be;
+}
+
 .wrap {
-    background-image: url("../img/xix/M2oldnewspaperBG.jpg"); 
+    background-image: linear-gradient(rgba(255, 255, 255, 0.615), rgba(255, 255, 255, 0.653)), url("../img/xix/M2oldnewspaperBG.jpg"); 
 }
 
 .sidenav {
@@ -20,8 +58,159 @@
 }
 
 #hero .btn-get-started {
-    border-style: double;
-    border-width: 5px;
+    border-style: none;    
+    transition: none;
+    color: #000;
+
+    --scoop-radius: 20px;
+    --border-width: 2px;
+    --border-color: #000000;
+    --background-color: #ffffff;
+
+    --border-stop: calc(var(--scoop-radius) + var(--border-width));
+
+    --scoop-gradient: rgba(255, 255, 255, 0) var(--scoop-radius),
+        var(--border-color) calc(var(--scoop-radius) + 1px),
+        var(--border-color) var(--border-stop),
+        var(--background-color) calc(var(--border-stop) + 1px);
+
+    padding: var(--border-stop);
+
+    background: var(--background-color);
+    background: radial-gradient(circle at 0 0, var(--scoop-gradient)) top left,
+        radial-gradient(circle at 100% 0, var(--scoop-gradient)) top right,
+        radial-gradient(circle at 100% 100%, var(--scoop-gradient)) bottom right,
+        radial-gradient(circle at 0 100%, var(--scoop-gradient)) bottom left;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+
+    background-image: linear-gradient(
+            to bottom,
+            var(--border-color) 0,
+            var(--border-color) var(--border-width)
+        ),
+        linear-gradient(
+            to left,
+            var(--border-color) 0,
+            var(--border-color) var(--border-width)
+        ),
+        linear-gradient(
+            to top,
+            var(--border-color) 0,
+            var(--border-color) var(--border-width)
+        ),
+        linear-gradient(
+            to right,
+            var(--border-color) 0,
+            var(--border-color) var(--border-width)
+        ),
+        radial-gradient(circle at 0 0, var(--scoop-gradient)),
+        radial-gradient(circle at 100% 0, var(--scoop-gradient)),
+        radial-gradient(circle at 100% 100%, var(--scoop-gradient)),
+        radial-gradient(circle at 0 100%, var(--scoop-gradient)),
+        linear-gradient(
+            to right,
+            var(--background-color) 0,
+            var(--background-color) 1px
+        ),
+        linear-gradient(
+            to right,
+            var(--background-color) 0,
+            var(--background-color) 1px
+        );
+
+    background-position: top center, right center, bottom center, left center,
+        top left, top right, bottom right, bottom left, top center, left center;
+
+    background-size: calc(100% - (var(--scoop-radius) + 1px) * 2)
+            var(--border-width),
+        var(--border-width) calc(100% - (var(--scoop-radius) + 1px) * 2),
+        calc(100% - (var(--scoop-radius) + 1px) * 2) var(--border-width),
+        var(--border-width) calc(100% - (var(--scoop-radius) + 1px) * 2),
+        var(--border-stop) var(--border-stop),
+        var(--border-stop) var(--border-stop),
+        var(--border-stop) var(--border-stop),
+        var(--border-stop) var(--border-stop),
+        calc(100% - var(--border-stop) * 2) 100%,
+        100% calc(100% - var(--border-stop) * 2);
+}
+
+#hero .btn-get-started:hover {
+    color: #fff;
+    border-style: none;    
+    transition: 0,5;
+
+    --scoop-radius: 20px;
+    --border-width: 2px;
+    --border-color: #fff;
+    --background-color: #000;
+
+    --border-stop: calc(var(--scoop-radius) + var(--border-width));
+
+    --scoop-gradient: rgba(255, 255, 255, 0) var(--scoop-radius),
+        var(--border-color) calc(var(--scoop-radius) + 1px),
+        var(--border-color) var(--border-stop),
+        var(--background-color) calc(var(--border-stop) + 1px);
+
+    padding: var(--border-stop);
+
+    background: var(--background-color);
+    background: radial-gradient(circle at 0 0, var(--scoop-gradient)) top left,
+        radial-gradient(circle at 100% 0, var(--scoop-gradient)) top right,
+        radial-gradient(circle at 100% 100%, var(--scoop-gradient)) bottom right,
+        radial-gradient(circle at 0 100%, var(--scoop-gradient)) bottom left;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+
+    background-image: linear-gradient(
+            to bottom,
+            var(--border-color) 0,
+            var(--border-color) var(--border-width)
+        ),
+        linear-gradient(
+            to left,
+            var(--border-color) 0,
+            var(--border-color) var(--border-width)
+        ),
+        linear-gradient(
+            to top,
+            var(--border-color) 0,
+            var(--border-color) var(--border-width)
+        ),
+        linear-gradient(
+            to right,
+            var(--border-color) 0,
+            var(--border-color) var(--border-width)
+        ),
+        radial-gradient(circle at 0 0, var(--scoop-gradient)),
+        radial-gradient(circle at 100% 0, var(--scoop-gradient)),
+        radial-gradient(circle at 100% 100%, var(--scoop-gradient)),
+        radial-gradient(circle at 0 100%, var(--scoop-gradient)),
+        linear-gradient(
+            to right,
+            var(--background-color) 0,
+            var(--background-color) 1px
+        ),
+        linear-gradient(
+            to right,
+            var(--background-color) 0,
+            var(--background-color) 1px
+        );
+
+    background-position: top center, right center, bottom center, left center,
+        top left, top right, bottom right, bottom left, top center, left center;
+
+    background-size: calc(100% - (var(--scoop-radius) + 1px) * 2)
+            var(--border-width),
+        var(--border-width) calc(100% - (var(--scoop-radius) + 1px) * 2),
+        calc(100% - (var(--scoop-radius) + 1px) * 2) var(--border-width),
+        var(--border-width) calc(100% - (var(--scoop-radius) + 1px) * 2),
+        var(--border-stop) var(--border-stop),
+        var(--border-stop) var(--border-stop),
+        var(--border-stop) var(--border-stop),
+        var(--border-stop) var(--border-stop),
+        calc(100% - var(--border-stop) * 2) 100%,
+        100% calc(100% - var(--border-stop) * 2);
 }
 
 #header {
@@ -47,15 +236,19 @@
     text-align: justify;
 }
 
-#DisclaimerBtn{
+#DisclaimerBtn, #DisclaimerBtn:hover {
     color: #000;
     background-color: #fff;
     border-color: #000;
-    border-style: double;
-    border-width: 5px;
+    border-style: none;
 }
-#DisclaimerBtn:hover {
-    border-width: 8px;
+
+.modal-content, .modal-content ul {
+    columns: 2;
+}
+
+.modal-content ul a {
+    color: #46a8be;
 }
 
 .image, img:not(.card-img-top){
@@ -63,6 +256,7 @@
     border-radius: 50%;
     border-style: solid;
     border-width: medium;
+    box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset;
 }
 
 .card{
@@ -71,14 +265,25 @@
     outline: double 5px black;
 }
 
-.icon-box{
-    background-color: #faf8f4;
-    border-radius: 10px;
+.features .card:hover .card-title a {
+    color: #46a8be;
+  }
+
+.services .icon-box{
+    /*background-color: #faf8f4;*/
+    border-radius: 0;
+}
+
+.services .icon-box:hover {
+    background-color: #83bcc95b;
+    box-shadow: -8px 8px 10px rgba(0, 0, 0, 0.101);    
+    transition: 1;
 }
 
 .card-img-top {
     filter: grayscale(100%);
-    box-shadow: 0 0 8px 8px white inset;
+    border-radius: 0;
+    box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset;
 }
 
 .services .icon-box {
@@ -92,20 +297,42 @@
 }
 
 .features .card {
-    border-radius: 10px;
+    border-radius: 0;
     border-style: solid;
     border-width: 2px;
   }
 
+.member img{
+    border-radius: 0;
+    border:none;
+}
 
+.section-title span {
+    display: none;
+}
+
+.section-title h2 {
+    font-family: "TheStrandTitle";
+    text-transform: uppercase;
+    color: #000;
+}
+
+.services .section-title p {
+    columns: 1;
+    text-align: center;
+}
 
 /*ISSUES SPECIFIC*/
+#navbarTogglerDemo03 a:active, #navbarTogglerDemo03 a:hover {
+    color: #46a8be;
+}
+
 #toggler {
     background-image: url("../img/xix/M2oldnewspaperBG.jpg") !important;
     border-bottom: black solid 2px ; 
 }
 
-.metadata, .articles table {
+.metadata, .articles table, #DisclaimerBtn, #DisclaimerBtn:hover {
     --scoop-radius: 20px;
     --border-width: 2px;
     --border-color: #000000;
@@ -194,4 +421,9 @@
     vertical-align: middle;
     padding:0.5em 0.5em 0.5em 0.5em;
     letter-spacing: 2px;
+}
+
+#article-intro{
+    columns: 1;
+    text-align: center;
 }
