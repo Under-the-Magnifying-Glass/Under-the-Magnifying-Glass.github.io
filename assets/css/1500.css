@@ -74,15 +74,19 @@ a:hover {
     color: #8f6839;
   }
 
-#DisclaimerBtn{
+.about .image {
+background-image: url(../img/updated/med_glass.jpg);
+}
+
+#DisclaimerBtn, #DisclaimerBtn:hover{
     color:#000;
     background-color:rgb(212, 188, 139) ;
     padding: 10px 28px;
     border-radius: 5px;
     transition: 0.5s;
-    border: 2px solid
-
+    border: 2px solid;
 }
+
 
 .image, img:not(.card-img-top){
     filter: sepia(1);
@@ -177,6 +181,9 @@ a:hover {
     color: rgb(255, 42, 0);
     border: solid;
     text-transform: capitalize;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -186,7 +193,7 @@ a:hover {
     border: solid;
 }
 
-#navbarTogglerDemo03 a.active, #navbarTogglerDemo03 a.hover {
+#navbarTogglerDemo03 a:active, #navbarTogglerDemo03 a:hover {
     color: #8f6839;
 }
 
@@ -247,7 +254,7 @@ td {
     border-image: url(../img/1500/border.png) 30% stretch;
 }
 
-#articles p::first-letter {
+#articles:not #article-intro p::first-letter {
     float: left;
     line-height: 35px;
     font-size: 55px;
@@ -260,8 +267,3 @@ td {
     margin-right: 5px;
     margin-bottom: -5px;
 }
-/* MODIFICA 
--> ARTICLES-COMPARE COLORE SFONDO E CHAPTERS VERDI
--> NOTE...
-
- 
