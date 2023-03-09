@@ -212,7 +212,7 @@ a.closebtn:hover {
   }
   .about div.image {
     
-  background-image: url(/img/cyberpunk/detective.jpg);
+ /* background-image: url(/img/cyberpunk/detective.jpg);*/
   border-radius: 25px ;
   border: 1px solid transparent;
   filter: blur();
