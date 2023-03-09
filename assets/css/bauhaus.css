@@ -373,12 +373,25 @@ letter-spacing:2px;
 
 .services .img-right {
   border-radius: 100px;
+  display:block;
   margin: 15px;
   width: 120px;
   height: 120px;
   float: right;
+  filter:hue-rotate(-45deg);
   border: 5px dotted #21409a;
   background-color:#ffde17;
+
+
+}
+
+.border-img{
+  border-radius: 100px;
+  margin: 15px;
+  width: 120px;
+  height: 120px;
+  border: 5px dotted #21409a;
+  display:inline-block;
 
 }
 
