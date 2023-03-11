@@ -41,7 +41,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 
 
-a:hover{
+a:hover {
+    color: #46a8be;
+}
+
+a:active {
     color: #46a8be;
 }
 
@@ -430,6 +434,7 @@ a:hover{
 
 #article #placeholder p {
     column-count: 1;
+    text-align: center;
 }
 
 #article img {
