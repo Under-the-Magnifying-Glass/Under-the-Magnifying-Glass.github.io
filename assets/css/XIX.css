@@ -427,3 +427,16 @@ a:hover{
     columns: 1;
     text-align: center;
 }
+
+#article #placeholder p {
+    column-count: 1;
+}
+
+#article img {
+    border: none;
+}
+
+#article figcaption {
+    text-transform: uppercase;
+}
+
