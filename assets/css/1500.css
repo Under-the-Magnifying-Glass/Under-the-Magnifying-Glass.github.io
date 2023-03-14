@@ -106,18 +106,26 @@ background-image: url(../img/updated/med_glass.jpg);
     border-image: url("../img/1500/border.png") 30% stretch;
 }
 
-.features .card{
-    background-color: #f0e0c1;
-    border-radius: 0px;
-    border: 5px solid;
+.features .card, .features .card:hover{
+    padding-top: 10px;
+    background-color: transparent;
+    background-image: url("../img/1500/bgcards2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
 }
 
-.icon-box{
-    background-color: #faf8f4;
-    border-radius: 10px;
-    border-style: solid;
-    border-width: 2px;
-    
+.services .icon-box{
+    background-color: transparent;
+    background-image: url("../img/1500/bgiconbox.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    margin: 5px;
+    height: 50%;
+    padding: 10px;
+    clear: both;
+    display: table;    
 }
 
 .icon-box .img-right {
@@ -134,31 +142,10 @@ background-image: url(../img/updated/med_glass.jpg);
     filter: sepia(1);
 }
 
-.features .card:hover {
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  background: #e4dccb;
-}
-
 .features .card:hover .card-title a {
   color: #523513;
 }
 
-
-.services .icon-box {
-    border-style: solid;
-    border-width: 5px;
-    border-radius: 0px;
-    background-color: #f0e0c1;
-    margin: 5px;
-    height: 50%;
-    padding: 10px;
-    clear: both;
-    display: table;
-}
-
-.services .icon-box:hover{
-    background-color: #e4dccb;
-}
 
 .about p, .card p {
     text-align: justify
