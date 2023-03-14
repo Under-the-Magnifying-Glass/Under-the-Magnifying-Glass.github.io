@@ -80,7 +80,7 @@ a:hover {
   }
 
 .about .image {
-background-image: url(../img/updated/med_glass.jpg);
+background-image: url("../img/updated/med_glass.jpg");
 }
 
 #DisclaimerBtn, #DisclaimerBtn:hover{
