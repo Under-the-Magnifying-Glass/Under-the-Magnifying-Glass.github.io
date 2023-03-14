@@ -3,6 +3,11 @@
     src: url("../fonts/Ancient\ Medium.ttf");
 }
 
+@font-face {
+    font-family: "MedievalCaps";
+    src: url("../fonts/Romantik.ttf");
+}
+
 * {
     font-family: "Medieval";
 }
@@ -159,7 +164,7 @@ background-image: url(../img/updated/med_glass.jpg);
     text-align: justify
 }
 
-.about p::first-letter, .card p::first-letter {
+.about p::first-letter, .card p::first-letter, .services .icon-box p::first-letter  {
     float: left;
     line-height: 35px;
     font-size: 55px;
