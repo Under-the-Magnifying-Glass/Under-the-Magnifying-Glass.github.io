@@ -165,6 +165,7 @@ background-image: url(../img/updated/med_glass.jpg);
 }
 
 .about p::first-letter, .card p::first-letter, .services .icon-box p::first-letter  {
+    font-family: "MedievalCaps";
     float: left;
     line-height: 35px;
     font-size: 55px;
