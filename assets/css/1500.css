@@ -267,6 +267,8 @@ table {
 table, th, td {
   border: 5px solid;
   border-color: #8f6839;
+  max-width: 70%;
+  align-self: center;
 }
 
 td {
@@ -308,7 +310,7 @@ td {
     margin-bottom: -5px;
 }
 
-p#author::first-letter, p#article-info::first-letter, #placeholder p::first-letter {
+p#author::first-letter, p#article-info::first-letter, #placeholder p::first-letter, .notes p::first-letter, #articles p q::first-letter {
     font-family: "Medieval";
     padding: 0px;
     margin: 0px;
