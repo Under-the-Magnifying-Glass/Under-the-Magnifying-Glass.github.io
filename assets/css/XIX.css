@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
 
-a, a:hover, a:active, a:focus {
+a, a:hover, a:active, a:focus, navbar .active:focus {
     color: #46a8be;
 }
 
@@ -428,7 +428,7 @@ a, a:hover, a:active, a:focus {
     text-align: center;
 }
 
-#article #placeholder p {
+#placeholder p, p#author, p#article-info {
     column-count: 1;
     text-align: center;
 }
