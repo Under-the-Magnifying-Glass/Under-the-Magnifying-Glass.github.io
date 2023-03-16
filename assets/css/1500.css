@@ -266,7 +266,7 @@ table {
 
 table, th, td {
   border: 4px solid;
-  border-color: black;
+  border-color: #444444;
   max-width: 70%;
   align-self: center;
 }
@@ -312,7 +312,6 @@ table caption {
     float: left;
     line-height: 35px;
     font-size: 40px;
-    color: black;
     border: solid #311e06;
     padding-top: 5px;
     padding-bottom: 5px;
