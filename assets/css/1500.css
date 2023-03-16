@@ -308,13 +308,12 @@ td {
     margin-bottom: -5px;
 }
 
-#placeholder p, #articles .info p {
-    text-align: center;
-    font-family:"Medieval";
-    float:none;
-    border:none;
-    margin:none;
-    padding:none;
-    line-height:auto;
-    font-size:auto;
+p#author::first-letter, p#article-info::first-letter, #placeholder p::first-letter {
+    font-family: "Medieval";
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    float: none;
+    line-height: normal;
+    font-size: larger;
 }
