@@ -314,7 +314,7 @@ td {
     margin-bottom: -5px;
 }
 
-p#author::first-letter, p#article-info::first-letter, #placeholder p::first-letter, #articles .notes p::first-letter {
+p#author:first-of-type:first-letter, #placeholder p:first-of-type:first-letter, #articles .notes p:first-of-type:first-letter {
     font-family: "Medieval";
     padding: 0px;
     margin: 0px;
