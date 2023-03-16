@@ -12,6 +12,10 @@
     font-family: "Medieval";
 }
 
+a {
+    color: #8f6839;    
+}
+
 a:hover {
     color: rgb(153, 124, 74);
 }
@@ -58,11 +62,16 @@ a:hover {
   color: #8f6839;
 }
 
+.navbar-mobile ul {
+    background: #eed5a2;
+}
+
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
   color: #8f6839;
 }
+
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
@@ -79,6 +88,8 @@ a:hover {
     color: #8f6839;
   }
 
+
+
 .about .image {
 background-image: url("../img/updated/med_glass.jpg");
 }
@@ -87,11 +98,19 @@ background-image: url("../img/updated/med_glass.jpg");
     color:#000;
     background-color:rgb(212, 188, 139) ;
     padding: 10px 28px;
-    border-radius: 5px;
+    border-radius: 0px;
     transition: 0.5s;
-    border: 2px solid;
+    border: 3px solid;
 }
 
+.modal-content {
+    background-color: #edd9b0;
+}
+
+.modal-content a, .modal-content a:hover,
+.modal-content .active:hover, .modal-content a:focus {
+  color: #8f6839;
+}
 
 .image, img:not(.card-img-top){
     filter: sepia(1);
@@ -129,14 +148,36 @@ background-image: url("../img/updated/med_glass.jpg");
     display: table;    
 }
 
-.icon-box .img-right {
+.icon-box .img-right, .icon-box .img-left {
     border-radius: 0px;
     border: solid;
 }
 
-.icon-box .img-left {
-    border-radius: 0px;
-    border: solid;
+.services .icon-box .test-content-right p::first-letter  {
+    font-family: "MedievalCaps";
+    float: left;
+    line-height: 40px;
+    font-size: 55px;
+    color: black;
+    border: solid #311e06;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    margin-bottom: -5px;
+}
+
+.services .icon-box .test-content-left p::first-letter  {
+    font-family: "MedievalCaps";
+    float: left;
+    line-height: 40px;
+    font-size: 55px;
+    color: black;
+    border: solid #311e06;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    margin-right: 5px;
+    margin-bottom: -5px;
 }
 
 .card-img-top {
@@ -152,7 +193,7 @@ background-image: url("../img/updated/med_glass.jpg");
     text-align: justify
 }
 
-.about p::first-letter, .card p::first-letter, .services .icon-box p::first-letter  {
+.about p::first-letter, .card p::first-letter {
     font-family: "MedievalCaps";
     float: left;
     line-height: 40px;
@@ -182,18 +223,22 @@ background-image: url("../img/updated/med_glass.jpg");
 
 
 /*ISSUES SPECIFIC*/
-.metadata{
-    background-color: #edd9b0;
-    border: solid;
-}
-
-#navbarTogglerDemo03 a:active, #navbarTogglerDemo03 a:hover {
+#navbarTogglerDemo03 a:active, #navbarTogglerDemo03 a:hover, #navbarTogglerDemo03 .active:focus {
     color: #8f6839;
 }
 
 #toggler {
     background-image: url("../img/1500/MmedmanuscriptBG.jpg") !important;
     border-bottom: black solid 2px ; 
+}
+
+.metadata{
+    background-color: #edd9b0;
+    border: solid;
+}
+
+#metadata-select-metadata, #metadata-select-text {
+    font-family: "Medieval";
 }
 
 .articles h1 {
@@ -248,7 +293,7 @@ td {
     border-image: url(../img/1500/border.png) 30% stretch;
 }
 
-#articles:not #article-intro p::first-letter {
+#articles p::first-letter {
     float: left;
     line-height: 35px;
     font-size: 55px;
