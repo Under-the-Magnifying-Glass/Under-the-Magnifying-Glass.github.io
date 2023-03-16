@@ -301,9 +301,9 @@ table caption {
 #articles figure {
     margin-left: auto;
     margin-right: auto;
-    border-right: 130px solid;
-    border-left: 130px solid;
-    padding: 6px;
+    border-right: 50px solid;
+    border-left: 50px solid;
+    padding: 0px;
     border-image: url(../img/1500/border.png) 30% stretch;
 }
 
