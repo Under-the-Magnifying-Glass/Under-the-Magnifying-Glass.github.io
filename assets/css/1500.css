@@ -249,9 +249,9 @@ background-image: url("../img/updated/med_glass.jpg");
 
 .scroll-column{
     border: 5px solid;
-    border-color: #8f6839;
+    border-color: #444444;
     background-color: #edd9b0;
-    overflow-y: auto;
+    overflow-y: hidden;
     overflow-x: hidden;
 }
 
