@@ -293,7 +293,7 @@ td {
     border-image: url(../img/1500/border.png) 30% stretch;
 }
 
-#articles:not #placeholder p::first-letter {
+#articles p::first-letter {
     font-family: "MedievalCaps";
     float: left;
     line-height: 40px;
@@ -308,6 +308,13 @@ td {
     margin-bottom: -5px;
 }
 
-#articles .info p {
-    align-items: center;
+#placeholder p, #articles .info p {
+    text-align: center;
+    font-family:"Medieval";
+    float:none;
+    border:none;
+    margin:none;
+    padding:none;
+    line-height:auto;
+    font-size:auto;
 }
