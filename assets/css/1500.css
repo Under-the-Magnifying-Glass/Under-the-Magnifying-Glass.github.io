@@ -251,7 +251,7 @@ background-image: url("../img/updated/med_glass.jpg");
     border: 5px solid;
     border-color: #444444;
     background-color: #edd9b0;
-    overflow-y: hidden;
+    overflow-y: auto;
     overflow-x: hidden;
 }
 
