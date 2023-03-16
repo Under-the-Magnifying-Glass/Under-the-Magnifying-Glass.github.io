@@ -307,7 +307,7 @@ table caption {
     border-image: url(../img/1500/border.png) 30% stretch;
 }
 
-.scroll-column figure {
+.scroll-column #articles figure {
     border: solid 3px #444444;
     padding: 0px;
     border-image: none;
