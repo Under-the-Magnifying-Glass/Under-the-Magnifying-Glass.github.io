@@ -293,9 +293,10 @@ td {
     border-image: url(../img/1500/border.png) 30% stretch;
 }
 
-#articles p::first-letter:not .info, #articles p::first-letter:not #placeholder {
+#articles:not #placeholder p::first-letter {
+    font-family: "MedievalCaps";
     float: left;
-    line-height: 35px;
+    line-height: 40px;
     font-size: 55px;
     color: black;
     border: solid #311e06;
@@ -307,6 +308,6 @@ td {
     margin-bottom: -5px;
 }
 
-#articles .info {
+#articles .info p {
     align-items: center;
 }
