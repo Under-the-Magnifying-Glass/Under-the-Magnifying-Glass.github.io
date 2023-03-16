@@ -265,8 +265,8 @@ table {
 }
 
 table, th, td {
-  border: 5px solid;
-  border-color: #8f6839;
+  border: 4px solid;
+  border-color: black;
   max-width: 70%;
   align-self: center;
 }
@@ -276,6 +276,14 @@ td {
     vertical-align: middle;
     padding:0.5em 0.5em 0.5em 0.5em;
     letter-spacing: 2px;
+}
+
+table caption {
+    text-align:center;
+}
+
+#articles figcaption {
+    text-align:center;
 }
 
 .info {
@@ -302,8 +310,8 @@ td {
 #articles p:first-of-type:first-letter {
     font-family: "MedievalCaps";
     float: left;
-    line-height: 40px;
-    font-size: 55px;
+    line-height: 35px;
+    font-size: 40px;
     color: black;
     border: solid #311e06;
     padding-top: 5px;
