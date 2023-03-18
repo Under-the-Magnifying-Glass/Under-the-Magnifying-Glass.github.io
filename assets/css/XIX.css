@@ -323,7 +323,7 @@ a, a:hover, a:active, a:focus, navbar .active:focus {
 }
 
 /*ISSUES SPECIFIC*/
-#navbarTogglerDemo03 a:visited, #navbarTogglerDemo03 a:hover, #navbarTogglerDemo03 a:active, #navbarTogglerDemo03 .active:focus {
+#navbarTogglerDemo03 a:hover, #navbarTogglerDemo03 a:active, #navbarTogglerDemo03 .active:focus {
     color: #46a8be;
 }
 
