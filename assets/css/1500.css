@@ -82,13 +82,11 @@ a:hover {
     background: #edd9b0;
   }
 
-  .navbar .dropdown ul a:hover,
-  .navbar .dropdown ul .active:hover,
-  .navbar .dropdown ul li:hover>a {
-    color: #8f6839;
-  }
-
-
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover>a {
+color: #8f6839;
+}
 
 .about .image {
 background-image: url("../img/updated/med_glass.jpg");
@@ -242,9 +240,9 @@ background-image: url("../img/updated/med_glass.jpg");
 }
 
 .articles h1 {
-    border: solid;
+    border: 6px solid;
     text-transform: capitalize;
-    color: rgb(255, 42, 0);
+    color: #ac4b1f;
 }
 
 .scroll-column{
@@ -266,7 +264,7 @@ table {
 
 table, th, td {
   border: 4px solid;
-  border-color: #444444;
+  border-color: #ac4b1f;
   max-width: 70%;
   align-self: center;
 }
