@@ -323,7 +323,7 @@ a, a:hover, a:active, a:focus, navbar .active:focus {
 }
 
 /*ISSUES SPECIFIC*/
-#navbarTogglerDemo03 a:active, #navbarTogglerDemo03 a:hover {
+#navbarTogglerDemo03 a:active, #navbarTogglerDemo03 a:hover, #navbarTogglerDemo03 .active:focus {
     color: #46a8be;
 }
 
@@ -441,3 +441,9 @@ figcaption {
     text-transform: uppercase;
 }
 
+.articles blockquote {
+    font-style: italic;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+}
