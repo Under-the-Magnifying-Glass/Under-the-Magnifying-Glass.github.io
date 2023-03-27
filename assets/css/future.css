@@ -40,7 +40,7 @@ font-family: "Xirod";
   background: linear-gradient(to bottom right, #000000, #296147);;
 
 }
-#DisclaimerBtn{border-style: inset; border-color: #57F287; border-width: 5px;}
+#DisclaimerBtn, #DisclaimerBtn:hover {border-style: inset; border-color: #57F287; border-width: 5px; background-color:rgba(255, 255, 255, 0.521);}
 /*ANIMATIONS*/
 
 @keyframes glitch-2 {
@@ -220,7 +220,7 @@ a.closebtn:hover {
   }
   .about div.image {
     
-  background: url(/img/detective_anim.mp4);
+  background: none);
   border-radius: 25px ;
   border: 1px solid transparent;
   filter: blur(100%);
@@ -247,6 +247,7 @@ a.closebtn:hover {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
   }
+.card-title a {color:white;}
 
   img#logo{
     width: 30px;
