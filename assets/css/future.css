@@ -247,7 +247,8 @@ a.closebtn:hover {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
   }
-.card-title a {color:white;}
+
+.icon-box h3 a{color:white;}
 
   img#logo{
     width: 30px;
