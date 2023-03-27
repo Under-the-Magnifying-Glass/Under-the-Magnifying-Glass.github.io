@@ -104,6 +104,7 @@ color palette brighter
     background-position:center;
     background-size: cover;
     letter-spacing:2px;
+    filter:brightness(1.2);
 
 }
 /* #hero:hover{
@@ -366,7 +367,8 @@ letter-spacing:2px;
   width: 120px;
   height: 120px;
   float: left;
-  border: 5px dotted #21409a;
+  filter:grayscale(1);
+  border:8px solid black;
   background-color:#ffde17;
 
 }
@@ -378,12 +380,18 @@ letter-spacing:2px;
   width: 120px;
   height: 120px;
   float: right;
-  filter:hue-rotate(-45deg);
-  border: 5px dotted #21409a;
+  filter:grayscale(1);
+  border:8px solid black;
   background-color:#ffde17;
+
+}
+.icon-box{
+  border: 5px solid yellow;
+
 
 
 }
+
 
 .border-img{
   border-radius: 100px;
