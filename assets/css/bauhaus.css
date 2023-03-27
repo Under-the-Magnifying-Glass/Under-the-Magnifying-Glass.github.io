@@ -80,23 +80,16 @@ color palette brighter
   src:url('../fonts/bauhaus-font/Mandala/Mandala Italic.otf')
 }
 
-/* ---------Basic and index page------------ */
+/* ---------------------------------MAIN-INDEX PAGE------------------------------------------ */
 
 
-
+/* page container */
 .wrap {
     background-color: #f0f0f0;
-    /* padding:1em 2em 3em 1em; */
 
 }
-#canvas{
-  background-color:#f0f0f0;
-}
-/*
-.sidenav {
-    background-image: url("../img/1500/MmedmanuscriptBG.jpg");
-} */
 
+/* --------------------hero--------------------- */
 
 #hero{
     background-image: url("../img/bauhaus-img/BAUHAUSHERO-edit.jpg") ;
@@ -107,16 +100,13 @@ color palette brighter
     filter:brightness(1.2);
 
 }
-/* #hero:hover{
-  filter:saturate(2);
-} */
+
 
 #hero h1{
   transform: rotate(-35deg);
   transition-duration: 6s;
 
 }
-  /* transform: rotate(-35deg); */
 
 #hero h1:hover{
     transform: rotate(35deg);
@@ -138,7 +128,6 @@ color palette brighter
 #hero .btn-get-started:hover {
   letter-spacing: 3px;
   background: white;
-  /* border: 2px dotted #21409a; */
   color:black;
   border: 2px solid #be1e2d;
 
@@ -149,8 +138,33 @@ color palette brighter
 #about-img{
   filter:grayscale(100%);
 }
-/* #hero .btn-get-started:hover {
-   */
+#header{
+  background:white;
+  color:black;
+  height: 70px;
+  z-index: 997;
+  transition: all 0.5s;
+  background: #000;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+#header .logo h1 {
+  font-size: 28px;
+  margin: 0;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: lowercase;
+}
+#header .logo h1:hover {
+  color: #21409a;
+}
+
+#header .logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 40px;
+}
 
 #about-content p{
   padding-right:8em;
@@ -172,33 +186,64 @@ color palette brighter
 }
 body, p{
   font-family: "CypherRegular";
+  font-size: 1em;
 }
+
+/* --------------------navbar---------------------- */
+
 .navbar{
   font-family: "CypherBold";
   text-transform:lowercase;
   letter-spacing:2px;
 }
+.navbar a:hover,
+#navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+  color: #21409a;
 
+}
 
 .nav-item{
   font-family:'CypherSemiBold';
   text-transform: lowercase;
 }
 
+/* ------------------headings------------------ */
 
-h3{
-  font-family:'CypherRegular';
-  color:black;
 
+h1{
+ padding-top:3vw;
+ padding-left:2vw;
+ padding-bottom:3vh;
+ padding-right:2vw; */
+ display: inline-block;
+ line-height: normal;
+ text-transform: lowercase;
+ font-family:'Xpressive';
+ color:black;
 }
+
 h2{
- /* writing-mode: vertical-rl; */
  position: relative;
  word-wrap: break-word;
  color:black;
+}
 
+h3{
+text-align:center;
+font-family:'CypherSemiBold';
+letter-spacing: 2px;
+color:black;
+padding-left:2vw;
+padding-right:2vw;
+padding-top:1vh;
+padding-bottom:1vh;
+font-size: 1.2em;
 
 }
+
 .scroll-column{
   border: 2px solid #be1e2d;
   box-shadow: -4px -2px #ffde17, 5px 5px #21409a;
@@ -271,52 +316,16 @@ transform:rotateZ(15deg);
   color:black;
 }
 
-#header{
-  background:white;
-  color:black;
-}
-#header-content{
-}
-#header {
-  height: 70px;
-  z-index: 997;
-  transition: all 0.5s;
-  background: #000;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
-}
-
-#header .logo h1 {
-  font-size: 28px;
-  margin: 0;
-  line-height: 1;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: lowercase;
-}
-
-/* #header .logo h1 a, */
-#header .logo h1:hover {
-  color: #21409a;
-}
-
-#header .logo img {
-  padding: 0;
-  margin: 0;
-  max-height: 40px;
-}
+/* -----------------------features - cards-------------- */
 
 #features{
   background-color:black;
 }
 .feature-card{
-  /* border: 5px solid #21409a; */
   background-color: black;
-  /* margin-left: 1vw; */
-  /* width:30%; */
 }
 .card-img-top{
   border: 5px solid #ffde17;
-
 }
 
 .card-body{
@@ -327,8 +336,6 @@ transform:rotateZ(15deg);
 .card-title {
 display:inline-block;
 writing-mode:vertical-lr;
-/* text-orientation:upright; */
-/* white-space:nowrap; */
 vertical-align:middle;
 text-transform:lowercase;
 font-family:'CypherBold' ;
@@ -346,7 +353,6 @@ letter-spacing:2px;
 .features .card{
   border-radius:0;
 }
-
 .features .card-title a{
   color:#21409a;
 }
@@ -387,9 +393,6 @@ letter-spacing:2px;
 }
 .icon-box{
   border: 5px solid yellow;
-
-
-
 }
 
 
@@ -414,26 +417,50 @@ letter-spacing:2px;
   filter:grayscale(1);
 
 }
-.navbar a:hover,
-#navbar a:hover,
-.navbar .active,
-.navbar .active:focus,
-.navbar li:hover>a {
-  color: #21409a;
+
+
+#DisclaimerBtn{
+  width: 20%;
+  background: white;
+  color:black;
+  border: 2px solid #be1e2d;
+  box-shadow: -4px -2px #ffde17, 5px 5px #21409a;
 
 }
 
+#DisclaimerBtn:hover{
+  transform:rotate(10deg);
+  font-family:'CypherBold';
+  background: white;
+  color:black;
+  border: 2px solid #be1e2d	;
+  box-shadow: -4px -2px #ffde17, 5px 5px #21409a;
+
+}
+.modal-content{
+  padding:0 5em;
+  background-color:black;
+  color:white;
+  text-align:justify;
+}
+/* -------------------------------------ARTICLES PAGE -------------------------------- */
 
 
+#canvas{
+  background-color:#f0f0f0;
+  margin:1em 2em 3em 1em;
+}
 
+/* ------------------texts navbar-------------------------- */
 #navbarTogglerDemo03 a:hover{
   color: #21409a;
 }
-
 #navbarTogglerDemo03 a.active {
   color: #21409a;
 
 }
+
+/* -----------------metadata tab -------------------------*/
 .metadata{
   position: sticky;
   background-color: #E5F6DF;
@@ -476,145 +503,26 @@ color:#ffde17;
   font-family:'CypherSemiBold';
   letter-spacing:1.5px;
 }
-.empty{
-  font-family:'CypherLight';
-  font-size:0.8em;
-}
+
+/* ------------------------texts-------------------------- */
 
 
-.bauhaus-img{
-    background-image: url("img/bauhaus-style/bauhaus-articles.jpg");
-    background-size: 35vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 10vh;
-}
-
-/* -----------IMAGES----------- */
-
-
-
-/* -----------IMAGES----------- */
-
-
-
-
-/* BAUHAUS GRID ONLY!!! IGNORE!!!!!!!! */
-
-/* ---grid css--- */
-
-.blue {
-  background-color:#21409a;
-  height:80vh;
-  width:10vw;
-
-}
-
-.yellow{
-  background-color:#ffde17;
-  height:10vh;
-  width:30vw;
-}
-
-
-.white{
-  background-color:white;
-  height:30vh;
-  width:30vw;
-}
-.red{
-  background-color: #be1e2d;
-  height:40vh;
-  width:10vw;
-}
-.black{
-  background-color:black;
-  height:40vh;
-  width:20vw;
-}
-
-
+/*
 #articles{  margin:1em 2em 3em 1em;
 
-}
-.col{
-    margin:0 ;
-    padding:0;
+} */
 
-}
-.white-col{
-  height:80vh;
-  width:6vw;
-  background-color: #F5F5F5;
 
-}
-#DisclaimerBtn{
-  width: 20%;
-  background: white;
-  color:black;
-  border: 2px solid #be1e2d;
-  box-shadow: -4px -2px #ffde17, 5px 5px #21409a;
-
-}
-
-#DisclaimerBtn:hover{
-  transform:rotate(10deg);
-  font-family:'CypherBold';
-  background: white;
-  color:black;
-  border: 2px solid #be1e2d	;
-  box-shadow: -4px -2px #ffde17, 5px 5px #21409a;
-
-}
-.modal-content{
-  padding:0 5em;
-  background-color:black;
-  color:white;
-  text-align:justify;
-}
-
-/* -----bauhaus grid only------ */
 
 .articles{
   text-align:justify;
 }
 
 
-/* .articles h1{
-  font-weight:bolder;
-  font-family:"CypherBold";
-  letter-spacing:4px;
-  text-transform: lowercase;
-  font-size:2em;
-  text-align:center;
-  /* background-color:black;
-  color:white; */
-
-
-
 .articles p{
   color:#21409a;
 }
-/* .articles h2, h3, h4, h5{
-  font-family: "Baumans";
-  font-weight: bold;
-  text-transform: lowercase;
 
-} */
- h1{
-  padding-top:3vw;
-  padding-left:2vw;
-  padding-bottom:3vh;
-  padding-right:2vw; */
-  display: inline-block;
-  line-height: normal;
-  text-transform: lowercase;
-  font-family:'Xpressive';
-  color:black;
-
-  /* vertical-align: middle; */
-
-}
 
 
 #articles h2{
@@ -644,19 +552,6 @@ color:#ffde17;
 
 }
 
-
-h3{
-text-align:center;
-font-family:'CypherSemiBold';
-letter-spacing: 2px;
-color:black;
-padding-left:2vw;
-padding-right:2vw;
-padding-top:1vh;
-padding-bottom:1vh;
-font-size: 1.2em;
-
-}
 
 
 
@@ -691,10 +586,11 @@ font-size: 1.2em;
   font-size:1.2em;
   color:black;
   text-decoration:none;
+  text-transform: uppercase;
   font-family:'CypherBold';
   margin:0;
   padding:2vh 0;
-  letter-spacing:1px;
+  letter-spacing:3px;
 
 }
 
@@ -790,14 +686,9 @@ font-size: 1.2em;
   font-size: 0.8em;
   /* float:left; */
 }
-  /*ISSUES SPECIFIC*/
-  main#articles {
-
-  background-color:'#e8edd9'!important;
-  border-bottom: black solid 2px ;
-  }
 
 
+/* ----------------tables------------- */
 
 table {
   font-family:'CypherSemiBold';
@@ -816,18 +707,13 @@ tbody:not(.table-class){
 }
 
 td {
-
   text-align: center;
   vertical-align: middle;
   padding:0.5em 0.5em 0.5em 0.5em;
   letter-spacing: 2px;
-
 }
 
 table > caption{
-  /* display:inline-flex;
-  writing-mode:vertical-lr !important;
-  text-orientation: sideways; */
   letter-spacing:2px;
   text-decoration:underline;
   text-decoration-color:#be1e2d;
@@ -843,8 +729,6 @@ font-size:1.2em;
 letter-spacing:1px;
 padding:0.5em 0.5em 0.5em 0.5em;
 
-/* transform: rotate(-10deg); */
-
 }
 
 blockquote{
@@ -852,14 +736,47 @@ blockquote{
   font-style: italic;
   padding:1em 4em;
   color:#21409a;
-  /* background-color:#ffde17; */
+}
+
+
+/* -------------------------image------------------------- */
+
+
+.bauhaus-img{
+    background-image: url("img/bauhaus-style/bauhaus-articles.jpg");
+    background-size: 35vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 10vh;
+}
+
+
+/* ----------------------------------DOCUMENTATION PAGE----------------------------------- */
+
+
+.info-section h1{
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.info-section h2{
+  text-align: right;
+  text-transform: lowercase;
+  font-family:'Xpressive';
 
 }
-/* .col .style-title h1,h2,h3,h4{
-
-color:white !important;
-} */
-/* Underline animation */
+.info-section ul{
+  padding-left:2em;
+}
+.info-section a{
+  color:#21409a;
+  font-weight: bold;
+}
+.info-section  a:hover{
+  text-decoration-line: underline;
+}
+.info-section{
+  text-align: justify;
+}
 
 .hover-underline-animation {
   /* display: inline-block; */

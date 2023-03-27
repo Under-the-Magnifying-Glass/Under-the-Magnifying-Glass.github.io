@@ -48,9 +48,6 @@
 #canvas {
   background-image:url(/img/vaporwave/holographic-background.jpeg); background-size: contain;
 
-  /* padding-left:1vw;
-  padding-right:1vw;
-  padding-top:1vh; */
   text-align:justify;
   border: 3px groove fuchsia;
   box-shadow: 5px 5px cyan, 5px 5px cyan;
@@ -279,6 +276,59 @@ text-shadow: -1px -1px cyan, 2px 2px magenta;
 
 }
 
+
+/* ----------------tables------------- */
+
+table {
+  font-family:'CypherSemiBold';
+  padding: 1em 1em 1em 1em;
+  margin:1em 0;
+  border: 5px dotted #be1e2d;
+  align-items: stretch;
+  align-content:center;
+  width:100%;
+}
+
+tbody:not(.table-class){
+  font-size:0.8em;
+  align-self:center;
+
+}
+
+td {
+  text-align: center;
+  vertical-align: middle;
+  padding:0.5em 0.5em 0.5em 0.5em;
+  letter-spacing: 2px;
+}
+
+table > caption{
+  letter-spacing:2px;
+  text-decoration:underline;
+  text-decoration-color:#be1e2d;
+  align-self:center;
+  margin-bottom:1em;
+}
+
+.table-class{
+font-family:'CypherBold';
+text-transform:uppercase;
+text-decoration:underline;
+font-size:1.2em;
+letter-spacing:1px;
+padding:0.5em 0.5em 0.5em 0.5em;
+
+}
+
+blockquote{
+  font-family:'CypherRegular';
+  font-style: italic;
+  padding:1em 4em;
+  color:#21409a;
+}
+
+
+
  /* ------------ANIMATIONS----------- */
 
 .zoom-nav {
@@ -389,10 +439,19 @@ background-image:url(/img/vaporwave/question-mark.gif);
    font-family:"VCR_MONO";
  }
 
+.scroll-column{
+  background-color: #6f8de0ab;
+}
+.scroll-column h3{
+  font-size: 1.2em;
+}
+
  .scroll-column h5{
    font-family:"VCR_MONO";
  }
-
+ .scroll-column a{
+color:magenta;
+text-shadow: 1px -1px black; }
 
 h2{
   font-size:calc(0.9rem + 0.9vw) !important;
@@ -413,17 +472,28 @@ h2{
 }
 
 .info-section{
-  /* background-color:#a583e8bf; */
+  background-color:#6f8de0ab;
   border: 3px solid fuchsia;
   border-style:dotted;
   box-shadow: 5px 5px cyan, 5px 5px cyan;
-  background-image:linear-gradient(to left, #FF69B4, #40E0D0);
-
 }
 .info-section h2{
   text-transform: uppercase;
 }
+.info-section p, h6{
+  color:white;
+  text-shadow:1px -1px black;
 
+}
+.info-section a{
+  color:cyan;
+}
+
+.info-section ul{
+  color:magenta;
+  text-shadow:1px -1px black;
+  padding-left:5em;
+}
 /* TURQUOISE #40E0D0
 LIGHT CYAN
 E0FFFF*/
