@@ -141,9 +141,7 @@ figure{
  
   animation:  glitch-2 3s infinite;
 }
-table{aspect-ratio: 4/3; margin: 0;  padding: 10%; display: flex;
-  justify-content: center;
-  align-items: center;}
+
 
 .metadata{
   animation-name: none;
@@ -276,7 +274,9 @@ a.closebtn:hover {
 
 /*COMPARE*/
 /*
-
+table{aspect-ratio: 4/3; margin: 0;  padding: 10%; display: flex;
+  justify-content: center;
+  align-items: center;}
 #compare-stories div.overflow-auto>*,
 #compare-stories div.overflow-auto ul a,
 #compare-stories div.overflow-auto h4,
