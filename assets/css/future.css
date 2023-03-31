@@ -221,10 +221,11 @@ a.closebtn:hover {
   .about div.image {
     
   background: none !important;
-  border-radius: 25px ;
+  /*
   border: 1px solid transparent;
-  filter: blur(100%);
-  /*filter:hue-rotate(90deg);*/
+   border-radius: 25px ;
+    filter: blur(100%);
+    filter:hue-rotate(90deg);*/
  
 }
 
