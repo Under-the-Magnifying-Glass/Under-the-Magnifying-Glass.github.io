@@ -147,8 +147,10 @@ background-image: url("../img/updated/med_glass.jpg");
 }
 
 .icon-box .img-right, .icon-box .img-left {
-    border-radius: 0px;
-    border: solid;
+    border-radius: 100px;
+    border-style: double;
+    border-width: 8px;
+    border-color: #1f1c17;
 }
 
 .services .icon-box .test-content-right p::first-letter  {
@@ -263,10 +265,11 @@ table {
 }
 
 table, th, td {
-  border: 4px solid;
-  border-color: #ac4b1f;
+  border: 3px solid;
+  border-color: #1f1c17;
   max-width: 70%;
-  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 td {
