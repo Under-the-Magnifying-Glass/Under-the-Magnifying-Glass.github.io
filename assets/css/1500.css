@@ -299,6 +299,9 @@ table caption {
 #articles figure {
     margin-left: auto;
     margin-right: auto;
+}
+
+#articles img {
     border-radius: 100%;
     filter: sepia(1);
     border-style: double;
@@ -306,11 +309,7 @@ table caption {
     color:#1f1c17;
 }
 
-.scroll-column #articles figure {
-    border: solid 3px #444444;
-    padding: 0px;
-    border-image: none;
-}
+
 
 #articles p:first-of-type:first-letter {
     font-family: "MedievalCaps";
