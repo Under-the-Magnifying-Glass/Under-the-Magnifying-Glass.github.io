@@ -1295,3 +1295,8 @@ margin:0;}
 .vapo-border{
   display:none;
 }
+
+
+.tableClass {
+	overflow-x: auto;
+}
