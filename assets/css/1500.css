@@ -299,10 +299,11 @@ table caption {
 #articles figure {
     margin-left: auto;
     margin-right: auto;
-    border-right: 50px solid;
-    border-left: 50px solid;
-    padding: 0px;
-    border-image: url(../img/1500/border.png) 30% stretch;
+    border-radius: 100%;
+    filter: sepia(1);
+    border-style: double;
+    border-width: 8px;
+    color:#1f1c17;
 }
 
 .scroll-column #articles figure {
