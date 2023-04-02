@@ -12,9 +12,15 @@
     font-family: "OldNewspaper";
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
     font-family: "TheStrandTitle";
 } 
+
+.articles h2, .articles h3 {
+    font-family: "OldNewspaper";
+}
+
+
 
 .navbar a:hover,
 .navbar .active,
@@ -253,10 +259,11 @@ a, a:hover, a:active, a:focus, navbar .active:focus {
 
 .image, img:not(.card-img-top){
     filter: grayscale(100%);
-    border-radius: 50%;
+    border-radius: 0%;
     border-style: solid;
-    border-width: medium;
-    box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset;
+    border-width: 3px;
+    border-color: #2c2c2c;
+   /*box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset;*/
 }
 
 .card{
@@ -268,6 +275,7 @@ a, a:hover, a:active, a:focus, navbar .active:focus {
 .features .card:hover .card-title a {
     color: #46a8be;
   }
+
 
 .services .icon-box{
     /*background-color: #faf8f4;*/
@@ -296,15 +304,20 @@ a, a:hover, a:active, a:focus, navbar .active:focus {
     display: table;
 }
 
+.services .icon-box img {
+    border-radius: 0%;
+}
+
 .features .card {
     border-radius: 0;
     border-style: solid;
     border-width: 2px;
-  }
+}
 
-.member img{
-    border-radius: 0;
-    border:none;
+.team .member {
+    border-radius: 0%;
+    border:solid 3px;
+    border-color: #2c2c2c;
 }
 
 .section-title span {
@@ -433,12 +446,19 @@ a, a:hover, a:active, a:focus, navbar .active:focus {
     text-align: center;
 }
 
-#article img {
-    border: none;
+p#article-info, .articles #author {
+    text-transform: uppercase;
+}
+
+#article figure {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 figcaption {
     text-transform: uppercase;
+    text-align: center;
+    font-size: x-small;
 }
 
 .articles blockquote {
