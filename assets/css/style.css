@@ -22,7 +22,7 @@ a:hover {
   color: #72c393;
   text-decoration: none;
 }
-
+@media screen and (max-width:1200px){.logo span{font-size: large; }}
 
 .circt{display: none;}
 
