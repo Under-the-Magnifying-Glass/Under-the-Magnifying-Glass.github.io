@@ -516,11 +516,12 @@ color:#ffde17;
 
 .articles{
   text-align:justify;
+  margin: 0 5em;
 }
 
 
 .articles p{
-  color:#21409a;
+  color:black;
 }
 
 
@@ -608,7 +609,7 @@ color:#ffde17;
 }
 
 #articles a{
-  color:#ffde17;
+  color:#be1e2d;
   font-family: 'CypherSemiBold';
   text-shadow: 1px 1px grey, 1px 1px grey;
 }
@@ -625,6 +626,7 @@ color:#ffde17;
   font-weight: bolder;
   color:#be1e2d;
   display:inline-block;
+  letter-spacing: 0.2em;
 
 
 
