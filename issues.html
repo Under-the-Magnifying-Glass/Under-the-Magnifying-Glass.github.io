@@ -327,9 +327,10 @@
   </script>
 
 
+
 <!-- Highlight function -->
 <script>
-
+  
 function addHighlight(concept){
 /* Select all elements to highlight, which are the ones that have the specified value of the "property" attribute */
   let nodes = document.querySelectorAll(`[class="${concept}"]`)
@@ -338,13 +339,16 @@ function addHighlight(concept){
   let x= new Set();
 
   /* Higlhlight all selected elements and show instances*/
+  if(nodes[0]){
+
   nodes.forEach(node => {
     x.add(node.getAttribute("about"));
     node.classList.add('highlight');
   })
-
+  
   nodes[0].scrollIntoView({ behavior: 'smooth', block: "center" }, true);
 
+}
   let strings=""
 
   x.forEach(s=>{
@@ -369,10 +373,11 @@ $('#btn4').click(function(){
 
 function removeHighlight(concept){
   let nodes = document.querySelectorAll(`[class="${concept} highlight"]`)
-
+if (nodes[0]){
   nodes.forEach(node => {
       node.classList.remove('highlight')
   })
+}
 };
 
 const checkbox = document.querySelectorAll('input[type=checkbox]');
