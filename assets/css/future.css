@@ -29,7 +29,7 @@ font-family: "Xirod";
   background-color:rgba(255, 255, 255, 0.521);
 }
 
-.navbar a:hover , .navbar span:hover, a.nav-link.scrollto:hover{color:#F0FFF0;}
+.navbar a:hover , .navbar span:hover, a.nav-link.scrollto:hover{color:#defcde;}
  .sidenav a, a.navbar-text{font-size: medium; color:black;}
  .logo span{font-size: large; color: #000000;}
 .navbar a, .navbar span{font-size: small; color:black;}
@@ -109,7 +109,7 @@ li a:hover{
 }
 
 
-#articles h2, #articles h3, #articles h4,  table, .metadata, .modal-content{
+#articles h2, #articles h3, #articles h4,  table, .metadata, .modal-content, #documentation-page .row{
   
   animation: glitch-2 5s infinite;
   border-width: 1px;
@@ -124,6 +124,9 @@ li a:hover{
   color: white;
   text-align: center;
 }
+.navbar .dropdown ul { background-color:#57F287 !important;  
+  }
+
 #articles h5 {font-family: "Xirod";}
 
 figure{
@@ -179,7 +182,7 @@ box-shadow: 0px 0px 2px white;
   
   
 }
-.features .card p, .features .card h5 a{color: #F0FFF0;}
+.features .card p, .features .card h5 a{color: #dfe1df;}
 .features .card h5 a:hover{color: #57F287;}
 #hero h1{
   text-shadow: 0.05em 0 0 #00ff2f, -0.03em -0.04em 0 #5a5d5a,
@@ -195,8 +198,8 @@ box-shadow: 0px 0px 2px white;
 
   
 }
-
-
+ .navbar .dropdown ul a:hover{color: #defcde !important;}
+ .navbar .dropdown ul a{color:black;}
 .sidenav a:hover {
     color:black;
     
@@ -233,21 +236,17 @@ a.closebtn:hover {
 
 
 .services .icon-box{
-    
-    background: linear-gradient(
-      225deg,
-      rgba(178, 247, 99, 0.1) 17%,
-      rgba(38, 171, 63, 0.1) 74%
-    );
+   height: max-content; 
+  background: linear-gradient(
+    225deg,
+    rgba(178, 247, 99, 0.1) 17%,
+    rgba(38, 171, 63, 0.1) 74%
+  );
    
-    box-shadow:
-      inset 0px 5px 5px 0px rgba(255, 255, 255, 0.1),
-      inset 0px -5px 5px 0px rgba(38, 171, 63, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    
   }
 
-.icon-box h3 a{color:#F0FFF0;}
+#services h3 a{color:#F0FFF0;}
 
   img#logo{
     width: 30px;
@@ -292,4 +291,6 @@ table{aspect-ratio: 4/3; margin: 0;  padding: 10%; display: flex;
  .scroll-column h2, .scroll-column ul a, .scroll-column h4, .scroll-column h5, .scroll-column h3, .scroll-column p{
   font-size: small;
 }
+
+#documentation-page .row{margin-bottom: 50px; padding: 1%; color: #57F287;}
 
