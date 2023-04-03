@@ -95,11 +95,7 @@ border-style: solid;
 background-color:#108b9e;
 }
 */
-.about .image {
-    filter: grayscale(100%);
-    
-}
-   
+
 .about .content {
 padding: 20px;
 background-color: white;
@@ -118,7 +114,11 @@ color:#dd1c4b;
 }
 
 
-
+.about .image {
+    background: url("/img/sixtiesdocu/pexels-cottonbro-studio-6491960.jpg");
+    background-position: center; 
+    filter: sepia() hue-rotate(300deg) saturate(var(--value, 5)); --value: 4;
+}
 
 div.modal-content {
 background-color: white;
