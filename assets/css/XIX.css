@@ -419,6 +419,10 @@ a, a:hover, a:active, a:focus, navbar .active:focus {
         100% calc(100% - var(--border-stop) * 2);
 }
 
+#metadata-select-metadata, #metadata-select-text {
+    font-family: "OldNewspaper";
+}
+
 .articles table {
     padding: 1em 1em 1em 1em;
     margin:1em 0;
