@@ -227,13 +227,10 @@ color: #8f6839;
     display: none;
 }
 
-.section-title h2 {
+.section-title h2, #documentation-page h1 {
     color: #ac4b1f;
-    border: solid;
+    border: 6px solid;
     text-transform: capitalize;
-    width: 30%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .team .member {
