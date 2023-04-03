@@ -121,9 +121,6 @@ color palette brighter
 }
 
 
-#about-img{
-  filter:grayscale(100%);
-}
 #header{
   background:white;
   color:black;
@@ -175,6 +172,15 @@ body, p{
   font-size: 1em;
 }
 
+b {
+  font-family:"Cypherbold";
+}
+#about-img{
+  border: 2px solid #be1e2d;
+  box-shadow: -4px -2px #ffde17, 5px 5px #21409a;
+  background-image:url('../img/bauhaus-img/bauhaus-about-img.jpeg');
+  height:500px;
+}
 /* --------------------navbar---------------------- */
 
 .navbar{
@@ -196,6 +202,10 @@ body, p{
   text-transform: lowercase;
 }
 
+.sidenav a:focus{
+  color:#ffde17;
+  text-transform: uppercase;
+}
 /* ------------------headings, sections ------------------ */
 
 
@@ -375,11 +385,9 @@ h3{
 
 }
 .services .icon-box{
-  /* border: 5px solid yellow; */
+  border: 10px solid black;
   border-radius: 0%;
   text-align:justify;
-  background-color:black;
-  /* padding:2em 2em 1em 2em; */
 }
 
 .services .icon-box p{
@@ -390,7 +398,6 @@ h3{
 
 
 .services .icon-box h3{
-  font-size:1.3em;
   text-transform: uppercase;
 }
 
@@ -511,8 +518,8 @@ color:#ffde17;
 
 .articles{
   text-align:justify;
+  padding: 0em 5em;
 }
-
 
 .articles p{
   color:black;
@@ -672,9 +679,7 @@ color:#ffde17;
   /* float:left; */
 }
 
-.scroll-column {
 
-}
 /* ----------------------------tables------------------------------- */
 
 table {
@@ -723,18 +728,6 @@ blockquote{
   font-style: italic;
   padding:1em 4em;
   color:#21409a;
-}
-
-
-/* ---------------------------------------image------------------------------------- */
-
-
-.bauhaus-img{
-    background-image: url("img/bauhaus-style/bauhaus-articles.jpg");
-    background-size: 35vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 10vh;
 }
 
 

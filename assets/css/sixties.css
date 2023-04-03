@@ -13,8 +13,8 @@ src: url('../fonts/cooper-black.ttf'); /*http://www.fontsaddict.com/fontface/ame
 *{font-family: "Moscoso";}
 
 .body,  .wrap {
-background-color:#2090a1; 
-}  
+background-color:#2090a1;
+}
 
 
 
@@ -34,8 +34,8 @@ color: white;
 #header,#footer {
 
 color:white;
-background-color:#dd1c4b; 
- 
+background-color:#dd1c4b;
+
 }
 /*#page_logo h1 span, nav>* a{font-family: "Davida"; color: black;}*/
 
@@ -71,7 +71,7 @@ border-width: 3px;
       }
 #hero .btn-get-started:hover {
     background: #dd1c4b;
-    border: 2px solid #dd1c4b;        
+    border: 2px solid #dd1c4b;
 }
 /*
 .back-to-top {
@@ -116,7 +116,7 @@ color:#dd1c4b;
 
 .about .image {
     background: url("/img/sixtiesdocu/pexels-cottonbro-studio-6491960.jpg");
-    background-position: center; 
+    background-position: center;
     filter: sepia() hue-rotate(300deg) saturate(var(--value, 5)); --value: 4;
 }
 
@@ -134,7 +134,7 @@ border-color:#dd1c4b;*/
 
 
 .modal-content .close {
-color:#dd1c4b;   
+color:#dd1c4b;
 }
 
 
@@ -144,16 +144,16 @@ color:#dd1c4b;
     color: white;
     background-color: #dd1c4b;
     /*background-color: #ffce00;*/
-   
+
     }
 #DisclaimerBtn:hover{
-    
+
     background-color:#108b9e;
     border:none;
-    border-style: none;   
+    border-style: none;
 }
 
-.features .card, .metadata { 
+.features .card, .metadata {
     border-width: 5px;
     border-style: solid;
     border-color: white;
@@ -161,15 +161,15 @@ color:#dd1c4b;
     text-align:center;
     }
 
-/*.metadata{ 
+/*.metadata{
 
-background-color:#faff2c; 
-color:#dd1c4b; 
+background-color:#faff2c;
+color:#dd1c4b;
 }*/
- 
-    
+
+
 .features .card-title a{
-     
+
     font-size: 200%;
     font-weight: normal;
     background: linear-gradient(to right, #d6365a,
@@ -179,7 +179,7 @@ color:#dd1c4b;
 }
 /*.info p{ float:right;
  font-family: "Davida";}*/
- 
+
 .metadata h5, .metadata label, .metadata p{background: linear-gradient(to right, #d6365a,
     white, #108b9e);
        -webkit-text-fill-color: transparent;
@@ -188,7 +188,7 @@ color:#dd1c4b;
 
 .features  .card-text{
 block-size: max-content;
-     
+
     font-size:x-large;
     font-stretch:expanded;
     background: linear-gradient(to right,   #d6365a,
@@ -213,7 +213,7 @@ text-decoration: none;
 .features img {filter: sepia() hue-rotate(300deg) saturate(var(--value, 5)); --value: 4;}
 /*
 .section-title {
-font-family: "Davida";  
+font-family: "Davida";
 }*/
 
 .section-title h2{
@@ -223,35 +223,35 @@ color:#dd1c4b;
 
 .section-title p {
     color:white;
-    
+
 }
 
 .services .icon-box{
 
     border-radius: 15px 50px ;
     background-color: #faff2c ;
-   
+
 }
 
 
 
-            
+
 
 .services .test-content-right h3 a, .services .test-content-left h3 a{
-font-size: 150%; 
+font-size: 150%;
 color: #dd1c4b;
-text-transform:uppercase;   
+text-transform:uppercase;
 }
 
 
-.services .test-content-right p{font-size: 150%; 
-                            text-align:unset; 
+.services .test-content-right p{font-size: 150%;
+                            text-align:unset;
                             color: #dd1c4b;
-                             
+
                             }
-.services .test-content-left p{font-size: 150%; 
+.services .test-content-left p{font-size: 150%;
                             color: #dd1c4b;
-                             
+
                             }
 
 
@@ -259,20 +259,20 @@ h1,h3,h4{ color: #dd1c4b;   font-family: 'Moscoso';  }
 
 a { color: #dd1c4b;  }
 /*.member img{
-    
+
     filter: sepia() hue-rotate(370deg) saturate(var(--value, 5)); --value: 4;
 }*/
 
 .team .member .member-info-content h4{
- 
+
 color:#dd1c4b;
 font-size: 50px;
 }
 
 
 
-.team .member:hover .member-info-content h4, .team .member:hover, .team .member:hover img {  
-color: #dd1c4b;   
+.team .member:hover .member-info-content h4, .team .member:hover, .team .member:hover img {
+color: #dd1c4b;
 }
 .team .member:hover .member-info{
 background: rgba(161, 160, 161, 0.1);
@@ -305,7 +305,7 @@ pre p, #articles h5, #articles ul{font-family: "Cooper-Black";}
 
 .info, .info li a{
 
-font-size: small;    
+font-size: small;
 color:black;
 text-decoration: none;
 font-family:"Cooper-Black";
@@ -313,16 +313,19 @@ font-family:"Cooper-Black";
 
 
 
-/* .text p:nth-child(odd){  
+/* .text p:nth-child(odd){
 border: 2px solid #dd1c4b; padding:5px;
 }
 
 */
-@media screen and (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+@media screen and (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
 
         .circt{width:300px;}
- 
-       /* .text{ 
+        .scroll-column .circt{
+          width:50vw;
+        }
+
+       /* .text{
     column-count:2;
     column-gap: 40px;
     column-rule: 2px solid black;
@@ -336,9 +339,9 @@ div.notes p{
     color: black;
 }
 #articles figure img{
-   
+
    filter: sepia() hue-rotate(100deg) saturate(var(--value, 5)); --value: 4;
-  
+
 }
 
 
@@ -348,11 +351,15 @@ div.notes p{
 .circt{
     width: 100px;
 }
+.scroll-column .circt{
+  width:50vw;
+}
+
 
 }
 
 
-#articles h1 {                         
+#articles h1 {
                         font-family: "Moscoso";
                         color:black;
                          }
@@ -367,10 +374,10 @@ div.notes p{
 
 
 
-.intro h4{color:#dd1c4b}  
+.intro h4{color:#dd1c4b}
 /*.metadata h5 {font-family: "Moscoso"; font-size: x-large; color:#dd1c4b;}*/
 
-/*old titles 
+/*old titles
 
 h5, #articles h3 i , #articles ul a{color:black; font-family: "Cooper-Black";}
 #articles h3,#articles h4{font-family: 'Moscoso'; color: black;}
@@ -407,7 +414,7 @@ background-image: none;
 }
 #articles figure {
     display: block;
-   
+
     width: min-content;
     text-align: center;
 
@@ -433,25 +440,25 @@ border-color:#dd1c4b;
 #articles figure {
     margin-left: auto;
     margin-right: auto;
-    
-    
-    
+
+
+
 }
 
 figcaption{font-family: "Moscoso";
         color: white;
         font-size:xx-large;
         align-self: center;}
-table{ 
+table{
 margin-top: 10px;
 padding: 10px;
 background-color:#dd1c4b;
 column-span: all;
-  
+
 }
 /*  table border  border-style: solid;
 border-width: 2px;
-border-color:#dd1c4b;  
+border-color:#dd1c4b;
 
 
 td{background: linear-gradient(to right, #d6365a,
@@ -462,12 +469,12 @@ td{background: linear-gradient(to right, #d6365a,
 
 td{color: #fff; padding: 10px; font-size: large;}
 
-/*  */     
+/*  */
 blockquote{font-family: "Cooper-black";   color:black;}
 div.notes p{
 font-size: xx-small; }
 
 
-#documentation-page .row{margin-bottom: 50px; padding: 5%; background-color: #faff2c;  text-align:justify;  border-radius:  15px ;} 
+#documentation-page .row{margin-bottom: 50px; padding: 5%; background-color: #faff2c;  text-align:justify;  border-radius:  15px ;}
 #documentation-page .row h2, #documentation-page .row h1{text-align: center; }
 #documentation-page .row p{padding: 1%;}

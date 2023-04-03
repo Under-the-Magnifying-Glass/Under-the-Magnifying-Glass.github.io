@@ -116,7 +116,7 @@ function missingIssue() {
   alert("This issue is not yet available. Stay tuned to read the magazine's upcoming issues!");
 }
 
-//
+// music: play-pause button
 
 const audio = document.querySelector('#vaporwave-audio');
 const playPauseButton = document.querySelector('#play-pause-button');

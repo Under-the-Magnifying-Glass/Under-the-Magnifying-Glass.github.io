@@ -12,42 +12,23 @@
     font-family: 'VCR_MONO';
     src: url('../fonts/vaporwave-font/VCR_MONO.ttf');
 }
-@font-face {
-    font-family: 'Rocket Rinder';
-    src: url('../fonts/vaporwave-font/rocket-rinder-font/RocketRinder-yV5d.ttf');
-}
 
 @font-face {
     font-family: 'Line beam';
     src: url('../fonts/vaporwave-font/linear-beam 2/Linebeam.ttf');
 }
-/*
-.wrap::before{
-  content: "";
-  background-color: rgba(0,0,0,0.25);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-} */
 
-/* .body{
-   cursor: url("https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/cursor.png?raw=true"), auto;
-} */
-
+/* ---------------------------------------basics----------------------------------------- */
 
 .wrap {
  background: url("https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/sunset.gif?raw=true"); background-repeat: repeat;
  font-family:'VCR_MONO';
- /* position: relative; */
  cursor: url("https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/cursor.png?raw=true"), auto;
 }
 
 
 #canvas {
   background-image:url(/img/vaporwave/holographic-background.jpeg); background-size: contain;
-
   text-align:justify;
   border: 3px groove fuchsia;
   box-shadow: 5px 5px cyan, 5px 5px cyan;
@@ -55,37 +36,41 @@
   justify-content: center;
   }
 
-  p{
-    color:white;
-    padding-bottom: 4px;
-    line-height: 1.4;
-    font-family:'VCR_MONO';
-    letter-spacing: 1.5px;
-    border-width: thick;
-    border-color:white;
+p {
+  color:white;
+  padding-bottom: 4px;
+  line-height: 1.4;
+  font-family:'VCR_MONO';
+  letter-spacing: 1.5px;
+  border-width: thick;
+  border-color:white;
+  }
+
+
+a:hover{
+    color:cyan;
+  }
+
+h1, h2, h3, h4, h5, .info{
+  text-shadow: -1px -1px cyan, 2px 2px magenta;
 
   }
 
 
+h3{
+     font-family:"VCR_MONO";
+   }
 
-
-
-#toggler{
-  border: 3px solid fuchsia;
-  border-style: ridge;
-  box-shadow: 5px 5px cyan, 5px 5px cyan;
-  }
+/*---------------- hero and header------------- */
 
 #header .logo span{
-
   letter-spacing: 2px;
   color:white;
   text-shadow: -1px -1px grey, 2px 2px magenta;
-
   font-family:'Line beam';
-  /* padding:1em; */
   background-color: black;
 }
+/* header border */
 
 .border-gradient {
   border-image-slice: 1;
@@ -96,12 +81,10 @@
 }
 
 #header a {
-  /* background-color:cyan; */
   font-family:'VCR_MONO';
   text-shadow:2px 2px black, 2px 3px magenta;
   color:white;
 }
-
 
 
 #hero h1{
@@ -113,20 +96,15 @@
   font-family:'SFAlien';
   letter-spacing: 10px;
   text-shadow: -1px -1px cyan, 2px 2px magenta;;
-  /* animation: color-change 2s infinite; */
 
 }
 
 #hero{
-  /* background: url(img/vaporwave/vap-sad.png); */
   background: url("https://media.tenor.com/ydLN6cT0i3gAAAAd/vaporwave-car.gif"); background-repeat:repeat;
   background-position:center;
   background-size: cover;
 
 }
-
-
-
 
 
 #hero .btn-get-started {
@@ -150,258 +128,6 @@
   transform:scale(1.05);
   transition:0.1s;
 }
-
-
-/* get started button Animation */
-
-@keyframes color-change {
-  0% { color: magenta; }
-  50% { color: cyan; }
-  100% { color: magenta; }
-
-}
-
-@keyframes pop-out {
-  0% { opacity:1; }
-  50% { opacity: 0; }
-  100% { opacity:1; }
-
-}
-
-@keyframes background-color-change {
-  0% { background-color: cyan; }
-  50% { background-color: blue; }
-  100% { background-color: cyan; }
-}
-@keyframes move-sideways{
-  0% { transform: translate(0,  0px); }
-  50%  { transform: translate(500px, 0px); }
-  100%   { transform: translate(0, -0px); }}
-
-
-
-/* Adding the japanese characters */
-
-#header .logo span::before{
-   content:"【 ";
- }
-
- #header .logo span::after{
-   content:" マガジン";
- }
-
- h2:not(#articles h2)::before{
-  content:"【 ";
-}
- h3::before{
-  content:"【 ";
-}
-
-h2:not(#articles h2)::after{
-  content:"【 た畏応王﻿";
-}
-
-h3:not(#about-content > h3)::after{
-  content:"【 た畏応王﻿";
-}
-
-/* #articles h1::before{
-  content:"【 ";
-
-} */
-
-#articles h1::after{
-  content:"【 た畏応王﻿";
-  font-size:smaller;
-
-}
-
-.section-title span{
-display:none;
-
-}
-
-.section-title h2{
-  color:white;
-}
-.navbar-nav{
-  background-color: #270342;
-  /* background-image: url('https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/tile-holo.jpg?raw=true'); */
-  color:white;
-  font-family:'VCR_MONO';
-  text-shadow: 1px 1px white, 1px 1px white;
-
-}
-.nav-item{
-  margin-right:4vw;
-  color:cyan;
-
-}
-.nav-item:hover{
-    transform: scale(1.2);
-
-}
-
-#navbar > ul > li.dropdown > ul{
-  background-color:black;
-}
-
-#navbarTogglerDemo03 a:not(.active){
-
-  color:#444444;
-  text-shadow: -1px -1px cyan, 1px 1px magenta;
-
-}
-
-#navbarTogglerDemo03 a.active{
-
-  color:cyan;
-  text-shadow: -1px -1px black, 1px 1px magenta;
-  background-image: url('/img/vaporwave/stars.gif');
-  background-size: cover;
-
-
-}
-
-a:hover{
-  color:cyan;
-
-
-}
-
-h1, h2, h3, h4, h5, .info{
-text-shadow: -1px -1px cyan, 2px 2px magenta;
-
-}
-
-
-/* ----------------tables------------- */
-
-table {
-  font-family:'VCR_MONO';
-  padding: 1em 1em 1em 1em;
-  margin:1em 0;
-  border: 5px dotted cyan;
-  align-items: stretch;
-  align-content:center;
-  width:100%;
-  background-color: #6f8de0ab;
-  color:white;
-  text-shadow: 1px 1px magenta, -1px -1px cyan;
-
-}
-
-tbody:not(.table-class){
-  font-size:0.8em;
-  align-self:center;
-
-}
-
-td {
-  text-align: center;
-  vertical-align: middle;
-  padding:0.5em 0.5em 0.5em 0.5em;
-  letter-spacing: 2px;
-}
-
-table > caption{
-  letter-spacing:2px;
-  text-decoration:underline;
-  text-decoration-color:#be1e2d;
-  align-self:center;
-  margin-bottom:1em;
-  font-family:'SFAlien';
-}
-
-.table-class{
-font-family:'SFAlien';
-text-transform:uppercase;
-text-decoration:underline;
-color:black;
-text-shadow: 1px 1px magenta, -1px -1px cyan;
-font-size:1.2em;
-letter-spacing:1px;
-padding:0.5em 0.5em 0.5em 0.5em;
-
-}
-
-blockquote{
-  font-family:'VCR_MONO';
-  font-style: italic;
-  padding:1em 4em;
-  color:#21409a;
-}
-
-
-
- /* ------------ANIMATIONS----------- */
-
-.zoom-nav {
-  transition: transform .2s;
-}
-
-
-#toggler{
-  background-color: #270342;
-}
-.navbar-nav{
-}
-.sidenav{
-  background-image:url(/img/vaporwave/tile-building.jpg); background-size: cover;
-  text-transform: uppercase;
-  font-family:'VCR_MONO';
-  /* border: 3px solid blue;
-  border-style:groove; */
-  color:magenta;
-
-}
-
-.sidenav a:not(.closebtn){
-  border: 3px solid cyan;
-  border-style:dashed;
-  margin-bottom:1vh;
-  margin-top: 1px;
-  color:magenta;
-}
-
-
-
-.floating {
-    animation-name: floating;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-
-}
-
-@keyframes floating {
-    0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 15px); }
-    100%   { transform: translate(0, -0px); }
-}
-
-.vapo{display: block;
-   align-self: center;
-   height: 70px;}
-path {
-   fill: transparent;
- }
-
-
- .shift {
-     animation-name: shift;
-     animation-duration: 3s;
-     animation-iteration-count: infinite;
-     animation-timing-function: ease-in-out;
-
- }
-
- @keyframes shift {
-     0% { transform: scale(0.8); }
-     50%  { transform: scale(1); }
-     100%   { transform: scale(0.8); }
- }
-
 
  #about{
    background-color:black;
@@ -432,57 +158,94 @@ path {
 }
 
  .about .image {
-background-image:url(/img/vaporwave/question-mark.gif);
+   background-image:url('/img/vaporwave/question-mark.gif');
+ }
+
+ .section-title span{
+ display:none;
+
+ }
+
+ .section-title h2{
+   color:white;
  }
 
 
- #article-info, #author, h1, h2, h4, h5{
-   font-family:"VCR_MONO";
-   color:blue;
+
+ #DisclaimerBtn{
+   width:30%;
+   border: 3px dashed fuchsia;
+   border-radius:0px;
+   background-color:#3B3486;
+   text-shadow: -1px -1px black, 1px 1px magenta;
+   font-family: 'VCR_MONO';
+   animation:background-color-change 1.8s infinite;
 
  }
 
- h3{
-   font-family:"VCR_MONO";
- }
 
- }
- #articles h5{
-   font-family:"VCR_MONO";
- }
+/* --------------------------------navbar--------------------------------- */
 
-.scroll-column{
-  background-color: #6f8de0ab;
+.navbar-nav{
+  background-color: #270342;
+  color:white;
+  font-family:'VCR_MONO';
+  text-shadow: 1px 1px white, 1px 1px white;
+
 }
-.scroll-column h1{
-  font-size: 1.4em;
-}
-.scroll-column h2{
-  font-size: 1.2em;
-}
-.scroll-column h3{
-  font-size: 1em;
-}
- .scroll-column h5{
-   font-family:"VCR_MONO";
- }
- .scroll-column a{
-color:magenta;
-text-shadow: 1px -1px black; }
+.nav-item{
+  margin-right:4vw;
+  color:cyan;
 
+}
+.nav-item:hover{
+    transform: scale(1.2);
 
-#DisclaimerBtn{
-  width:30%;
-  border: 3px dashed fuchsia;
-  border-radius:0px;
-  background-color:#3B3486;
+}
+#navbar > ul > li.dropdown > ul{
+  background-color:black;
+}
+
+#navbarTogglerDemo03 a:not(.active){
+  color:#444444;
+  text-shadow: -1px -1px cyan, 1px 1px magenta;
+}
+
+#navbarTogglerDemo03 a.active{
+  color:cyan;
   text-shadow: -1px -1px black, 1px 1px magenta;
-  font-family: 'VCR_MONO';
-  animation:background-color-change 1.8s infinite;
-
-
+  background-image: url('/img/vaporwave/stars.gif');
+  background-size: cover;
 
 }
+
+#toggler{
+  background-color: #270342;
+  border: 3px solid fuchsia;
+  border-style: ridge;
+  box-shadow: 5px 5px cyan, 5px 5px cyan;
+
+}
+
+.sidenav{
+  background-image:url('/img/vaporwave/tile-building.jpg'); background-size: cover;
+  text-transform: uppercase;
+  font-family:'VCR_MONO';
+  color:magenta;
+
+}
+
+.sidenav a:not(.closebtn){
+  border: 3px solid cyan;
+  border-style:dashed;
+  margin-bottom:1vh;
+  margin-top: 1px;
+  color:magenta;
+}
+
+
+
+/* ------------------------------features and cards------------------------------------- */
 
 .info-section{
   background-color:#6f8de0ab;
@@ -538,28 +301,20 @@ background-color:#270342;
   border-style:ridge;
   box-shadow: 5px 5px cyan, 5px 5px cyan;
 
-
-}
-
-.card-img-top{
-  trans
 }
 
 .d_image{
   border: 3px solid magenta;
   border-style:dashed;
   box-shadow: 5px 5px cyan, 5px 5px cyan;
-
 }
-
 .modal-content{
-  /* background-color:black; */
-  color:black;
   text-shadow: -1px 1px cyan, 1px -1px magenta;
   padding:2em;
-
   background-image:url(/img/vaporwave/vaporwave-desert.jpeg); background-position: center;
-  /* opacity:0.8; */
+}
+.modal-content p{
+  color:black;
 }
 
 .modal-content span{
@@ -667,36 +422,106 @@ background-color:#270342;
   border:4px dotted cyan;
 }
 
+ #article-info, #author, h1, h2, h4, h5{
+   font-family:"VCR_MONO";
+   color:blue;
+
+ }
+
+
+ #articles h5{
+   font-family:"VCR_MONO";
+ }
+
+
+/* multi view edits to fit the text */
+.scroll-column{
+  background-color: #6f8de0ab;
+}
+.scroll-column h1{
+  font-size: 1.4em;
+}
+.scroll-column h2{
+  font-size: 1.2em;
+}
+.scroll-column h3{
+  font-size: 1em;
+}
+.scroll-column h5{
+   font-family:"VCR_MONO";
+ }
+.scroll-column a{
+  color:magenta;
+  text-shadow: 1px -1px black; }
+
 
 blockquote{
   font-family: "VCR_MONO";
   font-style: italic;
   padding:1em 4em;
-  /* background-color:#ffde17; */
+  color:#21409a;
+  }
+
+
+/* --------------------------tables------------------------ */
+
+table {
+  font-family:'VCR_MONO';
+  padding: 1em 1em 1em 1em;
+  margin:1em 0;
+  border: 5px dotted cyan;
+  align-items: stretch;
+  align-content:center;
+  width:100%;
+  background-color: #6f8de0ab;
+  color:white;
+  text-shadow: 1px 1px magenta, -1px -1px cyan;
 
 }
 
-.vapo-img{
-  display:flex;
-  align-items:center;
-  align-content: stretch;
+tbody:not(.table-class){
+  font-size:0.8em;
+  align-self:center;
+
 }
-#vapo-img-computer{
-  display:flex;
-  background-image: url("https://raw.githubusercontent.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/main/img/vaporwave/this-is-the-end.gif"); background-repeat:no-repeat;
-  height:150px;
-  width:150px;
-  align-self:flex-start;
+
+td {
+  text-align: center;
+  vertical-align: middle;
+  padding:0.5em 0.5em 0.5em 0.5em;
+  letter-spacing: 2px;
 }
-/*------------------------------- images------------------------------------ */
+
+table > caption{
+  letter-spacing:2px;
+  text-decoration:underline;
+  text-decoration-color:#be1e2d;
+  align-self:center;
+  margin-bottom:1em;
+  font-family:'SFAlien';
+}
+
+.table-class{
+font-family:'SFAlien';
+text-transform:uppercase;
+text-decoration:underline;
+color:black;
+text-shadow: 1px 1px magenta, -1px -1px cyan;
+font-size:1.2em;
+letter-spacing:1px;
+padding:0.5em 0.5em 0.5em 0.5em;
+
+}
+
+
+
+/*------------------------------- article images------------------------------------ */
 
 #articles figure{
 background-color:black;
   border: 3px groove fuchsia;
   box-shadow: 5px 5px cyan, 5px 5px cyan;
-  /* align-content: center; */
   justify-content:flex-start;
-  /* display:flex; */
 
 }
 
@@ -706,16 +531,121 @@ background-color:black;
 
 }
 
-
 figcaption{
   font-family:'VCR_MONO';
   color:magenta;
   text-shadow: -1px -1px cyan, 1px 1px black;
   background-color:black;
-padding:1em 1em;
+  padding:1em 1em;
 }
 
-/*------------------------------- tables------------------------------------ */
+
+
+
+ /* ------------------------------ANIMATIONS-------------------------------- */
+
+
+.zoom-nav {
+  transition: transform .2s;
+}
+
+.floating {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+
+
+/* get started button Animation */
+
+@keyframes color-change {
+  0% { color: magenta; }
+  50% { color: cyan; }
+  100% { color: magenta; }
+
+}
+
+@keyframes background-color-change {
+  0% { background-color: cyan; }
+  50% { background-color: blue; }
+  100% { background-color: cyan; }
+}
+
+/* text in main page */
+@keyframes pop-out {
+  0% { opacity:1; }
+  50% { opacity: 0; }
+  100% { opacity:1; }
+
+}
+
+@keyframes move-sideways{
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(500px, 0px); }
+  100%   { transform: translate(0, -0px); }}
+
+
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }
+}
+
+
+
+.shift {
+     animation-name: shift;
+     animation-duration: 3s;
+     animation-iteration-count: infinite;
+     animation-timing-function: ease-in-out;
+
+ }
+
+ @keyframes shift {
+     0% { transform: scale(0.8); }
+     50%  { transform: scale(1); }
+     100%   { transform: scale(0.8); }
+ }
+
+
+
+
+
+/*--------- Adding the japanese characters ----------*/
+
+#header .logo span::before{
+  content:"【 ";
+}
+
+#header .logo span::after{
+  content:" マガジン";
+}
+
+h2:not(#articles h2)::before{
+ content:"【 ";
+}
+h3::before{
+ content:"【 ";
+}
+
+h2:not(#articles h2)::after{
+ content:"【 た畏応王﻿";
+}
+
+h3:not(#about-content > h3)::after{
+ content:"【 た畏応王﻿";
+}
+
+
+#articles h1::after{
+ content:"【 た畏応王﻿";
+ font-size:smaller;
+
+}
+
 
 /*------------------------------- music------------------------------------ */
 
@@ -725,9 +655,7 @@ padding:1em 1em;
    bottom: 0;
    margin-top:5vh;
    margin-left:92vw;
-   /* margin-right:10vw; */
    margin-bottom:5vh;
-   /* padding:0 1em 0 2em; */
    width: 5vw;
    height:100px;
    box-sizing: border-box;
@@ -769,7 +697,7 @@ padding:1em 1em;
   }
 
 
-/* Vaporwave gifs */
+/* -------Vaporwave gifs and images ---------*/
 
 .vapo-issues{
   align-content: center;
@@ -779,7 +707,6 @@ padding:1em 1em;
   border:none;
 }
 #vapo-book{
-  /* background-image:url('/img/vaporwave/book-flip.gif'); */
   width:50px;
   height:auto;
   display:inline-block;
@@ -804,9 +731,7 @@ padding:1em 1em;
 }
 #vapo-welcome{
   width:18vw;
-  /* display:inline-block; */
   height:30px;
-  /* align-self:center; */
   filter:hue-rotate(260deg);
 
 }
@@ -817,6 +742,18 @@ padding:1em 1em;
   display:inline-block;
   margin:0 1em;
 }
+.vapo-img{
+  display:flex;
+  align-items:center;
+  align-content: stretch;
+}
+#vapo-img-computer{
+  display:flex;
+  background-image: url("https://raw.githubusercontent.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/main/img/vaporwave/this-is-the-end.gif"); background-repeat:no-repeat;
+  height:150px;
+  width:150px;
+  align-self:flex-start;
+}
 
 /* remove padding to have the border */
 #about{
@@ -824,3 +761,11 @@ padding:1em 1em;
   padding-top:0;
   padding-bottom:2em;
 }
+.vapo{
+  display: block;
+  align-self: center;
+  height: 70px;}
+
+path {
+   fill: transparent;
+ }
