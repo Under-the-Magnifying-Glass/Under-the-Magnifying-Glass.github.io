@@ -906,7 +906,6 @@ section {
 }
 
 .services .icon-box h3 {
-  margin-left: 70px;
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
@@ -922,7 +921,6 @@ section {
 }
 
 .services .icon-box p {
-  margin-left: 70px;
   line-height: 24px;
   font-size: 14px;
   text-align:justify;
