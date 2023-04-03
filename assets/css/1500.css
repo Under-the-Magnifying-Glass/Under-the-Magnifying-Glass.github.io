@@ -208,7 +208,7 @@ color: #8f6839;
     text-align: justify
 }
 
-.about p::first-letter, .card p::first-letter {
+.about p::first-letter, .card p::first-letter, section#documentation-page p::first-letter {
     font-family: "MedievalCaps";
     float: left;
     line-height: 40px;
