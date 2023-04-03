@@ -56,15 +56,16 @@
   }
 
   p{
+    color:white;
     padding-bottom: 4px;
     line-height: 1.4;
-    font-weight: 400;
     font-family:'VCR_MONO';
     letter-spacing: 1.5px;
     border-width: thick;
     border-color:white;
 
   }
+
 
 
 
@@ -172,6 +173,10 @@
   50% { background-color: blue; }
   100% { background-color: cyan; }
 }
+@keyframes move-sideways{
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(500px, 0px); }
+  100%   { transform: translate(0, -0px); }}
 
 
 
@@ -236,14 +241,8 @@ display:none;
     transform: scale(1.2);
 
 }
-.nav-link.scroll-to{
-  font-family:'Rocket Rinder' !important;
-  letter-spacing: 2px;
-  text-shadow: 2px 1px white, 2px 1px white;
-}
 
 #navbar > ul > li.dropdown > ul{
-
   background-color:black;
 }
 
@@ -252,7 +251,6 @@ display:none;
   color:#444444;
   text-shadow: -1px -1px cyan, 1px 1px magenta;
 
-
 }
 
 #navbarTogglerDemo03 a.active{
@@ -260,7 +258,7 @@ display:none;
   color:cyan;
   text-shadow: -1px -1px black, 1px 1px magenta;
   background-image: url('/img/vaporwave/stars.gif');
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background-size: cover;
 
 
 }
@@ -280,13 +278,17 @@ text-shadow: -1px -1px cyan, 2px 2px magenta;
 /* ----------------tables------------- */
 
 table {
-  font-family:'CypherSemiBold';
+  font-family:'VCR_MONO';
   padding: 1em 1em 1em 1em;
   margin:1em 0;
-  border: 5px dotted #be1e2d;
+  border: 5px dotted cyan;
   align-items: stretch;
   align-content:center;
   width:100%;
+  background-color: #6f8de0ab;
+  color:white;
+  text-shadow: 1px 1px magenta, -1px -1px cyan;
+
 }
 
 tbody:not(.table-class){
@@ -308,12 +310,15 @@ table > caption{
   text-decoration-color:#be1e2d;
   align-self:center;
   margin-bottom:1em;
+  font-family:'SFAlien';
 }
 
 .table-class{
-font-family:'CypherBold';
+font-family:'SFAlien';
 text-transform:uppercase;
 text-decoration:underline;
+color:black;
+text-shadow: 1px 1px magenta, -1px -1px cyan;
 font-size:1.2em;
 letter-spacing:1px;
 padding:0.5em 0.5em 0.5em 0.5em;
@@ -321,7 +326,7 @@ padding:0.5em 0.5em 0.5em 0.5em;
 }
 
 blockquote{
-  font-family:'CypherRegular';
+  font-family:'VCR_MONO';
   font-style: italic;
   padding:1em 4em;
   color:#21409a;
@@ -431,8 +436,15 @@ background-image:url(/img/vaporwave/question-mark.gif);
  }
 
 
- h1, h2, h3, h4,h5{
+ #article-info, #author, h1, h2, h4, h5{
    font-family:"VCR_MONO";
+   color:blue;
+
+ }
+
+ h3{
+   font-family:"VCR_MONO";
+ }
 
  }
  #articles h5{
@@ -442,10 +454,15 @@ background-image:url(/img/vaporwave/question-mark.gif);
 .scroll-column{
   background-color: #6f8de0ab;
 }
-.scroll-column h3{
+.scroll-column h1{
+  font-size: 1.4em;
+}
+.scroll-column h2{
   font-size: 1.2em;
 }
-
+.scroll-column h3{
+  font-size: 1em;
+}
  .scroll-column h5{
    font-family:"VCR_MONO";
  }
@@ -453,10 +470,6 @@ background-image:url(/img/vaporwave/question-mark.gif);
 color:magenta;
 text-shadow: 1px -1px black; }
 
-h2{
-  font-size:calc(0.9rem + 0.9vw) !important;
-  font-weight:lighter;
-}
 
 #DisclaimerBtn{
   width:30%;
@@ -490,25 +503,19 @@ h2{
 }
 
 .info-section ul{
-  color:magenta;
+  color:white;
   text-shadow:1px -1px black;
   padding-left:5em;
 }
-/* TURQUOISE #40E0D0
-LIGHT CYAN
-E0FFFF*/
+
 .feature-card{
 
-  /* border: 2px solid cyan; */
-  /* border-style:dashed !important; */
   padding-top:inherit;
   padding-bottom:inherit;
-  /* background-color:#3B3486; */
   font-family: 'VCR_MONO';
 
 }
 .features .card-body{
-  /* background-image: url('https://github.com/Under-the-Magnifying-Glass/Under-the-Magnifying-Glass.github.io/blob/main/img/vaporwave/tile-holo.jpg?raw=true'); */
 background-color:#270342;
 }
 
@@ -528,7 +535,7 @@ background-color:#270342;
 }
 .card-img-top{
   border: 2px solid cyan;
-  border-style:ridge !important;
+  border-style:ridge;
   box-shadow: 5px 5px cyan, 5px 5px cyan;
 
 
@@ -571,7 +578,7 @@ background-color:#270342;
   color:magenta;
 
 }
-/* Articles */
+/*----------------------------------- Articles -----------------------------------------*/
 
 #articles{
   background-color:#e3daffd4;
@@ -590,7 +597,11 @@ background-color:#270342;
   filter: invert(1);
 
 }
-#articles p{
+#placeholder p{
+  color: #444444;
+  text-shadow:-1px -1px cyan, 2px 2px magenta;
+}
+.articles p{
   padding-bottom: 4px;
   line-height: 1.4;
   font-weight: 400;
@@ -598,6 +609,7 @@ background-color:#270342;
   letter-spacing: 1.5px;
   border-width: thick;
   border-color:white;
+  color:black;
 
 }
 
@@ -615,7 +627,10 @@ background-color:#270342;
 
 }
 
-
+.articles a{
+  color:blue;
+  text-shadow: 1px 1px cyan, -1px -1px magenta;
+}
 .ul{
   padding-top:1vh;
   padding-bottom:1vh;
@@ -635,7 +650,6 @@ background-color:#270342;
   color:white;
 }
 .metadata{
-  background-color:#6C4AB6;
   border: 3px solid fuchsia;
   box-shadow: 5px 5px cyan, 5px 5px cyan;
   background-color:#3B3486;
@@ -674,9 +688,36 @@ blockquote{
   width:150px;
   align-self:flex-start;
 }
+/*------------------------------- images------------------------------------ */
+
+#articles figure{
+background-color:black;
+  border: 3px groove fuchsia;
+  box-shadow: 5px 5px cyan, 5px 5px cyan;
+  /* align-content: center; */
+  justify-content:flex-start;
+  /* display:flex; */
+
+}
+
+#articles img:not(#book-worm){
+  border: 3px dotted fuchsia;
+  margin:1em 1em;
+
+}
 
 
-/* music */
+figcaption{
+  font-family:'VCR_MONO';
+  color:magenta;
+  text-shadow: -1px -1px cyan, 1px 1px black;
+  background-color:black;
+padding:1em 1em;
+}
+
+/*------------------------------- tables------------------------------------ */
+
+/*------------------------------- music------------------------------------ */
 
 
  #audio-player {
@@ -735,6 +776,7 @@ blockquote{
   align-items: center;
   align-self: center;
   display:flex;
+  border:none;
 }
 #vapo-book{
   /* background-image:url('/img/vaporwave/book-flip.gif'); */

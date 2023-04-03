@@ -48,6 +48,8 @@ head > link{
   filter:invert(1);
 }
 
+#page_logo
+
 /*--------------------------------------------------------------
 # Disable AOS delay on mobile
 --------------------------------------------------------------*/
@@ -885,10 +887,15 @@ section {
 }
 
 .services .icon-box {
-  margin-bottom: 20px;
-  padding: 30px 15px;
+  padding: 1em 1em;
   border-radius: 6px;
   background: #fff;
+  height:auto;
+  position:relative;
+  width:100%;
+  height:90%;
+  text-align: justify;
+
 }
 
 .services .icon-box i {
@@ -918,6 +925,7 @@ section {
   margin-left: 70px;
   line-height: 24px;
   font-size: 14px;
+  text-align:justify;
 }
 
 
@@ -939,12 +947,20 @@ section {
 }
 
 .services .test-content-right {
-  padding-top: 5%;
-  text-align: right;
+  padding: 1em 1em;
+  margin: 1em 1em;
+  text-align:justify;
+  height:200px;
 }
 
 .services .test-content-left {
-  padding-top: 5%;
+  padding: 1em 1em;
+  margin: 1em 1em;
+  text-align: justify;
+  height:200px;
+
+
+
 }
 
 /*--------------------------------------------------------------

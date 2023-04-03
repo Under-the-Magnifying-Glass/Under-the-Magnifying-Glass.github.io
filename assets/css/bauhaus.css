@@ -18,20 +18,6 @@ color palette brighter
 
 /* --------------Fonts---------------- */
 
-@font-face {
-    font-family: 'Baumans';
-    src: url('../fonts/bauhaus-font/Baumans-Regular.ttf');
-  }
-
-@font-face{
-  font-family:"Righteous";
-  src:url('../fonts/bauhaus-font/Righteous-Regular.ttf')
-}
-
-@font-face{
-  font-family:"Sacco";
-  src:url('../fonts/bauhaus-font/Sacco-SemiBoldCondensed.ttf')
-}
 
 
 @font-face{
@@ -210,7 +196,7 @@ body, p{
   text-transform: lowercase;
 }
 
-/* ------------------headings------------------ */
+/* ------------------headings, sections ------------------ */
 
 
 h1{
@@ -232,15 +218,15 @@ h2{
 }
 
 h3{
-text-align:center;
-font-family:'CypherSemiBold';
-letter-spacing: 2px;
-color:black;
-padding-left:2vw;
-padding-right:2vw;
-padding-top:1vh;
-padding-bottom:1vh;
-font-size: 1.2em;
+  text-align:center;
+  font-family:'CypherSemiBold';
+  letter-spacing: 2px;
+  color:black;
+  padding-left:2vw;
+  padding-right:2vw;
+  padding-top:1vh;
+  padding-bottom:1vh;
+  font-size: 1.2em;
 
 }
 
@@ -292,8 +278,9 @@ font-size: 1.2em;
   line-height: 0;
 }
 
+/* diagonal effect */
 .section-title span:hover {
-transform:rotateZ(15deg);
+  transform:rotateZ(15deg);
 }
 
 
@@ -312,9 +299,7 @@ transform:rotateZ(15deg);
 
 }
 
-#services p{
-  color:black;
-}
+
 
 /* -----------------------features - cards-------------- */
 
@@ -334,13 +319,13 @@ transform:rotateZ(15deg);
 }
 
 .card-title {
-display:inline-block;
-writing-mode:vertical-lr;
-vertical-align:middle;
-text-transform:lowercase;
-font-family:'CypherBold' ;
-color: #21409a;
-letter-spacing:2px;
+  display:inline-block;
+  writing-mode:vertical-lr;
+  vertical-align:middle;
+  text-transform:lowercase;
+  font-family:'CypherBold' ;
+  color: #21409a;
+  letter-spacing:2px;
 
 }
 .card-text{
@@ -375,7 +360,6 @@ letter-spacing:2px;
   float: left;
   filter:grayscale(1);
   border:8px solid black;
-  background-color:#ffde17;
 
 }
 
@@ -388,22 +372,34 @@ letter-spacing:2px;
   float: right;
   filter:grayscale(1);
   border:8px solid black;
-  background-color:#ffde17;
 
 }
-.icon-box{
-  border: 5px solid yellow;
+.services .icon-box{
+  /* border: 5px solid yellow; */
+  border-radius: 0%;
+  text-align:justify;
+  background-color:black;
+  /* padding:2em 2em 1em 2em; */
+}
+
+.services .icon-box p{
+  text-align:justify;
+  text-transform: lowercase;
+  border-radius: 0%;
 }
 
 
-.border-img{
-  border-radius: 100px;
-  margin: 15px;
-  width: 120px;
-  height: 120px;
-  border: 5px dotted #21409a;
-  display:inline-block;
+.services .icon-box h3{
+  font-size:1.3em;
+  text-transform: uppercase;
+}
 
+.test-content-right{
+  background-color:white;
+}
+
+.test-content-left{
+  background-color:white;
 }
 
 .member{
@@ -442,6 +438,11 @@ letter-spacing:2px;
   background-color:black;
   color:white;
   text-align:justify;
+}
+
+#footer a{
+  color:#be1e2d;
+
 }
 /* -------------------------------------ARTICLES PAGE -------------------------------- */
 
@@ -507,16 +508,9 @@ color:#ffde17;
 /* ------------------------texts-------------------------- */
 
 
-/*
-#articles{  margin:1em 2em 3em 1em;
-
-} */
-
-
 
 .articles{
   text-align:justify;
-  margin: 0 5em;
 }
 
 
@@ -526,37 +520,29 @@ color:#ffde17;
 
 
 
-#articles h2{
+.articles h2{
   padding-left:2vw;
   padding-right:2vw;
   padding-bottom:2vh;
   padding-top:2vh;
   font-family:'CypherSemiBold';
   text-transform: lowercase;
-
-  /* writing-mode:vertical-lr; */
-  /* text-orientation: upright; */
   font-size:1.2em;
   text-align:center;
   background-color:black;
   color:white;
 
-  /* viewport HEIGHT here AND NOT WIDTH!!! ITS VERTICAL STUPID */
-  /* white-space: nowrap; */
 }
 
 .articles h5{
   font-size:1em;
   font-family:'CypherRegular';
-
-
-
 }
 
 
 
 
-#articles h1{
+.articles h1{
   font-family:"CypherBold";
   letter-spacing:4px;
   text-transform: lowercase;
@@ -571,7 +557,7 @@ color:#ffde17;
 
 }
 
-#articles h3{
+.articles h3{
   font-size:1.5em;
   text-align:left;
   text-decoration:none;
@@ -595,7 +581,7 @@ color:#ffde17;
 
 }
 
-#articles h4:not(#author){
+.articles h4:not(#author){
   font-size:1.2em;
   text-align:left;
   text-decoration:none;
@@ -608,7 +594,7 @@ color:#ffde17;
 
 }
 
-#articles a{
+.articles a{
   color:#be1e2d;
   font-family: 'CypherSemiBold';
   text-shadow: 1px 1px grey, 1px 1px grey;
@@ -662,11 +648,8 @@ color:#ffde17;
   background-color:black;
   color:white;
 
-
-  /* writing-mode:vertical-lr; */
 }
 
-/* align items center for the article only */
 
 .info{
   padding-left:4.5vw;
@@ -689,8 +672,10 @@ color:#ffde17;
   /* float:left; */
 }
 
+.scroll-column {
 
-/* ----------------tables------------- */
+}
+/* ----------------------------tables------------------------------- */
 
 table {
   font-family:'CypherSemiBold';
@@ -741,7 +726,7 @@ blockquote{
 }
 
 
-/* -------------------------image------------------------- */
+/* ---------------------------------------image------------------------------------- */
 
 
 .bauhaus-img{
@@ -780,6 +765,8 @@ blockquote{
   text-align: justify;
 }
 
+
+/* underlining animation */
 .hover-underline-animation {
   /* display: inline-block; */
   position: relative;
@@ -818,13 +805,6 @@ blockquote{
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-
-
-
-
-
-
-
 
 
 .text-light.hover-underline-animation {
