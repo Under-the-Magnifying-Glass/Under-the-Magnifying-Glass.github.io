@@ -288,9 +288,9 @@ table{aspect-ratio: 4/3; margin: 0;  padding: 10%; display: flex;
   background-color: rgba(28, 76, 25, 0.7);
 }
 .scroll-column h1{font-size: medium;}
- .scroll-column h2, .scroll-column ul a, .scroll-column h4, .scroll-column h5, .scroll-column h3, .scroll-column p{
+ .scroll-column h2, .scroll-column ul a, .scroll-column h4, .scroll-column h5, .scroll-column h3, .scroll-column p, .scroll-column table{
   font-size: small;
 }
-
+.scroll-column table{border:none; width: fit-content;}
 #documentation-page .row{margin-bottom: 50px; padding: 1%; color: #57F287;}
 
