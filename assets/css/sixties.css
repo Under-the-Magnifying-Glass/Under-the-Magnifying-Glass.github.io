@@ -349,7 +349,7 @@ div.notes p{
 
 @media screen and (max-width:801px){
 .circt{
-    width: 100px;
+    width: 50vw;
 }
 .scroll-column .circt{
   width:50vw;
