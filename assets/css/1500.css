@@ -208,7 +208,7 @@ color: #8f6839;
     text-align: justify
 }
 
-.about p::first-letter, .card p::first-letter, section#documentation-page p::first-letter {
+.about p::first-letter, .card p::first-letter, #documentation-page p:first-of-type:first-letter {
     font-family: "MedievalCaps";
     float: left;
     line-height: 40px;
@@ -349,8 +349,6 @@ table caption {
     color:#1f1c17;
 }
 
-
-
 #articles p:first-of-type:first-letter {
     font-family: "MedievalCaps";
     float: left;
@@ -373,4 +371,8 @@ p#author:first-of-type:first-letter, #placeholder p:first-of-type:first-letter, 
     float: none;
     line-height: normal;
     font-size: larger;
+}
+
+#documentation-page p {
+    text-align: justify;
 }
