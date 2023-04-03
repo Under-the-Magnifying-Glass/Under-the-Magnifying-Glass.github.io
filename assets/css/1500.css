@@ -341,7 +341,7 @@ table caption {
     margin-right: auto;
 }
 
-#articles img {
+#articles img, #documentation-page img {
     border-radius: 100%;
     filter: sepia(1);
     border-style: double;
