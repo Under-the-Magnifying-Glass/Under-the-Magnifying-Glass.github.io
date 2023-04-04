@@ -283,10 +283,7 @@ div.container.info-section div.row p{font-family: "Cooper-Black";}
 div.container.info-section div.row h1, div.container.info-section div.row h2 {color: #dd1c4b;}
 
 /*ISSUES*/
-.grid-container{display: grid;
-grid-template-columns: 1fr 1fr;
-grid-template-rows: auto;
-column-gap: 28px;}
+
 
 
 #navbarTogglerDemo03 a.active, #navbarTogglerDemo03 a:hover{color: #2090a1;}
