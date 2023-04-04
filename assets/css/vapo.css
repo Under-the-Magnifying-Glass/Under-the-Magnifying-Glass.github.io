@@ -416,10 +416,10 @@ background-color:#270342;
   background-color: #6f8de0ab;
 }
 .scroll-column h1{
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 .scroll-column h2{
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 .scroll-column h3{
   font-size: 1em;
@@ -439,6 +439,26 @@ blockquote{
   color:#21409a;
   }
 
+
+  @media screen and (max-width:801px){
+  .articles h1, h2, h3, h4{
+      font-size:1.2em;
+  }
+  .articles p{
+    padding:0.5em;
+    font-size:0.9em;
+  }
+  .scroll-column .articles h1{
+    font-size:1em;
+  }
+#metadata {
+  font-size:0.8em;
+}
+#metadata p{
+  font-size:0.8em;
+}
+
+  }
 
 /* --------------------------tables------------------------ */
 
