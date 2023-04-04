@@ -1,70 +1,52 @@
 
-  //change article
-    $(document).ready(function(){
-      $("#btn1").click(function(){
-        $.ajax({
-          url: 'texts/dainty-hands.html',
-          success: function(data) {
-            $("#articles").html(data);
+ // <!-- change article -->
 
-          }
-        });
-      });
-    });
+ $(document).ready(function(){
+   $("#btn1").click(function(){
+     $.ajax({
+       url: 'texts/dainty-hands.html',
+       success: function(data) {
+         $("#articles").html(data);
+       }
+     });
+   });
 
-    $(document).ready(function(){
-      $("#btn2").click(function(){
-        $.ajax({
-          url: 'texts/musgrave-ritual.html',
-          success: function(data) {
-            $("#articles").html(data);
-          }
-        });
-      });
-    });
+   $("#btn2").click(function(){
+     $.ajax({
+       url: 'texts/musgrave-ritual.html',
+       success: function(data) {
+         $("#articles").html(data);
+       }
+     });
+   });
 
-    $(document).ready(function(){
-      $("#btn3").click(function(){
-        $.ajax({
-          url: 'texts/scandal-in-bohemia.html',
-          success: function(data) {
-            $("#articles").html(data);
-          }
-        });
-      });
-    });
-
-    $(document).ready(function(){
-      $("#btn4").click(function(){
-        $.ajax({
-          url: 'issues-compare.html',
-          success: function(data) {
-            $("#articles").html(data);
-          }
-        });
-      });
-    });
+   $("#btn3").click(function(){
+     $.ajax({
+       url: 'texts/scandal-in-bohemia.html',
+       success: function(data) {
+         $("#articles").html(data);
+       }
+     });
+   });
+   $("#btn4").click(function(){
+     $.ajax({
+       url: 'issues-compare.html',
+       success: function(data) {
+         $("#articles").html(data);
+       }
+     });
+   });
+ });
 
 
     $(document).ready(function(){
-
        $('#first_scroll').load("texts/scandal-in-bohemia.html");
-
-    });
-
-    $(document).ready(function(){
-
        $('#second_scroll').load("texts/musgrave-ritual.html");
-
-    });
-
-    $(document).ready(function(){
-
        $('#third_scroll').load("texts/dainty-hands.html");
-
     });
 
 // <!-- Highlight function -->
+
 
 function addHighlight(concept){
 /* Select all elements to highlight, which are the ones that have the specified value of the "property" attribute */
@@ -74,6 +56,8 @@ function addHighlight(concept){
   let x= new Set();
 
   /* Higlhlight all selected elements and show instances*/
+  if(nodes[0]){
+
   nodes.forEach(node => {
     x.add(node.getAttribute("about"));
     node.classList.add('highlight');
@@ -81,6 +65,7 @@ function addHighlight(concept){
 
   nodes[0].scrollIntoView({ behavior: 'smooth', block: "center" }, true);
 
+}
   let strings=""
 
   x.forEach(s=>{
@@ -105,10 +90,11 @@ $('#btn4').click(function(){
 
 function removeHighlight(concept){
   let nodes = document.querySelectorAll(`[class="${concept} highlight"]`)
-
+if (nodes[0]){
   nodes.forEach(node => {
       node.classList.remove('highlight')
   })
+}
 };
 
 const checkbox = document.querySelectorAll('input[type=checkbox]');
@@ -123,6 +109,8 @@ document.querySelectorAll(".showmetadata").forEach(checkbox =>{
     removeHighlight(e.currentTarget.getAttribute("data-concept"));
   }})
 });
+
+
 
 
 var coll = document.getElementsByClassName("collapsible");

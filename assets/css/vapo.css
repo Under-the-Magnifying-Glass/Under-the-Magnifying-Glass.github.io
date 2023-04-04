@@ -247,29 +247,6 @@ h3{
 
 /* ------------------------------features and cards------------------------------------- */
 
-.info-section{
-  background-color:#6f8de0ab;
-  border: 3px solid fuchsia;
-  border-style:dotted;
-  box-shadow: 5px 5px cyan, 5px 5px cyan;
-}
-.info-section h2{
-  text-transform: uppercase;
-}
-.info-section p, h6{
-  color:white;
-  text-shadow:1px -1px black;
-
-}
-.info-section a{
-  color:cyan;
-}
-
-.info-section ul{
-  color:white;
-  text-shadow:1px -1px black;
-  padding-left:5em;
-}
 
 .feature-card{
 
@@ -540,6 +517,32 @@ figcaption{
 }
 
 
+/*------------------------------- DOCUMENTATION PAGE------------------------------------ */
+
+.info-section{
+  background-color:#6f8de0ab;
+  border: 3px solid fuchsia;
+  border-style:dotted;
+  box-shadow: 5px 5px cyan, 5px 5px cyan;
+}
+.info-section h2{
+  text-transform: uppercase;
+}
+.info-section p, h6{
+  color:white;
+  text-shadow:1px -1px black;
+
+}
+.info-section a{
+  color:cyan;
+}
+
+.info-section ul{
+  color:white;
+  text-shadow:1px -1px black;
+  padding-left:5em;
+}
+
 
 
  /* ------------------------------ANIMATIONS-------------------------------- */
@@ -676,9 +679,7 @@ h3:not(#about-content > h3)::after{
     text-shadow: -1px -1px black, 1px 1px magenta;
     background: none;
     cursor: pointer;
-    /* width:5vw; */
     position:fixed;
-    /* align-self:center; */
     border-radius:50px;
     border:none;
   }
