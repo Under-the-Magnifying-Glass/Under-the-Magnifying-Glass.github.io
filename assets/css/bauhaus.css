@@ -457,7 +457,7 @@ h3{
 
 #canvas{
   background-color:#f0f0f0;
-  margin:1em 2em 3em 1em;
+  margin:1em;
 }
 
 /* ------------------texts navbar-------------------------- */
@@ -679,7 +679,20 @@ color:#ffde17;
   font-size: 0.8em;
   /* float:left; */
 }
+/* remove large padding on small screen */
+@media screen and (max-width:801px){
+.articles{
+    padding: 1em;
+}
+.scroll-column .articles{
+  padding:1em;
+}
 
+.metadata{
+  padding:1em;
+  font-size:0.8em;
+}
+}
 
 /* ----------------------------tables------------------------------- */
 
